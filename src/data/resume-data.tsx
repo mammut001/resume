@@ -13,7 +13,7 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://github.com/mammut001", // Placeholder personal website URL
   contact: {
     email: "paytonpei01@gmail.com",
-    tel: "873-354-4085",
+    tel: "",
     social: [
       {
         name: "GitHub",
@@ -93,7 +93,8 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
-      title: "RentWise - House hunting",
+      title: "RentWise",
+      status:1,
       techStack: ["TypeScript", "React Native", "Firebase", "Android Studio", "Xcode", "NoSql"],
       description:
         "Implemented Google SignUp and SignIn for user authentication, securely storing user info in Firebase. Used Firebase for instant updates in terms of house listings, enhancing user engagement.",
@@ -104,6 +105,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Coin Web Crawler",
+      status:1,
       techStack: ["JavaScript", "jQuery", "NodeJS", "Express", "Web Crawling", "PageRank", "Recommendation Algorithm"],
       description:
         "Developed a Node.js-based web crawler for CoinMarketCap.com, using crawling technology for cryptocurrency trading data extraction; scraped 500 pages per day and stored data in MongoDB for future inquiry.",
@@ -113,7 +115,8 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Workout Plan Generator (In progress)",
+      title: "Workout Plan Generator",
+      status:0,
       techStack: ["TypeScript", "Vercel", "Next.js", "Flask", "Redis", "Zustand"],
       description:
         "Utilized Vercel’s online hosting service with Python and Flask for backend services. Adopted Docker running-environment setup for project deployment, utilizing GitHub for project collaboration.",
