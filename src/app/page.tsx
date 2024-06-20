@@ -25,9 +25,6 @@ export default function Page() {
   const summary = language === 'french' ? RESUME_DATA.summary_fr :
     language === 'chinese' ? RESUME_DATA.summary_cn :
       RESUME_DATA.summary
-  // const workDescription = language === 'french' ? RESUME_DATa :
-  //   language === 'chinese' ? RESUME_DATA.summary_cn :
-  //     RESUME_DATA.summary
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4">
