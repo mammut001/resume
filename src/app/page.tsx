@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 import {useLanguageStore} from "@/store/useLanguageStore";
-import { Language } from "@/store/useLanguageStore";
 
 // export const metadata: Metadata = {
 //   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
