@@ -131,7 +131,7 @@ export const RESUME_DATA = {
         label: "github.com",
         label_fr: "github.com",
         label_cn: "github.com",
-        href: "https://github.com/random-char1198/Coin-Web-Crawler", // Placeholder link
+        href: "https://github.com/random-char1198/Coin-Web-Crawler",
       },
     },
     {
@@ -157,7 +157,7 @@ export const RESUME_DATA = {
       title: "Workout Plan Generator",
       title_fr: "Générateur de plan d'entraînement",
       title_cn: "锻炼计划生成器",
-      status: 0,
+      status: 1,
       techStack: ["TypeScript", "Vercel", "Next.js", "Flask", "Redis", "Zustand"],
       description:
         "Utilized Vercel’s online hosting service with Python and Flask for backend services. Adopted Docker running-environment setup for project deployment, utilizing GitHub for project collaboration.",
@@ -172,5 +172,25 @@ export const RESUME_DATA = {
         href: "https://github.com/ivespeggy/workout-generator",
       },
     },
+    {
+      title: "Library System",
+      title_fr: "Système de Bibliothèque",
+      title_cn: "图书馆系统",
+      status: 0,
+      techStack: ["C++11", "Object-Oriented Programming", "Shared_ptr"],
+      description:
+        "Developed a library management system using C++11 and object-oriented programming principles. Utilized smart pointers (shared_ptr) for efficient memory management. The system includes functionalities for managing books, shelves, and libraries.",
+      description_fr:
+        "Développement d'un système de gestion de bibliothèque en utilisant C++11 et les principes de programmation orientée objet. Utilisation de pointeurs intelligents (shared_ptr) pour une gestion efficace de la mémoire. Le système inclut des fonctionnalités pour la gestion des livres, des étagères et des bibliothèques.",
+      description_cn:
+        "使用C++11和面向对象编程原则开发了图书馆管理系统。利用智能指针（shared_ptr）进行高效的内存管理。该系统包括管理图书、书架和图书馆的功能。",
+      link: {
+        label: "github.com",
+        label_fr: "github.com",
+        label_cn: "github.com",
+        href: "https://github.com/mammut001/library_system",
+      },
+    }
+
   ],
 } as const;
