@@ -190,7 +190,25 @@ export const RESUME_DATA = {
         label_cn: "github.com",
         href: "https://github.com/mammut001/library_system",
       },
-    }
-
+    },
+    {
+      title: "Cash Drawer",
+      title_fr: "Cash Drawer",
+      title_cn: "现金抽屉",
+      status: 1,
+      techStack: ["Flutter", "Dart"],
+      description:
+        "Developed a mobile application using Flutter and Dart for managing personal finances. The application allows users to track their expenses, create budgets, and visualize their financial data.",
+      description_fr:
+        "Développement d'une application mobile utilisant Flutter et Dart pour la gestion des finances personnelles. L'application permet aux utilisateurs de suivre leurs dépenses, de créer des budgets et de visualiser leurs données financières.",
+      description_cn:
+        "使用Flutter和Dart开发了一个管理个人财务的移动应用程序。该应用程序允许用户跟踪他们的支出，创建预算，并可视化他们的财务数据。",
+      link: {
+        label: "github.com",
+        label_fr: "github.com",
+        label_cn: "github.com",
+        href: "https://github.com/mammut001/Cash-Drawer",
+      },
+    },
   ],
 } as const;
