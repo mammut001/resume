@@ -6,6 +6,7 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Badge } from "./ui/badge";
+import PopupWindow from "@/components/ui/popup-window";
 
 interface Props {
   title: string;
@@ -17,8 +18,10 @@ interface Props {
 
 export function ProjectCard({ title, description, tags, link, status}: Props) {
   return (
-    <Card className="flex flex-col overflow-hidden border border-muted p-3">
+
+    <Card className="cursor-pointer flex flex-col overflow-hidden border border-muted p-3">
       <CardHeader className="">
+        <PopupWindow name={link?.toString()!}></PopupWindow>
         <div className="space-y-1">
           <CardTitle className="text-base">
             {link ? (
