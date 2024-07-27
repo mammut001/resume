@@ -1,0 +1,67 @@
+[
+  {
+    "date": "2024-07-20T01:23:41Z",
+    "author": "P A I",
+    "message": "updated chart.dart to be able to render data from number_occurrence.\nBut still have problems."
+  },
+  {
+    "date": "2024-07-19T16:54:48Z",
+    "author": "P A I",
+    "message": "added legends (from calculator.dart)"
+  },
+  {
+    "date": "2024-07-19T04:46:13Z",
+    "author": "P A I",
+    "message": "added example.chart from fl_chart"
+  },
+  {
+    "date": "2024-07-18T16:02:59Z",
+    "author": "P A I",
+    "message": "added script"
+  },
+  {
+    "date": "2024-07-18T15:56:07Z",
+    "author": "P A I",
+    "message": "refactored codebase and moved main view to calculator.dart.\nAdded tabview"
+  },
+  {
+    "date": "2024-07-17T23:51:03Z",
+    "author": "P A I",
+    "message": "adjusting padding based on their width instead of their platform anymore."
+  },
+  {
+    "date": "2024-07-17T22:25:49Z",
+    "author": "P A I",
+    "message": "fixed padding issues for customized input textfield"
+  },
+  {
+    "date": "2024-07-14T00:05:57Z",
+    "author": "P A I",
+    "message": "fixed error\nand added warning.dart to prompt error when having more than 100 hundred bills"
+  },
+  {
+    "date": "2024-07-13T05:05:24Z",
+    "author": "P A I",
+    "message": "update"
+  },
+  {
+    "date": "2024-07-11T16:26:56Z",
+    "author": "P A I",
+    "message": "update"
+  },
+  {
+    "date": "2024-07-10T15:33:33Z",
+    "author": "P A I",
+    "message": "issue: textfield cannot be added properly"
+  },
+  {
+    "date": "2024-07-10T05:18:05Z",
+    "author": "P A I",
+    "message": "added snack and fixed dialog box"
+  },
+  {
+    "date": "2024-07-10T03:10:53Z",
+    "author": "P A I",
+    "message": "Initial commit"
+  }
+]

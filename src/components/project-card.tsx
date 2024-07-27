@@ -7,6 +7,7 @@ import {
 } from "./ui/card";
 import { Badge } from "./ui/badge";
 import PopupWindow from "@/components/ui/popup-window";
+import { useTriggerPopupStore } from "@/store/useTriggerPopupStore";
 
 interface Props {
   title: string;
@@ -16,10 +17,19 @@ interface Props {
   status: number;
 }
 
+
 export function ProjectCard({ title, description, tags, link, status}: Props) {
+  const {toggleTrigger } = useTriggerPopupStore(state => ({
+    toggleTrigger: state.toggleTrigger,
+  }))
+
+  const handlePopUp = ()=>{
+    toggleTrigger()
+
+  }
   return (
 
-    <Card className="cursor-pointer flex flex-col overflow-hidden border border-muted p-3">
+    <Card onClick={handlePopUp} className="cursor-pointer flex flex-col overflow-hidden border border-muted p-3">
       <CardHeader className="">
         <PopupWindow name={link?.toString()!}></PopupWindow>
         <div className="space-y-1">
