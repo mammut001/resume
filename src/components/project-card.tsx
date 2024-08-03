@@ -9,8 +9,12 @@ import { Badge } from "./ui/badge";
 import PopupWindow from "@/components/ui/popup-window";
 import { useTriggerPopupStore } from "@/store/useTriggerPopupStore";
 import { useEffect } from "react";
+import { useLanguageStore } from "@/store/useLanguageStore";
+import { RESUME_DATA } from "@/data/resume-data";
+
 
 interface Props {
+  index: number
   title: string;
   description: string;
   tags: readonly string[];
@@ -19,12 +23,14 @@ interface Props {
 }
 
 
-export function ProjectCard({ title, description, tags, link, status}: Props) {
+export function ProjectCard({ title, description, tags, link, status,index}: Props) {
   const {toggleTrigger,dics,loadProjectDic } = useTriggerPopupStore(state => ({
     toggleTrigger: state.toggleTrigger,
     dics: state.projectDic,
     loadProjectDic:state.loadProjectDic,
   }))
+  const languageName = useLanguageStore(state => state.name)
+
 
 
   useEffect(() => {
@@ -33,13 +39,20 @@ export function ProjectCard({ title, description, tags, link, status}: Props) {
     }
   }, [dics, loadProjectDic]);
   const handlePopUp = ()=>{
-    toggleTrigger(title)
+    if (languageName !== "english"){
+      toggleTrigger(RESUME_DATA.projects[index].title)
+    }
+    else{
+      toggleTrigger(title)
+    }
+    console.log("DIC")
+    console.log(dics)
   }
   return (
 
     <Card onClick={handlePopUp} className="cursor-pointer flex flex-col overflow-hidden border border-muted p-3">
       <CardHeader className="">
-        <PopupWindow name={title?.toString()!}></PopupWindow>
+        <PopupWindow title={title?.toString()!} projectIndex={index}></PopupWindow>
         <div className="space-y-1">
           <CardTitle className="text-base">
             {link ? (

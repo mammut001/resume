@@ -116,6 +116,7 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      index:0,
       title: "rent-wise-app",
       title_fr: "RentWise",
       title_cn: "租房智选",
@@ -135,6 +136,7 @@ export const RESUME_DATA = {
       },
     },
     {
+      index:1,
       title: "Coin-Web-Crawler",
       title_fr: "Coin Web Crawler",
       title_cn: "币种网页爬虫",
@@ -154,6 +156,7 @@ export const RESUME_DATA = {
       },
     },
     {
+      index:2,
       title: "workout-generator",
       title_fr: "Générateur de plan d'entraînement",
       title_cn: "锻炼计划生成器",
@@ -173,6 +176,7 @@ export const RESUME_DATA = {
       },
     },
     {
+      index:3,
       title: "library_system",
       title_fr: "Système de Bibliothèque",
       title_cn: "图书馆系统",
@@ -192,6 +196,7 @@ export const RESUME_DATA = {
       },
     },
     {
+      index:4,
       title: "Cash-Drawer",
       title_fr: "Cash Drawer",
       title_cn: "现金抽屉",

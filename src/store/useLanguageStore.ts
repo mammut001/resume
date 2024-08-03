@@ -1,9 +1,8 @@
 
 import {create} from 'zustand'
-import { type } from "node:os";
 
 
-type Lang = "english" | "french" | "chinese"
+export type Lang = "english" | "french" | "chinese"
 
 export type Language ={
   name: string,
