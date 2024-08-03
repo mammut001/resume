@@ -1,0 +1,112 @@
+[
+  {
+    "date": "2024-06-28T01:16:49Z",
+    "author": "P A I",
+    "message": "feat: user can only add book if they initialize the book properly"
+  },
+  {
+    "date": "2024-06-27T02:28:11Z",
+    "author": "P A I",
+    "message": "update"
+  },
+  {
+    "date": "2024-06-27T02:24:22Z",
+    "author": "P A I",
+    "message": "feat: setInitialAmt works!"
+  },
+  {
+    "date": "2024-06-26T01:03:04Z",
+    "author": "P A I",
+    "message": "fixing printBorrowedBooks in Student.h"
+  },
+  {
+    "date": "2024-06-26T01:02:42Z",
+    "author": "P A I",
+    "message": "fixing printBorrowedBooks in Student.h"
+  },
+  {
+    "date": "2024-06-26T00:50:49Z",
+    "author": "P A I",
+    "message": "feat: return-book now works."
+  },
+  {
+    "date": "2024-06-25T20:34:31Z",
+    "author": "P A I",
+    "message": "fix bash scripts"
+  },
+  {
+    "date": "2024-06-25T20:31:53Z",
+    "author": "P A I",
+    "message": "fix bash scripts"
+  },
+  {
+    "date": "2024-06-25T06:55:18Z",
+    "author": "P A I",
+    "message": "feat added lines-of-code.sh and fix shared_ptr potential issues."
+  },
+  {
+    "date": "2024-06-25T05:47:50Z",
+    "author": "P A I",
+    "message": "fix: no duplicate book will be borrowed."
+  },
+  {
+    "date": "2024-06-25T04:10:27Z",
+    "author": "P A I",
+    "message": "convert unix time stamp to human readable time."
+  },
+  {
+    "date": "2024-06-24T08:14:04Z",
+    "author": "P A I",
+    "message": "Seemed Working!!!!"
+  },
+  {
+    "date": "2024-06-24T04:53:05Z",
+    "author": "P A I",
+    "message": "refactor:\nmove shared_ptr from shelf to library"
+  },
+  {
+    "date": "2024-06-23T22:57:41Z",
+    "author": "P A I",
+    "message": "in progress,\nborrow book should be in library object."
+  },
+  {
+    "date": "2024-06-23T05:23:33Z",
+    "author": "P A I",
+    "message": "added shared_ptr for sharing info."
+  },
+  {
+    "date": "2024-06-23T03:57:58Z",
+    "author": "P A I",
+    "message": "update uni.cc\n-basic structures."
+  },
+  {
+    "date": "2024-06-23T03:35:54Z",
+    "author": "P A I",
+    "message": "add uni.cc and uni.h"
+  },
+  {
+    "date": "2024-06-21T17:01:12Z",
+    "author": "P A I",
+    "message": "update main.cc"
+  },
+  {
+    "date": "2024-06-20T03:18:12Z",
+    "author": "P A I",
+    "message": "update main.cc"
+  },
+  {
+    "date": "2024-06-20T03:17:32Z",
+    "author": "P A I",
+    "message": "issue:\nwhen adding book, book object cannot be updated properly.\nWILL FIX TOMORROW>"
+  },
+  {
+    "date": "2024-06-19T18:23:51Z",
+    "author": "P A I",
+    "message": "delete is working!"
+  },
+  {
+    "date": "2024-06-19T03:13:59Z",
+    "author": "P A I",
+    "message": "first push"
+  }
+]

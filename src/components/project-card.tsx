@@ -34,10 +34,6 @@ export function ProjectCard({ title, description, tags, link, status}: Props) {
   }, [dics, loadProjectDic]);
   const handlePopUp = ()=>{
     toggleTrigger(title)
-    console.log(123)
-    console.log(dics)
-    console.log(456)
-    console.log(title)
   }
   return (
 

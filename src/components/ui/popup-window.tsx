@@ -22,7 +22,7 @@ const PopupWindow: FC<ProjectCardProp> = ({ name }) => {
   useEffect(() => {
     const fetchCommits = async () => {
       try {
-        const response = await fetch('/output.json');
+        const response = await fetch(`/${name}.json`)
         const data = await response.json();
         setCommits(data);
       } catch (error) {
