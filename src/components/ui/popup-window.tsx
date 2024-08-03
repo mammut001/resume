@@ -15,7 +15,10 @@ const PopupWindow: FC<ProjectCardProp> = ({ name }) => {
   const [commits, setCommits] = useState<Commit[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
-  const toggleStatus = useTriggerPopupStore(state=>state.toggleStatus);
+
+
+  const statusDictionary = useTriggerPopupStore(state => state.projectDic)
+
   useEffect(() => {
     const fetchCommits = async () => {
       try {
@@ -40,9 +43,11 @@ const PopupWindow: FC<ProjectCardProp> = ({ name }) => {
     return <div>{error}</div>;
   }
 
+  const popupStatus = statusDictionary ? statusDictionary[name] : false;
+
   return (
 
-    <Popup open={toggleStatus} trigger={<button></button>} position="right center">
+    <Popup open={popupStatus}trigger={<button></button>} position="right center">
       <div style={{ backgroundColor: 'white', padding: '20px', borderRadius: '8px' }}>
         <ul>
           {commits.map((commit, index) => (
