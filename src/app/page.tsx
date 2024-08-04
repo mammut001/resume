@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 import {useLanguageStore} from "@/store/useLanguageStore";
+import { useTriggerPopupStore } from "@/store/useTriggerPopupStore";
 
 // export const metadata: Metadata = {
 //   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -18,6 +19,7 @@ import {useLanguageStore} from "@/store/useLanguageStore";
 export default function Page() {
   const language = useLanguageStore(state => state.name)
   const updateLanguage = useLanguageStore(state => state.updateLang)
+  const resetProjectClickedStatus = useTriggerPopupStore(state => state.resetToFalse)
 
   const aboutContent = language === 'french' ? RESUME_DATA.about_fr :
     language === 'chinese' ? RESUME_DATA.about_cn :
@@ -33,13 +35,24 @@ export default function Page() {
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
             <div className="space-x-2 cursor-pointer">
 
-              <Badge className="print:text-[10px]" key={""} onClick={()=>updateLanguage("french")}>
+              <Badge className="print:text-[10px]" key={""} onClick={
+                ()=>{
+                  updateLanguage("french")
+                  resetProjectClickedStatus()
+                }
+              }>
                 Français
               </Badge>
-              <Badge className="print:text-[10px]" key={""} onClick={() =>updateLanguage("chinese")}>
+              <Badge className="print:text-[10px]" key={""} onClick={()=>{
+                updateLanguage("chinese")
+                resetProjectClickedStatus()
+              }}>
                 中文
               </Badge>
-              <Badge className="print:text-[10px]" key={""} onClick={() =>updateLanguage("english")}>
+              <Badge className="print:text-[10px]" key={""} onClick={() =>{
+                updateLanguage("english")
+                resetProjectClickedStatus()
+              }}>
                 English
               </Badge>
             </div>

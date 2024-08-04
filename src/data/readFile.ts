@@ -10,7 +10,6 @@ export const readProjectFromFile = async (): Promise<{[key: string]: boolean}> =
     let bool = false;
 
     keys.forEach(key => {
-      console.log(key)
       dic[key] = bool
     });
     return dic;

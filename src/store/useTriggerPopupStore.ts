@@ -1,5 +1,4 @@
 import {create} from 'zustand'
-import { Language } from "@/store/useLanguageStore";
 import { readProjectFromFile } from "@/data/readFile";
 export type TriggerPopupStore = {
   projectName: string,
@@ -8,6 +7,7 @@ export type TriggerPopupStore = {
   projectDic: { [key: string]: boolean } | null,
   setProjectDic: (dic: { [key: string]: boolean }) => void,
   loadProjectDic: () => Promise<void>,
+  resetToFalse: () => void,
 }
 
 export  const useTriggerPopupStore = create<TriggerPopupStore>()((set,get)=>({
@@ -28,9 +28,9 @@ export  const useTriggerPopupStore = create<TriggerPopupStore>()((set,get)=>({
 
   toggleTrigger: (name: string) => set((state) => {
     if (state.projectDic && name in state.projectDic) {
-      const newProjectDic = {
-        ...state.projectDic,
-        [name]: !state.projectDic[name]
+      const newProjectDic: { [key: string]: boolean } = {};
+      for (const key in state.projectDic) {
+          newProjectDic[key] = key === name ? !state.projectDic[key] : false;
       }
       return { projectDic: newProjectDic }
     } else {
@@ -38,6 +38,19 @@ export  const useTriggerPopupStore = create<TriggerPopupStore>()((set,get)=>({
       return {}
     }
   }),
+  resetToFalse: ()=> set((state)=>{
+    if(state.projectDic){
+      const newProjectDic: { [key: string]: boolean } = {};
+      for (const key in state.projectDic) {
+        newProjectDic[key] = false
+      }
+      return { projectDic: newProjectDic }
+    }
+    else{
+      console.error('projectDic is NULL')
+      return {}
+    }
+  })
 
 }))
 
