@@ -84,7 +84,7 @@ Object.entries(urlDic).forEach(([name, url]) => {
     try {
       await writeFile(`../public/${name}.json`, jsonData);
       await delay(3000);
-      console.log('succeeded!');
+      console.log('succeeded! json');
     } catch (err) {
       console.error('error', err);
     }

@@ -28,13 +28,13 @@ export  const useTriggerPopupStore = create<TriggerPopupStore>()((set,get)=>({
 
   toggleTrigger: (name: string) => set((state) => {
     if (state.projectDic && name in state.projectDic) {
-      const newProjectDic: { [key: string]: boolean } = {};
+      const newProjectDic: { [key: string]: boolean } = {}
       for (const key in state.projectDic) {
-          newProjectDic[key] = key === name ? !state.projectDic[key] : false;
+          newProjectDic[key] = key === name ? !state.projectDic[key] : false
       }
-      return { projectDic: newProjectDic }
+      return {projectDic: newProjectDic}
     } else {
-      console.error('Name not found in projectDic or projectDic is null');
+      console.error('Name not found in projectDic or projectDic is null')
       return {}
     }
   }),
@@ -44,7 +44,7 @@ export  const useTriggerPopupStore = create<TriggerPopupStore>()((set,get)=>({
       for (const key in state.projectDic) {
         newProjectDic[key] = false
       }
-      return { projectDic: newProjectDic }
+      return {projectDic:newProjectDic }
     }
     else{
       console.error('projectDic is NULL')
