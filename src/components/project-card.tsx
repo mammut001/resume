@@ -23,7 +23,7 @@ interface Props {
 }
 
 
-export function ProjectCard({ title, description, tags, link, status,index}: Props) {
+export function ProjectCard({index, title, description, tags, link, status}: Props) {
   const {toggleTrigger,dics,loadProjectDic } = useTriggerPopupStore(state => ({
     toggleTrigger: state.toggleTrigger,
     dics: state.projectDic,
