@@ -3,5 +3,6 @@
   "library_system": "https://api.github.com/repos/mammut001/library_system/commits",
   "Coin-Web-Crawler": "https://api.github.com/repos/mammut001/Coin-Web-Crawler/commits",
   "workout-generator": "https://api.github.com/repos/mammut001/workout-generator/commits",
-  "rent-wise-app": "https://api.github.com/repos/mammut001/rent-wise-app/commits"
+  "rent-wise-app": "https://api.github.com/repos/mammut001/rent-wise-app/commits",
+  "hotel":"https://github.com/mammut001/hotel/commits/"
 }

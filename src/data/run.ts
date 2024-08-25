@@ -4,7 +4,7 @@ import * as fs from 'fs';
 const owner = 'mammut001';
 const repo = 'Cash-Drawer';
 
-const repos = ['Cash-Drawer','library_system','Coin-Web-Crawler','workout-generator','rent-wise-app']
+const repos = ['Cash-Drawer','library_system','Coin-Web-Crawler','workout-generator','rent-wise-app',"hotel"]
 const token = process.env.NEXT_PUBLIC_API_TOKEN;
 
 
@@ -82,7 +82,7 @@ Object.entries(urlDic).forEach(([name, url]) => {
     const jsonData = JSON.stringify(commitData, null, 2);
 
     try {
-      await writeFile(`../public/${name}.json`, jsonData);
+      await writeFile(`./${name}.json`, jsonData);
       await delay(3000);
       console.log('succeeded!');
     } catch (err) {
@@ -94,13 +94,13 @@ Object.entries(urlDic).forEach(([name, url]) => {
 })
 
 
-try {
-  const jsonData = JSON.stringify(urlDic, null, 2);
-
-  writeFile(`../public/objects.json`, jsonData).then(r => {
-    console.log('succeeded!');
-  });
-} catch (err) {
-  console.error('error', err);
-}
-
+// try {
+//   const jsonData = JSON.stringify(urlDic, null, 2);
+//
+//   writeFile(`./objects.json`, jsonData).then(r => {
+//     console.log('succeeded!');
+//   });
+// } catch (err) {
+//   console.error('error', err);
+// }
+//

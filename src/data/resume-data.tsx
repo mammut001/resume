@@ -215,5 +215,25 @@ export const RESUME_DATA = {
         href: "https://github.com/mammut001/Cash-Drawer",
       },
     },
+    {
+      index: 5, // Adjust the index accordingly if it's the next project
+      title: "hotel",
+      title_fr: "Système de Gestion d'Hôtel",
+      title_cn: "酒店管理系统",
+      status: 1,
+      techStack: ["Next.js", "Fastify", "SQLite3", "Redis", "TypeScript"],
+      description:
+        "Developed a full-stack hotel management system with a Next.js front-end and a Fastify back-end. Utilized SQLite3 for permanent data storage, managing hotel reservations, guest information, and room availability. Implemented Redis for temporary data storage, ensuring fast access to session data and caching frequent queries to enhance performance.",
+      description_fr:
+        "Développement d'un système de gestion d'hôtel full-stack avec un front-end Next.js et un back-end Fastify. Utilisation de SQLite3 pour le stockage permanent des données, gestion des réservations d'hôtel, des informations sur les clients et de la disponibilité des chambres. Mise en œuvre de Redis pour le stockage temporaire des données, assurant un accès rapide aux données de session et la mise en cache des requêtes fréquentes pour améliorer les performances.",
+      description_cn:
+        "开发了一个全栈酒店管理系统，前端使用Next.js，后端使用Fastify。利用SQLite3进行永久数据存储，管理酒店预订、客户信息和房间可用性。实现了Redis用于临时数据存储，确保快速访问会话数据，并缓存频繁查询以提高性能。",
+      link: {
+        label: "github.com",
+        label_fr: "github.com",
+        label_cn: "github.com",
+        href: "https://github.com/mammut001/hotel",
+      },
+    }
   ],
 } as const;

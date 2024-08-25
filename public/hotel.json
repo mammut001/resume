@@ -1,0 +1,77 @@
+[
+  {
+    "date": "2024-08-23T01:13:36Z",
+    "author": "mammut001",
+    "message": "feat: added Confirmation route!!!!"
+  },
+  {
+    "date": "2024-08-22T22:33:22Z",
+    "author": "mammut001",
+    "message": "update: changing body payload params"
+  },
+  {
+    "date": "2024-08-22T06:53:48Z",
+    "author": "mammut001",
+    "message": "feat: added submitReservation.ts"
+  },
+  {
+    "date": "2024-08-21T05:17:28Z",
+    "author": "mammut001",
+    "message": "feat: add new features in popup.tsx.\nissue: validation still have issues."
+  },
+  {
+    "date": "2024-08-20T00:19:38Z",
+    "author": "mammut001",
+    "message": "fix: stop using DateTimerPicker on Mobile but DateTimeField"
+  },
+  {
+    "date": "2024-08-19T23:32:57Z",
+    "author": "mammut001",
+    "message": "fix: ? maybe, attempted to detect the platform to render different datetimepicker"
+  },
+  {
+    "date": "2024-08-19T06:26:28Z",
+    "author": "mammut001",
+    "message": "updates"
+  },
+  {
+    "date": "2024-08-19T06:23:18Z",
+    "author": "mammut001",
+    "message": "feat: @mui/material for date range selection.\nbug! please go to-> issue #1"
+  },
+  {
+    "date": "2024-08-18T21:55:12Z",
+    "author": "mammut001",
+    "message": "feat: added nextUI,"
+  },
+  {
+    "date": "2024-08-17T20:44:06Z",
+    "author": "mammut001",
+    "message": "feat: add basic hover effect and implement routes for rooms"
+  },
+  {
+    "date": "2024-08-16T22:50:02Z",
+    "author": "mammut001",
+    "message": "feat: added dynamic routing for every room and basic error handling!"
+  },
+  {
+    "date": "2024-08-15T06:24:50Z",
+    "author": "mammut001",
+    "message": "optimizing ui for mobile devices"
+  },
+  {
+    "date": "2024-08-14T04:35:27Z",
+    "author": "mammut001",
+    "message": "feat: new features on ROOM CARD"
+  },
+  {
+    "date": "2024-08-13T23:03:30Z",
+    "author": "mammut001",
+    "message": "delete files"
+  },
+  {
+    "date": "2024-08-13T22:54:49Z",
+    "author": "mammut001",
+    "message": "first commit"
+  }
+]
