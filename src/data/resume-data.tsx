@@ -45,6 +45,16 @@ export const RESUME_DATA = {
       start: "2017",
       end: "2023",
     },
+    {
+      school: "University of Ottawa",
+      school_fr: "Université d'Ottawa",
+      school_cn: "渥太华大学",
+      degree: "System Science and Engineering",
+      degree_fr: "Génie des systèmes et de l'ingénierie",
+      degree_cn: "系统科学与工程",
+      start: "Present",
+      end: null,
+    },
   ],
   work: [
     {
