@@ -49,7 +49,7 @@ export const RESUME_DATA = {
       school: "University of Ottawa",
       school_fr: "Université d'Ottawa",
       school_cn: "渥太华大学",
-      degree: "System Science and Engineering",
+      degree: "Master of Engineering System Science",
       degree_fr: "Génie des systèmes et de l'ingénierie",
       degree_cn: "系统科学与工程",
       start: "Present",
@@ -126,7 +126,7 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
-      index:0,
+      index: 0,
       title: "rent-wise-app",
       title_fr: "RentWise",
       title_cn: "租房智选",
@@ -146,7 +146,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      index:1,
+      index: 1,
       title: "Coin-Web-Crawler",
       title_fr: "Coin Web Crawler",
       title_cn: "币种网页爬虫",
@@ -166,7 +166,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      index:2,
+      index: 2,
       title: "workout-generator",
       title_fr: "Générateur de plan d'entraînement",
       title_cn: "锻炼计划生成器",
@@ -186,7 +186,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      index:3,
+      index: 3,
       title: "library_system",
       title_fr: "Système de Bibliothèque",
       title_cn: "图书馆系统",
@@ -206,7 +206,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      index:4,
+      index: 4,
       title: "Cash-Drawer",
       title_fr: "Cash Drawer",
       title_cn: "现金抽屉",
@@ -243,6 +243,23 @@ export const RESUME_DATA = {
         label_fr: "github.com",
         label_cn: "github.com",
         href: "https://github.com/mammut001/hotel",
+      },
+    }
+  ],
+  research: [
+    {
+      title: "Learning to See in the Dark 2018 Enhancement with DDBM",
+      title_fr: "Learning to See in the Dark 2018 Enhancement with DDBM",
+      title_cn: "Learning to See in the Dark 2018 Enhancement with DDBM",
+      start: "2024",
+      end: "Present",
+      description: "Research on enhancing low-light image processing using DDBM (Denoising Diffusion Probabilistic Models) based on the foundational 'Learning to See in the Dark' paper.",
+      description_fr: "Recherche sur l'amélioration du traitement d'images en faible luminosité utilisant DDBM basé sur l'article fondateur 'Learning to See in the Dark'.",
+      description_cn: "基于'Learning to See in the Dark'论文，利用DDBM（去噪扩散概率模型）增强低光图像处理的研究。",
+      tags: ["Python", "PyTorch", "Computer Vision", "Deep Learning", "DDBM"],
+      link: {
+        label: "github.com",
+        href: "https://github.com/mammut001",
       },
     }
   ],
