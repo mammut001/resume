@@ -1,0 +1,52 @@
+[
+  {
+    "date": "Wed Mar 25 16:41:54 2026 -0400",
+    "author": "mammut001",
+    "message": "feat: Page Agent now works"
+  },
+  {
+    "date": "Wed Mar 25 14:43:02 2026 -0400",
+    "author": "mammut001",
+    "message": "feat: broswer control"
+  },
+  {
+    "date": "Wed Mar 25 03:41:46 2026 -0400",
+    "author": "mammut001",
+    "message": "feat:pageagent"
+  },
+  {
+    "date": "Wed Mar 25 01:11:09 2026 -0400",
+    "author": "mammut001",
+    "message": "Update .gitignore"
+  },
+  {
+    "date": "Wed Mar 25 01:09:59 2026 -0400",
+    "author": "mammut001",
+    "message": "docs(browser): add follow-up update for real browser surface handoff to next agent"
+  },
+  {
+    "date": "Tue Mar 24 01:50:27 2026 -0400",
+    "author": "mammut001",
+    "message": "Feat: BroswerControls"
+  },
+  {
+    "date": "Mon Mar 23 15:00:11 2026 -0400",
+    "author": "mammut001",
+    "message": "fixed errors"
+  },
+  {
+    "date": "Mon Mar 23 03:23:38 2026 -0400",
+    "author": "mammut001",
+    "message": "Update chatStore.ts"
+  },
+  {
+    "date": "Mon Mar 23 02:59:53 2026 -0400",
+    "author": "mammut001",
+    "message": "update UI"
+  },
+  {
+    "date": "Mon Mar 23 02:36:09 2026 -0400",
+    "author": "mammut001",
+    "message": "fix: permission error"
+  }
+]

@@ -103,7 +103,11 @@ export const RESUME_DATA = {
     "JQuery",
     "Flask",
     "NextJS",
-    "React Native",
+    "Tauri v2",
+    "Rust",
+    "SQLite",
+    "Typst",
+    "Mermaid",
     "MongoDB",
     "Object-Oriented Programming",
     "PyTest",
@@ -243,6 +247,26 @@ export const RESUME_DATA = {
         label_fr: "github.com",
         label_cn: "github.com",
         href: "https://github.com/mammut001/hotel",
+      },
+    },
+    {
+      index: 6,
+      title: "pipi-shrimp-agent",
+      title_fr: "Pipi Shrimp Agent",
+      title_cn: "皮皮虾助手",
+      status: 1,
+      techStack: ["Tauri v2", "Rust", "React", "TypeScript", "Zustand", "SQLite", "Typst", "Mermaid", "PageAgent"],
+      description:
+        "A high-performance desktop AI agent built with Tauri v2. Features real-time reasoning visualization (thinking process), a project-based context management system, and advanced tool calling for local scripts, web automation (PageAgent), and Telegram integration (Grammy). Includes specialized rendering for Typst documents and Mermaid diagrams.",
+      description_fr:
+        "Un agent IA de bureau haute performance construit avec Tauri v2. Comprend une visualisation du raisonnement en temps réel (processus de réflexion), un système de gestion de contexte basé sur des projets et un appel d'outils avancé pour les scripts locaux, l'automatisation Web (PageAgent) et l'intégration Telegram (Grammy). Comprend un rendu spécialisé pour les documents Typst et les diagrammes Mermaid.",
+      description_cn:
+        "基于 Tauri v2 构建的高性能桌面 AI 助手。支持实时思维链（Thinking Process）可视化、项目级上下文管理系统，以及针对本地脚本、网页自动化（PageAgent）和 Telegram（Grammy）的高级工具调用。集成了 Typst 高质量文档渲染和 Mermaid 图表支持。",
+      link: {
+        label: "github.com",
+        label_fr: "github.com",
+        label_cn: "github.com",
+        href: "https://github.com/mammut001/pipi-shrimp-agent",
       },
     }
   ],
