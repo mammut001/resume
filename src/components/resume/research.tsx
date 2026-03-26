@@ -16,7 +16,7 @@ export const Research = () => {
             <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">Research</h2>
 
             <div className="space-y-6">
-                {RESUME_DATA.research.map((item) => {
+                {[...RESUME_DATA.research].reverse().map((item) => {
                     const title =
                         language === "french" ? item.title_fr : language === "chinese" ? item.title_cn
                             : item.title
