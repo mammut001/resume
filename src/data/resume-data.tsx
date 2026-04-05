@@ -151,46 +151,6 @@ export const RESUME_DATA = {
     },
     {
       index: 1,
-      title: "Coin-Web-Crawler",
-      title_fr: "Coin Web Crawler",
-      title_cn: "币种网页爬虫",
-      status: 1,
-      techStack: ["JavaScript", "jQuery", "NodeJS", "Express", "Web Crawling", "PageRank", "Recommendation Algorithm"],
-      description:
-        "Developed a Node.js-based web crawler for CoinMarketCap.com, using crawling technology for cryptocurrency trading data extraction; scraped 500 pages per day and stored data in MongoDB for future inquiry.",
-      description_fr:
-        "Développement d'un web crawler basé sur Node.js pour CoinMarketCap.com, utilisant la technologie de crawling pour l'extraction des données de trading de crypto-monnaies ; récupération de 500 pages par jour et stockage des données dans MongoDB pour des consultations futures.",
-      description_cn:
-        "开发了一个基于Node.js的CoinMarketCap.com网站爬虫，使用爬虫技术提取加密货币交易数据；每天抓取500页，并将数据存储在MongoDB中以备将来查询。",
-      link: {
-        label: "github.com",
-        label_fr: "github.com",
-        label_cn: "github.com",
-        href: "https://github.com/random-char1198/Coin-Web-Crawler",
-      },
-    },
-    {
-      index: 2,
-      title: "workout-generator",
-      title_fr: "Générateur de plan d'entraînement",
-      title_cn: "锻炼计划生成器",
-      status: 1,
-      techStack: ["TypeScript", "Vercel", "Next.js", "Flask", "Redis", "Zustand"],
-      description:
-        "Utilized Vercel’s online hosting service with Python and Flask for backend services. Adopted Docker running-environment setup for project deployment, utilizing GitHub for project collaboration.",
-      description_fr:
-        "Utilisation du service d'hébergement en ligne de Vercel avec Python et Flask pour les services backend. Adoption de la configuration de l'environnement d'exécution Docker pour le déploiement du projet, en utilisant GitHub pour la collaboration sur le projet.",
-      description_cn:
-        "利用Vercel的在线托管服务和Python与Flask进行后端服务。采用Docker运行环境设置进行项目部署，利用GitHub进行项目协作。",
-      link: {
-        label: "github.com",
-        label_fr: "github.com",
-        label_cn: "github.com",
-        href: "https://github.com/ivespeggy/workout-generator",
-      },
-    },
-    {
-      index: 3,
       title: "library_system",
       title_fr: "Système de Bibliothèque",
       title_cn: "图书馆系统",
@@ -210,65 +170,65 @@ export const RESUME_DATA = {
       },
     },
     {
+      index: 2,
+      title: "Smart Path",
+      title_fr: "Smart Path",
+      title_cn: "算法可视化平台",
+      status: 1,
+      techStack: ["TypeScript", "React", "Vite", "TailwindCSS", "XYFlow", "Zustand"],
+      description:
+        "A sophisticated algorithm visualization platform supporting graph theory (Dijkstra, A*, BFS/DFS), optimization (Simplex, Branch & Bound), and machine learning (Perceptrons). Features real-time, step-by-step interactive execution and state visualization.",
+      description_fr:
+        "Une plateforme sophistiquée de visualisation d'algorithmes prenant en charge la théorie des graphes (Dijkstra, A*, BFS/DFS), l'optimisation (Simplex, Branch & Bound) et l'apprentissage automatique (Perceptrons). Propose une exécution interactive étape par étape et une visualisation d'état en temps réel.",
+      description_cn:
+        "一个复杂的算法可视化平台，支持图论（Dijkstra、A*、BFS/DFS）、优化方法（单纯形法、分支定界法）和机器学习（感知机）。具有实时、分步交互式执行和状态可视化功能。",
+      link: {
+        label: "system-optimizaion.vercel.app",
+        label_fr: "system-optimizaion.vercel.app",
+        label_cn: "system-optimizaion.vercel.app",
+        href: "https://system-optimizaion.vercel.app/",
+      },
+    },
+    {
+      index: 3,
+      title: "Focus Mint",
+      title_fr: "Focus Mint",
+      title_cn: "Focus Mint 专注计时器",
+      status: 1,
+      techStack: ["Swift", "SwiftUI", "WatchKit", "StoreKit", "WidgetKit"],
+      description:
+        "A premium utility app for iOS, watchOS, and macOS designed to enhance productivity through Pomodoro-style timers and session tracking. Supports multi-language localization (EN/CN/FR), In-App Purchases, and cross-device synchronization.",
+      description_fr:
+        "Une application utilitaire premium pour iOS, watchOS et macOS conçue pour améliorer la productivité via des minuteurs de style Pomodoro et le suivi de sessions. Prend en charge la localisation multilingue (EN/CN/FR), les achats intégrés et la synchronisation entre appareils.",
+      description_cn:
+        "一款适用于 iOS、watchOS 和 macOS 的高级实用应用程序，旨在通过番茄钟风格的计时器和会话跟踪提高生产力。支持多语言本地化（中/英/法）、应用内购买和跨设备同步。",
+      link: {
+        label: "App Store",
+        label_fr: "App Store",
+        label_cn: "App Store",
+        href: "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
+      },
+    },
+    {
       index: 4,
-      title: "Cash-Drawer",
-      title_fr: "Cash Drawer",
-      title_cn: "现金抽屉",
+      title: "Chatpart AI",
+      title_fr: "Chatpart AI",
+      title_cn: "Chatpart AI 社交应用",
       status: 1,
-      techStack: ["Flutter", "Dart"],
+      techStack: ["Kotlin", "Android SDK", "Firebase", "LLM", "Deepgram API", "MiniMax API", "Next.js"],
       description:
-        "Developed a mobile application using Flutter and Dart for managing personal finances. The application allows users to track their expenses, create budgets, and visualize their financial data.",
+        "A full-stack AI social application featuring virtual companions with persistent vector memory and custom voice cloning. Engineered complex AI pipelines integrating MiniMax-M2.1 LLM, Deepgram ASR, and localized vector storage for long-term context retention. Also developed a premium Vercel-style landing page with Next.js.",
       description_fr:
-        "Développement d'une application mobile utilisant Flutter et Dart pour la gestion des finances personnelles. L'application permet aux utilisateurs de suivre leurs dépenses, de créer des budgets et de visualiser leurs données financières.",
+        "Une application sociale IA complète avec des compagnons virtuels dotés d'une mémoire vectorielle persistante et d'un clonage de voix personnalisé. Conception de pipelines IA complexes intégrant MiniMax-M2.1 LLM, Deepgram ASR et un stockage vectoriel local. Comprend également une page de destination premium de style Vercel avec Next.js.",
       description_cn:
-        "使用Flutter和Dart开发了一个管理个人财务的移动应用程序。该应用程序允许用户跟踪他们的支出，创建预算，并可视化他们的财务数据。",
+        "一个全栈 AI 社交应用，具有持久向量记忆和自定义语音克隆功能的虚拟伙伴。开发了集成了 MiniMax-M2.1 大模型、Deepgram 语音识别和本地向量存储的复杂 AI 流水线。同时使用 Next.js 开发了高级 Vercel 风格的营销落地页。",
       link: {
-        label: "github.com",
-        label_fr: "github.com",
-        label_cn: "github.com",
-        href: "https://github.com/mammut001/Cash-Drawer",
+        label: "Market Site",
+        label_fr: "Site Marketing",
+        label_cn: "营销官网",
+        href: "https://chatpart-website.vercel.app/",
       },
     },
-    {
-      index: 5, // Adjust the index accordingly if it's the next project
-      title: "hotel",
-      title_fr: "Système de Gestion d'Hôtel",
-      title_cn: "酒店管理系统",
-      status: 1,
-      techStack: ["Next.js", "Fastify", "SQLite3", "Redis", "TypeScript"],
-      description:
-        "Developed a full-stack hotel management system with a Next.js front-end and a Fastify back-end. Utilized SQLite3 for permanent data storage, managing hotel reservations, guest information, and room availability. Implemented Redis for temporary data storage, ensuring fast access to session data and caching frequent queries to enhance performance.",
-      description_fr:
-        "Développement d'un système de gestion d'hôtel full-stack avec un front-end Next.js et un back-end Fastify. Utilisation de SQLite3 pour le stockage permanent des données, gestion des réservations d'hôtel, des informations sur les clients et de la disponibilité des chambres. Mise en œuvre de Redis pour le stockage temporaire des données, assurant un accès rapide aux données de session et la mise en cache des requêtes fréquentes pour améliorer les performances.",
-      description_cn:
-        "开发了一个全栈酒店管理系统，前端使用Next.js，后端使用Fastify。利用SQLite3进行永久数据存储，管理酒店预订、客户信息和房间可用性。实现了Redis用于临时数据存储，确保快速访问会话数据，并缓存频繁查询以提高性能。",
-      link: {
-        label: "github.com",
-        label_fr: "github.com",
-        label_cn: "github.com",
-        href: "https://github.com/mammut001/hotel",
-      },
-    },
-    {
-      index: 6,
-      title: "pipi-shrimp-agent",
-      title_fr: "Pipi Shrimp Agent",
-      title_cn: "皮皮虾助手",
-      status: 1,
-      techStack: ["Tauri v2", "Rust", "React", "TypeScript", "Zustand", "SQLite", "Typst", "Mermaid", "PageAgent"],
-      description:
-        "A high-performance desktop AI agent built with Tauri v2. Features real-time reasoning visualization (thinking process), a project-based context management system, and advanced tool calling for local scripts, web automation (PageAgent), and Telegram integration (Grammy). Includes specialized rendering for Typst documents and Mermaid diagrams.",
-      description_fr:
-        "Un agent IA de bureau haute performance construit avec Tauri v2. Comprend une visualisation du raisonnement en temps réel (processus de réflexion), un système de gestion de contexte basé sur des projets et un appel d'outils avancé pour les scripts locaux, l'automatisation Web (PageAgent) et l'intégration Telegram (Grammy). Comprend un rendu spécialisé pour les documents Typst et les diagrammes Mermaid.",
-      description_cn:
-        "基于 Tauri v2 构建的高性能桌面 AI 助手。支持实时思维链（Thinking Process）可视化、项目级上下文管理系统，以及针对本地脚本、网页自动化（PageAgent）和 Telegram（Grammy）的高级工具调用。集成了 Typst 高质量文档渲染和 Mermaid 图表支持。",
-      link: {
-        label: "github.com",
-        label_fr: "github.com",
-        label_cn: "github.com",
-        href: "https://github.com/mammut001/pipi-shrimp-agent",
-      },
-    }
   ],
   research: [
     {
