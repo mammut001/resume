@@ -8,6 +8,7 @@ import { Education } from "@/components/resume/education";
 import { Skills } from "@/components/resume/skills";
 import { Projects } from "@/components/resume/projects";
 import { Research } from "@/components/resume/research";
+import { Heatmap } from "@/components/resume/heatmap";
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
           <About />
           <Experience />
           <Projects />
+          <Heatmap />
           <Education />
           <Research />
           <Skills />
