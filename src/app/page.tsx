@@ -17,10 +17,10 @@ export default function Page() {
       <div className="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 max-w-screen-lg">
         <section className="mx-auto w-full space-y-8 bg-background print:space-y-4">
           <Hero />
+          <Heatmap />
           <About />
           <Experience />
           <Projects />
-          <Heatmap />
           <Education />
           <Research />
           <Skills />
