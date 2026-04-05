@@ -18,10 +18,10 @@ export default function Page() {
           <Hero />
           <About />
           <Experience />
+          <Projects />
           <Education />
           <Research />
           <Skills />
-          <Projects />
         </section>
       </div>
     </main>
