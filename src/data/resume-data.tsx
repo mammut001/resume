@@ -211,9 +211,9 @@ export const RESUME_DATA = {
     },
     {
       index: 4,
-      title: "Chatpart AI",
-      title_fr: "Chatpart AI",
-      title_cn: "Chatpart AI 社交应用",
+      title: "Meet See U",
+      title_fr: "Meet See U",
+      title_cn: "Meet See U 社交应用",
       status: 1,
       techStack: ["Kotlin", "Android SDK", "Firebase", "LLM", "Deepgram API", "MiniMax API", "Next.js"],
       description:
