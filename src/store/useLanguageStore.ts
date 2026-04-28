@@ -1,27 +1,13 @@
+import { create } from "zustand";
 
-import {create} from 'zustand'
+export type Lang = "english" | "french" | "chinese";
 
-export type Lang = "english" | "french" | "chinese"
+type LanguageState = {
+  name: Lang;
+  updateLang: (lang: Lang) => void;
+};
 
-export type Language ={
-  name: string,
-  updateLang: (lang:Lang) =>void
-}
-
-export const useLanguageStore = create<Language>() ((set) =>({
-  name:"english",
-  updateLang:(lang:Lang) => set({name:lang})
-  // updateLang:(lang:Lang) => set((state) =>{
-  //
-  //   return {name:lang}
-  // })
-}))
-type selectedDateStore = {
-  date:string,
-  updateDate: (date:string) =>void
-}
-
-export const useSelectedDateStore = create<selectedDateStore>() ((set)=> ({
-  date:'',
-  updateDate: (newDate: string) => set({date:newDate})
-}))
+export const useLanguageStore = create<LanguageState>()((set) => ({
+  name: "english",
+  updateLang: (lang: Lang) => set({ name: lang }),
+}));

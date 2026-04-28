@@ -1,10 +1,9 @@
 "use client"
 
-import React from 'react';
+import { useResumeLocale } from '@/data/resume-locale';
 import { ModeToggle } from '@/components/mode-toggle';
 import { Button } from '@/components/ui/button';
 import { useLanguageStore, type Lang } from '@/store/useLanguageStore';
-import { useTriggerPopupStore } from '@/store/useTriggerPopupStore';
 import { Languages } from 'lucide-react';
 import {
     DropdownMenu,
@@ -14,13 +13,11 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 export const Header = () => {
+    const { labels } = useResumeLocale();
     const updateLanguage = useLanguageStore(state => state.updateLang);
-    const resetProjectClickedStatus = useTriggerPopupStore(state => state.resetToFalse);
-    const currentLang = useLanguageStore(state => state.name);
 
     const handleLanguageChange = (lang: Lang) => {
         updateLanguage(lang);
-        resetProjectClickedStatus();
     };
 
     return (
@@ -35,7 +32,7 @@ export const Header = () => {
                         <DropdownMenuTrigger asChild>
                             <Button variant="ghost" size="icon">
                                 <Languages className="size-4" />
-                                <span className="sr-only">Change Language</span>
+                                <span className="sr-only">{labels.changeLanguage}</span>
                             </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end">

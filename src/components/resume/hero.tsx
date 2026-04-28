@@ -1,18 +1,14 @@
 "use client"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
-import { useLanguageStore } from "@/store/useLanguageStore";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { useResumeLocale } from "@/data/resume-locale";
+import { DownloadIcon, GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 
 export const Hero = () => {
-    const language = useLanguageStore(state => state.name)
-
-    const aboutContent = language === 'french' ? RESUME_DATA.about_fr :
-        language === 'chinese' ? RESUME_DATA.about_cn :
-            RESUME_DATA.about
+    const { labels, localize } = useResumeLocale()
+    const aboutContent = localize(RESUME_DATA, "about")
 
     return (
         <div className="flex flex-col-reverse gap-8 md:flex-row md:items-start md:justify-between py-12 md:py-16">
@@ -30,12 +26,19 @@ export const Hero = () => {
                         className="hover:underline offset-4"
                         href={RESUME_DATA.locationLink}
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         {RESUME_DATA.location}
                     </a>
                 </div>
 
-                <div className="flex gap-2 pt-4 print:hidden">
+                <div className="flex flex-wrap items-center gap-2 pt-4 print:hidden">
+                    <Button className="gap-2 rounded-full px-4" size="sm" asChild>
+                        <a href="/payton-pei-resume.pdf" download="Dong-Payton-Pei-Resume.pdf">
+                            <DownloadIcon className="size-4" />
+                            <span>{labels.downloadResume}</span>
+                        </a>
+                    </Button>
                     {RESUME_DATA.contact.email ? (
                         <Button
                             className="size-10 rounded-full"
@@ -68,7 +71,7 @@ export const Hero = () => {
                             size="icon"
                             asChild
                         >
-                            <a href={social.url}>
+                            <a href={social.url} target="_blank" rel="noopener noreferrer">
                                 <social.icon className="size-4" />
                             </a>
                         </Button>

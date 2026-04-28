@@ -1,13 +1,16 @@
 "use client"
 
+import { useResumeLocale } from "@/data/resume-locale";
 import { Badge } from "@/components/ui/badge";
 import { Section } from "@/components/ui/section";
 import { RESUME_DATA } from "@/data/resume-data";
 
 export const Skills = () => {
+    const { labels } = useResumeLocale()
+
     return (
         <Section className="py-8">
-            <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">Skills</h2>
+            <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">{labels.skills}</h2>
             <div className="flex flex-wrap gap-2">
                 {RESUME_DATA.skills.map((skill) => {
                     return (

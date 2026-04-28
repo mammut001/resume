@@ -3,26 +3,22 @@
 
 import { Section } from "@/components/ui/section";
 import { RESUME_DATA } from "@/data/resume-data";
-import { useLanguageStore } from "@/store/useLanguageStore";
+import { formatDateRange, useResumeLocale } from "@/data/resume-locale";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 
 export const Research = () => {
-    const language = useLanguageStore(state => state.name)
+    const { labels, localize } = useResumeLocale()
 
     return (
         <Section className="py-8 print-force-new-page scroll-mb-16">
-            <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">Research</h2>
+            <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">{labels.research}</h2>
 
             <div className="space-y-6">
                 {[...RESUME_DATA.research].reverse().map((item) => {
-                    const title =
-                        language === "french" ? item.title_fr : language === "chinese" ? item.title_cn
-                            : item.title
-                    const description =
-                        language === "french" ? item.description_fr : language === "chinese" ? item.description_cn
-                            : item.description
+                    const title = localize(item, "title")
+                    const description = localize(item, "description")
 
                     return (
                         <Card key={title} className="border-none shadow-none bg-transparent p-0">
@@ -38,7 +34,7 @@ export const Research = () => {
                                         )}
                                     </h3>
                                     <div className="text-sm font-medium tabular-nums text-muted-foreground">
-                                        {item.start} - {item.end ?? "Present"}
+                                        {formatDateRange(item.start, item.end, labels.present)}
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-2 flex-wrap">

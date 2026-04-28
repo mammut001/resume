@@ -3,24 +3,21 @@
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import { RESUME_DATA } from "@/data/resume-data";
-import { useLanguageStore } from "@/store/useLanguageStore";
+import { useResumeLocale } from "@/data/resume-locale";
 import { Badge } from "@/components/ui/badge";
 
 export const Projects = () => {
-    const language = useLanguageStore(state => state.name)
+    const { labels, localize } = useResumeLocale()
 
     return (
         <Section className="py-8 print-force-new-page scroll-mb-16">
-            <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">Projects</h2>
+            <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">{labels.projects}</h2>
 
             <div className="space-y-6">
                 {[...RESUME_DATA.projects].reverse().map((project) => {
-                    const title =
-                        language === "french" ? project.title_fr : language === "chinese" ? project.title_cn
-                            : project.title
-                    const description =
-                        language === "french" ? project.description_fr : language === "chinese" ? project.description_cn
-                            : project.description
+                    const title = localize(project, "title")
+                    const description = localize(project, "description")
+                    const statusLabel = project.status === 1 ? labels.active : labels.archived
 
                     return (
                         <Card key={title} className="border-none shadow-none bg-transparent p-0">
@@ -45,7 +42,7 @@ export const Projects = () => {
                                             <span className="h-2 w-2 rounded-full bg-orange-500" />
                                         )}
                                         <span className="text-xs uppercase tracking-wider font-mono opacity-80">
-                                            {project.status === 1 ? "Active" : "Archived"}
+                                            {statusLabel}
                                         </span>
                                     </div>
                                 </div>

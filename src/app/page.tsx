@@ -1,5 +1,3 @@
-"use client"
-
 import { Header } from "@/components/resume/header";
 import { Hero } from "@/components/resume/hero";
 import { About } from "@/components/resume/about";

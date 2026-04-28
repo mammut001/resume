@@ -1,24 +1,20 @@
 "use client"
 
+import { formatDateRange, useResumeLocale } from "@/data/resume-locale";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import { RESUME_DATA } from "@/data/resume-data";
-import { useLanguageStore } from "@/store/useLanguageStore";
 
 export const Education = () => {
-    const language = useLanguageStore(state => state.name)
+    const { labels, localize } = useResumeLocale()
 
     return (
         <Section className="py-8">
-            <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">Education</h2>
+            <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">{labels.education}</h2>
             <div className="space-y-4">
                 {[...RESUME_DATA.education].reverse().map((education) => {
-                    const schoolName =
-                        language === "french" ? education.school_fr : language === "chinese" ? education.school_cn
-                            : education.school
-                    const degree =
-                        language === "french" ? education.degree_fr : language === "chinese" ? education.degree_cn
-                            : education.degree
+                    const schoolName = localize(education, "school")
+                    const degree = localize(education, "degree")
 
                     return (
                         <Card key={schoolName} className="border-none shadow-none bg-transparent p-0">
@@ -28,7 +24,7 @@ export const Education = () => {
                                         {schoolName}
                                     </h3>
                                     <div className="text-sm tabular-nums text-muted-foreground">
-                                        {education.start} - {education.end}
+                                        {formatDateRange(education.start, education.end, labels.present)}
                                     </div>
                                 </div>
                             </CardHeader>
