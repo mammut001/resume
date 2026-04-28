@@ -4,11 +4,28 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { useResumeLocale } from "@/data/resume-locale";
+import type { Lang } from "@/store/useLanguageStore";
 import { DownloadIcon, GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 
+const resumeDownloads: Record<Lang, { href: string; filename: string }> = {
+    english: {
+        href: "/payton-pei-resume.pdf",
+        filename: "Dong-Payton-Pei-Resume-English.pdf",
+    },
+    french: {
+        href: "/payton-pei-resume-fr.pdf",
+        filename: "Dong-Payton-Pei-Resume-French.pdf",
+    },
+    chinese: {
+        href: "/payton-pei-resume-zh.pdf",
+        filename: "Dong-Payton-Pei-Resume-Chinese.pdf",
+    },
+};
+
 export const Hero = () => {
-    const { labels, localize } = useResumeLocale()
+    const { labels, localize, language } = useResumeLocale()
     const aboutContent = localize(RESUME_DATA, "about")
+    const resumeDownload = resumeDownloads[language]
 
     return (
         <div className="flex flex-col-reverse gap-8 md:flex-row md:items-start md:justify-between py-12 md:py-16">
@@ -34,7 +51,7 @@ export const Hero = () => {
 
                 <div className="flex flex-wrap items-center gap-2 pt-4 print:hidden">
                     <Button className="gap-2 rounded-full px-4" size="sm" asChild>
-                        <a href="/payton-pei-resume.pdf" download="Dong-Payton-Pei-Resume.pdf">
+                        <a href={resumeDownload.href} download={resumeDownload.filename}>
                             <DownloadIcon className="size-4" />
                             <span>{labels.downloadResume}</span>
                         </a>

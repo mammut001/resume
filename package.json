@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "typst:ensure": "node scripts/ensure-typst.cjs",
+    "build": "npm run build:resume-pdf && npm run build:web",
+    "build:web": "next build",
     "generate:resume-typst": "node scripts/generate-resume-typst.cjs",
-    "build:resume-pdf": "npm run generate:resume-typst && typst compile typst/resume.typ public/payton-pei-resume.pdf",
+    "build:resume-pdf": "npm run generate:resume-typst && node scripts/run-typst.cjs compile typst/resume.typ public/payton-pei-resume.pdf && node scripts/run-typst.cjs compile typst/resume.fr.typ public/payton-pei-resume-fr.pdf && node scripts/run-typst.cjs compile typst/resume.zh.typ public/payton-pei-resume-zh.pdf",
     "start": "next start",
     "lint": "next lint"
   },
