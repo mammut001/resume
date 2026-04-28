@@ -36,6 +36,7 @@
     "octokit": "^4.0.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-github-calendar": "^5.0.6",
     "reflect-metadata": "^0.2.2",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7",
