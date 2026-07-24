@@ -25,22 +25,22 @@
 
 == Summary
 
-Bachelor of Computer Science from Carleton University with extensive co-op experience in software testing and development. Skilled in TypeScript, JavaScript, Python, and various other technologies. Seeking a Software Engineer position to leverage my skills in designing, developing, and testing software solutions.
+Software developer and Master of Engineering student in System Science and Engineering at the University of Ottawa. Former Nokia and Ford co-op developer/tester with experience building full-stack, desktop, mobile, and AI products using TypeScript, React, Rust/Tauri, Swift, Kotlin, and cloud APIs.
 
 == Education
-
-#edu(
-  institution: "University of Ottawa",
-  location: "Ottawa, ON",
-  dates: "Present",
-  degree: "Master of Engineering System Science",
-)
 
 #edu(
   institution: "Carleton University",
   location: "Ottawa, ON",
   dates: dates-helper(start-date: "2017", end-date: "2023"),
   degree: "Bachelor of Computer Science",
+)
+
+#edu(
+  institution: "University of Ottawa",
+  location: "Ottawa, ON",
+  dates: "2024",
+  degree: "Master of Engineering in System Science and Engineering",
 )
 
 == Work Experience
@@ -51,7 +51,8 @@ Bachelor of Computer Science from Carleton University with extensive co-op exper
   company: "Ford Motor Canada",
   dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
 )
-- Participated in Agile development, developed unit test scripts using C++11 Google Test Framework, and utilized Jenkins for CI/CD.
+- Developed C++11 unit-test scripts with GoogleTest for automotive software components.
+- Integrated test execution with Jenkins CI/CD in an Agile development workflow.
 
 #work(
   title: "Software Tester Co-op",
@@ -59,8 +60,8 @@ Bachelor of Computer Science from Carleton University with extensive co-op exper
   company: "Nokia Canada",
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
-- Enhanced JavaScript/XML code for better code coverage and robustness.
-- Produced design documents using Confluence Pages for system architecture and data flows.
+- Improved JavaScript/XML test code to strengthen coverage, maintainability, and regression confidence.
+- Documented system architecture and data flows in Confluence to support cross-team development.
 
 == Projects
 
@@ -68,43 +69,42 @@ Bachelor of Computer Science from Carleton University with extensive co-op exper
   name: "pipi-shrimp-agent",
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
-- A high-performance desktop AI agent built with Tauri v2.
+- Built a local-first AI desktop agent with Rust, Tauri 2, React, and TypeScript, supporting multi-provider streaming, tool calling, workflow orchestration, and project-scoped memory.
 
 #project(
-  name: "Meet See U",
-  url: "chatpart-website.vercel.app",
+  name: "Resume Generator",
+  url: "resume-tailor.paytonpei.top",
 )
-- A full-stack AI social application featuring virtual companions with persistent vector memory and custom voice cloning.
+- Built and deployed a full-stack resume editor with React, TypeScript, Vite, and Node.
 
 #project(
   name: "Focus Mint",
   url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
 )
-- A premium utility app for iOS, watchOS, and macOS designed to enhance productivity through Pomodoro-style timers and session tracking.
+- Shipped a SwiftUI productivity app for iOS, watchOS, and macOS with Pomodoro sessions, widgets, multilingual localization, in-app purchases, and cross-device synchronization.
 
 #project(
-  name: "System Optimization - Smart Path",
-  url: "system-optimizaion.vercel.app",
+  name: "Meet See U",
+  url: "chatpart-website.vercel.app",
 )
-- A sophisticated algorithm visualization platform supporting graph theory (Dijkstra, A\*, BFS/DFS), optimization (Simplex, Branch & Bound), and machine learning (Perceptrons).
+- Built a full-stack AI social product with Kotlin, Jetpack Compose, Next.
 
 #project(
-  name: "RentWise",
-  url: "github.com/random-char1198/Coin-Web-Crawler",
+  name: "Conveyor",
+  url: "github.com/mammut001/Conveyor",
 )
-- Implemented Google SignUp and SignIn for user authentication, securely storing user info in Firebase.
+- Built a Python automation platform for Telegram and Feishu that routes commands to agent-assisted development tasks, personal tools, and scheduled operations.
 
 == Research
 
 #extracurriculars(
-  activity: "Learning to See in the Dark 2018 Enhancement with DDBM",
+  activity: "Low-Light Image Enhancement with DDBM",
   dates: dates-helper(start-date: "2024", end-date: "Present"),
 )
-- Research on enhancing low-light image processing using DDBM (Denoising Diffusion Probabilistic Models) based on the foundational 'Learning to See in the Dark' paper.
+- Conducting research on low-light image enhancement with DDBM, building on the Learning to See in the Dark research direction.
 
 == Skills
-- *Languages*: TypeScript, JavaScript, Python, Java, C++, Swift, Rust, HTML, CSS, Bash
-- *Frameworks & Data*: NextJS, TailwindCSS, Flask, Tauri v2, SQLite, MongoDB, JQuery
-- *Testing & Delivery*: PyTest, GTest, SeleniumGrid, Jenkins, Docker, Vagrant
-- *Tools & Platforms*: GitHub, Jira, Confluence, Linux, AWS, OpenStack, IntelliJ, PostMan, Windows10, Visual Studio, Typst, Mermaid, Object-Oriented Programming
+- *Languages*: TypeScript, JavaScript, Python, Java, C++, Swift, Kotlin, Rust, HTML, CSS, Bash
+- *Frameworks & Data*: React, React Native, Next.js, SwiftUI, Jetpack Compose, Node.js, Tailwind CSS, Flask, Tauri 2, SQLite, MongoDB, Firebase, WebRTC, PyTorch, Typst, Mermaid
+- *Testing & Delivery*: GoogleTest, PyTest, SeleniumGrid, Jenkins, Docker
 

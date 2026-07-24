@@ -25,22 +25,22 @@
 
 == 概述
 
-毕业于卡尔顿大学计算机科学学士，拥有丰富的软件测试和开发合作经验。熟练掌握TypeScript、JavaScript、Python等多种技术。寻求软件工程师职位，以利用我在设计、开发和测试软件解决方案方面的技能。
+渥太华大学系统科学与工程硕士研究生，具备 Nokia 和 Ford 软件开发与测试实习经历。使用 TypeScript、React、Rust/Tauri、Swift、Kotlin 及云端 API 构建过全栈、桌面、移动端和 AI 产品。
 
 == 教育经历
-
-#edu(
-  institution: "渥太华大学",
-  location: "Ottawa, ON",
-  dates: "至今",
-  degree: "系统科学与工程",
-)
 
 #edu(
   institution: "卡尔顿大学",
   location: "Ottawa, ON",
   dates: dates-helper(start-date: "2017", end-date: "2023"),
   degree: "计算机科学学士",
+)
+
+#edu(
+  institution: "渥太华大学",
+  location: "Ottawa, ON",
+  dates: "2024",
+  degree: "系统科学与工程硕士",
 )
 
 == 工作经历
@@ -51,7 +51,8 @@
   company: "Ford Motor Canada",
   dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
 )
-- 参与敏捷开发，使用C++11 Google Test Framework开发单元测试脚本，并利用Jenkins进行CI/CD。
+- 使用 C++11 和 GoogleTest 为汽车软件组件开发单元测试脚本。
+- 将测试执行集成到 Jenkins CI/CD 流程中，参与敏捷开发。
 
 #work(
   title: "软件测试实习生",
@@ -59,8 +60,8 @@
   company: "Nokia Canada",
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
-- 增强JavaScript/XML代码，以提高代码覆盖率和稳健性。
-- 使用Confluence Pages编写设计文档，描述系统架构和数据流。
+- 改进 JavaScript/XML 测试代码，提升代码覆盖率、可维护性和回归测试可靠性。
+- 使用 Confluence 记录系统架构与数据流，支持跨团队协作开发。
 
 == 项目
 
@@ -68,43 +69,42 @@
   name: "皮皮虾助手",
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
-- 基于 Tauri v2 构建的高性能桌面 AI 助手。
+- 使用 Rust、Tauri 2、React 和 TypeScript 构建本地优先的 AI 桌面助手，支持多 Provider 流式输出、工具调用、工作流编排和项目级记忆。
 
 #project(
-  name: "Meet See U 社交应用",
-  url: "chatpart-website.vercel.app",
+  name: "Resume Generator 简历生成器",
+  url: "resume-tailor.paytonpei.top",
 )
-- 一个全栈 AI 社交应用，具有持久向量记忆和自定义语音克隆功能的虚拟伙伴。
+- 使用 React、TypeScript、Vite 和 Node.
 
 #project(
   name: "Focus Mint 专注计时器",
   url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
 )
-- 一款适用于 iOS、watchOS 和 macOS 的高级实用应用程序，旨在通过番茄钟风格的计时器和会话跟踪提高生产力。
+- 发布基于 SwiftUI 的 iOS、watchOS 和 macOS 效率应用，支持番茄钟会话、小组件、多语言本地化、应用内购买和跨设备同步。
 
 #project(
-  name: "系统优化 - 算法可视化平台",
-  url: "system-optimizaion.vercel.app",
+  name: "Meet See U AI 社交应用",
+  url: "chatpart-website.vercel.app",
 )
-- 一个复杂的算法可视化平台，支持图论（Dijkstra、A\*、BFS/DFS）、优化方法（单纯形法、分支定界法）和机器学习（感知机）。
+- 使用 Kotlin、Jetpack Compose、Next.
 
 #project(
-  name: "租房智选",
-  url: "github.com/random-char1198/Coin-Web-Crawler",
+  name: "Conveyor 自动化平台",
+  url: "github.com/mammut001/Conveyor",
 )
-- 实现了Google登录和注册用户认证，将用户信息安全地存储在Firebase中。
+- 构建 Python 自动化平台，通过 Telegram 和飞书将指令路由到智能体辅助开发任务、个人工具和定时操作。
 
 == 研究
 
 #extracurriculars(
-  activity: "Learning to See in the Dark 2018 Enhancement with DDBM",
+  activity: "基于 DDBM 的低光图像增强",
   dates: dates-helper(start-date: "2024", end-date: "至今"),
 )
-- 基于'Learning to See in the Dark'论文，利用DDBM（去噪扩散概率模型）增强低光图像处理的研究。
+- 围绕 DDBM 开展低光图像增强研究，延续 Learning to See in the Dark 方向的相关工作。
 
 == 技能
-- *语言*: TypeScript, JavaScript, Python, Java, C++, Swift, Rust, HTML, CSS, Bash
-- *框架与数据*: NextJS, TailwindCSS, Flask, Tauri v2, SQLite, MongoDB, JQuery
-- *测试与交付*: PyTest, GTest, SeleniumGrid, Jenkins, Docker, Vagrant
-- *工具与平台*: GitHub, Jira, Confluence, Linux, AWS, OpenStack, IntelliJ, PostMan, Windows10, Visual Studio, Typst, Mermaid, Object-Oriented Programming
+- *语言*: TypeScript, JavaScript, Python, Java, C++, Swift, Kotlin, Rust, HTML, CSS, Bash
+- *框架与数据*: React, React Native, Next.js, SwiftUI, Jetpack Compose, Node.js, Tailwind CSS, Flask, Tauri 2, SQLite, MongoDB, Firebase, WebRTC, PyTorch, Typst, Mermaid
+- *测试与交付*: GoogleTest, PyTest, SeleniumGrid, Jenkins, Docker
 

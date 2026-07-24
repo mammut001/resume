@@ -25,22 +25,22 @@
 
 == Résumé
 
-Bachelier en informatique de l'Université Carleton avec une vaste expérience de stage coopératif en test et développement de logiciels. Compétent en TypeScript, JavaScript, Python et diverses autres technologies. Cherche un poste d'ingénieur logiciel pour tirer parti de mes compétences en conception, développement et test de solutions logicielles.
+Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. Ancien stagiaire chez Nokia et Ford, je crée des produits Web, de bureau, mobiles et d'IA avec TypeScript, React, Rust/Tauri, Swift et Kotlin.
 
 == Formation
 
 #edu(
-  institution: "Université d'Ottawa",
-  location: "Ottawa, ON",
-  dates: "Présent",
-  degree: "Génie des systèmes et de l'ingénierie",
-)
-
-#edu(
-  institution: "L'Université Carleton",
+  institution: "Université Carleton",
   location: "Ottawa, ON",
   dates: dates-helper(start-date: "2017", end-date: "2023"),
   degree: "Baccalauréat en informatique",
+)
+
+#edu(
+  institution: "Université d'Ottawa",
+  location: "Ottawa, ON",
+  dates: "2024",
+  degree: "Maîtrise en science et ingénierie des systèmes",
 )
 
 == Expérience
@@ -51,7 +51,8 @@ Bachelier en informatique de l'Université Carleton avec une vaste expérience d
   company: "Ford Motor Canada",
   dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
 )
-- Participation au développement Agile, développement de scripts de test unitaire utilisant le framework Google Test de C++11, et utilisation de Jenkins pour le CI/CD.
+- Développement de scripts de tests unitaires en C++11 avec GoogleTest pour des composants logiciels automobiles.
+- Intégration de l'exécution des tests dans Jenkins CI/CD au sein d'un processus Agile.
 
 #work(
   title: "Stagiaire en test de logiciels",
@@ -59,8 +60,8 @@ Bachelier en informatique de l'Université Carleton avec une vaste expérience d
   company: "Nokia Canada",
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
-- Amélioration du code JavaScript/XML pour une meilleure couverture de code et robustesse.
-- Production de documents de conception utilisant Confluence Pages pour l'architecture système et les flux de données.
+- Amélioration du code de test JavaScript/XML afin de renforcer la couverture, la maintenabilité et la fiabilité des régressions.
+- Documentation de l'architecture système et des flux de données dans Confluence pour soutenir le développement interéquipes.
 
 == Projets
 
@@ -68,43 +69,42 @@ Bachelier en informatique de l'Université Carleton avec une vaste expérience d
   name: "Pipi Shrimp Agent",
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
-- Un agent IA de bureau haute performance construit avec Tauri v2.
+- Création d'un agent IA de bureau local-first avec Rust, Tauri 2, React et TypeScript, prenant en charge le streaming multi-fournisseurs, les appels d'outils, l'orchestration de workflows et la mémoire par projet.
 
 #project(
-  name: "Meet See U",
-  url: "chatpart-website.vercel.app",
+  name: "Resume Generator",
+  url: "resume-tailor.paytonpei.top",
 )
-- Une application sociale IA complète avec des compagnons virtuels dotés d'une mémoire vectorielle persistante et d'un clonage de voix personnalisé.
+- Création et déploiement d'un éditeur de CV full-stack avec React, TypeScript, Vite et Node.
 
 #project(
   name: "Focus Mint",
   url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
 )
-- Une application utilitaire premium pour iOS, watchOS et macOS conçue pour améliorer la productivité via des minuteurs de style Pomodoro et le suivi de sessions.
+- Mise en production d'une application de productivité SwiftUI pour iOS, watchOS et macOS, avec sessions Pomodoro, widgets, localisation multilingue, achats intégrés et synchronisation entre appareils.
 
 #project(
-  name: "Optimisation des Systèmes - Smart Path",
-  url: "system-optimizaion.vercel.app",
+  name: "Meet See U",
+  url: "chatpart-website.vercel.app",
 )
-- Une plateforme sophistiquée de visualisation d'algorithmes prenant en charge la théorie des graphes (Dijkstra, A\*, BFS/DFS), l'optimisation (Simplex, Branch & Bound) et l'apprentissage automatique (Perceptrons).
+- Création d'un produit social d'IA full-stack avec Kotlin, Jetpack Compose, Next.
 
 #project(
-  name: "RentWise",
-  url: "github.com/random-char1198/Coin-Web-Crawler",
+  name: "Conveyor",
+  url: "github.com/mammut001/Conveyor",
 )
-- Mise en œuvre de l'inscription et de la connexion Google pour l'authentification des utilisateurs, stockant de manière sécurisée les informations des utilisateurs dans Firebase.
+- Création d'une plateforme d'automatisation Python pour Telegram et Feishu, capable d'acheminer les commandes vers des tâches de développement assistées par agent, des outils personnels et des opérations planifiées.
 
 == Recherche
 
 #extracurriculars(
-  activity: "Learning to See in the Dark 2018 Enhancement with DDBM",
+  activity: "Amélioration d'images en faible luminosité avec DDBM",
   dates: dates-helper(start-date: "2024", end-date: "Présent"),
 )
-- Recherche sur l'amélioration du traitement d'images en faible luminosité utilisant DDBM basé sur l'article fondateur 'Learning to See in the Dark'.
+- Recherche sur l'amélioration d'images en faible luminosité avec DDBM, dans le prolongement des travaux Learning to See in the Dark.
 
 == Compétences
-- *Langages*: TypeScript, JavaScript, Python, Java, C++, Swift, Rust, HTML, CSS, Bash
-- *Frameworks & données*: NextJS, TailwindCSS, Flask, Tauri v2, SQLite, MongoDB, JQuery
-- *Tests & livraison*: PyTest, GTest, SeleniumGrid, Jenkins, Docker, Vagrant
-- *Outils & plateformes*: GitHub, Jira, Confluence, Linux, AWS, OpenStack, IntelliJ, PostMan, Windows10, Visual Studio, Typst, Mermaid, Object-Oriented Programming
+- *Langages*: TypeScript, JavaScript, Python, Java, C++, Swift, Kotlin, Rust, HTML, CSS, Bash
+- *Frameworks & données*: React, React Native, Next.js, SwiftUI, Jetpack Compose, Node.js, Tailwind CSS, Flask, Tauri 2, SQLite, MongoDB, Firebase, WebRTC, PyTorch, Typst, Mermaid
+- *Tests & livraison*: GoogleTest, PyTest, SeleniumGrid, Jenkins, Docker
 

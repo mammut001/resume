@@ -226,19 +226,36 @@ const renderResearch = (language) =>
 const skillGroups = [
   {
     labelKey: "languages",
-    values: ["TypeScript", "JavaScript", "Python", "Java", "C++", "Swift", "Rust", "HTML", "CSS", "Bash"],
+    values: ["TypeScript", "JavaScript", "Python", "Java", "C++", "Swift", "Kotlin", "Rust", "HTML", "CSS", "Bash"],
   },
   {
     labelKey: "frameworks",
-    values: ["NextJS", "TailwindCSS", "Flask", "Tauri v2", "SQLite", "MongoDB", "JQuery"],
+    values: [
+      "React",
+      "React Native",
+      "Next.js",
+      "SwiftUI",
+      "Jetpack Compose",
+      "Node.js",
+      "Tailwind CSS",
+      "Flask",
+      "Tauri 2",
+      "SQLite",
+      "MongoDB",
+      "Firebase",
+      "WebRTC",
+      "PyTorch",
+      "Typst",
+      "Mermaid",
+    ],
   },
   {
     labelKey: "delivery",
-    values: ["PyTest", "GTest", "SeleniumGrid", "Jenkins", "Docker", "Vagrant"],
+    values: ["GoogleTest", "PyTest", "SeleniumGrid", "Jenkins", "Docker", "GitHub Actions"],
   },
   {
     labelKey: "tools",
-    values: ["GitHub", "Jira", "Confluence", "Linux", "AWS", "OpenStack", "IntelliJ", "PostMan", "Windows10", "Visual Studio", "Typst", "Mermaid", "Object-Oriented Programming"],
+    values: ["GitHub", "Jira", "Confluence", "Linux", "AWS"],
   },
 ];
 

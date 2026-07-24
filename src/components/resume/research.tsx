@@ -19,14 +19,22 @@ export const Research = () => {
                 {[...RESUME_DATA.research].reverse().map((item) => {
                     const title = localize(item, "title")
                     const description = localize(item, "description")
+                    const researchLink =
+                        "link" in item &&
+                        typeof item.link === "object" &&
+                        item.link !== null &&
+                        "href" in item.link &&
+                        typeof item.link.href === "string"
+                            ? item.link.href
+                            : null
 
                     return (
                         <Card key={title} className="border-none shadow-none bg-transparent p-0">
                             <CardHeader className="p-0 space-y-1">
                                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                                     <h3 className="text-lg font-semibold leading-none hover:underline">
-                                        {item.link ? (
-                                            <a href={item.link.href} target="_blank" rel="noopener noreferrer">
+                                        {researchLink ? (
+                                            <a href={researchLink} target="_blank" rel="noopener noreferrer">
                                                 {title}
                                             </a>
                                         ) : (
