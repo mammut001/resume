@@ -51,8 +51,10 @@
   company: "Ford Motor Canada",
   dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
 )
+#align(left)[
 - 使用 C++11 和 GoogleTest 为汽车软件组件开发单元测试脚本。
 - 将测试执行集成到 Jenkins CI/CD 流程中，参与敏捷开发。
+]
 
 #work(
   title: "软件测试实习生",
@@ -60,8 +62,10 @@
   company: "Nokia Canada",
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
+#align(left)[
 - 改进 JavaScript/XML 测试代码，提升代码覆盖率、可维护性和回归测试可靠性。
 - 使用 Confluence 记录系统架构与数据流，支持跨团队协作开发。
+]
 
 == 项目
 
@@ -69,31 +73,41 @@
   name: "皮皮虾助手",
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
+#align(left)[
 - 使用 Rust、Tauri 2、React 和 TypeScript 构建本地优先的 AI 桌面助手，支持多 Provider 流式输出、工具调用、工作流编排和项目级记忆。
+]
 
 #project(
   name: "Resume Generator 简历生成器",
   url: "resume-tailor.paytonpei.top",
 )
+#align(left)[
 - 使用 React、TypeScript、Vite 和 Node.
+]
 
 #project(
   name: "Focus Mint 专注计时器",
   url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
 )
+#align(left)[
 - 发布基于 SwiftUI 的 iOS、watchOS 和 macOS 效率应用，支持番茄钟会话、小组件、多语言本地化、应用内购买和跨设备同步。
+]
 
 #project(
   name: "Meet See U AI 社交应用",
   url: "chatpart-website.vercel.app",
 )
+#align(left)[
 - 使用 Kotlin、Jetpack Compose、Next.
+]
 
 #project(
   name: "Conveyor 自动化平台",
   url: "github.com/mammut001/Conveyor",
 )
+#align(left)[
 - 构建 Python 自动化平台，通过 Telegram 和飞书将指令路由到智能体辅助开发任务、个人工具和定时操作。
+]
 
 == 研究
 
@@ -101,7 +115,9 @@
   activity: "基于 DDBM 的低光图像增强",
   dates: dates-helper(start-date: "2024", end-date: "至今"),
 )
+#align(left)[
 - 围绕 DDBM 开展低光图像增强研究，延续 Learning to See in the Dark 方向的相关工作。
+]
 
 == 技能
 - *语言*: TypeScript, JavaScript, Python, Java, C++, Swift, Kotlin, Rust, HTML, CSS, Bash

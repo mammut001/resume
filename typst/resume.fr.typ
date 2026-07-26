@@ -51,8 +51,10 @@ Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. An
   company: "Ford Motor Canada",
   dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
 )
+#align(left)[
 - Développement de scripts de tests unitaires en C++11 avec GoogleTest pour des composants logiciels automobiles.
 - Intégration de l'exécution des tests dans Jenkins CI/CD au sein d'un processus Agile.
+]
 
 #work(
   title: "Stagiaire en test de logiciels",
@@ -60,8 +62,10 @@ Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. An
   company: "Nokia Canada",
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
+#align(left)[
 - Amélioration du code de test JavaScript/XML afin de renforcer la couverture, la maintenabilité et la fiabilité des régressions.
 - Documentation de l'architecture système et des flux de données dans Confluence pour soutenir le développement interéquipes.
+]
 
 == Projets
 
@@ -69,31 +73,41 @@ Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. An
   name: "Pipi Shrimp Agent",
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
+#align(left)[
 - Création d'un agent IA de bureau local-first avec Rust, Tauri 2, React et TypeScript, prenant en charge le streaming multi-fournisseurs, les appels d'outils, l'orchestration de workflows et la mémoire par projet.
+]
 
 #project(
   name: "Resume Generator",
   url: "resume-tailor.paytonpei.top",
 )
+#align(left)[
 - Création et déploiement d'un éditeur de CV full-stack avec React, TypeScript, Vite et Node.
+]
 
 #project(
   name: "Focus Mint",
   url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
 )
+#align(left)[
 - Mise en production d'une application de productivité SwiftUI pour iOS, watchOS et macOS, avec sessions Pomodoro, widgets, localisation multilingue, achats intégrés et synchronisation entre appareils.
+]
 
 #project(
   name: "Meet See U",
   url: "chatpart-website.vercel.app",
 )
+#align(left)[
 - Création d'un produit social d'IA full-stack avec Kotlin, Jetpack Compose, Next.
+]
 
 #project(
   name: "Conveyor",
   url: "github.com/mammut001/Conveyor",
 )
+#align(left)[
 - Création d'une plateforme d'automatisation Python pour Telegram et Feishu, capable d'acheminer les commandes vers des tâches de développement assistées par agent, des outils personnels et des opérations planifiées.
+]
 
 == Recherche
 
@@ -101,7 +115,9 @@ Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. An
   activity: "Amélioration d'images en faible luminosité avec DDBM",
   dates: dates-helper(start-date: "2024", end-date: "Présent"),
 )
+#align(left)[
 - Recherche sur l'amélioration d'images en faible luminosité avec DDBM, dans le prolongement des travaux Learning to See in the Dark.
+]
 
 == Compétences
 - *Langages*: TypeScript, JavaScript, Python, Java, C++, Swift, Kotlin, Rust, HTML, CSS, Bash

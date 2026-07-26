@@ -98,7 +98,8 @@ const splitSentences = (value = "") =>
     .map((sentence) => escapeTypstInline(sentence.trim()))
     .filter(Boolean);
 
-const renderBulletList = (items) => items.map((item) => `- ${item}`).join("\n");
+const renderBulletList = (items) =>
+  `#align(left)[\n${items.map((item) => `- ${item}`).join("\n")}\n]`;
 
 const parseRequestedLanguages = () => {
   const args = process.argv.slice(2);
@@ -204,7 +205,7 @@ const renderProjects = (language) =>
       const description = splitSentences(localizedDescription)[0] ?? escapeTypstInline(localizedDescription);
       const urlLine = entry.link?.href ? `\n  url: ${typstString(stripProtocol(entry.link.href))},` : "";
 
-      return `#project(\n  name: ${typstString(getLocalizedText(entry, "title", language))},${urlLine}\n)\n- ${description}`;
+      return `#project(\n  name: ${typstString(getLocalizedText(entry, "title", language))},${urlLine}\n)\n${renderBulletList([description])}`;
     })
     .join("\n\n");
 

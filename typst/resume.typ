@@ -51,8 +51,10 @@ Software developer and Master of Engineering student in System Science and Engin
   company: "Ford Motor Canada",
   dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
 )
+#align(left)[
 - Developed C++11 unit-test scripts with GoogleTest for automotive software components.
 - Integrated test execution with Jenkins CI/CD in an Agile development workflow.
+]
 
 #work(
   title: "Software Tester Co-op",
@@ -60,8 +62,10 @@ Software developer and Master of Engineering student in System Science and Engin
   company: "Nokia Canada",
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
+#align(left)[
 - Improved JavaScript/XML test code to strengthen coverage, maintainability, and regression confidence.
 - Documented system architecture and data flows in Confluence to support cross-team development.
+]
 
 == Projects
 
@@ -69,31 +73,41 @@ Software developer and Master of Engineering student in System Science and Engin
   name: "pipi-shrimp-agent",
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
+#align(left)[
 - Built a local-first AI desktop agent with Rust, Tauri 2, React, and TypeScript, supporting multi-provider streaming, tool calling, workflow orchestration, and project-scoped memory.
+]
 
 #project(
   name: "Resume Generator",
   url: "resume-tailor.paytonpei.top",
 )
+#align(left)[
 - Built and deployed a full-stack resume editor with React, TypeScript, Vite, and Node.
+]
 
 #project(
   name: "Focus Mint",
   url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
 )
+#align(left)[
 - Shipped a SwiftUI productivity app for iOS, watchOS, and macOS with Pomodoro sessions, widgets, multilingual localization, in-app purchases, and cross-device synchronization.
+]
 
 #project(
   name: "Meet See U",
   url: "chatpart-website.vercel.app",
 )
+#align(left)[
 - Built a full-stack AI social product with Kotlin, Jetpack Compose, Next.
+]
 
 #project(
   name: "Conveyor",
   url: "github.com/mammut001/Conveyor",
 )
+#align(left)[
 - Built a Python automation platform for Telegram and Feishu that routes commands to agent-assisted development tasks, personal tools, and scheduled operations.
+]
 
 == Research
 
@@ -101,7 +115,9 @@ Software developer and Master of Engineering student in System Science and Engin
   activity: "Low-Light Image Enhancement with DDBM",
   dates: dates-helper(start-date: "2024", end-date: "Present"),
 )
+#align(left)[
 - Conducting research on low-light image enhancement with DDBM, building on the Learning to See in the Dark research direction.
+]
 
 == Skills
 - *Languages*: TypeScript, JavaScript, Python, Java, C++, Swift, Kotlin, Rust, HTML, CSS, Bash
