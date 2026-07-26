@@ -176,5 +176,17 @@
       }
     }
   ],
-  "research": []
+  "research": [
+    {
+      "title": "Low-Light RAW Image Restoration with Bridge U-Net and DDBM",
+      "title_fr": "Restauration d'images RAW en très faible luminosité avec Bridge U-Net et DDBM",
+      "title_cn": "基于 Bridge U-Net 与 DDBM 的极低照度 RAW 图像复原",
+      "start": "2026",
+      "end": null,
+      "description": "Collaborated on an extreme low-light RAW image restoration study using paired SID and ELD images, comparing Bridge U-Net, fine-tuning, few-shot meta-learning, and a DDBM-inspired feature-space approach. Investigated and documented a memory-efficient DDBM-Feature variant using time-conditioned decoding, selective bridge interpolation over deep encoder features, and three-step deterministic inference; evaluated it at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.",
+      "description_fr": "Collaboration à une étude de restauration d'images RAW en très faible luminosité utilisant des images appariées SID et ELD, comparant Bridge U-Net, le fine-tuning, le meta-learning few-shot et une approche inspirée de DDBM dans l'espace des caractéristiques. Étude et documentation d'une variante DDBM-Feature économe en mémoire, fondée sur un décodage conditionné par le temps, une interpolation de pont sélective sur des caractéristiques profondes de l'encodeur et une inférence déterministe en trois étapes ; évaluation à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.",
+      "description_cn": "参与极低照度 RAW 图像复原研究，使用配对的 SID 和 ELD 图像，对比 Bridge U-Net、微调、少样本元学习以及受 DDBM 启发的特征空间方法。研究并记录内存高效的 DDBM-Feature 变体，采用时间条件解码、对深层编码器特征的选择性桥接插值和三步确定性推理；在 598 张 SID Sony 测试图像上取得 26.12 dB PSNR 与 0.807 MS-SSIM。",
+      "tags": ["Python", "PyTorch", "Computer Vision", "Low-Light Imaging", "DDBM"]
+    }
+  ]
 }

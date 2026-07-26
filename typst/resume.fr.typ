@@ -107,6 +107,17 @@ Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils
 - Mise en œuvre de la monétisation StoreKit, d'expériences WidgetKit et Live Activity, ainsi que d'une synchronisation bidirectionnelle iPhone-Apple Watch avec WatchConnectivity.
 ]
 
+== Recherche
+
+#extracurriculars(
+  activity: "Restauration d'images RAW en très faible luminosité avec Bridge U-Net et DDBM",
+  dates: "2026",
+)
+#align(left)[
+- Collaboration à une étude de restauration d'images RAW en très faible luminosité utilisant des images appariées SID et ELD, comparant Bridge U-Net, le fine-tuning, le meta-learning few-shot et une approche inspirée de DDBM dans l'espace des caractéristiques.
+- Étude et documentation d'une variante DDBM-Feature économe en mémoire, fondée sur un décodage conditionné par le temps, une interpolation de pont sélective sur des caractéristiques profondes de l'encodeur et une inférence déterministe en trois étapes ; évaluation à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.
+]
+
 == Compétences
 - *Langages*: Python, TypeScript, JavaScript, Rust, Swift, Kotlin, C++, Java, Bash
 - *Frameworks*: React, Node.js, Tauri 2, SwiftUI, Jetpack Compose, Firebase, Tailwind CSS

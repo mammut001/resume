@@ -105,6 +105,19 @@
 - 实现 StoreKit 变现、WidgetKit 和 Live Activity 体验，以及通过 WatchConnectivity 实现 iPhone 与 Apple Watch 双向同步。
 ]
 
+#pagebreak()
+
+== 研究
+
+#extracurriculars(
+  activity: "基于 Bridge U-Net 与 DDBM 的极低照度 RAW 图像复原",
+  dates: "2026",
+)
+#align(left)[
+- 参与极低照度 RAW 图像复原研究，使用配对的 SID 和 ELD 图像，对比 Bridge U-Net、微调、少样本元学习以及受 DDBM 启发的特征空间方法。
+- 研究并记录内存高效的 DDBM-Feature 变体，采用时间条件解码、对深层编码器特征的选择性桥接插值和三步确定性推理；在 598 张 SID Sony 测试图像上取得 26.12 dB PSNR 与 0.807 MS-SSIM。
+]
+
 == 技能
 - *语言*: Python, TypeScript, JavaScript, Rust, Swift, Kotlin, C++, Java, Bash
 - *框架*: React, Node.js, Tauri 2, SwiftUI, Jetpack Compose, Firebase, Tailwind CSS

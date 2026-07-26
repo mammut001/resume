@@ -317,7 +317,13 @@ const renderResume = (language) => {
     renderProjects(language),
     "",
     ...(resume.research.length > 0
-      ? [`== ${labels.research}`, "", renderResearch(language), ""]
+      ? [
+          ...(language === "chinese" ? ["#pagebreak()", ""] : []),
+          `== ${labels.research}`,
+          "",
+          renderResearch(language),
+          "",
+        ]
       : []),
     `== ${labels.skills}`,
     renderSkills(language),

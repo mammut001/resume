@@ -107,6 +107,17 @@ Software engineer building local-first AI systems, developer tools, and producti
 - Implemented StoreKit monetization, WidgetKit and Live Activity experiences, and bidirectional iPhone-Apple Watch synchronization using WatchConnectivity.
 ]
 
+== Research
+
+#extracurriculars(
+  activity: "Low-Light RAW Image Restoration with Bridge U-Net and DDBM",
+  dates: "2026",
+)
+#align(left)[
+- Collaborated on an extreme low-light RAW image restoration study using paired SID and ELD images, comparing Bridge U-Net, fine-tuning, few-shot meta-learning, and a DDBM-inspired feature-space approach.
+- Investigated and documented a memory-efficient DDBM-Feature variant using time-conditioned decoding, selective bridge interpolation over deep encoder features, and three-step deterministic inference; evaluated it at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.
+]
+
 == Skills
 - *Languages*: Python, TypeScript, JavaScript, Rust, Swift, Kotlin, C++, Java, Bash
 - *Frameworks*: React, Node.js, Tauri 2, SwiftUI, Jetpack Compose, Firebase, Tailwind CSS
