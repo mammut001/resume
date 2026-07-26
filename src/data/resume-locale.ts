@@ -12,6 +12,9 @@ export const UI_LABELS = {
   english: {
     about: "About",
     education: "Education",
+    coursework: "Selected Coursework",
+    courseworkIntro: "Completed graduate coursework at the University of Ottawa.",
+    officialCourseDescription: "Official course description",
     workExperience: "Work Experience",
     projects: "Projects",
     research: "Research",
@@ -26,6 +29,9 @@ export const UI_LABELS = {
   french: {
     about: "Profil",
     education: "Formation",
+    coursework: "Cours sélectionnés",
+    courseworkIntro: "Cours de maîtrise complétés à l'Université d'Ottawa.",
+    officialCourseDescription: "Description officielle du cours",
     workExperience: "Expérience",
     projects: "Projets",
     research: "Recherche",
@@ -40,6 +46,9 @@ export const UI_LABELS = {
   chinese: {
     about: "简介",
     education: "教育经历",
+    coursework: "课程精选",
+    courseworkIntro: "已完成的渥太华大学研究生课程。",
+    officialCourseDescription: "官方课程简介",
     workExperience: "工作经历",
     projects: "项目",
     research: "研究",

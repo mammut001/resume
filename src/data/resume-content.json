@@ -47,6 +47,112 @@
       "end": "2023"
     }
   ],
+  "coursework": [
+    {
+      "code": "DTI 6160",
+      "title": "Cyber Security Systems and Strategies",
+      "title_fr": "Systèmes et stratégies de cybersécurité",
+      "title_cn": "网络安全系统与策略",
+      "term": "Fall 2025",
+      "term_fr": "Automne 2025",
+      "term_cn": "2025 年秋季",
+      "description": "Security principles and risk frameworks for protecting users, data, and networks, covering authentication, access control, encryption, public-key infrastructure, and security in wireless, cloud, and IoT environments.",
+      "description_fr": "Principes de sécurité et cadres de gestion des risques pour protéger les utilisateurs, les données et les réseaux, notamment l'authentification, le contrôle d'accès, le chiffrement, l'infrastructure à clés publiques et la sécurité des environnements sans fil, infonuagiques et IoT.",
+      "description_cn": "学习保护用户、数据和网络的安全原则与风险框架，涵盖身份验证、访问控制、加密、公钥基础设施，以及无线、云和物联网环境的安全。",
+      "sourceUrl": "https://catalogue.uottawa.ca/en/courses/dti/"
+    },
+    {
+      "code": "SYS 5110",
+      "title": "Foundation of Modelling and Simulation",
+      "title_fr": "Fondements de la modélisation et de la simulation",
+      "title_cn": "建模与仿真基础",
+      "term": "Fall 2025",
+      "term_fr": "Automne 2025",
+      "term_cn": "2025 年秋季",
+      "description": "System modelling and the simulation process, including continuous and discrete-event simulation, numerical solution of ordinary differential equations, random variates, validation, quality assurance, and simulation languages.",
+      "description_fr": "Modélisation des systèmes et processus de simulation, y compris la simulation continue et à événements discrets, la résolution numérique d'équations différentielles ordinaires, les variables aléatoires, la validation, l'assurance qualité et les langages de simulation.",
+      "description_cn": "学习系统建模与仿真流程，包括连续与离散事件仿真、常微分方程数值求解、随机变量生成、验证、质量保证和仿真语言。",
+      "sourceUrl": "https://catalogue.uottawa.ca/en/courses/sys/"
+    },
+    {
+      "code": "SYS 5130",
+      "title": "Systems Optimization and Management",
+      "title_fr": "Optimisation et gestion des systèmes",
+      "title_cn": "系统优化与管理",
+      "term": "Fall 2025",
+      "term_fr": "Automne 2025",
+      "term_cn": "2025 年秋季",
+      "description": "User-requirements analysis, model design, data mining, optimization software, and systems thinking applied to the modelling, simulation, optimization, and management of economic and hierarchical systems.",
+      "description_fr": "Analyse des besoins utilisateurs, conception de modèles, exploration de données, logiciels d'optimisation et pensée systémique appliqués à la modélisation, la simulation, l'optimisation et la gestion de systèmes économiques et hiérarchiques.",
+      "description_cn": "涵盖用户需求分析、模型设计、数据挖掘、优化软件和系统思维，并将其应用于经济与层级系统的建模、仿真、优化和管理。",
+      "sourceUrl": "https://catalogue.uottawa.ca/en/courses/sys/"
+    },
+    {
+      "code": "SYS 5140",
+      "title": "Economic System Design",
+      "title_fr": "Conception des systèmes économiques",
+      "title_cn": "经济系统设计",
+      "term": "Fall 2025",
+      "term_fr": "Automne 2025",
+      "term_cn": "2025 年秋季",
+      "description": "Systems thinking for economic and complex systems, covering hierarchical systems, simulation and behaviour, soft systems thinking, and interdisciplinary applications.",
+      "description_fr": "Pensée systémique appliquée aux systèmes économiques et complexes, couvrant les systèmes hiérarchiques, la simulation et le comportement, la pensée systémique souple et des applications interdisciplinaires.",
+      "description_cn": "将系统思维应用于经济与复杂系统，涵盖层级系统、仿真与行为、软系统思维和跨学科应用。",
+      "sourceUrl": "https://catalogue.uottawa.ca/en/courses/sys/"
+    },
+    {
+      "code": "DTI 5175",
+      "title": "Mobile Commerce Technologies",
+      "title_fr": "Technologies du commerce mobile",
+      "title_cn": "移动商务技术",
+      "term": "Winter 2026",
+      "term_fr": "Hiver 2026",
+      "term_cn": "2026 年冬季",
+      "description": "Architectures and applications for wireless and mobile commerce, including electronic banking, digital cash, wireless exchanges, business models, mobile networks and routing, content presentation, security, standards, protocols, and case studies.",
+      "description_fr": "Architectures et applications du commerce électronique sans fil et mobile, dont les services bancaires électroniques, la monnaie numérique, les échanges sans fil, les modèles d'affaires, les réseaux et le routage mobiles, la présentation de contenu, la sécurité, les normes, les protocoles et les études de cas.",
+      "description_cn": "学习无线和移动商务的架构与应用，包括电子银行、数字现金、无线交易、商业模式、移动网络与路由、内容呈现、安全、标准、协议和案例研究。",
+      "sourceUrl": "https://catalogue.uottawa.ca/en/courses/dti/"
+    },
+    {
+      "code": "GNG 5300",
+      "title": "Topics in Engineering: Affective & Persuasive Computing",
+      "title_fr": "Sujets en génie : informatique affective et persuasive",
+      "title_cn": "工程专题：情感与说服计算",
+      "term": "Winter 2026",
+      "term_fr": "Hiver 2026",
+      "term_cn": "2026 年冬季",
+      "description": "A special-topic offering focused on human affect models, AI-based affect estimation, multimodal fusion, persuasive technologies, persuasion design, serious games, and open challenges in affective and persuasive computing.",
+      "description_fr": "Offre de sujet spécial portant sur les modèles d'affect humain, l'estimation de l'affect par l'IA, la fusion multimodale, les technologies persuasives, la conception de la persuasion, les jeux sérieux et les défis ouverts en informatique affective et persuasive.",
+      "description_cn": "专题课程聚焦人类情感模型、基于 AI 的情感估计、多模态融合、说服性技术、说服设计、严肃游戏，以及情感与说服计算的开放挑战。",
+      "sourceUrl": "https://catalogue.uottawa.ca/en/courses/dti/"
+    },
+    {
+      "code": "SYS 5160",
+      "title": "Systems Integration",
+      "title_fr": "Intégration des systèmes",
+      "title_cn": "系统集成",
+      "term": "Winter 2026",
+      "term_fr": "Hiver 2026",
+      "term_cn": "2026 年冬季",
+      "description": "Planning and design of complex systems across continuous and discrete time, with systems-methodology synthesis, state estimation, parameter identification, discretization, stochastic effects, dynamic and logic control, and discrete-event simulation.",
+      "description_fr": "Planification et conception de systèmes complexes en temps continu et discret, avec synthèse de méthodologies système, estimation d'état, identification de paramètres, discrétisation, effets stochastiques, commande dynamique et logique, et simulation à événements discrets.",
+      "description_cn": "学习跨连续与离散时间的复杂系统规划和设计，涵盖系统方法论综合、状态估计、参数辨识、离散化、随机效应、动态与逻辑控制，以及离散事件仿真。",
+      "sourceUrl": "https://catalogue.uottawa.ca/en/courses/sys/"
+    },
+    {
+      "code": "SYS 5185",
+      "title": "Foundations and Applications of Machine Learning",
+      "title_fr": "Fondements et applications de l'apprentissage automatique",
+      "title_cn": "机器学习基础与应用",
+      "term": "Winter 2026",
+      "term_fr": "Hiver 2026",
+      "term_cn": "2026 年冬季",
+      "description": "Machine-learning capabilities and limitations, problem formulation, supervised and unsupervised techniques, model deployment, monitoring and evaluation, communicating results, and current applications across business, law, arts, social sciences, and education.",
+      "description_fr": "Capacités et limites de l'apprentissage automatique, formulation de problèmes, techniques supervisées et non supervisées, déploiement, suivi et évaluation de modèles, communication des résultats et applications actuelles en affaires, droit, arts, sciences sociales et éducation.",
+      "description_cn": "学习机器学习的能力与局限、问题建模、监督与无监督方法、模型部署、监控与评估、结果沟通，以及其在商业、法律、艺术、社会科学和教育中的应用。",
+      "sourceUrl": "https://catalogue.uottawa.ca/en/courses/sys/"
+    }
+  ],
   "work": [
     {
       "company": "Nokia Canada",

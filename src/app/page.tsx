@@ -3,6 +3,7 @@ import { Hero } from "@/components/resume/hero";
 import { About } from "@/components/resume/about";
 import { Experience } from "@/components/resume/experience";
 import { Education } from "@/components/resume/education";
+import { Coursework } from "@/components/resume/coursework";
 import { Skills } from "@/components/resume/skills";
 import { Projects } from "@/components/resume/projects";
 import { Research } from "@/components/resume/research";
@@ -18,6 +19,7 @@ export default function Page() {
           <Heatmap />
           <About />
           <Education />
+          <Coursework />
           <Experience />
           <Projects />
           <Research />
