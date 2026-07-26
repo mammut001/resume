@@ -98,7 +98,7 @@ Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. An
   url: "chatpart-website.vercel.app",
 )
 #align(left)[
-- Création d'un produit social d'IA full-stack avec Kotlin, Jetpack Compose, Next.
+- Compagnon IA Android : Kotlin/Compose, Firebase, voix push-to-talk/VAD, mémoire et paiements Stripe.
 ]
 
 #project(

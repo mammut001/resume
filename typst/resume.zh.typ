@@ -98,7 +98,7 @@
   url: "chatpart-website.vercel.app",
 )
 #align(left)[
-- 使用 Kotlin、Jetpack Compose、Next.
+- 使用 Kotlin 和 Jetpack Compose 构建原生 Android AI 陪伴应用，支持 Firebase 身份验证、可自定义角色档案、文字聊天、按住说话/VAD 免提语音对话、语义记忆和 Stripe 付费角色槽位。
 ]
 
 #project(

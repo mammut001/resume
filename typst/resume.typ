@@ -98,7 +98,7 @@ Software developer and Master of Engineering student in System Science and Engin
   url: "chatpart-website.vercel.app",
 )
 #align(left)[
-- Built a full-stack AI social product with Kotlin, Jetpack Compose, Next.
+- Built a native Android AI companion app with Kotlin and Jetpack Compose, featuring Firebase authentication, customizable character profiles, messaging, push-to-talk/VAD voice chat, semantic memory, and Stripe-paid character slots.
 ]
 
 #project(
