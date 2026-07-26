@@ -13,7 +13,7 @@ export const Experience = () => {
         <Section className="py-8">
             <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">{labels.workExperience}</h2>
             <div className="space-y-6">
-                {[...RESUME_DATA.work].reverse().map((work) => {
+                {RESUME_DATA.work.map((work) => {
                     const workDescription = localize(work, "description")
                     const title = localize(work, "title")
 

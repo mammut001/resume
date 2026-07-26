@@ -14,7 +14,7 @@ export const Projects = () => {
             <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">{labels.projects}</h2>
 
             <div className="space-y-6">
-                {[...RESUME_DATA.projects].reverse().map((project) => {
+                {RESUME_DATA.projects.map((project) => {
                     const title = localize(project, "title")
                     const description = localize(project, "description")
                     const statusLabel = project.status === 1 ? labels.active : labels.archived

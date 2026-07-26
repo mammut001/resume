@@ -25,9 +25,16 @@
 
 == Résumé
 
-Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. Ancien stagiaire chez Nokia et Ford, je crée des produits Web, de bureau, mobiles et d'IA avec TypeScript, React, Rust/Tauri, Swift et Kotlin.
+Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils de développement et les applications mobiles de production. Ancien stagiaire développeur/testeur chez Nokia et Ford et étudiant actuel à la maîtrise en ingénierie à l'Université d'Ottawa, avec une expérience pratique de Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose, des appels d'outils LLM et des intégrations cloud.
 
 == Formation
+
+#edu(
+  institution: "Université d'Ottawa",
+  location: "Ottawa, ON",
+  dates: dates-helper(start-date: "2024", end-date: "Présent"),
+  degree: "Maîtrise en ingénierie des systèmes",
+)
 
 #edu(
   institution: "Université Carleton",
@@ -36,25 +43,7 @@ Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. An
   degree: "Baccalauréat en informatique",
 )
 
-#edu(
-  institution: "Université d'Ottawa",
-  location: "Ottawa, ON",
-  dates: "2024",
-  degree: "Maîtrise en science et ingénierie des systèmes",
-)
-
 == Expérience
-
-#work(
-  title: "Stagiaire en développement logiciel",
-  location: "Ottawa, ON",
-  company: "Ford Motor Canada",
-  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
-)
-#align(left)[
-- Développement de scripts de tests unitaires en C++11 avec GoogleTest pour des composants logiciels automobiles.
-- Intégration de l'exécution des tests dans Jenkins CI/CD au sein d'un processus Agile.
-]
 
 #work(
   title: "Stagiaire en test de logiciels",
@@ -63,8 +52,19 @@ Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. An
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
 #align(left)[
-- Amélioration du code de test JavaScript/XML afin de renforcer la couverture, la maintenabilité et la fiabilité des régressions.
-- Documentation de l'architecture système et des flux de données dans Confluence pour soutenir le développement interéquipes.
+- Maintenance et extension de suites de tests automatisés JavaScript/XML pour des logiciels de télécommunications, améliorant la couverture de régression, la robustesse et la maintenabilité.
+- Rédaction de documentation sur l'architecture système et les flux de données dans Confluence pour soutenir le développement, le débogage et le transfert de connaissances interéquipes.
+]
+
+#work(
+  title: "Stagiaire en développement logiciel",
+  location: "Ottawa, ON",
+  company: "Ford Motor Canada",
+  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
+)
+#align(left)[
+- Développement de tests unitaires C++11 avec GoogleTest pour des composants logiciels automobiles.
+- Intégration de l'exécution automatisée des tests dans des pipelines Jenkins CI au sein d'un processus Agile.
 ]
 
 == Projets
@@ -74,31 +74,8 @@ Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. An
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
 #align(left)[
-- Création d'un agent IA de bureau local-first avec Rust, Tauri 2, React et TypeScript, prenant en charge le streaming multi-fournisseurs, les appels d'outils, l'orchestration de workflows et la mémoire par projet.
-]
-
-#project(
-  name: "Resume Generator",
-  url: "resume-tailor.paytonpei.top",
-)
-#align(left)[
-- Création et déploiement d'un éditeur de CV full-stack avec React, TypeScript, Vite et Node.
-]
-
-#project(
-  name: "Focus Mint",
-  url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
-)
-#align(left)[
-- Mise en production d'une application de productivité SwiftUI pour iOS, watchOS et macOS, avec sessions Pomodoro, widgets, localisation multilingue, achats intégrés et synchronisation entre appareils.
-]
-
-#project(
-  name: "Meet See U",
-  url: "chatpart-website.vercel.app",
-)
-#align(left)[
-- Compagnon IA Android : Kotlin/Compose, Firebase, voix push-to-talk/VAD, mémoire et paiements Stripe.
+- Architecture d'un agent IA de bureau local-first avec Rust, Tauri 2, React, TypeScript et SQLite, avec streaming multi-fournisseurs, appels d'outils structurés, mémoire par projet et exécution locale de code et de fichiers.
+- Mise en œuvre d'une orchestration visuelle de workflows, de l'automatisation de navigateur par CDP, de la collaboration multi-agents, de la compression de contexte et du rendu natif Typst PDF/SVG via une couche de commandes Tauri en Rust.
 ]
 
 #project(
@@ -106,21 +83,33 @@ Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. An
   url: "github.com/mammut001/Conveyor",
 )
 #align(left)[
-- Création d'une plateforme d'automatisation Python pour Telegram et Feishu, capable d'acheminer les commandes vers des tâches de développement assistées par agent, des outils personnels et des opérations planifiées.
+- Création d'un plan de contrôle Python auto-hébergé reliant Telegram et Feishu à Codex CLI sur un VPS, exécutant des tâches de développement dans des worktrees Git isolés avec contrôles de diff, application, abandon et annulation.
+- Conception d'une file de tâches SQLite persistante et d'une couche de sécurité avec listes d'opérateurs autorisés, confirmations explicites, masquage de sorties, journalisation d'audit, diagnostics, rappels et intégrations optionnelles d'outils de développement.
 ]
 
-== Recherche
+#pagebreak()
 
-#extracurriculars(
-  activity: "Amélioration d'images en faible luminosité avec DDBM",
-  dates: dates-helper(start-date: "2024", end-date: "Présent"),
+#project(
+  name: "Resume Generator",
+  url: "resume-tailor.paytonpei.top",
 )
 #align(left)[
-- Recherche sur l'amélioration d'images en faible luminosité avec DDBM, dans le prolongement des travaux Learning to See in the Dark.
+- Création et déploiement d'un espace de travail de CV full-stack avec React, TypeScript et Node.js, prenant en charge l'importation PDF/texte, l'adaptation aux offres d'emploi, l'édition structurée et l'export PDF/SVG avec Typst.
+- Ajout de routes backend validées par Zod, d'une observabilité respectueuse de la confidentialité, d'un déploiement Docker et de tests automatisés avec Vitest et Playwright.
+]
+
+#project(
+  name: "Focus Mint",
+  url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
+)
+#align(left)[
+- Publication sur l'App Store d'une application de productivité SwiftUI pour iPhone, iPad et Apple Watch, avec sessions de concentration, suivi des gains, analytique, modes personnalisés et localisation multilingue.
+- Mise en œuvre de la monétisation StoreKit, d'expériences WidgetKit et Live Activity, ainsi que d'une synchronisation bidirectionnelle iPhone-Apple Watch avec WatchConnectivity.
 ]
 
 == Compétences
-- *Langages*: TypeScript, JavaScript, Python, Java, C++, Swift, Kotlin, Rust, HTML, CSS, Bash
-- *Frameworks & données*: React, React Native, Next.js, SwiftUI, Jetpack Compose, Node.js, Tailwind CSS, Flask, Tauri 2, SQLite, MongoDB, Firebase, WebRTC, PyTorch, Typst, Mermaid
-- *Tests & livraison*: GoogleTest, PyTest, SeleniumGrid, Jenkins, Docker
+- *Langages*: Python, TypeScript, JavaScript, Rust, Swift, Kotlin, C++, Java, Bash
+- *Frameworks*: React, Node.js, Tauri 2, SwiftUI, Jetpack Compose, Firebase, Tailwind CSS
+- *IA & systèmes*: LLM APIs, Tool Calling, Embeddings, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
+- *Tests & livraison*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
 

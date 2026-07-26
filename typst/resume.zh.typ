@@ -25,9 +25,16 @@
 
 == 概述
 
-渥太华大学系统科学与工程硕士研究生，具备 Nokia 和 Ford 软件开发与测试实习经历。使用 TypeScript、React、Rust/Tauri、Swift、Kotlin 及云端 API 构建过全栈、桌面、移动端和 AI 产品。
+软件工程师，专注于本地优先 AI 系统、开发者工具和生产级移动应用。曾在 Nokia 和 Ford 担任开发/测试实习生，目前就读于渥太华大学工程硕士，具备 Rust/Tauri、TypeScript/React、Python、SwiftUI、Kotlin/Jetpack Compose、LLM 工具调用和云端集成的实战经验。
 
 == 教育经历
+
+#edu(
+  institution: "渥太华大学",
+  location: "Ottawa, ON",
+  dates: dates-helper(start-date: "2024", end-date: "至今"),
+  degree: "系统工程硕士",
+)
 
 #edu(
   institution: "卡尔顿大学",
@@ -36,25 +43,7 @@
   degree: "计算机科学学士",
 )
 
-#edu(
-  institution: "渥太华大学",
-  location: "Ottawa, ON",
-  dates: "2024",
-  degree: "系统科学与工程硕士",
-)
-
 == 工作经历
-
-#work(
-  title: "软件开发实习生",
-  location: "Ottawa, ON",
-  company: "Ford Motor Canada",
-  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
-)
-#align(left)[
-- 使用 C++11 和 GoogleTest 为汽车软件组件开发单元测试脚本。
-- 将测试执行集成到 Jenkins CI/CD 流程中，参与敏捷开发。
-]
 
 #work(
   title: "软件测试实习生",
@@ -63,8 +52,19 @@
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
 #align(left)[
-- 改进 JavaScript/XML 测试代码，提升代码覆盖率、可维护性和回归测试可靠性。
-- 使用 Confluence 记录系统架构与数据流，支持跨团队协作开发。
+- 维护并扩展面向电信软件的 JavaScript/XML 自动化测试套件，提升回归覆盖率、代码鲁棒性和可维护性。
+- 使用 Confluence 编写系统架构和数据流文档，支持开发、调试和跨团队知识传递。
+]
+
+#work(
+  title: "软件开发实习生",
+  location: "Ottawa, ON",
+  company: "Ford Motor Canada",
+  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
+)
+#align(left)[
+- 使用 C++11 和 GoogleTest 为汽车软件组件开发单元测试。
+- 将自动化测试执行集成到敏捷开发流程中的 Jenkins CI 管道。
 ]
 
 == 项目
@@ -74,31 +74,8 @@
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
 #align(left)[
-- 使用 Rust、Tauri 2、React 和 TypeScript 构建本地优先的 AI 桌面助手，支持多 Provider 流式输出、工具调用、工作流编排和项目级记忆。
-]
-
-#project(
-  name: "Resume Generator 简历生成器",
-  url: "resume-tailor.paytonpei.top",
-)
-#align(left)[
-- 使用 React、TypeScript、Vite 和 Node.
-]
-
-#project(
-  name: "Focus Mint 专注计时器",
-  url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
-)
-#align(left)[
-- 发布基于 SwiftUI 的 iOS、watchOS 和 macOS 效率应用，支持番茄钟会话、小组件、多语言本地化、应用内购买和跨设备同步。
-]
-
-#project(
-  name: "Meet See U AI 社交应用",
-  url: "chatpart-website.vercel.app",
-)
-#align(left)[
-- 使用 Kotlin 和 Jetpack Compose 构建原生 Android AI 陪伴应用，支持 Firebase 身份验证、可自定义角色档案、文字聊天、按住说话/VAD 免提语音对话、语义记忆和 Stripe 付费角色槽位。
+- 使用 Rust、Tauri 2、React、TypeScript 和 SQLite 构建本地优先的桌面 AI 智能体，支持多 Provider 流式输出、结构化工具调用、项目级记忆以及本地代码和文件执行。
+- 实现可视化工作流编排、基于 CDP 的浏览器自动化、多智能体协作、上下文压缩，并通过 Rust 后端的 Tauri 命令层实现原生 Typst PDF/SVG 渲染。
 ]
 
 #project(
@@ -106,21 +83,31 @@
   url: "github.com/mammut001/Conveyor",
 )
 #align(left)[
-- 构建 Python 自动化平台，通过 Telegram 和飞书将指令路由到智能体辅助开发任务、个人工具和定时操作。
+- 构建自托管 Python 控制平面，在 VPS 上连接 Telegram、飞书与 Codex CLI，并在隔离的 Git worktree 中执行开发任务，支持 diff、应用、丢弃和取消控制。
+- 设计持久化 SQLite 任务队列和安全层，包含操作员白名单、显式确认门禁、输出脱敏、审计日志、诊断、提醒和可选开发者工具集成。
 ]
 
-== 研究
-
-#extracurriculars(
-  activity: "基于 DDBM 的低光图像增强",
-  dates: dates-helper(start-date: "2024", end-date: "至今"),
+#project(
+  name: "Resume Generator 简历生成器",
+  url: "resume-tailor.paytonpei.top",
 )
 #align(left)[
-- 围绕 DDBM 开展低光图像增强研究，延续 Learning to See in the Dark 方向的相关工作。
+- 使用 React、TypeScript 和 Node.js 构建并部署全栈简历工作区，支持 PDF/文本导入、岗位描述定制、结构化编辑和基于 Typst 的 PDF/SVG 导出。
+- 新增经 Zod 校验的后端路由、注重隐私的可观测性、Docker 部署，以及 Vitest 和 Playwright 自动化测试。
+]
+
+#project(
+  name: "Focus Mint 专注计时器",
+  url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
+)
+#align(left)[
+- 在 App Store 发布面向 iPhone、iPad 和 Apple Watch 的 SwiftUI 效率应用，支持专注会话、收益追踪、数据分析、自定义模式和多语言本地化。
+- 实现 StoreKit 变现、WidgetKit 和 Live Activity 体验，以及通过 WatchConnectivity 实现 iPhone 与 Apple Watch 双向同步。
 ]
 
 == 技能
-- *语言*: TypeScript, JavaScript, Python, Java, C++, Swift, Kotlin, Rust, HTML, CSS, Bash
-- *框架与数据*: React, React Native, Next.js, SwiftUI, Jetpack Compose, Node.js, Tailwind CSS, Flask, Tauri 2, SQLite, MongoDB, Firebase, WebRTC, PyTorch, Typst, Mermaid
-- *测试与交付*: GoogleTest, PyTest, SeleniumGrid, Jenkins, Docker
+- *语言*: Python, TypeScript, JavaScript, Rust, Swift, Kotlin, C++, Java, Bash
+- *框架*: React, Node.js, Tauri 2, SwiftUI, Jetpack Compose, Firebase, Tailwind CSS
+- *AI 与系统*: LLM APIs, Tool Calling, Embeddings, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
+- *测试与交付*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
 

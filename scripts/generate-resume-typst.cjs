@@ -20,9 +20,9 @@ const localeConfig = {
       present: "Present",
       skillGroups: {
         languages: "Languages",
-        frameworks: "Frameworks & Data",
+        frameworks: "Frameworks",
+        aiSystems: "AI & Systems",
         delivery: "Testing & Delivery",
-        tools: "Tools & Platforms",
         additional: "Additional",
       },
     },
@@ -41,9 +41,9 @@ const localeConfig = {
       present: "Présent",
       skillGroups: {
         languages: "Langages",
-        frameworks: "Frameworks & données",
+        frameworks: "Frameworks",
+        aiSystems: "IA & systèmes",
         delivery: "Tests & livraison",
-        tools: "Outils & plateformes",
         additional: "Complémentaire",
       },
     },
@@ -62,9 +62,9 @@ const localeConfig = {
       present: "至今",
       skillGroups: {
         languages: "语言",
-        frameworks: "框架与数据",
+        frameworks: "框架",
+        aiSystems: "AI 与系统",
         delivery: "测试与交付",
-        tools: "工具与平台",
         additional: "补充",
       },
     },
@@ -94,7 +94,7 @@ const normalizeWhitespace = (value = "") => value.replace(/\s+/g, " ").trim();
 
 const splitSentences = (value = "") =>
   normalizeWhitespace(value)
-    .split(/(?<=[.!?。！？])\s*/)
+    .split(/(?<=[.!?])\s+|(?<=[。！？])/)
     .map((sentence) => escapeTypstInline(sentence.trim()))
     .filter(Boolean);
 
@@ -172,7 +172,6 @@ const showPersonalSite = personalSite && personalSite !== github;
 const renderEducation = (language) =>
   resume.education
     .slice()
-    .reverse()
     .map(
       (entry) => `#edu(\n  institution: ${typstString(getLocalizedText(entry, "school", language))},\n  location: ${typstString(
         resume.location,
@@ -185,7 +184,6 @@ const renderEducation = (language) =>
 const renderWork = (language) =>
   resume.work
     .slice()
-    .reverse()
     .map((entry) => {
       const bullets = splitSentences(getLocalizedText(entry, "description", language));
 
@@ -195,19 +193,22 @@ const renderWork = (language) =>
     })
     .join("\n\n");
 
-const renderProjects = (language) =>
-  resume.projects
+const renderProjects = (language) => {
+  const projects = resume.projects
     .filter((entry) => entry.status === 1)
-    .slice()
-    .reverse()
-    .map((entry) => {
-      const localizedDescription = getLocalizedText(entry, "description", language);
-      const description = splitSentences(localizedDescription)[0] ?? escapeTypstInline(localizedDescription);
-      const urlLine = entry.link?.href ? `\n  url: ${typstString(stripProtocol(entry.link.href))},` : "";
+    .slice();
 
-      return `#project(\n  name: ${typstString(getLocalizedText(entry, "title", language))},${urlLine}\n)\n${renderBulletList([description])}`;
+  return projects
+    .map((entry, index) => {
+      const localizedDescription = getLocalizedText(entry, "description", language);
+      const descriptions = splitSentences(localizedDescription);
+      const urlLine = entry.link?.href ? `\n  url: ${typstString(stripProtocol(entry.link.href))},` : "";
+      const pageBreak = language !== "chinese" && index === 2 ? "#pagebreak()\n\n" : "";
+
+      return `${pageBreak}#project(\n  name: ${typstString(getLocalizedText(entry, "title", language))},${urlLine}\n)\n${renderBulletList(descriptions)}`;
     })
     .join("\n\n");
+};
 
 const renderResearch = (language) =>
   resume.research
@@ -227,36 +228,19 @@ const renderResearch = (language) =>
 const skillGroups = [
   {
     labelKey: "languages",
-    values: ["TypeScript", "JavaScript", "Python", "Java", "C++", "Swift", "Kotlin", "Rust", "HTML", "CSS", "Bash"],
+    values: ["Python", "TypeScript", "JavaScript", "Rust", "Swift", "Kotlin", "C++", "Java", "Bash"],
   },
   {
     labelKey: "frameworks",
-    values: [
-      "React",
-      "React Native",
-      "Next.js",
-      "SwiftUI",
-      "Jetpack Compose",
-      "Node.js",
-      "Tailwind CSS",
-      "Flask",
-      "Tauri 2",
-      "SQLite",
-      "MongoDB",
-      "Firebase",
-      "WebRTC",
-      "PyTorch",
-      "Typst",
-      "Mermaid",
-    ],
+    values: ["React", "Node.js", "Tauri 2", "SwiftUI", "Jetpack Compose", "Firebase", "Tailwind CSS"],
+  },
+  {
+    labelKey: "aiSystems",
+    values: ["LLM APIs", "Tool Calling", "Embeddings", "SQLite", "CDP Browser Automation", "WatchConnectivity", "StoreKit 2"],
   },
   {
     labelKey: "delivery",
-    values: ["GoogleTest", "PyTest", "SeleniumGrid", "Jenkins", "Docker", "GitHub Actions"],
-  },
-  {
-    labelKey: "tools",
-    values: ["GitHub", "Jira", "Confluence", "Linux", "AWS"],
+    values: ["PyTest", "Vitest", "Playwright", "GoogleTest", "Jenkins", "Docker"],
   },
 ];
 
@@ -332,10 +316,9 @@ const renderResume = (language) => {
     "",
     renderProjects(language),
     "",
-    `== ${labels.research}`,
-    "",
-    renderResearch(language),
-    "",
+    ...(resume.research.length > 0
+      ? [`== ${labels.research}`, "", renderResearch(language), ""]
+      : []),
     `== ${labels.skills}`,
     renderSkills(language),
     "",

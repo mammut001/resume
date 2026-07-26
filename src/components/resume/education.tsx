@@ -12,7 +12,7 @@ export const Education = () => {
         <Section className="py-8">
             <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">{labels.education}</h2>
             <div className="space-y-4">
-                {[...RESUME_DATA.education].reverse().map((education) => {
+                {RESUME_DATA.education.map((education) => {
                     const schoolName = localize(education, "school")
                     const degree = localize(education, "degree")
 

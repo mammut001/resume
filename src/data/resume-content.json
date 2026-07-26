@@ -3,12 +3,12 @@
   "initials": "DP",
   "location": "Ottawa, ON",
   "locationLink": "https://www.google.com/maps/place/Ottawa,+ON",
-  "about": "Software developer and graduate student in system science and engineering, building practical full-stack, desktop, mobile, and AI-powered products.",
-  "about_fr": "Développeur logiciel et étudiant de deuxième cycle en science et ingénierie des systèmes, je conçois des produits pratiques pour le Web, le bureau, le mobile et l'IA.",
-  "about_cn": "软件开发者与系统科学和工程硕士研究生，专注于构建实用的全栈、桌面、移动端和 AI 产品。",
-  "summary": "Software developer and Master of Engineering student in System Science and Engineering at the University of Ottawa. Former Nokia and Ford co-op developer/tester with experience building full-stack, desktop, mobile, and AI products using TypeScript, React, Rust/Tauri, Swift, Kotlin, and cloud APIs.",
-  "summary_fr": "Développeur logiciel et étudiant à la maîtrise à l'Université d'Ottawa. Ancien stagiaire chez Nokia et Ford, je crée des produits Web, de bureau, mobiles et d'IA avec TypeScript, React, Rust/Tauri, Swift et Kotlin.",
-  "summary_cn": "渥太华大学系统科学与工程硕士研究生，具备 Nokia 和 Ford 软件开发与测试实习经历。使用 TypeScript、React、Rust/Tauri、Swift、Kotlin 及云端 API 构建过全栈、桌面、移动端和 AI 产品。",
+  "about": "Software engineer building local-first AI systems, developer tools, and production mobile applications.",
+  "about_fr": "Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils de développement et les applications mobiles de production.",
+  "about_cn": "软件工程师，专注于本地优先 AI 系统、开发者工具和生产级移动应用。",
+  "summary": "Software engineer building local-first AI systems, developer tools, and production mobile applications. Former Nokia and Ford co-op developer/tester and current Master of Engineering student at the University of Ottawa, with hands-on experience in Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose, LLM tool calling, and cloud integrations.",
+  "summary_fr": "Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils de développement et les applications mobiles de production. Ancien stagiaire développeur/testeur chez Nokia et Ford et étudiant actuel à la maîtrise en ingénierie à l'Université d'Ottawa, avec une expérience pratique de Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose, des appels d'outils LLM et des intégrations cloud.",
+  "summary_cn": "软件工程师，专注于本地优先 AI 系统、开发者工具和生产级移动应用。曾在 Nokia 和 Ford 担任开发/测试实习生，目前就读于渥太华大学工程硕士，具备 Rust/Tauri、TypeScript/React、Python、SwiftUI、Kotlin/Jetpack Compose、LLM 工具调用和云端集成的实战经验。",
   "avatarUrl": "https://avatars.githubusercontent.com/u/141458085?v=4",
   "personalWebsiteUrl": "https://github.com/mammut001",
   "contact": {
@@ -30,11 +30,11 @@
       "school": "University of Ottawa",
       "school_fr": "Université d'Ottawa",
       "school_cn": "渥太华大学",
-      "degree": "Master of Engineering in System Science and Engineering",
-      "degree_fr": "Maîtrise en science et ingénierie des systèmes",
-      "degree_cn": "系统科学与工程硕士",
+      "degree": "Master of Engineering in Systems Engineering",
+      "degree_fr": "Maîtrise en ingénierie des systèmes",
+      "degree_cn": "系统工程硕士",
       "start": "2024",
-      "end": null
+      "end": "Present"
     },
     {
       "school": "Carleton University",
@@ -57,9 +57,9 @@
       "title_cn": "软件测试实习生",
       "start": "Aug 2020",
       "end": "Aug 2021",
-      "description": "Improved JavaScript/XML test code to strengthen coverage, maintainability, and regression confidence. Documented system architecture and data flows in Confluence to support cross-team development.",
-      "description_fr": "Amélioration du code de test JavaScript/XML afin de renforcer la couverture, la maintenabilité et la fiabilité des régressions. Documentation de l'architecture système et des flux de données dans Confluence pour soutenir le développement interéquipes.",
-      "description_cn": "改进 JavaScript/XML 测试代码，提升代码覆盖率、可维护性和回归测试可靠性。使用 Confluence 记录系统架构与数据流，支持跨团队协作开发。"
+      "description": "Maintained and extended JavaScript/XML-based automated test suites for telecommunications software, improving regression coverage, code robustness, and maintainability. Authored system architecture and data-flow documentation in Confluence to support development, debugging, and cross-team knowledge transfer.",
+      "description_fr": "Maintenance et extension de suites de tests automatisés JavaScript/XML pour des logiciels de télécommunications, améliorant la couverture de régression, la robustesse et la maintenabilité. Rédaction de documentation sur l'architecture système et les flux de données dans Confluence pour soutenir le développement, le débogage et le transfert de connaissances interéquipes.",
+      "description_cn": "维护并扩展面向电信软件的 JavaScript/XML 自动化测试套件，提升回归覆盖率、代码鲁棒性和可维护性。使用 Confluence 编写系统架构和数据流文档，支持开发、调试和跨团队知识传递。"
     },
     {
       "company": "Ford Motor Canada",
@@ -70,56 +70,70 @@
       "title_cn": "软件开发实习生",
       "start": "Apr 2020",
       "end": "Aug 2020",
-      "description": "Developed C++11 unit-test scripts with GoogleTest for automotive software components. Integrated test execution with Jenkins CI/CD in an Agile development workflow.",
-      "description_fr": "Développement de scripts de tests unitaires en C++11 avec GoogleTest pour des composants logiciels automobiles. Intégration de l'exécution des tests dans Jenkins CI/CD au sein d'un processus Agile.",
-      "description_cn": "使用 C++11 和 GoogleTest 为汽车软件组件开发单元测试脚本。将测试执行集成到 Jenkins CI/CD 流程中，参与敏捷开发。"
+      "description": "Developed C++11 unit tests with GoogleTest for automotive software components. Integrated automated test execution into Jenkins CI pipelines within an Agile development workflow.",
+      "description_fr": "Développement de tests unitaires C++11 avec GoogleTest pour des composants logiciels automobiles. Intégration de l'exécution automatisée des tests dans des pipelines Jenkins CI au sein d'un processus Agile.",
+      "description_cn": "使用 C++11 和 GoogleTest 为汽车软件组件开发单元测试。将自动化测试执行集成到敏捷开发流程中的 Jenkins CI 管道。"
     }
   ],
   "skills": [
+    "Python",
     "TypeScript",
     "JavaScript",
-    "Python",
-    "Java",
-    "C++",
+    "Rust",
     "Swift",
     "Kotlin",
-    "Rust",
-    "HTML",
-    "CSS",
+    "C++",
+    "Java",
     "Bash",
     "React",
-    "React Native",
-    "Next.js",
+    "Node.js",
+    "Tauri 2",
     "SwiftUI",
     "Jetpack Compose",
-    "Node.js",
-    "Tailwind CSS",
-    "Flask",
-    "Tauri 2",
-    "SQLite",
-    "MongoDB",
     "Firebase",
-    "WebRTC",
-    "PyTorch",
-    "Typst",
-    "Mermaid",
-    "GoogleTest",
+    "Tailwind CSS",
+    "LLM APIs",
+    "Tool Calling",
+    "Embeddings",
+    "SQLite",
+    "CDP Browser Automation",
+    "WatchConnectivity",
+    "StoreKit 2",
     "PyTest",
-    "SeleniumGrid",
+    "Vitest",
+    "Playwright",
+    "GoogleTest",
     "Jenkins",
     "Docker"
   ],
   "projects": [
     {
       "index": 0,
+      "title": "pipi-shrimp-agent",
+      "title_fr": "Pipi Shrimp Agent",
+      "title_cn": "皮皮虾助手",
+      "status": 1,
+      "techStack": ["Rust", "Tauri 2", "React", "TypeScript", "SQLite", "CDP", "Typst"],
+      "description": "Architected a local-first desktop AI agent using Rust, Tauri 2, React, TypeScript, and SQLite, with multi-provider streaming, structured tool calling, project-scoped memory, and local code and file execution. Implemented visual workflow orchestration, CDP browser automation, multi-agent collaboration, context compression, and native Typst PDF/SVG rendering through a Rust-backed Tauri command layer.",
+      "description_fr": "Architecture d'un agent IA de bureau local-first avec Rust, Tauri 2, React, TypeScript et SQLite, avec streaming multi-fournisseurs, appels d'outils structurés, mémoire par projet et exécution locale de code et de fichiers. Mise en œuvre d'une orchestration visuelle de workflows, de l'automatisation de navigateur par CDP, de la collaboration multi-agents, de la compression de contexte et du rendu natif Typst PDF/SVG via une couche de commandes Tauri en Rust.",
+      "description_cn": "使用 Rust、Tauri 2、React、TypeScript 和 SQLite 构建本地优先的桌面 AI 智能体，支持多 Provider 流式输出、结构化工具调用、项目级记忆以及本地代码和文件执行。实现可视化工作流编排、基于 CDP 的浏览器自动化、多智能体协作、上下文压缩，并通过 Rust 后端的 Tauri 命令层实现原生 Typst PDF/SVG 渲染。",
+      "link": {
+        "label": "GitHub",
+        "label_fr": "GitHub",
+        "label_cn": "GitHub",
+        "href": "https://github.com/mammut001/pipi-shrimp-agent"
+      }
+    },
+    {
+      "index": 1,
       "title": "Conveyor",
       "title_fr": "Conveyor",
       "title_cn": "Conveyor 自动化平台",
       "status": 1,
-      "techStack": ["Python", "Telegram", "Feishu", "GitHub Actions", "Linux", "systemd"],
-      "description": "Built a Python automation platform for Telegram and Feishu that routes commands to agent-assisted development tasks, personal tools, and scheduled operations. Added GitHub Actions/VPS deployment, smoke-test gates, service health checks, and rollback-aware deployment scripts.",
-      "description_fr": "Création d'une plateforme d'automatisation Python pour Telegram et Feishu, capable d'acheminer les commandes vers des tâches de développement assistées par agent, des outils personnels et des opérations planifiées. Ajout d'un déploiement GitHub Actions/VPS, de contrôles smoke, de vérifications de santé des services et de scripts de déploiement avec gestion du retour arrière.",
-      "description_cn": "构建 Python 自动化平台，通过 Telegram 和飞书将指令路由到智能体辅助开发任务、个人工具和定时操作。实现 GitHub Actions/VPS 部署、smoke test 门禁、服务健康检查以及支持回滚的部署脚本。",
+      "techStack": ["Python", "SQLite", "Telegram", "Feishu", "Codex CLI", "Git"],
+      "description": "Built a self-hosted Python control plane connecting Telegram and Feishu to Codex CLI on a VPS, executing development tasks inside isolated Git worktrees with diff, apply, discard, and cancellation controls. Designed a persistent SQLite job queue and safety layer with operator allowlists, explicit confirmation gates, output redaction, audit logging, diagnostics, reminders, and optional developer-tool integrations.",
+      "description_fr": "Création d'un plan de contrôle Python auto-hébergé reliant Telegram et Feishu à Codex CLI sur un VPS, exécutant des tâches de développement dans des worktrees Git isolés avec contrôles de diff, application, abandon et annulation. Conception d'une file de tâches SQLite persistante et d'une couche de sécurité avec listes d'opérateurs autorisés, confirmations explicites, masquage de sorties, journalisation d'audit, diagnostics, rappels et intégrations optionnelles d'outils de développement.",
+      "description_cn": "构建自托管 Python 控制平面，在 VPS 上连接 Telegram、飞书与 Codex CLI，并在隔离的 Git worktree 中执行开发任务，支持 diff、应用、丢弃和取消控制。设计持久化 SQLite 任务队列和安全层，包含操作员白名单、显式确认门禁、输出脱敏、审计日志、诊断、提醒和可选开发者工具集成。",
       "link": {
         "label": "GitHub",
         "label_fr": "GitHub",
@@ -128,49 +142,15 @@
       }
     },
     {
-      "index": 1,
-      "title": "Meet See U",
-      "title_fr": "Meet See U",
-      "title_cn": "Meet See U AI 社交应用",
-      "status": 1,
-      "techStack": ["Kotlin", "Jetpack Compose", "Firebase", "MiniMax", "Deepgram", "Gemini", "Stripe", "WebRTC"],
-      "description": "Built a native Android AI companion app with Kotlin and Jetpack Compose, featuring Firebase authentication, customizable character profiles, messaging, push-to-talk/VAD voice chat, semantic memory, and Stripe-paid character slots. Engineered an end-to-end voice pipeline with AudioRecord, Deepgram speech recognition, MiniMax M2.1, and MiniMax TTS, including user voice cloning and character voice assignment. Implemented top-K semantic memory retrieval with Gemini embeddings and cosine similarity, plus per-character local chat history in SharedPreferences. Developed Firebase Cloud Functions and verified Stripe payment workflows with authenticated payment intents, idempotent webhooks, and atomic Firestore updates. Prototyped GPU-generated avatar video responses and a WebRTC receiving client for future real-time streaming.",
-      "description_fr": "Compagnon IA Android : Kotlin/Compose, Firebase, voix push-to-talk/VAD, mémoire et paiements Stripe. Conception d'une chaîne vocale de bout en bout avec AudioRecord, la reconnaissance vocale Deepgram, MiniMax M2.1 et MiniMax TTS, avec clonage de voix utilisateur et attribution de voix aux personnages. Mise en œuvre d'une récupération de mémoire sémantique top-K avec les embeddings Gemini et la similarité cosinus, ainsi que d'un historique local par personnage dans SharedPreferences. Développement de Firebase Cloud Functions et de paiements Stripe vérifiés avec intents authentifiés, webhooks idempotents et mises à jour Firestore atomiques. Prototypage de réponses vidéo d'avatars générées par GPU et d'un client de réception WebRTC pour le streaming temps réel futur.",
-      "description_cn": "使用 Kotlin 和 Jetpack Compose 构建原生 Android AI 陪伴应用，支持 Firebase 身份验证、可自定义角色档案、文字聊天、按住说话/VAD 免提语音对话、语义记忆和 Stripe 付费角色槽位。使用 AudioRecord、Deepgram 语音识别、MiniMax M2.1 和 MiniMax TTS 构建端到端语音链路，支持用户声纹克隆和角色音色分配。通过 Gemini 文本向量和余弦相似度实现 top-K 语义记忆检索，并用 SharedPreferences 持久化每个角色的本地聊天记录。开发 Firebase Cloud Functions 和 Stripe 支付流程，包含已认证的 Payment Intent、已验证且幂等的 Webhook 处理，以及原子化 Firestore 更新。原型验证通过 GPU API 生成的虚拟形象视频回复，并实现 WebRTC 接收客户端以支持未来实时视频流。",
-      "link": {
-        "label": "Market Site",
-        "label_fr": "Site marketing",
-        "label_cn": "营销官网",
-        "href": "https://chatpart-website.vercel.app/"
-      }
-    },
-    {
       "index": 2,
-      "title": "Focus Mint",
-      "title_fr": "Focus Mint",
-      "title_cn": "Focus Mint 专注计时器",
-      "status": 1,
-      "techStack": ["Swift", "SwiftUI", "WatchKit", "StoreKit", "WidgetKit", "Localization"],
-      "description": "Shipped a SwiftUI productivity app for iOS, watchOS, and macOS with Pomodoro sessions, widgets, multilingual localization, in-app purchases, and cross-device synchronization.",
-      "description_fr": "Mise en production d'une application de productivité SwiftUI pour iOS, watchOS et macOS, avec sessions Pomodoro, widgets, localisation multilingue, achats intégrés et synchronisation entre appareils.",
-      "description_cn": "发布基于 SwiftUI 的 iOS、watchOS 和 macOS 效率应用，支持番茄钟会话、小组件、多语言本地化、应用内购买和跨设备同步。",
-      "link": {
-        "label": "App Store",
-        "label_fr": "App Store",
-        "label_cn": "App Store",
-        "href": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
-      }
-    },
-    {
-      "index": 3,
       "title": "Resume Generator",
       "title_fr": "Resume Generator",
       "title_cn": "Resume Generator 简历生成器",
       "status": 1,
-      "techStack": ["React", "TypeScript", "Vite", "Node.js", "Typst", "Playwright"],
-      "description": "Built and deployed a full-stack resume editor with React, TypeScript, Vite, and Node.js, supporting PDF import, AI-assisted job tailoring, and Typst-based PDF/SVG export. Added browser-local data handling, validation, observability, and automated smoke tests.",
-      "description_fr": "Création et déploiement d'un éditeur de CV full-stack avec React, TypeScript, Vite et Node.js, prenant en charge l'importation de PDF, l'adaptation assistée par IA aux offres d'emploi et l'export PDF/SVG avec Typst. Ajout de la gestion locale des données, de la validation, de l'observabilité et de tests smoke automatisés.",
-      "description_cn": "使用 React、TypeScript、Vite 和 Node.js 构建并部署全栈简历编辑器，支持 PDF 导入、AI 辅助职位定制以及基于 Typst 的 PDF/SVG 导出。实现浏览器本地数据处理、校验、可观测性和自动化 smoke test。",
+      "techStack": ["React", "TypeScript", "Node.js", "Zod", "Typst", "Vitest", "Playwright", "Docker"],
+      "description": "Built and deployed a full-stack React, TypeScript, and Node.js resume workspace supporting PDF/text import, job-description tailoring, structured editing, and Typst-backed PDF/SVG export. Added Zod-validated backend routes, privacy-conscious observability, Docker deployment, and automated testing with Vitest and Playwright.",
+      "description_fr": "Création et déploiement d'un espace de travail de CV full-stack avec React, TypeScript et Node.js, prenant en charge l'importation PDF/texte, l'adaptation aux offres d'emploi, l'édition structurée et l'export PDF/SVG avec Typst. Ajout de routes backend validées par Zod, d'une observabilité respectueuse de la confidentialité, d'un déploiement Docker et de tests automatisés avec Vitest et Playwright.",
+      "description_cn": "使用 React、TypeScript 和 Node.js 构建并部署全栈简历工作区，支持 PDF/文本导入、岗位描述定制、结构化编辑和基于 Typst 的 PDF/SVG 导出。新增经 Zod 校验的后端路由、注重隐私的可观测性、Docker 部署，以及 Vitest 和 Playwright 自动化测试。",
       "link": {
         "label": "Live Demo",
         "label_fr": "Démo en ligne",
@@ -179,34 +159,22 @@
       }
     },
     {
-      "index": 4,
-      "title": "pipi-shrimp-agent",
-      "title_fr": "Pipi Shrimp Agent",
-      "title_cn": "皮皮虾助手",
+      "index": 3,
+      "title": "Focus Mint",
+      "title_fr": "Focus Mint",
+      "title_cn": "Focus Mint 专注计时器",
       "status": 1,
-      "techStack": ["Rust", "Tauri 2", "React", "TypeScript", "SQLite", "CDP", "Typst"],
-      "description": "Built a local-first AI desktop agent with Rust, Tauri 2, React, and TypeScript, supporting multi-provider streaming, tool calling, workflow orchestration, and project-scoped memory. Added SQLite persistence, CDP browser automation, Typst/Mermaid rendering, multi-agent workflows, and Telegram control.",
-      "description_fr": "Création d'un agent IA de bureau local-first avec Rust, Tauri 2, React et TypeScript, prenant en charge le streaming multi-fournisseurs, les appels d'outils, l'orchestration de workflows et la mémoire par projet. Ajout de la persistance SQLite, de l'automatisation de navigateur par CDP, du rendu Typst/Mermaid, de workflows multi-agents et du contrôle par Telegram.",
-      "description_cn": "使用 Rust、Tauri 2、React 和 TypeScript 构建本地优先的 AI 桌面助手，支持多 Provider 流式输出、工具调用、工作流编排和项目级记忆。实现 SQLite 持久化、基于 CDP 的浏览器自动化、Typst/Mermaid 渲染、多智能体工作流以及 Telegram 控制。",
+      "techStack": ["Swift", "SwiftUI", "StoreKit 2", "WidgetKit", "Live Activities", "WatchConnectivity", "Localization"],
+      "description": "Shipped a SwiftUI productivity app on the App Store for iPhone, iPad, and Apple Watch, featuring focus sessions, earnings tracking, analytics, custom modes, and multilingual localization. Implemented StoreKit monetization, WidgetKit and Live Activity experiences, and bidirectional iPhone-Apple Watch synchronization using WatchConnectivity.",
+      "description_fr": "Publication sur l'App Store d'une application de productivité SwiftUI pour iPhone, iPad et Apple Watch, avec sessions de concentration, suivi des gains, analytique, modes personnalisés et localisation multilingue. Mise en œuvre de la monétisation StoreKit, d'expériences WidgetKit et Live Activity, ainsi que d'une synchronisation bidirectionnelle iPhone-Apple Watch avec WatchConnectivity.",
+      "description_cn": "在 App Store 发布面向 iPhone、iPad 和 Apple Watch 的 SwiftUI 效率应用，支持专注会话、收益追踪、数据分析、自定义模式和多语言本地化。实现 StoreKit 变现、WidgetKit 和 Live Activity 体验，以及通过 WatchConnectivity 实现 iPhone 与 Apple Watch 双向同步。",
       "link": {
-        "label": "GitHub",
-        "label_fr": "GitHub",
-        "label_cn": "GitHub",
-        "href": "https://github.com/mammut001/pipi-shrimp-agent"
+        "label": "App Store",
+        "label_fr": "App Store",
+        "label_cn": "App Store",
+        "href": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
       }
     }
   ],
-  "research": [
-    {
-      "title": "Low-Light Image Enhancement with DDBM",
-      "title_fr": "Amélioration d'images en faible luminosité avec DDBM",
-      "title_cn": "基于 DDBM 的低光图像增强",
-      "start": "2024",
-      "end": "Present",
-      "description": "Conducting research on low-light image enhancement with DDBM, building on the Learning to See in the Dark research direction.",
-      "description_fr": "Recherche sur l'amélioration d'images en faible luminosité avec DDBM, dans le prolongement des travaux Learning to See in the Dark.",
-      "description_cn": "围绕 DDBM 开展低光图像增强研究，延续 Learning to See in the Dark 方向的相关工作。",
-      "tags": ["Python", "PyTorch", "Computer Vision", "Deep Learning", "DDBM"]
-    }
-  ]
+  "research": []
 }

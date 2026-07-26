@@ -25,9 +25,16 @@
 
 == Summary
 
-Software developer and Master of Engineering student in System Science and Engineering at the University of Ottawa. Former Nokia and Ford co-op developer/tester with experience building full-stack, desktop, mobile, and AI products using TypeScript, React, Rust/Tauri, Swift, Kotlin, and cloud APIs.
+Software engineer building local-first AI systems, developer tools, and production mobile applications. Former Nokia and Ford co-op developer/tester and current Master of Engineering student at the University of Ottawa, with hands-on experience in Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose, LLM tool calling, and cloud integrations.
 
 == Education
+
+#edu(
+  institution: "University of Ottawa",
+  location: "Ottawa, ON",
+  dates: dates-helper(start-date: "2024", end-date: "Present"),
+  degree: "Master of Engineering in Systems Engineering",
+)
 
 #edu(
   institution: "Carleton University",
@@ -36,25 +43,7 @@ Software developer and Master of Engineering student in System Science and Engin
   degree: "Bachelor of Computer Science",
 )
 
-#edu(
-  institution: "University of Ottawa",
-  location: "Ottawa, ON",
-  dates: "2024",
-  degree: "Master of Engineering in System Science and Engineering",
-)
-
 == Work Experience
-
-#work(
-  title: "Software Developer Co-op",
-  location: "Ottawa, ON",
-  company: "Ford Motor Canada",
-  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
-)
-#align(left)[
-- Developed C++11 unit-test scripts with GoogleTest for automotive software components.
-- Integrated test execution with Jenkins CI/CD in an Agile development workflow.
-]
 
 #work(
   title: "Software Tester Co-op",
@@ -63,8 +52,19 @@ Software developer and Master of Engineering student in System Science and Engin
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
 #align(left)[
-- Improved JavaScript/XML test code to strengthen coverage, maintainability, and regression confidence.
-- Documented system architecture and data flows in Confluence to support cross-team development.
+- Maintained and extended JavaScript/XML-based automated test suites for telecommunications software, improving regression coverage, code robustness, and maintainability.
+- Authored system architecture and data-flow documentation in Confluence to support development, debugging, and cross-team knowledge transfer.
+]
+
+#work(
+  title: "Software Developer Co-op",
+  location: "Ottawa, ON",
+  company: "Ford Motor Canada",
+  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
+)
+#align(left)[
+- Developed C++11 unit tests with GoogleTest for automotive software components.
+- Integrated automated test execution into Jenkins CI pipelines within an Agile development workflow.
 ]
 
 == Projects
@@ -74,31 +74,8 @@ Software developer and Master of Engineering student in System Science and Engin
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
 #align(left)[
-- Built a local-first AI desktop agent with Rust, Tauri 2, React, and TypeScript, supporting multi-provider streaming, tool calling, workflow orchestration, and project-scoped memory.
-]
-
-#project(
-  name: "Resume Generator",
-  url: "resume-tailor.paytonpei.top",
-)
-#align(left)[
-- Built and deployed a full-stack resume editor with React, TypeScript, Vite, and Node.
-]
-
-#project(
-  name: "Focus Mint",
-  url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
-)
-#align(left)[
-- Shipped a SwiftUI productivity app for iOS, watchOS, and macOS with Pomodoro sessions, widgets, multilingual localization, in-app purchases, and cross-device synchronization.
-]
-
-#project(
-  name: "Meet See U",
-  url: "chatpart-website.vercel.app",
-)
-#align(left)[
-- Built a native Android AI companion app with Kotlin and Jetpack Compose, featuring Firebase authentication, customizable character profiles, messaging, push-to-talk/VAD voice chat, semantic memory, and Stripe-paid character slots.
+- Architected a local-first desktop AI agent using Rust, Tauri 2, React, TypeScript, and SQLite, with multi-provider streaming, structured tool calling, project-scoped memory, and local code and file execution.
+- Implemented visual workflow orchestration, CDP browser automation, multi-agent collaboration, context compression, and native Typst PDF/SVG rendering through a Rust-backed Tauri command layer.
 ]
 
 #project(
@@ -106,21 +83,33 @@ Software developer and Master of Engineering student in System Science and Engin
   url: "github.com/mammut001/Conveyor",
 )
 #align(left)[
-- Built a Python automation platform for Telegram and Feishu that routes commands to agent-assisted development tasks, personal tools, and scheduled operations.
+- Built a self-hosted Python control plane connecting Telegram and Feishu to Codex CLI on a VPS, executing development tasks inside isolated Git worktrees with diff, apply, discard, and cancellation controls.
+- Designed a persistent SQLite job queue and safety layer with operator allowlists, explicit confirmation gates, output redaction, audit logging, diagnostics, reminders, and optional developer-tool integrations.
 ]
 
-== Research
+#pagebreak()
 
-#extracurriculars(
-  activity: "Low-Light Image Enhancement with DDBM",
-  dates: dates-helper(start-date: "2024", end-date: "Present"),
+#project(
+  name: "Resume Generator",
+  url: "resume-tailor.paytonpei.top",
 )
 #align(left)[
-- Conducting research on low-light image enhancement with DDBM, building on the Learning to See in the Dark research direction.
+- Built and deployed a full-stack React, TypeScript, and Node.js resume workspace supporting PDF/text import, job-description tailoring, structured editing, and Typst-backed PDF/SVG export.
+- Added Zod-validated backend routes, privacy-conscious observability, Docker deployment, and automated testing with Vitest and Playwright.
+]
+
+#project(
+  name: "Focus Mint",
+  url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
+)
+#align(left)[
+- Shipped a SwiftUI productivity app on the App Store for iPhone, iPad, and Apple Watch, featuring focus sessions, earnings tracking, analytics, custom modes, and multilingual localization.
+- Implemented StoreKit monetization, WidgetKit and Live Activity experiences, and bidirectional iPhone-Apple Watch synchronization using WatchConnectivity.
 ]
 
 == Skills
-- *Languages*: TypeScript, JavaScript, Python, Java, C++, Swift, Kotlin, Rust, HTML, CSS, Bash
-- *Frameworks & Data*: React, React Native, Next.js, SwiftUI, Jetpack Compose, Node.js, Tailwind CSS, Flask, Tauri 2, SQLite, MongoDB, Firebase, WebRTC, PyTorch, Typst, Mermaid
-- *Testing & Delivery*: GoogleTest, PyTest, SeleniumGrid, Jenkins, Docker
+- *Languages*: Python, TypeScript, JavaScript, Rust, Swift, Kotlin, C++, Java, Bash
+- *Frameworks*: React, Node.js, Tauri 2, SwiftUI, Jetpack Compose, Firebase, Tailwind CSS
+- *AI & Systems*: LLM APIs, Tool Calling, Embeddings, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
+- *Testing & Delivery*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
 
