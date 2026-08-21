@@ -7,8 +7,29 @@ import { RESUME_DATA } from "@/data/resume-data";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
+  metadataBase: new URL("https://cv.paytonpei.top"),
+  title: {
+    default: `${RESUME_DATA.name} — Software Engineer`,
+    template: `%s | ${RESUME_DATA.name}`,
+  },
   description: RESUME_DATA.summary,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: `${RESUME_DATA.name} — Software Engineer`,
+    description: RESUME_DATA.summary,
+    url: "https://cv.paytonpei.top",
+    siteName: `${RESUME_DATA.name} — Resume & Portfolio`,
+    type: "profile",
+    images: [RESUME_DATA.avatarUrl],
+  },
+  twitter: {
+    card: "summary",
+    title: `${RESUME_DATA.name} — Software Engineer`,
+    description: RESUME_DATA.about,
+    images: [RESUME_DATA.avatarUrl],
+  },
 };
 
 export default function RootLayout({
