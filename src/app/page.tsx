@@ -16,6 +16,7 @@ export default function Page() {
       <div className="container relative mx-auto max-w-screen-lg scroll-my-12 overflow-auto p-4 md:p-16">
         <section className="mx-auto w-full space-y-8 bg-background print:space-y-4">
           <Hero />
+          <Heatmap />
           <About />
           <Projects />
           <Experience />
@@ -23,7 +24,6 @@ export default function Page() {
           <Research />
           <Skills />
           <Coursework />
-          <Heatmap />
         </section>
       </div>
     </main>
