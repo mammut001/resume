@@ -114,17 +114,17 @@
       "sourceUrl": "https://catalogue.uottawa.ca/en/courses/dti/"
     },
     {
-      "code": "GNG 5300",
-      "title": "Topics in Engineering",
-      "title_fr": "Sujets en génie",
-      "title_cn": "工程专题",
+      "code": "DTI 6402",
+      "title": "Affective and Persuasive Computing",
+      "title_fr": "Informatique affective et persuasive",
+      "title_cn": "情感与说服计算",
       "term": "Winter 2026",
       "term_fr": "Hiver 2026",
       "term_cn": "2026 年冬季",
-      "description": "A special-topics engineering course covering recent and advanced subjects; the specific topic varies by offering.",
-      "description_fr": "Cours de sujets spéciaux en génie portant sur des thèmes récents et avancés; le sujet précis varie selon l'offre.",
-      "description_cn": "工程专题课程，涵盖近期和前沿主题；具体专题会随开课学期而变化。",
-      "sourceUrl": "https://catalogue.uottawa.ca/en/courses/gng/"
+      "description": "Human affect models, AI-based affect estimation, multimodal fusion, persuasive technologies, persuasion design, serious games, and open challenges in affective and persuasive computing.",
+      "description_fr": "Modèles d'affect humain, estimation de l'affect par l'IA, fusion multimodale, technologies persuasives, conception de la persuasion, jeux sérieux et défis ouverts en informatique affective et persuasive.",
+      "description_cn": "学习人类情感模型、基于 AI 的情感估计、多模态融合、说服性技术、说服设计、严肃游戏，以及情感与说服计算中的开放挑战。",
+      "sourceUrl": "https://catalogue.uottawa.ca/en/courses/dti/"
     },
     {
       "code": "SYS 5160",
@@ -289,9 +289,9 @@
       "title_cn": "基于 Bridge U-Net 与 DDBM 的极低照度 RAW 图像复原",
       "start": "2026",
       "end": null,
-      "description": "Collaborated on an extreme low-light RAW image restoration study using SID and ELD image data, exploring Bridge U-Net, fine-tuning, few-shot meta-learning, and a DDBM-inspired feature-space approach. Focused on model design and evaluation for low-light reconstruction.",
-      "description_fr": "Collaboration à une étude de restauration d'images RAW en très faible luminosité à partir de données SID et ELD, explorant Bridge U-Net, le fine-tuning, le meta-learning few-shot et une approche inspirée de DDBM dans l'espace des caractéristiques. Travail centré sur la conception et l'évaluation de modèles pour la reconstruction en faible luminosité.",
-      "description_cn": "参与极低照度 RAW 图像复原研究，使用 SID 和 ELD 图像数据，探索 Bridge U-Net、微调、少样本元学习以及受 DDBM 启发的特征空间方法，重点关注低照度重建的模型设计与评估。",
+      "description": "Collaborated on an extreme low-light RAW image restoration study using paired SID and ELD images, comparing Bridge U-Net, fine-tuning, few-shot meta-learning, and a DDBM-inspired feature-space approach. Investigated and documented a memory-efficient DDBM-Feature variant using time-conditioned decoding, selective bridge interpolation over deep encoder features, and three-step deterministic inference; evaluated it at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.",
+      "description_fr": "Collaboration à une étude de restauration d'images RAW en très faible luminosité utilisant des images appariées SID et ELD, comparant Bridge U-Net, le fine-tuning, le meta-learning few-shot et une approche inspirée de DDBM dans l'espace des caractéristiques. Étude et documentation d'une variante DDBM-Feature économe en mémoire, fondée sur un décodage conditionné par le temps, une interpolation de pont sélective sur des caractéristiques profondes de l'encodeur et une inférence déterministe en trois étapes ; évaluation à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.",
+      "description_cn": "参与极低照度 RAW 图像复原研究，使用配对的 SID 和 ELD 图像，对比 Bridge U-Net、微调、少样本元学习以及受 DDBM 启发的特征空间方法。研究并记录内存高效的 DDBM-Feature 变体，采用时间条件解码、对深层编码器特征的选择性桥接插值和三步确定性推理；在 598 张 SID Sony 测试图像上取得 26.12 dB PSNR 与 0.807 MS-SSIM。",
       "tags": ["Python", "PyTorch", "Computer Vision", "Low-Light Imaging", "DDBM"]
     }
   ]
