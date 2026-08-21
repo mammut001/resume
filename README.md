@@ -1,40 +1,51 @@
-# Dong Payton Pei — Resume
+# Dong Payton Pei — Resume & Portfolio
 
-Personal resume and portfolio site for [Dong Payton Pei](https://github.com/mammut001), a software developer and Master of Engineering student in System Science and Engineering at the University of Ottawa.
+Canonical source for **https://cv.paytonpei.top/**.
 
-![Resume preview](screenshot)
+This repository is the single maintained source for my public resume, portfolio website, and generated PDF resumes. The site is deployed on Vercel from `main`.
 
 ## What is included
 
 - Responsive portfolio site built with Next.js, React, TypeScript, Tailwind CSS, and shadcn/ui.
 - English, French, and Chinese content from one source file: [`src/data/resume-content.json`](src/data/resume-content.json).
-- Links to current projects, published products, GitHub repositories, and research.
+- Current flagship projects, published products, GitHub repositories, coursework, work experience, and research.
 - Print-friendly layouts and generated PDF resumes for all three languages.
+- Vercel Analytics and production deployment at [`cv.paytonpei.top`](https://cv.paytonpei.top/).
+
+## Content workflow
+
+Update [`src/data/resume-content.json`](src/data/resume-content.json), then run:
+
+```bash
+npm run build
+```
+
+The same content source drives the web view, generated Typst files, and all three PDFs. The Typst files under `typst/` are generated artifacts and should not be edited manually.
 
 ## Run locally
 
 ```bash
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the site.
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Build
 
 The full build regenerates the three PDF resumes and then creates the production web build:
 
 ```bash
-yarn build
+npm run build
 ```
 
 To build only the web application without regenerating PDFs:
 
 ```bash
-yarn build:web
+npm run build:web
 ```
 
-The generated files are:
+Generated files:
 
 - `public/payton-pei-resume.pdf`
 - `public/payton-pei-resume-fr.pdf`
@@ -42,15 +53,13 @@ The generated files are:
 
 If Typst is not installed, the build scripts provision a local binary under `.tools/` automatically.
 
-## Content workflow
+## Production
 
-Update [`src/data/resume-content.json`](src/data/resume-content.json), then run:
+Vercel project: `resume`
 
-```bash
-yarn build
-```
+Production domain: **https://cv.paytonpei.top/**
 
-The same content source drives the web view, the generated Typst files, and all three PDFs. The Typst files under `typst/` are generated artifacts and should not be edited manually.
+Every merge to `main` is intended to update the canonical resume site. The older `mammut001/cv` repository is no longer a separate resume source and should only point people here.
 
 ## Links
 
