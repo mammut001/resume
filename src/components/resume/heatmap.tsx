@@ -12,10 +12,12 @@ export function Heatmap() {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  // Use the GitHub username from resume data
-  const githubUsername = RESUME_DATA.contact.social.find(s => s.name === "GitHub")?.url.split("/").pop() || "mammut001";
+  const githubUsername =
+    RESUME_DATA.contact.social
+      .find((social) => social.name === "GitHub")
+      ?.url.split("/")
+      .pop() || "mammut001";
 
-  // Prevent hydration mismatch
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -25,10 +27,9 @@ export function Heatmap() {
   return (
     <Section className="print-force-visible">
       <h2 className="text-xl font-bold">{labels.githubContributions}</h2>
-      <div className="mt-4 overflow-hidden rounded-lg border bg-card p-4 shadow-sm flex justify-center">
-        <GitHubCalendar 
-          username={githubUsername} 
-          year={2026}
+      <div className="mt-4 flex justify-center overflow-hidden rounded-lg border bg-card p-4 shadow-sm">
+        <GitHubCalendar
+          username={githubUsername}
           colorScheme={resolvedTheme === "dark" ? "dark" : "light"}
         />
       </div>
