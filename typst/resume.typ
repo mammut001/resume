@@ -5,7 +5,7 @@
 #import "@preview/basic-resume:0.2.9": *
 
 #let name = "Dong Payton Pei"
-#let location = "Ottawa, ON"
+#let location = "Hangzhou / Ottawa"
 #let email = "paytonpei01@gmail.com"
 #let github = "github.com/mammut001"
 #let linkedin = "www.linkedin.com/in/pd110"
@@ -25,47 +25,23 @@
 
 == Summary
 
-Software engineer building local-first AI systems, developer tools, and production mobile applications. Former Nokia and Ford co-op developer/tester and current Master of Engineering student at the University of Ottawa, with hands-on experience in Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose, LLM tool calling, and cloud integrations.
+Software engineer building local-first AI systems, developer tools, and production mobile applications. Former Nokia and Ford co-op developer/tester and current master's student in Systems Science and Engineering at the University of Ottawa, with hands-on experience in Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose, and LLM tool calling.
 
 == Education
 
 #edu(
   institution: "University of Ottawa",
-  location: "Ottawa, ON",
+  location: "Hangzhou / Ottawa",
   dates: dates-helper(start-date: "2024", end-date: "Present"),
-  degree: "Master of Engineering in Systems Engineering",
+  degree: "Master of Systems Science and Engineering",
 )
 
 #edu(
   institution: "Carleton University",
-  location: "Ottawa, ON",
+  location: "Hangzhou / Ottawa",
   dates: dates-helper(start-date: "2017", end-date: "2023"),
   degree: "Bachelor of Computer Science",
 )
-
-== Work Experience
-
-#work(
-  title: "Software Tester Co-op",
-  location: "Ottawa, ON",
-  company: "Nokia Canada",
-  dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
-)
-#align(left)[
-- Maintained and extended JavaScript/XML-based automated test suites for telecommunications software, improving regression coverage, code robustness, and maintainability.
-- Authored system architecture and data-flow documentation in Confluence to support development, debugging, and cross-team knowledge transfer.
-]
-
-#work(
-  title: "Software Developer Co-op",
-  location: "Ottawa, ON",
-  company: "Ford Motor Canada",
-  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
-)
-#align(left)[
-- Developed C++11 unit tests with GoogleTest for automotive software components.
-- Integrated automated test execution into Jenkins CI pipelines within an Agile development workflow.
-]
 
 == Projects
 
@@ -107,6 +83,29 @@ Software engineer building local-first AI systems, developer tools, and producti
 - Implemented StoreKit monetization, WidgetKit and Live Activity experiences, and bidirectional iPhone-Apple Watch synchronization using WatchConnectivity.
 ]
 
+== Work Experience
+
+#work(
+  title: "Software Tester Co-op",
+  location: "Hangzhou / Ottawa",
+  company: "Nokia Canada",
+  dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
+)
+#align(left)[
+- Enhanced JavaScript/XML code to improve code coverage and robustness.
+- Produced Confluence design documentation for system architecture and data flows.
+]
+
+#work(
+  title: "Software Developer Co-op",
+  location: "Hangzhou / Ottawa",
+  company: "Ford Motor Canada",
+  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
+)
+#align(left)[
+- Participated in Agile development, wrote C++11 unit tests with GoogleTest, and used Jenkins in the CI/CD workflow.
+]
+
 == Research
 
 #extracurriculars(
@@ -123,4 +122,5 @@ Software engineer building local-first AI systems, developer tools, and producti
 - *Frameworks*: React, Node.js, Tauri 2, SwiftUI, Jetpack Compose, Firebase, Tailwind CSS
 - *AI & Systems*: LLM APIs, Tool Calling, Embeddings, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
 - *Testing & Delivery*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
+- *Additional*: MCP, Function Calling, Agent Harness, Skills, SSE, IPC, Sandbox, Multi-Agent
 

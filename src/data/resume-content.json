@@ -1,14 +1,14 @@
 {
   "name": "Dong Payton Pei",
   "initials": "DP",
-  "location": "Ottawa, ON",
-  "locationLink": "https://www.google.com/maps/place/Ottawa,+ON",
+  "location": "Hangzhou / Ottawa",
+  "locationLink": "https://www.google.com/maps/place/Hangzhou,+Zhejiang",
   "about": "Software engineer building local-first AI systems, developer tools, and production mobile applications.",
   "about_fr": "Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils de développement et les applications mobiles de production.",
-  "about_cn": "软件工程师，专注于本地优先 AI 系统、开发者工具和生产级移动应用。",
+  "about_cn": "软件工程师，专注本地优先 AI Agent、开发者工具与可上线产品。求职意向：杭州。",
   "summary": "Software engineer building local-first AI systems, developer tools, and production mobile applications. Former Nokia and Ford co-op developer/tester and current master's student in Systems Science and Engineering at the University of Ottawa, with hands-on experience in Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose, and LLM tool calling.",
   "summary_fr": "Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils de développement et les applications mobiles de production. Ancien stagiaire développeur/testeur chez Nokia et Ford et actuellement étudiant à la maîtrise en science et génie des systèmes à l'Université d'Ottawa, avec une expérience pratique de Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose et des appels d'outils LLM.",
-  "summary_cn": "软件工程师，专注于本地优先 AI 系统、开发者工具和生产级移动应用。曾在 Nokia 和 Ford 担任开发/测试实习生，目前就读于渥太华大学系统科学与工程硕士项目，具备 Rust/Tauri、TypeScript/React、Python、SwiftUI、Kotlin/Jetpack Compose 和 LLM 工具调用的实战经验。",
+  "summary_cn": "软件工程师，求职意向杭州，可尽快到岗。专注本地优先 AI Agent、开发者工具与生产级移动应用。在读渥太华大学系统科学与工程硕士；曾在 Nokia、Ford 实习。具备 Rust/Tauri、TypeScript/React、Python、SwiftUI/Kotlin 实战经验，熟悉 LLM Tool Calling / Function Calling、MCP、Skills 插件、多智能体协作与 Agent Harness。",
   "avatarUrl": "https://avatars.githubusercontent.com/u/141458085?v=4",
   "personalWebsiteUrl": "https://github.com/mammut001",
   "contact": {
@@ -165,7 +165,7 @@
       "end": "Aug 2021",
       "description": "Enhanced JavaScript/XML code to improve code coverage and robustness. Produced Confluence design documentation for system architecture and data flows.",
       "description_fr": "Amélioration du code JavaScript/XML afin d'accroître la couverture de code et la robustesse. Production de documentation de conception dans Confluence pour l'architecture système et les flux de données.",
-      "description_cn": "增强 JavaScript/XML 代码以提高代码覆盖率和稳健性，并使用 Confluence 编写系统架构和数据流设计文档。"
+      "description_cn": "参与通信软件质量保障：增强 JavaScript/XML 覆盖与稳健性，编写 Confluence 架构与数据流设计文档，在真实产品代码库中完成可交付改动。"
     },
     {
       "company": "Ford Motor Canada",
@@ -178,7 +178,7 @@
       "end": "Aug 2020",
       "description": "Participated in Agile development, wrote C++11 unit tests with GoogleTest, and used Jenkins in the CI/CD workflow.",
       "description_fr": "Participation au développement Agile, écriture de tests unitaires C++11 avec GoogleTest et utilisation de Jenkins dans le flux CI/CD.",
-      "description_cn": "参与敏捷开发，使用 C++11 和 GoogleTest 编写单元测试，并在 CI/CD 流程中使用 Jenkins。"
+      "description_cn": "参与敏捷研发：使用 C++11 与 GoogleTest 编写单元测试，接入 Jenkins CI/CD，保障车载相关模块回归质量。"
     }
   ],
   "skills": [
@@ -200,6 +200,14 @@
     "Tailwind CSS",
     "LLM APIs",
     "Tool Calling",
+    "MCP",
+    "Function Calling",
+    "Agent Harness",
+    "Skills",
+    "SSE",
+    "IPC",
+    "Sandbox",
+    "Multi-Agent",
     "Embeddings",
     "SQLite",
     "CDP Browser Automation",
@@ -217,12 +225,12 @@
       "index": 0,
       "title": "pipi-shrimp-agent",
       "title_fr": "Pipi Shrimp Agent",
-      "title_cn": "皮皮虾助手",
+      "title_cn": "桌面 AI Agent（pipi-shrimp-agent）",
       "status": 1,
-      "techStack": ["Rust", "Tauri 2", "React", "TypeScript", "SQLite", "CDP", "Typst"],
+      "techStack": ["Rust", "Tauri 2", "React", "TypeScript", "SQLite", "CDP", "Typst", "MCP", "Tool Calling", "SSE", "IPC", "Skills"],
       "description": "Architected a local-first desktop AI agent using Rust, Tauri 2, React, TypeScript, and SQLite, with multi-provider streaming, structured tool calling, project-scoped memory, and local code and file execution. Implemented visual workflow orchestration, CDP browser automation, multi-agent collaboration, context compression, and native Typst PDF/SVG rendering through a Rust-backed Tauri command layer.",
       "description_fr": "Architecture d'un agent IA de bureau local-first avec Rust, Tauri 2, React, TypeScript et SQLite, avec streaming multi-fournisseurs, appels d'outils structurés, mémoire par projet et exécution locale de code et de fichiers. Mise en œuvre d'une orchestration visuelle de workflows, de l'automatisation de navigateur par CDP, de la collaboration multi-agents, de la compression de contexte et du rendu natif Typst PDF/SVG via une couche de commandes Tauri en Rust.",
-      "description_cn": "使用 Rust、Tauri 2、React、TypeScript 和 SQLite 构建本地优先的桌面 AI 智能体，支持多 Provider 流式输出、结构化工具调用、项目级记忆以及本地代码和文件执行。实现可视化工作流编排、基于 CDP 的浏览器自动化、多智能体协作、上下文压缩，并通过 Rust 后端的 Tauri 命令层实现原生 Typst PDF/SVG 渲染。",
+      "description_cn": "使用 Rust、Tauri 2、React、TypeScript 与 SQLite 构建本地优先桌面 AI Agent：多模型流式输出（SSE）、结构化 Tool Calling / Function Calling、项目级记忆、本地代码与文件执行沙箱，以及 Skills 插件扩展。实现可视化工作流编排、基于 CDP 的浏览器自动化、多智能体协作、上下文压缩；通过 Rust 侧 Tauri 命令层（IPC）完成原生 Typst PDF/SVG 渲染，并支持 MCP 风格工具接入与自动研究循环（Agent Harness）。",
       "link": {
         "label": "GitHub",
         "label_fr": "GitHub",
@@ -234,12 +242,12 @@
       "index": 1,
       "title": "Conveyor",
       "title_fr": "Conveyor",
-      "title_cn": "Conveyor 自动化平台",
+      "title_cn": "Conveyor 任务控制平面",
       "status": 1,
-      "techStack": ["Python", "SQLite", "Telegram", "Feishu", "Codex CLI", "Git"],
+      "techStack": ["Python", "SQLite", "Telegram", "Feishu", "Codex CLI", "Git", "Sandbox", "Tool Calling"],
       "description": "Built a self-hosted Python control plane connecting Telegram and Feishu to Codex CLI on a VPS, executing development tasks inside isolated Git worktrees with diff, apply, discard, and cancellation controls. Designed a persistent SQLite job queue and safety layer with operator allowlists, explicit confirmation gates, output redaction, audit logging, diagnostics, reminders, and optional developer-tool integrations.",
       "description_fr": "Création d'un plan de contrôle Python auto-hébergé reliant Telegram et Feishu à Codex CLI sur un VPS, exécutant des tâches de développement dans des worktrees Git isolés avec contrôles de diff, application, abandon et annulation. Conception d'une file de tâches SQLite persistante et d'une couche de sécurité avec listes d'opérateurs autorisés, confirmations explicites, masquage de sorties, journalisation d'audit, diagnostics, rappels et intégrations optionnelles d'outils de développement.",
-      "description_cn": "构建自托管 Python 控制平面，在 VPS 上连接 Telegram、飞书与 Codex CLI，并在隔离的 Git worktree 中执行开发任务，支持 diff、应用、丢弃和取消控制。设计持久化 SQLite 任务队列和安全层，包含操作员白名单、显式确认门禁、输出脱敏、审计日志、诊断、提醒和可选开发者工具集成。",
+      "description_cn": "自托管 Python 控制平面，连接 Telegram、飞书与 Codex CLI，在隔离 Git worktree 沙箱中执行开发任务，支持 diff、应用、丢弃与取消。持久化 SQLite 任务队列与安全层：操作员白名单、显式确认门禁、输出脱敏、审计日志与诊断；面向远程 Agent 编排与人机确认的高风险操作管控。",
       "link": {
         "label": "GitHub",
         "label_fr": "GitHub",

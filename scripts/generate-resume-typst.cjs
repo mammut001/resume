@@ -308,13 +308,13 @@ const renderResume = (language) => {
     "",
     renderEducation(language),
     "",
-    `== ${labels.workExperience}`,
-    "",
-    renderWork(language),
-    "",
     `== ${labels.projects}`,
     "",
     renderProjects(language),
+    "",
+    `== ${labels.workExperience}`,
+    "",
+    renderWork(language),
     "",
     ...(resume.research.length > 0
       ? [
