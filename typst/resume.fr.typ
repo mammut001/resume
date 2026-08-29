@@ -5,7 +5,7 @@
 #import "@preview/basic-resume:0.2.9": *
 
 #let name = "Dong Payton Pei"
-#let location = "Ottawa, ON"
+#let location = "Hangzhou / Ottawa"
 #let email = "paytonpei01@gmail.com"
 #let github = "github.com/mammut001"
 #let linkedin = "www.linkedin.com/in/pd110"
@@ -25,47 +25,23 @@
 
 == Résumé
 
-Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils de développement et les applications mobiles de production. Ancien stagiaire développeur/testeur chez Nokia et Ford et étudiant actuel à la maîtrise en ingénierie à l'Université d'Ottawa, avec une expérience pratique de Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose, des appels d'outils LLM et des intégrations cloud.
+Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils de développement et les applications mobiles de production. Ancien stagiaire développeur/testeur chez Nokia et Ford et actuellement étudiant à la maîtrise en science et génie des systèmes à l'Université d'Ottawa, avec une expérience pratique de Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose et des appels d'outils LLM.
 
 == Formation
 
 #edu(
   institution: "Université d'Ottawa",
-  location: "Ottawa, ON",
+  location: "Hangzhou / Ottawa",
   dates: dates-helper(start-date: "2024", end-date: "Présent"),
-  degree: "Maîtrise en ingénierie des systèmes",
+  degree: "Maîtrise en science et génie des systèmes",
 )
 
 #edu(
   institution: "Université Carleton",
-  location: "Ottawa, ON",
+  location: "Hangzhou / Ottawa",
   dates: dates-helper(start-date: "2017", end-date: "2023"),
   degree: "Baccalauréat en informatique",
 )
-
-== Expérience
-
-#work(
-  title: "Stagiaire en test de logiciels",
-  location: "Ottawa, ON",
-  company: "Nokia Canada",
-  dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
-)
-#align(left)[
-- Maintenance et extension de suites de tests automatisés JavaScript/XML pour des logiciels de télécommunications, améliorant la couverture de régression, la robustesse et la maintenabilité.
-- Rédaction de documentation sur l'architecture système et les flux de données dans Confluence pour soutenir le développement, le débogage et le transfert de connaissances interéquipes.
-]
-
-#work(
-  title: "Stagiaire en développement logiciel",
-  location: "Ottawa, ON",
-  company: "Ford Motor Canada",
-  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
-)
-#align(left)[
-- Développement de tests unitaires C++11 avec GoogleTest pour des composants logiciels automobiles.
-- Intégration de l'exécution automatisée des tests dans des pipelines Jenkins CI au sein d'un processus Agile.
-]
 
 == Projets
 
@@ -107,6 +83,29 @@ Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils
 - Mise en œuvre de la monétisation StoreKit, d'expériences WidgetKit et Live Activity, ainsi que d'une synchronisation bidirectionnelle iPhone-Apple Watch avec WatchConnectivity.
 ]
 
+== Expérience
+
+#work(
+  title: "Stagiaire en test de logiciels",
+  location: "Hangzhou / Ottawa",
+  company: "Nokia Canada",
+  dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
+)
+#align(left)[
+- Amélioration du code JavaScript/XML afin d'accroître la couverture de code et la robustesse.
+- Production de documentation de conception dans Confluence pour l'architecture système et les flux de données.
+]
+
+#work(
+  title: "Stagiaire en développement logiciel",
+  location: "Hangzhou / Ottawa",
+  company: "Ford Motor Canada",
+  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
+)
+#align(left)[
+- Participation au développement Agile, écriture de tests unitaires C++11 avec GoogleTest et utilisation de Jenkins dans le flux CI/CD.
+]
+
 == Recherche
 
 #extracurriculars(
@@ -123,4 +122,5 @@ Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils
 - *Frameworks*: React, Node.js, Tauri 2, SwiftUI, Jetpack Compose, Firebase, Tailwind CSS
 - *IA & systèmes*: LLM APIs, Tool Calling, Embeddings, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
 - *Tests & livraison*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
+- *Complémentaire*: MCP, Function Calling, Agent Harness, Skills, SSE, IPC, Sandbox, Multi-Agent
 

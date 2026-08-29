@@ -5,7 +5,7 @@
 #import "@preview/basic-resume:0.2.9": *
 
 #let name = "Dong Payton Pei"
-#let location = "Ottawa, ON"
+#let location = "Hangzhou / Ottawa"
 #let email = "paytonpei01@gmail.com"
 #let github = "github.com/mammut001"
 #let linkedin = "www.linkedin.com/in/pd110"
@@ -25,66 +25,42 @@
 
 == 概述
 
-软件工程师，专注于本地优先 AI 系统、开发者工具和生产级移动应用。曾在 Nokia 和 Ford 担任开发/测试实习生，目前就读于渥太华大学工程硕士，具备 Rust/Tauri、TypeScript/React、Python、SwiftUI、Kotlin/Jetpack Compose、LLM 工具调用和云端集成的实战经验。
+软件工程师，求职意向杭州，可尽快到岗。专注本地优先 AI Agent、开发者工具与生产级移动应用。在读渥太华大学系统科学与工程硕士；曾在 Nokia、Ford 实习。具备 Rust/Tauri、TypeScript/React、Python、SwiftUI/Kotlin 实战经验，熟悉 LLM Tool Calling / Function Calling、MCP、Skills 插件、多智能体协作与 Agent Harness。
 
 == 教育经历
 
 #edu(
   institution: "渥太华大学",
-  location: "Ottawa, ON",
+  location: "Hangzhou / Ottawa",
   dates: dates-helper(start-date: "2024", end-date: "至今"),
-  degree: "系统工程硕士",
+  degree: "系统科学与工程硕士",
 )
 
 #edu(
   institution: "卡尔顿大学",
-  location: "Ottawa, ON",
+  location: "Hangzhou / Ottawa",
   dates: dates-helper(start-date: "2017", end-date: "2023"),
   degree: "计算机科学学士",
 )
 
-== 工作经历
-
-#work(
-  title: "软件测试实习生",
-  location: "Ottawa, ON",
-  company: "Nokia Canada",
-  dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
-)
-#align(left)[
-- 维护并扩展面向电信软件的 JavaScript/XML 自动化测试套件，提升回归覆盖率、代码鲁棒性和可维护性。
-- 使用 Confluence 编写系统架构和数据流文档，支持开发、调试和跨团队知识传递。
-]
-
-#work(
-  title: "软件开发实习生",
-  location: "Ottawa, ON",
-  company: "Ford Motor Canada",
-  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
-)
-#align(left)[
-- 使用 C++11 和 GoogleTest 为汽车软件组件开发单元测试。
-- 将自动化测试执行集成到敏捷开发流程中的 Jenkins CI 管道。
-]
-
 == 项目
 
 #project(
-  name: "皮皮虾助手",
+  name: "桌面 AI Agent（pipi-shrimp-agent）",
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
 #align(left)[
-- 使用 Rust、Tauri 2、React、TypeScript 和 SQLite 构建本地优先的桌面 AI 智能体，支持多 Provider 流式输出、结构化工具调用、项目级记忆以及本地代码和文件执行。
-- 实现可视化工作流编排、基于 CDP 的浏览器自动化、多智能体协作、上下文压缩，并通过 Rust 后端的 Tauri 命令层实现原生 Typst PDF/SVG 渲染。
+- 使用 Rust、Tauri 2、React、TypeScript 与 SQLite 构建本地优先桌面 AI Agent：多模型流式输出（SSE）、结构化 Tool Calling / Function Calling、项目级记忆、本地代码与文件执行沙箱，以及 Skills 插件扩展。
+- 实现可视化工作流编排、基于 CDP 的浏览器自动化、多智能体协作、上下文压缩；通过 Rust 侧 Tauri 命令层（IPC）完成原生 Typst PDF/SVG 渲染，并支持 MCP 风格工具接入与自动研究循环（Agent Harness）。
 ]
 
 #project(
-  name: "Conveyor 自动化平台",
+  name: "Conveyor 任务控制平面",
   url: "github.com/mammut001/Conveyor",
 )
 #align(left)[
-- 构建自托管 Python 控制平面，在 VPS 上连接 Telegram、飞书与 Codex CLI，并在隔离的 Git worktree 中执行开发任务，支持 diff、应用、丢弃和取消控制。
-- 设计持久化 SQLite 任务队列和安全层，包含操作员白名单、显式确认门禁、输出脱敏、审计日志、诊断、提醒和可选开发者工具集成。
+- 自托管 Python 控制平面，连接 Telegram、飞书与 Codex CLI，在隔离 Git worktree 沙箱中执行开发任务，支持 diff、应用、丢弃与取消。
+- 持久化 SQLite 任务队列与安全层：操作员白名单、显式确认门禁、输出脱敏、审计日志与诊断；面向远程 Agent 编排与人机确认的高风险操作管控。
 ]
 
 #project(
@@ -105,6 +81,28 @@
 - 实现 StoreKit 变现、WidgetKit 和 Live Activity 体验，以及通过 WatchConnectivity 实现 iPhone 与 Apple Watch 双向同步。
 ]
 
+== 工作经历
+
+#work(
+  title: "软件测试实习生",
+  location: "Hangzhou / Ottawa",
+  company: "Nokia Canada",
+  dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
+)
+#align(left)[
+- 参与通信软件质量保障：增强 JavaScript/XML 覆盖与稳健性，编写 Confluence 架构与数据流设计文档，在真实产品代码库中完成可交付改动。
+]
+
+#work(
+  title: "软件开发实习生",
+  location: "Hangzhou / Ottawa",
+  company: "Ford Motor Canada",
+  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
+)
+#align(left)[
+- 参与敏捷研发：使用 C++11 与 GoogleTest 编写单元测试，接入 Jenkins CI/CD，保障车载相关模块回归质量。
+]
+
 #pagebreak()
 
 == 研究
@@ -123,4 +121,5 @@
 - *框架*: React, Node.js, Tauri 2, SwiftUI, Jetpack Compose, Firebase, Tailwind CSS
 - *AI 与系统*: LLM APIs, Tool Calling, Embeddings, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
 - *测试与交付*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
+- *补充*: MCP, Function Calling, Agent Harness, Skills, SSE, IPC, Sandbox, Multi-Agent
 
