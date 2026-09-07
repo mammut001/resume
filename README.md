@@ -22,6 +22,15 @@ npm run build
 
 The same content source drives the web view, generated Typst files, and all three PDFs. The Typst files under `typst/` are generated artifacts and should not be edited manually.
 
+Keep personal contributions distinct from project-wide results. Do not infer graduation
+dates, project dates, or performance improvements. Education and work locations use
+each entry's optional `location` field; an unknown location stays blank.
+
+The PDFs use A4 pages with natural pagination. The build provisions a pinned,
+checksum-verified CJK font under `.tools/resume-fonts/`; its OFL license and source
+are documented in `typst/fonts/`. This also works on hosts without system CJK fonts.
+After content edits, inspect all three PDFs for overflow before pushing.
+
 ## Run locally
 
 ```bash

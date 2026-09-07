@@ -31,7 +31,7 @@ export const Hero = () => {
         <div className="flex flex-col-reverse gap-8 md:flex-row md:items-start md:justify-between py-12 md:py-16">
             <div className="flex-1 space-y-4">
                 <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">
-                    {RESUME_DATA.name}
+                    {localize(RESUME_DATA, "name")}
                 </h1>
                 <p className="max-w-xl text-lg text-muted-foreground leading-relaxed">
                     {aboutContent}
@@ -63,20 +63,21 @@ export const Hero = () => {
                             size="icon"
                             asChild
                         >
-                            <a href={`mailto:${RESUME_DATA.contact.email}`}>
+                            <a href={`mailto:${RESUME_DATA.contact.email}`} aria-label={RESUME_DATA.contact.email}>
                                 <MailIcon className="size-4" />
                             </a>
                         </Button>
                     ) : null}
                     {RESUME_DATA.contact.tel ? (
                         <Button
-                            className="size-10 rounded-full"
+                            className="gap-2 rounded-full px-4"
                             variant="outline"
-                            size="icon"
+                            size="sm"
                             asChild
                         >
-                            <a href={`tel:${RESUME_DATA.contact.tel}`}>
+                            <a href={`tel:${RESUME_DATA.contact.tel.replace(/\s/g, "")}`}>
                                 <PhoneIcon className="size-4" />
+                                <span>{RESUME_DATA.contact.tel}</span>
                             </a>
                         </Button>
                     ) : null}
@@ -88,7 +89,7 @@ export const Hero = () => {
                             size="icon"
                             asChild
                         >
-                            <a href={social.url} target="_blank" rel="noopener noreferrer">
+                            <a href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
                                 <social.icon className="size-4" />
                             </a>
                         </Button>

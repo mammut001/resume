@@ -7,38 +7,40 @@
 #let name = "Dong Payton Pei"
 #let location = "Hangzhou / Ottawa"
 #let email = "paytonpei01@gmail.com"
-#let github = "github.com/mammut001"
-#let linkedin = "www.linkedin.com/in/pd110"
 
 #show: resume.with(
   author: name,
   location: location,
   email: email,
-  github: github,
-  linkedin: linkedin,
+  phone: "+86 17640426168",
   accent-color: "#000000",
-  font: "New Computer Modern",
-  paper: "us-letter",
+  font: ("New Computer Modern", "Noto Sans CJK SC"),
+  paper: "a4",
+  lang: "en",
+  font-size: 10pt,
   author-position: left,
   personal-info-position: left,
 )
 
+#set par(leading: 0.45em, spacing: 0.55em)
+#link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
+
 == Summary
 
-Software engineer building local-first AI systems, developer tools, and production mobile applications. Former Nokia and Ford co-op developer/tester and current master's student in Systems Science and Engineering at the University of Ottawa, with hands-on experience in Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose, and LLM tool calling.
+Software engineer focused on AI agents and developer tools, with Rust/Tauri, TypeScript/React and Python experience. Built local-first agent applications and shipped LifeMint on the App Store. Former Nokia and Ford co-op; currently studying Systems Science and Engineering at the University of Ottawa. Seeking software engineering opportunities in Hangzhou.
 
 == Education
 
 #edu(
   institution: "University of Ottawa",
-  location: "Hangzhou / Ottawa",
+  location: "",
   dates: dates-helper(start-date: "2024", end-date: "Present"),
   degree: "Master of Systems Science and Engineering",
 )
 
 #edu(
   institution: "Carleton University",
-  location: "Hangzhou / Ottawa",
+  location: "",
   dates: dates-helper(start-date: "2017", end-date: "2023"),
   degree: "Bachelor of Computer Science",
 )
@@ -50,8 +52,8 @@ Software engineer building local-first AI systems, developer tools, and producti
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
 #align(left)[
-- Architected a local-first desktop AI agent using Rust, Tauri 2, React, TypeScript, and SQLite, with multi-provider streaming, structured tool calling, project-scoped memory, and local code and file execution.
-- Implemented visual workflow orchestration, CDP browser automation, multi-agent collaboration, context compression, and native Typst PDF/SVG rendering through a Rust-backed Tauri command layer.
+- Built a local-first desktop AI agent with Rust/Tauri, React/TypeScript and SQLite, integrating multiple LLM providers, structured tool calls and project memory.
+- Implemented provider adapters, buffered SSE parsing and cancellation, plus CDP browser automation with failure recovery and context compression for long-running sessions.
 ]
 
 #project(
@@ -59,35 +61,33 @@ Software engineer building local-first AI systems, developer tools, and producti
   url: "github.com/mammut001/Conveyor",
 )
 #align(left)[
-- Built a self-hosted Python control plane connecting Telegram and Feishu to Codex CLI on a VPS, executing development tasks inside isolated Git worktrees with diff, apply, discard, and cancellation controls.
-- Designed a persistent SQLite job queue and safety layer with operator allowlists, explicit confirmation gates, output redaction, audit logging, diagnostics, reminders, and optional developer-tool integrations.
+- Built a self-hosted Python service connecting Telegram and Feishu to Codex CLI, separating code changes into detached Git worktrees with diff, apply, discard and cancellation controls.
+- Implemented a persistent SQLite task queue with restart recovery, operator allowlists, explicit approval gates and audit logging.
 ]
 
-#pagebreak()
+#project(
+  name: "LifeMint (formerly Focus Mint)",
+  url: "apps.apple.com/us/app/lifemint/id6759029810",
+)
+#align(left)[
+- Published a SwiftUI productivity app for iPhone, iPad and Apple Watch with focus sessions, earnings tracking and English, Chinese and French localization.
+- Implemented StoreKit purchases, widgets, Live Activities and bidirectional iPhone–Apple Watch synchronization with WatchConnectivity.
+]
 
 #project(
   name: "Resume Generator",
-  url: "resume-tailor.paytonpei.top",
+  url: "github.com/mammut001/Resume-Generator",
 )
 #align(left)[
-- Built and deployed a full-stack React, TypeScript, and Node.js resume workspace supporting PDF/text import, job-description tailoring, structured editing, and Typst-backed PDF/SVG export.
-- Added Zod-validated backend routes, privacy-conscious observability, Docker deployment, and automated testing with Vitest and Playwright.
-]
-
-#project(
-  name: "Focus Mint",
-  url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
-)
-#align(left)[
-- Shipped a SwiftUI productivity app on the App Store for iPhone, iPad, and Apple Watch, featuring focus sessions, earnings tracking, analytics, custom modes, and multilingual localization.
-- Implemented StoreKit monetization, WidgetKit and Live Activity experiences, and bidirectional iPhone-Apple Watch synchronization using WatchConnectivity.
+- Built a React/TypeScript and Node.js resume workspace with PDF/text import, job-description tailoring and Typst PDF/SVG export.
+- Added Zod request validation, Docker deployment and automated tests with Vitest and Playwright.
 ]
 
 == Work Experience
 
 #work(
   title: "Software Tester Co-op",
-  location: "Hangzhou / Ottawa",
+  location: "",
   company: "Nokia Canada",
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
@@ -98,7 +98,7 @@ Software engineer building local-first AI systems, developer tools, and producti
 
 #work(
   title: "Software Developer Co-op",
-  location: "Hangzhou / Ottawa",
+  location: "",
   company: "Ford Motor Canada",
   dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
 )
@@ -113,14 +113,13 @@ Software engineer building local-first AI systems, developer tools, and producti
   dates: "2026",
 )
 #align(left)[
-- Collaborated on an extreme low-light RAW image restoration study using paired SID and ELD images, comparing Bridge U-Net, fine-tuning, few-shot meta-learning, and a DDBM-inspired feature-space approach.
-- Investigated and documented a memory-efficient DDBM-Feature variant using time-conditioned decoding, selective bridge interpolation over deep encoder features, and three-step deterministic inference; evaluated it at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.
+- Responsible for the initial DDBM implementation in a collaborative low-light RAW image restoration study using SID and ELD data.
+- The project evaluated a DDBM-Feature variant at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.
 ]
 
 == Skills
-- *Languages*: Python, TypeScript, JavaScript, Rust, Swift, Kotlin, C++, Java, Bash
-- *Frameworks*: React, Node.js, Tauri 2, SwiftUI, Jetpack Compose, Firebase, Tailwind CSS
-- *AI & Systems*: LLM APIs, Tool Calling, Embeddings, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
+- *Languages*: Python, TypeScript, JavaScript, Rust, Swift, C++
+- *Frameworks*: React, Node.js, Tauri 2, SwiftUI
+- *AI & Systems*: LLM APIs, Tool Calling, MCP, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
 - *Testing & Delivery*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
-- *Additional*: MCP, Function Calling, Agent Harness, Skills, SSE, IPC, Sandbox, Multi-Agent
 

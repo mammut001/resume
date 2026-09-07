@@ -7,38 +7,40 @@
 #let name = "Dong Payton Pei"
 #let location = "Hangzhou / Ottawa"
 #let email = "paytonpei01@gmail.com"
-#let github = "github.com/mammut001"
-#let linkedin = "www.linkedin.com/in/pd110"
 
 #show: resume.with(
   author: name,
   location: location,
   email: email,
-  github: github,
-  linkedin: linkedin,
+  phone: "+86 17640426168",
   accent-color: "#000000",
-  font: "New Computer Modern",
-  paper: "us-letter",
+  font: ("New Computer Modern", "Noto Sans CJK SC"),
+  paper: "a4",
+  lang: "fr",
+  font-size: 10pt,
   author-position: left,
   personal-info-position: left,
 )
 
+#set par(leading: 0.45em, spacing: 0.55em)
+#link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
+
 == Résumé
 
-Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils de développement et les applications mobiles de production. Ancien stagiaire développeur/testeur chez Nokia et Ford et actuellement étudiant à la maîtrise en science et génie des systèmes à l'Université d'Ottawa, avec une expérience pratique de Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose et des appels d'outils LLM.
+Ingénieur logiciel spécialisé dans les agents IA et les outils de développement, avec une expérience de Rust/Tauri, TypeScript/React et Python. Développement d'agents local-first et publication de LifeMint sur l'App Store. Ancien stagiaire chez Nokia et Ford, actuellement à la maîtrise en science et génie des systèmes à l'Université d'Ottawa. Recherche un poste en génie logiciel à Hangzhou.
 
 == Formation
 
 #edu(
   institution: "Université d'Ottawa",
-  location: "Hangzhou / Ottawa",
+  location: "",
   dates: dates-helper(start-date: "2024", end-date: "Présent"),
   degree: "Maîtrise en science et génie des systèmes",
 )
 
 #edu(
   institution: "Université Carleton",
-  location: "Hangzhou / Ottawa",
+  location: "",
   dates: dates-helper(start-date: "2017", end-date: "2023"),
   degree: "Baccalauréat en informatique",
 )
@@ -50,8 +52,8 @@ Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
 #align(left)[
-- Architecture d'un agent IA de bureau local-first avec Rust, Tauri 2, React, TypeScript et SQLite, avec streaming multi-fournisseurs, appels d'outils structurés, mémoire par projet et exécution locale de code et de fichiers.
-- Mise en œuvre d'une orchestration visuelle de workflows, de l'automatisation de navigateur par CDP, de la collaboration multi-agents, de la compression de contexte et du rendu natif Typst PDF/SVG via une couche de commandes Tauri en Rust.
+- Développement d'un agent IA de bureau local-first avec Rust/Tauri, React/TypeScript et SQLite : intégration de plusieurs fournisseurs LLM, appels d'outils structurés et mémoire par projet.
+- Mise en œuvre d'adaptateurs fournisseurs, d'une analyse SSE avec mise en tampon et de l'annulation, ainsi que de l'automatisation CDP avec reprise après échec et compression du contexte.
 ]
 
 #project(
@@ -59,35 +61,33 @@ Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils
   url: "github.com/mammut001/Conveyor",
 )
 #align(left)[
-- Création d'un plan de contrôle Python auto-hébergé reliant Telegram et Feishu à Codex CLI sur un VPS, exécutant des tâches de développement dans des worktrees Git isolés avec contrôles de diff, application, abandon et annulation.
-- Conception d'une file de tâches SQLite persistante et d'une couche de sécurité avec listes d'opérateurs autorisés, confirmations explicites, masquage de sorties, journalisation d'audit, diagnostics, rappels et intégrations optionnelles d'outils de développement.
+- Développement d'un service Python auto-hébergé reliant Telegram et Feishu à Codex CLI, avec des worktrees Git détachés pour séparer les modifications et des commandes de diff, application, abandon et annulation.
+- Mise en œuvre d'une file SQLite persistante avec reprise après redémarrage, listes d'opérateurs autorisés, confirmations explicites et journalisation d'audit.
 ]
 
-#pagebreak()
+#project(
+  name: "LifeMint (anciennement Focus Mint)",
+  url: "apps.apple.com/us/app/lifemint/id6759029810",
+)
+#align(left)[
+- Publication d'une application SwiftUI pour iPhone, iPad et Apple Watch : sessions de concentration, suivi des gains et localisation en anglais, chinois et français.
+- Mise en œuvre des achats StoreKit, des widgets, des Live Activities et de la synchronisation bidirectionnelle iPhone–Apple Watch avec WatchConnectivity.
+]
 
 #project(
   name: "Resume Generator",
-  url: "resume-tailor.paytonpei.top",
+  url: "github.com/mammut001/Resume-Generator",
 )
 #align(left)[
-- Création et déploiement d'un espace de travail de CV full-stack avec React, TypeScript et Node.js, prenant en charge l'importation PDF/texte, l'adaptation aux offres d'emploi, l'édition structurée et l'export PDF/SVG avec Typst.
-- Ajout de routes backend validées par Zod, d'une observabilité respectueuse de la confidentialité, d'un déploiement Docker et de tests automatisés avec Vitest et Playwright.
-]
-
-#project(
-  name: "Focus Mint",
-  url: "apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810",
-)
-#align(left)[
-- Publication sur l'App Store d'une application de productivité SwiftUI pour iPhone, iPad et Apple Watch, avec sessions de concentration, suivi des gains, analytique, modes personnalisés et localisation multilingue.
-- Mise en œuvre de la monétisation StoreKit, d'expériences WidgetKit et Live Activity, ainsi que d'une synchronisation bidirectionnelle iPhone-Apple Watch avec WatchConnectivity.
+- Développement d'un outil de CV React/TypeScript et Node.js avec import PDF/texte, adaptation aux offres et export PDF/SVG via Typst.
+- Ajout de la validation Zod, du déploiement Docker et de tests automatisés Vitest et Playwright.
 ]
 
 == Expérience
 
 #work(
   title: "Stagiaire en test de logiciels",
-  location: "Hangzhou / Ottawa",
+  location: "",
   company: "Nokia Canada",
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
@@ -98,7 +98,7 @@ Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils
 
 #work(
   title: "Stagiaire en développement logiciel",
-  location: "Hangzhou / Ottawa",
+  location: "",
   company: "Ford Motor Canada",
   dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
 )
@@ -113,14 +113,13 @@ Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils
   dates: "2026",
 )
 #align(left)[
-- Collaboration à une étude de restauration d'images RAW en très faible luminosité utilisant des images appariées SID et ELD, comparant Bridge U-Net, le fine-tuning, le meta-learning few-shot et une approche inspirée de DDBM dans l'espace des caractéristiques.
-- Étude et documentation d'une variante DDBM-Feature économe en mémoire, fondée sur un décodage conditionné par le temps, une interpolation de pont sélective sur des caractéristiques profondes de l'encodeur et une inférence déterministe en trois étapes ; évaluation à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.
+- Responsable de l'implémentation initiale de DDBM dans une étude collaborative de restauration d'images RAW en faible luminosité utilisant SID et ELD.
+- Le projet a évalué une variante DDBM-Feature à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.
 ]
 
 == Compétences
-- *Langages*: Python, TypeScript, JavaScript, Rust, Swift, Kotlin, C++, Java, Bash
-- *Frameworks*: React, Node.js, Tauri 2, SwiftUI, Jetpack Compose, Firebase, Tailwind CSS
-- *IA & systèmes*: LLM APIs, Tool Calling, Embeddings, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
+- *Langages*: Python, TypeScript, JavaScript, Rust, Swift, C++
+- *Frameworks*: React, Node.js, Tauri 2, SwiftUI
+- *IA & systèmes*: LLM APIs, Tool Calling, MCP, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
 - *Tests & livraison*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
-- *Complémentaire*: MCP, Function Calling, Agent Harness, Skills, SSE, IPC, Sandbox, Multi-Agent
 

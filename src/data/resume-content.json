@@ -6,14 +6,14 @@
   "about": "Software engineer building local-first AI systems, developer tools, and production mobile applications.",
   "about_fr": "Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils de développement et les applications mobiles de production.",
   "about_cn": "软件工程师，专注本地优先 AI Agent、开发者工具与可上线产品。求职意向：杭州。",
-  "summary": "Software engineer building local-first AI systems, developer tools, and production mobile applications. Former Nokia and Ford co-op developer/tester and current master's student in Systems Science and Engineering at the University of Ottawa, with hands-on experience in Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose, and LLM tool calling.",
-  "summary_fr": "Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils de développement et les applications mobiles de production. Ancien stagiaire développeur/testeur chez Nokia et Ford et actuellement étudiant à la maîtrise en science et génie des systèmes à l'Université d'Ottawa, avec une expérience pratique de Rust/Tauri, TypeScript/React, Python, SwiftUI, Kotlin/Jetpack Compose et des appels d'outils LLM.",
-  "summary_cn": "软件工程师，求职意向杭州，可尽快到岗。专注本地优先 AI Agent、开发者工具与生产级移动应用。在读渥太华大学系统科学与工程硕士；曾在 Nokia、Ford 实习。具备 Rust/Tauri、TypeScript/React、Python、SwiftUI/Kotlin 实战经验，熟悉 LLM Tool Calling / Function Calling、MCP、Skills 插件、多智能体协作与 Agent Harness。",
+  "summary": "Software engineer focused on AI agents and developer tools, with Rust/Tauri, TypeScript/React and Python experience. Built local-first agent applications and shipped LifeMint on the App Store. Former Nokia and Ford co-op; currently studying Systems Science and Engineering at the University of Ottawa. Seeking software engineering opportunities in Hangzhou.",
+  "summary_fr": "Ingénieur logiciel spécialisé dans les agents IA et les outils de développement, avec une expérience de Rust/Tauri, TypeScript/React et Python. Développement d'agents local-first et publication de LifeMint sur l'App Store. Ancien stagiaire chez Nokia et Ford, actuellement à la maîtrise en science et génie des systèmes à l'Université d'Ottawa. Recherche un poste en génie logiciel à Hangzhou.",
+  "summary_cn": "软件工程师，求职意向：杭州 AI 应用与开发者工具方向。使用 Rust/Tauri、TypeScript/React 和 Python 开发本地优先 Agent，并在 App Store 发布 LifeMint。曾在 Nokia、Ford 实习，现为渥太华大学系统科学与工程硕士在读。",
   "avatarUrl": "https://avatars.githubusercontent.com/u/141458085?v=4",
-  "personalWebsiteUrl": "https://github.com/mammut001",
+  "personalWebsiteUrl": "https://cv.paytonpei.top",
   "contact": {
     "email": "paytonpei01@gmail.com",
-    "tel": "",
+    "tel": "+86 17640426168",
     "social": [
       {
         "name": "GitHub",
@@ -34,7 +34,8 @@
       "degree_fr": "Maîtrise en science et génie des systèmes",
       "degree_cn": "系统科学与工程硕士",
       "start": "2024",
-      "end": "Present"
+      "end": "Present",
+      "location": ""
     },
     {
       "school": "Carleton University",
@@ -44,7 +45,8 @@
       "degree_fr": "Baccalauréat en informatique",
       "degree_cn": "计算机科学学士",
       "start": "2017",
-      "end": "2023"
+      "end": "2023",
+      "location": ""
     }
   ],
   "coursework": [
@@ -157,7 +159,9 @@
     {
       "company": "Nokia Canada",
       "link": "https://www.nokia.com",
-      "badges": ["Co-op"],
+      "badges": [
+        "Co-op"
+      ],
       "title": "Software Tester Co-op",
       "title_fr": "Stagiaire en test de logiciels",
       "title_cn": "软件测试实习生",
@@ -165,12 +169,15 @@
       "end": "Aug 2021",
       "description": "Enhanced JavaScript/XML code to improve code coverage and robustness. Produced Confluence design documentation for system architecture and data flows.",
       "description_fr": "Amélioration du code JavaScript/XML afin d'accroître la couverture de code et la robustesse. Production de documentation de conception dans Confluence pour l'architecture système et les flux de données.",
-      "description_cn": "参与通信软件质量保障：增强 JavaScript/XML 覆盖与稳健性，编写 Confluence 架构与数据流设计文档，在真实产品代码库中完成可交付改动。"
+      "description_cn": "参与通信软件质量保障，改进 JavaScript/XML 代码的覆盖与稳健性。编写 Confluence 设计文档，记录系统架构与数据流。",
+      "location": ""
     },
     {
       "company": "Ford Motor Canada",
       "link": "https://www.ford.ca",
-      "badges": ["Co-op"],
+      "badges": [
+        "Co-op"
+      ],
       "title": "Software Developer Co-op",
       "title_fr": "Stagiaire en développement logiciel",
       "title_cn": "软件开发实习生",
@@ -178,7 +185,8 @@
       "end": "Aug 2020",
       "description": "Participated in Agile development, wrote C++11 unit tests with GoogleTest, and used Jenkins in the CI/CD workflow.",
       "description_fr": "Participation au développement Agile, écriture de tests unitaires C++11 avec GoogleTest et utilisation de Jenkins dans le flux CI/CD.",
-      "description_cn": "参与敏捷研发：使用 C++11 与 GoogleTest 编写单元测试，接入 Jenkins CI/CD，保障车载相关模块回归质量。"
+      "description_cn": "参与敏捷研发，使用 C++11 与 GoogleTest 编写单元测试，并在 CI/CD 工作流中使用 Jenkins。",
+      "location": ""
     }
   ],
   "skills": [
@@ -187,28 +195,14 @@
     "JavaScript",
     "Rust",
     "Swift",
-    "Kotlin",
     "C++",
-    "Java",
-    "Bash",
     "React",
     "Node.js",
     "Tauri 2",
     "SwiftUI",
-    "Jetpack Compose",
-    "Firebase",
-    "Tailwind CSS",
     "LLM APIs",
     "Tool Calling",
     "MCP",
-    "Function Calling",
-    "Agent Harness",
-    "Skills",
-    "SSE",
-    "IPC",
-    "Sandbox",
-    "Multi-Agent",
-    "Embeddings",
     "SQLite",
     "CDP Browser Automation",
     "WatchConnectivity",
@@ -227,10 +221,18 @@
       "title_fr": "Pipi Shrimp Agent",
       "title_cn": "桌面 AI Agent（pipi-shrimp-agent）",
       "status": 1,
-      "techStack": ["Rust", "Tauri 2", "React", "TypeScript", "SQLite", "CDP", "Typst", "MCP", "Tool Calling", "SSE", "IPC", "Skills"],
-      "description": "Architected a local-first desktop AI agent using Rust, Tauri 2, React, TypeScript, and SQLite, with multi-provider streaming, structured tool calling, project-scoped memory, and local code and file execution. Implemented visual workflow orchestration, CDP browser automation, multi-agent collaboration, context compression, and native Typst PDF/SVG rendering through a Rust-backed Tauri command layer.",
-      "description_fr": "Architecture d'un agent IA de bureau local-first avec Rust, Tauri 2, React, TypeScript et SQLite, avec streaming multi-fournisseurs, appels d'outils structurés, mémoire par projet et exécution locale de code et de fichiers. Mise en œuvre d'une orchestration visuelle de workflows, de l'automatisation de navigateur par CDP, de la collaboration multi-agents, de la compression de contexte et du rendu natif Typst PDF/SVG via une couche de commandes Tauri en Rust.",
-      "description_cn": "使用 Rust、Tauri 2、React、TypeScript 与 SQLite 构建本地优先桌面 AI Agent：多模型流式输出（SSE）、结构化 Tool Calling / Function Calling、项目级记忆、本地代码与文件执行沙箱，以及 Skills 插件扩展。实现可视化工作流编排、基于 CDP 的浏览器自动化、多智能体协作、上下文压缩；通过 Rust 侧 Tauri 命令层（IPC）完成原生 Typst PDF/SVG 渲染，并支持 MCP 风格工具接入与自动研究循环（Agent Harness）。",
+      "techStack": [
+        "Rust",
+        "Tauri 2",
+        "React",
+        "TypeScript",
+        "SQLite",
+        "Tool Calling",
+        "CDP"
+      ],
+      "description": "Built a local-first desktop AI agent with Rust/Tauri, React/TypeScript and SQLite, integrating multiple LLM providers, structured tool calls and project memory. Implemented provider adapters, buffered SSE parsing and cancellation, plus CDP browser automation with failure recovery and context compression for long-running sessions.",
+      "description_fr": "Développement d'un agent IA de bureau local-first avec Rust/Tauri, React/TypeScript et SQLite : intégration de plusieurs fournisseurs LLM, appels d'outils structurés et mémoire par projet. Mise en œuvre d'adaptateurs fournisseurs, d'une analyse SSE avec mise en tampon et de l'annulation, ainsi que de l'automatisation CDP avec reprise après échec et compression du contexte.",
+      "description_cn": "使用 Rust/Tauri、React/TypeScript 与 SQLite 构建本地优先桌面 AI Agent，集成多模型接入、结构化工具调用与项目记忆。实现供应商适配、SSE 缓冲解析与取消机制，并支持 CDP 浏览器自动化、失败恢复和长会话上下文压缩。",
       "link": {
         "label": "GitHub",
         "label_fr": "GitHub",
@@ -244,10 +246,17 @@
       "title_fr": "Conveyor",
       "title_cn": "Conveyor 任务控制平面",
       "status": 1,
-      "techStack": ["Python", "SQLite", "Telegram", "Feishu", "Codex CLI", "Git", "Sandbox", "Tool Calling"],
-      "description": "Built a self-hosted Python control plane connecting Telegram and Feishu to Codex CLI on a VPS, executing development tasks inside isolated Git worktrees with diff, apply, discard, and cancellation controls. Designed a persistent SQLite job queue and safety layer with operator allowlists, explicit confirmation gates, output redaction, audit logging, diagnostics, reminders, and optional developer-tool integrations.",
-      "description_fr": "Création d'un plan de contrôle Python auto-hébergé reliant Telegram et Feishu à Codex CLI sur un VPS, exécutant des tâches de développement dans des worktrees Git isolés avec contrôles de diff, application, abandon et annulation. Conception d'une file de tâches SQLite persistante et d'une couche de sécurité avec listes d'opérateurs autorisés, confirmations explicites, masquage de sorties, journalisation d'audit, diagnostics, rappels et intégrations optionnelles d'outils de développement.",
-      "description_cn": "自托管 Python 控制平面，连接 Telegram、飞书与 Codex CLI，在隔离 Git worktree 沙箱中执行开发任务，支持 diff、应用、丢弃与取消。持久化 SQLite 任务队列与安全层：操作员白名单、显式确认门禁、输出脱敏、审计日志与诊断；面向远程 Agent 编排与人机确认的高风险操作管控。",
+      "techStack": [
+        "Python",
+        "SQLite",
+        "Telegram",
+        "Feishu",
+        "Codex CLI",
+        "Git worktree"
+      ],
+      "description": "Built a self-hosted Python service connecting Telegram and Feishu to Codex CLI, separating code changes into detached Git worktrees with diff, apply, discard and cancellation controls. Implemented a persistent SQLite task queue with restart recovery, operator allowlists, explicit approval gates and audit logging.",
+      "description_fr": "Développement d'un service Python auto-hébergé reliant Telegram et Feishu à Codex CLI, avec des worktrees Git détachés pour séparer les modifications et des commandes de diff, application, abandon et annulation. Mise en œuvre d'une file SQLite persistante avec reprise après redémarrage, listes d'opérateurs autorisés, confirmations explicites et journalisation d'audit.",
+      "description_cn": "开发自托管 Python 服务，将 Telegram、飞书连接到 Codex CLI，通过独立 Git worktree 隔离代码改动，支持差异检查、应用、丢弃和取消。实现 SQLite 持久化任务队列与重启恢复，并加入操作员白名单、显式确认门禁和审计日志。",
       "link": {
         "label": "GitHub",
         "label_fr": "GitHub",
@@ -257,36 +266,53 @@
     },
     {
       "index": 2,
-      "title": "Resume Generator",
-      "title_fr": "Resume Generator",
-      "title_cn": "Resume Generator 简历生成器",
+      "title": "LifeMint (formerly Focus Mint)",
+      "title_fr": "LifeMint (anciennement Focus Mint)",
+      "title_cn": "LifeMint（原 Focus Mint）",
       "status": 1,
-      "techStack": ["React", "TypeScript", "Node.js", "Zod", "Typst", "Vitest", "Playwright", "Docker"],
-      "description": "Built and deployed a full-stack React, TypeScript, and Node.js resume workspace supporting PDF/text import, job-description tailoring, structured editing, and Typst-backed PDF/SVG export. Added Zod-validated backend routes, privacy-conscious observability, Docker deployment, and automated testing with Vitest and Playwright.",
-      "description_fr": "Création et déploiement d'un espace de travail de CV full-stack avec React, TypeScript et Node.js, prenant en charge l'importation PDF/texte, l'adaptation aux offres d'emploi, l'édition structurée et l'export PDF/SVG avec Typst. Ajout de routes backend validées par Zod, d'une observabilité respectueuse de la confidentialité, d'un déploiement Docker et de tests automatisés avec Vitest et Playwright.",
-      "description_cn": "使用 React、TypeScript 和 Node.js 构建并部署全栈简历工作区，支持 PDF/文本导入、岗位描述定制、结构化编辑和基于 Typst 的 PDF/SVG 导出。新增经 Zod 校验的后端路由、注重隐私的可观测性、Docker 部署，以及 Vitest 和 Playwright 自动化测试。",
-      "link": {
-        "label": "Live Demo",
-        "label_fr": "Démo en ligne",
-        "label_cn": "在线 Demo",
-        "href": "https://resume-tailor.paytonpei.top/"
-      }
-    },
-    {
-      "index": 3,
-      "title": "Focus Mint",
-      "title_fr": "Focus Mint",
-      "title_cn": "Focus Mint 专注计时器",
-      "status": 1,
-      "techStack": ["Swift", "SwiftUI", "StoreKit 2", "WidgetKit", "Live Activities", "WatchConnectivity", "Localization"],
-      "description": "Shipped a SwiftUI productivity app on the App Store for iPhone, iPad, and Apple Watch, featuring focus sessions, earnings tracking, analytics, custom modes, and multilingual localization. Implemented StoreKit monetization, WidgetKit and Live Activity experiences, and bidirectional iPhone-Apple Watch synchronization using WatchConnectivity.",
-      "description_fr": "Publication sur l'App Store d'une application de productivité SwiftUI pour iPhone, iPad et Apple Watch, avec sessions de concentration, suivi des gains, analytique, modes personnalisés et localisation multilingue. Mise en œuvre de la monétisation StoreKit, d'expériences WidgetKit et Live Activity, ainsi que d'une synchronisation bidirectionnelle iPhone-Apple Watch avec WatchConnectivity.",
-      "description_cn": "在 App Store 发布面向 iPhone、iPad 和 Apple Watch 的 SwiftUI 效率应用，支持专注会话、收益追踪、数据分析、自定义模式和多语言本地化。实现 StoreKit 变现、WidgetKit 和 Live Activity 体验，以及通过 WatchConnectivity 实现 iPhone 与 Apple Watch 双向同步。",
+      "techStack": [
+        "Swift",
+        "SwiftUI",
+        "StoreKit 2",
+        "WidgetKit",
+        "Live Activities",
+        "WatchConnectivity",
+        "Localization"
+      ],
+      "description": "Published a SwiftUI productivity app for iPhone, iPad and Apple Watch with focus sessions, earnings tracking and English, Chinese and French localization. Implemented StoreKit purchases, widgets, Live Activities and bidirectional iPhone–Apple Watch synchronization with WatchConnectivity.",
+      "description_fr": "Publication d'une application SwiftUI pour iPhone, iPad et Apple Watch : sessions de concentration, suivi des gains et localisation en anglais, chinois et français. Mise en œuvre des achats StoreKit, des widgets, des Live Activities et de la synchronisation bidirectionnelle iPhone–Apple Watch avec WatchConnectivity.",
+      "description_cn": "在 App Store 发布面向 iPhone、iPad 和 Apple Watch 的 SwiftUI 应用，提供专注会话、收益追踪及中英法三语支持。实现 StoreKit 内购、桌面组件、实时活动，以及基于 WatchConnectivity 的手机与手表双向同步。",
       "link": {
         "label": "App Store",
         "label_fr": "App Store",
         "label_cn": "App Store",
-        "href": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+        "href": "https://apps.apple.com/us/app/lifemint/id6759029810"
+      }
+    },
+    {
+      "index": 3,
+      "title": "Resume Generator",
+      "title_fr": "Resume Generator",
+      "title_cn": "Resume Generator 简历生成器",
+      "status": 1,
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Zod",
+        "Typst",
+        "Vitest",
+        "Playwright",
+        "Docker"
+      ],
+      "description": "Built a React/TypeScript and Node.js resume workspace with PDF/text import, job-description tailoring and Typst PDF/SVG export. Added Zod request validation, Docker deployment and automated tests with Vitest and Playwright.",
+      "description_fr": "Développement d'un outil de CV React/TypeScript et Node.js avec import PDF/texte, adaptation aux offres et export PDF/SVG via Typst. Ajout de la validation Zod, du déploiement Docker et de tests automatisés Vitest et Playwright.",
+      "description_cn": "使用 React/TypeScript 与 Node.js 开发简历工作区，支持 PDF/文本导入、岗位定制和 Typst PDF/SVG 导出。加入 Zod 请求校验、Docker 部署与 Vitest、Playwright 自动化测试。",
+      "link": {
+        "label": "GitHub",
+        "label_fr": "GitHub",
+        "label_cn": "GitHub",
+        "href": "https://github.com/mammut001/Resume-Generator"
       }
     }
   ],
@@ -297,10 +323,17 @@
       "title_cn": "基于 Bridge U-Net 与 DDBM 的极低照度 RAW 图像复原",
       "start": "2026",
       "end": null,
-      "description": "Collaborated on an extreme low-light RAW image restoration study using paired SID and ELD images, comparing Bridge U-Net, fine-tuning, few-shot meta-learning, and a DDBM-inspired feature-space approach. Investigated and documented a memory-efficient DDBM-Feature variant using time-conditioned decoding, selective bridge interpolation over deep encoder features, and three-step deterministic inference; evaluated it at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.",
-      "description_fr": "Collaboration à une étude de restauration d'images RAW en très faible luminosité utilisant des images appariées SID et ELD, comparant Bridge U-Net, le fine-tuning, le meta-learning few-shot et une approche inspirée de DDBM dans l'espace des caractéristiques. Étude et documentation d'une variante DDBM-Feature économe en mémoire, fondée sur un décodage conditionné par le temps, une interpolation de pont sélective sur des caractéristiques profondes de l'encodeur et une inférence déterministe en trois étapes ; évaluation à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.",
-      "description_cn": "参与极低照度 RAW 图像复原研究，使用配对的 SID 和 ELD 图像，对比 Bridge U-Net、微调、少样本元学习以及受 DDBM 启发的特征空间方法。研究并记录内存高效的 DDBM-Feature 变体，采用时间条件解码、对深层编码器特征的选择性桥接插值和三步确定性推理；在 598 张 SID Sony 测试图像上取得 26.12 dB PSNR 与 0.807 MS-SSIM。",
-      "tags": ["Python", "PyTorch", "Computer Vision", "Low-Light Imaging", "DDBM"]
+      "description": "Responsible for the initial DDBM implementation in a collaborative low-light RAW image restoration study using SID and ELD data. The project evaluated a DDBM-Feature variant at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.",
+      "description_fr": "Responsable de l'implémentation initiale de DDBM dans une étude collaborative de restauration d'images RAW en faible luminosité utilisant SID et ELD. Le projet a évalué une variante DDBM-Feature à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.",
+      "description_cn": "参与基于 SID、ELD 数据的极低照度 RAW 图像复原研究，负责 DDBM 初版实现。项目中的 DDBM-Feature 变体在 598 张 SID Sony 测试图像上取得 26.12 dB PSNR 与 0.807 MS-SSIM。",
+      "tags": [
+        "Python",
+        "PyTorch",
+        "Computer Vision",
+        "Low-Light Imaging",
+        "DDBM"
+      ]
     }
-  ]
+  ],
+  "name_cn": "裴栋 | Payton Pei"
 }
