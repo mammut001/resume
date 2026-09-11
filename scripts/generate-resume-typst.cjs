@@ -193,7 +193,7 @@ const renderWork = (language) =>
     .join("\n\n");
 
 const renderProjects = (language) => {
-  const projects = resume.projects
+  const projects = resume.projects.filter((entry) => entry.includeInPdf !== false)
     .filter((entry) => entry.status === 1)
     .slice();
 

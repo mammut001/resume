@@ -74,36 +74,38 @@ Systems Science and Engineering master’s student at the University of Ottawa, 
 - Implemented StoreKit purchases, widgets, Live Activities and bidirectional iPhone–Apple Watch synchronization with WatchConnectivity.
 ]
 
-#project(
-  name: "Resume Generator",
-  url: "github.com/mammut001/Resume-Generator",
-)
-#align(left)[
-- Built a React/TypeScript and Node.js resume workspace with PDF/text import, job-description tailoring and Typst PDF/SVG export.
-- Added Zod request validation, Docker deployment and automated tests with Vitest and Playwright.
-]
-
 == Work Experience
 
 #work(
-  title: "Software Tester Co-op",
-  location: "",
-  company: "Nokia Canada",
-  dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
+  title: "Teaching Assistant",
+  location: "Ottawa, Canada",
+  company: "Carleton University",
+  dates: "2021",
 )
 #align(left)[
-- Enhanced JavaScript/XML code to improve code coverage and robustness.
-- Produced Confluence design documentation for system architecture and data flows.
+- Teaching assistant for Python 3 (Jan–Apr 2021) and JOUR 4401 (Sep–Dec 2021), covering relational databases, web crawling and data analysis.
 ]
 
 #work(
-  title: "Software Developer Co-op",
-  location: "",
-  company: "Ford Motor Canada",
-  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
+  title: "Software Tester Intern",
+  location: "Ottawa, Canada",
+  company: "Nokia Canada",
+  dates: dates-helper(start-date: "Sep 2020", end-date: "Aug 2021"),
 )
 #align(left)[
-- Wrote C++11 unit tests with GoogleTest and used Jenkins in an Agile development and CI/CD workflow.
+- Tested the legacy NFM-P client in the 7750 Service Router context using JavaScript, XML and the Mocha testing framework.
+- Documented system architecture and data flows in Confluence.
+]
+
+#work(
+  title: "Software Engineer Intern",
+  location: "Ottawa, Canada",
+  company: "Ford Motor Canada",
+  dates: dates-helper(start-date: "May 2020", end-date: "Aug 2020"),
+)
+#align(left)[
+- Contributed to in-vehicle and cloud connectivity software in C++11 on QNX/Linux.
+- Wrote GoogleTest unit tests, fixed bugs and maintained technical documentation; used Jenkins in the CI/CD workflow.
 ]
 
 == Research

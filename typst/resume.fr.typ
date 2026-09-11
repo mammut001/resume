@@ -74,36 +74,38 @@
 - Mise en œuvre des achats StoreKit, des widgets, des Live Activities et de la synchronisation bidirectionnelle iPhone–Apple Watch avec WatchConnectivity.
 ]
 
-#project(
-  name: "Resume Generator",
-  url: "github.com/mammut001/Resume-Generator",
-)
-#align(left)[
-- Développement d'un outil de CV React/TypeScript et Node.js avec import PDF/texte, adaptation aux offres et export PDF/SVG via Typst.
-- Ajout de la validation Zod, du déploiement Docker et de tests automatisés Vitest et Playwright.
-]
-
 == Expérience
 
 #work(
-  title: "Stagiaire en test de logiciels",
-  location: "",
-  company: "Nokia Canada",
-  dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
+  title: "Auxiliaire d’enseignement",
+  location: "Ottawa, Canada",
+  company: "Carleton University",
+  dates: "2021",
 )
 #align(left)[
-- Amélioration du code JavaScript/XML afin d'accroître la couverture de code et la robustesse.
-- Production de documentation de conception dans Confluence pour l'architecture système et les flux de données.
+- Auxiliaire pour Python 3 (janvier à avril 2021) et JOUR 4401 (septembre à décembre 2021) : bases de données relationnelles, collecte web et analyse de données.
+]
+
+#work(
+  title: "Stagiaire en test de logiciels",
+  location: "Ottawa, Canada",
+  company: "Nokia Canada",
+  dates: dates-helper(start-date: "Sep 2020", end-date: "Aug 2021"),
+)
+#align(left)[
+- Test du client NFM-P historique dans le contexte du 7750 Service Router avec JavaScript, XML et Mocha.
+- Documentation de l’architecture système et des flux de données dans Confluence.
 ]
 
 #work(
   title: "Stagiaire en développement logiciel",
-  location: "",
+  location: "Ottawa, Canada",
   company: "Ford Motor Canada",
-  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
+  dates: dates-helper(start-date: "May 2020", end-date: "Aug 2020"),
 )
 #align(left)[
-- Écriture de tests unitaires C++11 avec GoogleTest et utilisation de Jenkins dans un environnement de développement Agile et de CI/CD.
+- Contribution aux sous-systèmes de connectivité véhicule-cloud en C++11 sous QNX/Linux.
+- Tests unitaires GoogleTest, correction de bugs et documentation technique ; utilisation de Jenkins dans le flux CI/CD.
 ]
 
 == Recherche

@@ -74,35 +74,37 @@
 - 实现 StoreKit 内购、桌面组件、实时活动，以及基于 WatchConnectivity 的手机与手表双向同步。
 ]
 
-#project(
-  name: "Resume Generator 简历生成器",
-  url: "github.com/mammut001/Resume-Generator",
-)
-#align(left)[
-- 使用 React/TypeScript 与 Node.js 开发简历工作区，支持 PDF/文本导入、岗位定制和 Typst PDF/SVG 导出。
-- 加入 Zod 请求校验、Docker 部署与 Vitest、Playwright 自动化测试。
-]
-
 == 工作经历
 
 #work(
-  title: "软件测试实习生",
-  location: "",
-  company: "Nokia Canada",
-  dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
+  title: "助教（兼职）",
+  location: "加拿大渥太华",
+  company: "Carleton University",
+  dates: "2021",
 )
 #align(left)[
-- 改进 JavaScript/XML 代码，提高测试覆盖与稳健性；编写 Confluence 设计文档，记录系统架构与数据流。
+- 2021 年 1–4 月担任 Python 3 助教；9–12 月担任 JOUR 4401 助教，课程涉及关系型数据库、网络爬虫与数据分析。
 ]
 
 #work(
-  title: "软件开发实习生",
-  location: "",
-  company: "Ford Motor Canada",
-  dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
+  title: "软件测试实习生",
+  location: "加拿大渥太华",
+  company: "Nokia Canada",
+  dates: dates-helper(start-date: "Sep 2020", end-date: "Aug 2021"),
 )
 #align(left)[
-- 使用 C++11 与 GoogleTest 编写单元测试，并在敏捷开发与 CI/CD 工作流中使用 Jenkins。
+- 围绕 7750 Service Router，使用 JavaScript、XML 与 Mocha 测试框架测试旧版 NFM-P 客户端。
+- 编写 Confluence 设计文档，记录系统架构与数据流。
+]
+
+#work(
+  title: "软件工程实习生",
+  location: "加拿大渥太华",
+  company: "Ford Motor Canada",
+  dates: dates-helper(start-date: "May 2020", end-date: "Aug 2020"),
+)
+#align(left)[
+- 参与车载与云连接软件子系统开发，在 QNX/Linux 环境下使用 C++11 编写 GoogleTest 单元测试、修复缺陷并维护技术文档；在 CI/CD 工作流中使用 Jenkins。
 ]
 
 == 研究

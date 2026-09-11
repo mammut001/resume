@@ -159,20 +159,40 @@
   ],
   "work": [
     {
+      "company": "Carleton University",
+      "link": "https://carleton.ca",
+      "badges": [
+        "Part-time"
+      ],
+      "title": "Teaching Assistant",
+      "title_cn": "助教（兼职）",
+      "title_fr": "Auxiliaire d’enseignement",
+      "start": "2021",
+      "end": "",
+      "location": "Ottawa, Canada",
+      "location_cn": "加拿大渥太华",
+      "location_fr": "Ottawa, Canada",
+      "description": "Teaching assistant for Python 3 (Jan–Apr 2021) and JOUR 4401 (Sep–Dec 2021), covering relational databases, web crawling and data analysis.",
+      "description_cn": "2021 年 1–4 月担任 Python 3 助教；9–12 月担任 JOUR 4401 助教，课程涉及关系型数据库、网络爬虫与数据分析。",
+      "description_fr": "Auxiliaire pour Python 3 (janvier à avril 2021) et JOUR 4401 (septembre à décembre 2021) : bases de données relationnelles, collecte web et analyse de données."
+    },
+    {
       "company": "Nokia Canada",
       "link": "https://www.nokia.com",
       "badges": [
         "Co-op"
       ],
-      "title": "Software Tester Co-op",
+      "title": "Software Tester Intern",
       "title_fr": "Stagiaire en test de logiciels",
       "title_cn": "软件测试实习生",
-      "start": "Aug 2020",
+      "start": "Sep 2020",
       "end": "Aug 2021",
-      "description": "Enhanced JavaScript/XML code to improve code coverage and robustness. Produced Confluence design documentation for system architecture and data flows.",
-      "description_fr": "Amélioration du code JavaScript/XML afin d'accroître la couverture de code et la robustesse. Production de documentation de conception dans Confluence pour l'architecture système et les flux de données.",
-      "description_cn": "改进 JavaScript/XML 代码，提高测试覆盖与稳健性；编写 Confluence 设计文档，记录系统架构与数据流。",
-      "location": ""
+      "description": "Tested the legacy NFM-P client in the 7750 Service Router context using JavaScript, XML and the Mocha testing framework. Documented system architecture and data flows in Confluence.",
+      "description_fr": "Test du client NFM-P historique dans le contexte du 7750 Service Router avec JavaScript, XML et Mocha. Documentation de l’architecture système et des flux de données dans Confluence.",
+      "description_cn": "围绕 7750 Service Router，使用 JavaScript、XML 与 Mocha 测试框架测试旧版 NFM-P 客户端。编写 Confluence 设计文档，记录系统架构与数据流。",
+      "location": "Ottawa, Canada",
+      "location_cn": "加拿大渥太华",
+      "location_fr": "Ottawa, Canada"
     },
     {
       "company": "Ford Motor Canada",
@@ -180,15 +200,17 @@
       "badges": [
         "Co-op"
       ],
-      "title": "Software Developer Co-op",
+      "title": "Software Engineer Intern",
       "title_fr": "Stagiaire en développement logiciel",
-      "title_cn": "软件开发实习生",
-      "start": "Apr 2020",
+      "title_cn": "软件工程实习生",
+      "start": "May 2020",
       "end": "Aug 2020",
-      "description": "Wrote C++11 unit tests with GoogleTest and used Jenkins in an Agile development and CI/CD workflow.",
-      "description_fr": "Écriture de tests unitaires C++11 avec GoogleTest et utilisation de Jenkins dans un environnement de développement Agile et de CI/CD.",
-      "description_cn": "使用 C++11 与 GoogleTest 编写单元测试，并在敏捷开发与 CI/CD 工作流中使用 Jenkins。",
-      "location": ""
+      "description": "Contributed to in-vehicle and cloud connectivity software in C++11 on QNX/Linux. Wrote GoogleTest unit tests, fixed bugs and maintained technical documentation; used Jenkins in the CI/CD workflow.",
+      "description_fr": "Contribution aux sous-systèmes de connectivité véhicule-cloud en C++11 sous QNX/Linux. Tests unitaires GoogleTest, correction de bugs et documentation technique ; utilisation de Jenkins dans le flux CI/CD.",
+      "description_cn": "参与车载与云连接软件子系统开发，在 QNX/Linux 环境下使用 C++11 编写 GoogleTest 单元测试、修复缺陷并维护技术文档；在 CI/CD 工作流中使用 Jenkins。",
+      "location": "Ottawa, Canada",
+      "location_cn": "加拿大渥太华",
+      "location_fr": "Ottawa, Canada"
     }
   ],
   "skills": [
@@ -315,7 +337,8 @@
         "label_fr": "GitHub",
         "label_cn": "GitHub",
         "href": "https://github.com/mammut001/Resume-Generator"
-      }
+      },
+      "includeInPdf": false
     }
   ],
   "research": [
