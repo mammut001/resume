@@ -174,7 +174,7 @@ const renderEducation = (language) =>
     .map(
       (entry) => `#edu(\n  institution: ${typstString(getLocalizedText(entry, "school", language))},\n  location: ${typstString(
         getLocalizedText(entry, "location", language),
-      )},\n  dates: ${renderDates(language, entry.start, entry.end)},\n  degree: ${typstString(
+      )},\n  dates: ${renderDates(language, entry.start, getLocalizedText(entry, "end", language))},\n  degree: ${typstString(
         getLocalizedText(entry, "degree", language),
       )},\n)`,
     )

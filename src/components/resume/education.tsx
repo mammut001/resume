@@ -24,7 +24,7 @@ export const Education = () => {
                                         {schoolName}
                                     </h3>
                                     <div className="text-sm tabular-nums text-muted-foreground">
-                                        {formatDateRange(education.start, education.end, labels.present)}
+                                        {formatDateRange(education.start, localize(education, "end"), labels.present)}
                                     </div>
                                 </div>
                             </CardHeader>

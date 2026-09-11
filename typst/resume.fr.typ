@@ -27,14 +27,14 @@
 
 == Résumé
 
-Ingénieur logiciel spécialisé dans les agents IA et les outils de développement, avec une expérience de Rust/Tauri, TypeScript/React et Python. Développement d'agents local-first et publication de LifeMint sur l'App Store. Ancien stagiaire chez Nokia et Ford, actuellement à la maîtrise en science et génie des systèmes à l'Université d'Ottawa. Recherche un poste en génie logiciel à Hangzhou.
+Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en décembre 2026. Développement d’agents IA et d’outils de développement avec Rust/Tauri, TypeScript/React et Python ; publication de LifeMint sur l’App Store. Stages chez Nokia et Ford. Recherche un poste en applications IA et outils de développement à Hangzhou.
 
 == Formation
 
 #edu(
   institution: "Université d'Ottawa",
   location: "",
-  dates: dates-helper(start-date: "2024", end-date: "Présent"),
+  dates: dates-helper(start-date: "2024", end-date: "Déc. 2026 (prévu)"),
   degree: "Maîtrise en science et génie des systèmes",
 )
 
@@ -103,7 +103,7 @@ Ingénieur logiciel spécialisé dans les agents IA et les outils de développem
   dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
 )
 #align(left)[
-- Participation au développement Agile, écriture de tests unitaires C++11 avec GoogleTest et utilisation de Jenkins dans le flux CI/CD.
+- Écriture de tests unitaires C++11 avec GoogleTest et utilisation de Jenkins dans un environnement de développement Agile et de CI/CD.
 ]
 
 == Recherche

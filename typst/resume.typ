@@ -27,14 +27,14 @@
 
 == Summary
 
-Software engineer focused on AI agents and developer tools, with Rust/Tauri, TypeScript/React and Python experience. Built local-first agent applications and shipped LifeMint on the App Store. Former Nokia and Ford co-op; currently studying Systems Science and Engineering at the University of Ottawa. Seeking software engineering opportunities in Hangzhou.
+Systems Science and Engineering master’s student at the University of Ottawa, graduating in December 2026 (expected). Build AI agents and developer tools with Rust/Tauri, TypeScript/React and Python; published LifeMint on the App Store. Former Nokia and Ford co-op, seeking AI application and developer tools roles in Hangzhou.
 
 == Education
 
 #edu(
   institution: "University of Ottawa",
   location: "",
-  dates: dates-helper(start-date: "2024", end-date: "Present"),
+  dates: dates-helper(start-date: "2024", end-date: "Dec 2026 (expected)"),
   degree: "Master of Systems Science and Engineering",
 )
 
@@ -103,7 +103,7 @@ Software engineer focused on AI agents and developer tools, with Rust/Tauri, Typ
   dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
 )
 #align(left)[
-- Participated in Agile development, wrote C++11 unit tests with GoogleTest, and used Jenkins in the CI/CD workflow.
+- Wrote C++11 unit tests with GoogleTest and used Jenkins in an Agile development and CI/CD workflow.
 ]
 
 == Research

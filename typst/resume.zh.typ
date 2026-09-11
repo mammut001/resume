@@ -27,14 +27,14 @@
 
 == 概述
 
-软件工程师，求职意向：杭州 AI 应用与开发者工具方向。使用 Rust/Tauri、TypeScript/React 和 Python 开发本地优先 Agent，并在 App Store 发布 LifeMint。曾在 Nokia、Ford 实习，现为渥太华大学系统科学与工程硕士在读。
+渥太华大学系统科学与工程硕士在读，预计 2026 年 12 月毕业，求职意向为杭州 AI 应用与开发者工具方向。使用 Rust/Tauri、TypeScript/React 和 Python 开发桌面 Agent 与任务服务；LifeMint 已在 App Store 发布。曾在 Nokia、Ford 实习。
 
 == 教育经历
 
 #edu(
   institution: "渥太华大学",
   location: "",
-  dates: dates-helper(start-date: "2024", end-date: "至今"),
+  dates: dates-helper(start-date: "2024", end-date: "2026 年 12 月（预计）"),
   degree: "系统科学与工程硕士",
 )
 
@@ -57,12 +57,12 @@
 ]
 
 #project(
-  name: "Conveyor 任务控制平面",
+  name: "Conveyor 编码任务服务",
   url: "github.com/mammut001/Conveyor",
 )
 #align(left)[
 - 开发自托管 Python 服务，将 Telegram、飞书连接到 Codex CLI，通过独立 Git worktree 隔离代码改动，支持差异检查、应用、丢弃和取消。
-- 实现 SQLite 持久化任务队列与重启恢复，并加入操作员白名单、显式确认门禁和审计日志。
+- 实现 SQLite 持久化任务队列与重启恢复，并加入操作员白名单、操作确认和审计日志。
 ]
 
 #project(
@@ -92,8 +92,7 @@
   dates: dates-helper(start-date: "Aug 2020", end-date: "Aug 2021"),
 )
 #align(left)[
-- 参与通信软件质量保障，改进 JavaScript/XML 代码的覆盖与稳健性。
-- 编写 Confluence 设计文档，记录系统架构与数据流。
+- 改进 JavaScript/XML 代码，提高测试覆盖与稳健性；编写 Confluence 设计文档，记录系统架构与数据流。
 ]
 
 #work(
@@ -103,7 +102,7 @@
   dates: dates-helper(start-date: "Apr 2020", end-date: "Aug 2020"),
 )
 #align(left)[
-- 参与敏捷研发，使用 C++11 与 GoogleTest 编写单元测试，并在 CI/CD 工作流中使用 Jenkins。
+- 使用 C++11 与 GoogleTest 编写单元测试，并在敏捷开发与 CI/CD 工作流中使用 Jenkins。
 ]
 
 == 研究

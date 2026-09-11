@@ -3,12 +3,12 @@
   "initials": "DP",
   "location": "Hangzhou / Ottawa",
   "locationLink": "https://www.google.com/maps/place/Hangzhou,+Zhejiang",
-  "about": "Software engineer building local-first AI systems, developer tools, and production mobile applications.",
-  "about_fr": "Ingénieur logiciel spécialisé dans les systèmes d'IA local-first, les outils de développement et les applications mobiles de production.",
-  "about_cn": "软件工程师，专注本地优先 AI Agent、开发者工具与可上线产品。求职意向：杭州。",
-  "summary": "Software engineer focused on AI agents and developer tools, with Rust/Tauri, TypeScript/React and Python experience. Built local-first agent applications and shipped LifeMint on the App Store. Former Nokia and Ford co-op; currently studying Systems Science and Engineering at the University of Ottawa. Seeking software engineering opportunities in Hangzhou.",
-  "summary_fr": "Ingénieur logiciel spécialisé dans les agents IA et les outils de développement, avec une expérience de Rust/Tauri, TypeScript/React et Python. Développement d'agents local-first et publication de LifeMint sur l'App Store. Ancien stagiaire chez Nokia et Ford, actuellement à la maîtrise en science et génie des systèmes à l'Université d'Ottawa. Recherche un poste en génie logiciel à Hangzhou.",
-  "summary_cn": "软件工程师，求职意向：杭州 AI 应用与开发者工具方向。使用 Rust/Tauri、TypeScript/React 和 Python 开发本地优先 Agent，并在 App Store 发布 LifeMint。曾在 Nokia、Ford 实习，现为渥太华大学系统科学与工程硕士在读。",
+  "about": "AI applications and developer tools · Master’s expected Dec 2026 · Seeking roles in Hangzhou",
+  "about_fr": "Applications IA et outils de développement · Maîtrise prévue en déc. 2026 · Recherche à Hangzhou",
+  "about_cn": "AI 应用与开发者工具方向 · 硕士预计 2026 年 12 月毕业 · 求职意向：杭州",
+  "summary": "Systems Science and Engineering master’s student at the University of Ottawa, graduating in December 2026 (expected). Build AI agents and developer tools with Rust/Tauri, TypeScript/React and Python; published LifeMint on the App Store. Former Nokia and Ford co-op, seeking AI application and developer tools roles in Hangzhou.",
+  "summary_fr": "Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en décembre 2026. Développement d’agents IA et d’outils de développement avec Rust/Tauri, TypeScript/React et Python ; publication de LifeMint sur l’App Store. Stages chez Nokia et Ford. Recherche un poste en applications IA et outils de développement à Hangzhou.",
+  "summary_cn": "渥太华大学系统科学与工程硕士在读，预计 2026 年 12 月毕业，求职意向为杭州 AI 应用与开发者工具方向。使用 Rust/Tauri、TypeScript/React 和 Python 开发桌面 Agent 与任务服务；LifeMint 已在 App Store 发布。曾在 Nokia、Ford 实习。",
   "avatarUrl": "https://avatars.githubusercontent.com/u/141458085?v=4",
   "personalWebsiteUrl": "https://cv.paytonpei.top",
   "contact": {
@@ -34,8 +34,10 @@
       "degree_fr": "Maîtrise en science et génie des systèmes",
       "degree_cn": "系统科学与工程硕士",
       "start": "2024",
-      "end": "Present",
-      "location": ""
+      "end": "Dec 2026 (expected)",
+      "location": "",
+      "end_cn": "2026 年 12 月（预计）",
+      "end_fr": "Déc. 2026 (prévu)"
     },
     {
       "school": "Carleton University",
@@ -169,7 +171,7 @@
       "end": "Aug 2021",
       "description": "Enhanced JavaScript/XML code to improve code coverage and robustness. Produced Confluence design documentation for system architecture and data flows.",
       "description_fr": "Amélioration du code JavaScript/XML afin d'accroître la couverture de code et la robustesse. Production de documentation de conception dans Confluence pour l'architecture système et les flux de données.",
-      "description_cn": "参与通信软件质量保障，改进 JavaScript/XML 代码的覆盖与稳健性。编写 Confluence 设计文档，记录系统架构与数据流。",
+      "description_cn": "改进 JavaScript/XML 代码，提高测试覆盖与稳健性；编写 Confluence 设计文档，记录系统架构与数据流。",
       "location": ""
     },
     {
@@ -183,9 +185,9 @@
       "title_cn": "软件开发实习生",
       "start": "Apr 2020",
       "end": "Aug 2020",
-      "description": "Participated in Agile development, wrote C++11 unit tests with GoogleTest, and used Jenkins in the CI/CD workflow.",
-      "description_fr": "Participation au développement Agile, écriture de tests unitaires C++11 avec GoogleTest et utilisation de Jenkins dans le flux CI/CD.",
-      "description_cn": "参与敏捷研发，使用 C++11 与 GoogleTest 编写单元测试，并在 CI/CD 工作流中使用 Jenkins。",
+      "description": "Wrote C++11 unit tests with GoogleTest and used Jenkins in an Agile development and CI/CD workflow.",
+      "description_fr": "Écriture de tests unitaires C++11 avec GoogleTest et utilisation de Jenkins dans un environnement de développement Agile et de CI/CD.",
+      "description_cn": "使用 C++11 与 GoogleTest 编写单元测试，并在敏捷开发与 CI/CD 工作流中使用 Jenkins。",
       "location": ""
     }
   ],
@@ -244,7 +246,7 @@
       "index": 1,
       "title": "Conveyor",
       "title_fr": "Conveyor",
-      "title_cn": "Conveyor 任务控制平面",
+      "title_cn": "Conveyor 编码任务服务",
       "status": 1,
       "techStack": [
         "Python",
@@ -256,7 +258,7 @@
       ],
       "description": "Built a self-hosted Python service connecting Telegram and Feishu to Codex CLI, separating code changes into detached Git worktrees with diff, apply, discard and cancellation controls. Implemented a persistent SQLite task queue with restart recovery, operator allowlists, explicit approval gates and audit logging.",
       "description_fr": "Développement d'un service Python auto-hébergé reliant Telegram et Feishu à Codex CLI, avec des worktrees Git détachés pour séparer les modifications et des commandes de diff, application, abandon et annulation. Mise en œuvre d'une file SQLite persistante avec reprise après redémarrage, listes d'opérateurs autorisés, confirmations explicites et journalisation d'audit.",
-      "description_cn": "开发自托管 Python 服务，将 Telegram、飞书连接到 Codex CLI，通过独立 Git worktree 隔离代码改动，支持差异检查、应用、丢弃和取消。实现 SQLite 持久化任务队列与重启恢复，并加入操作员白名单、显式确认门禁和审计日志。",
+      "description_cn": "开发自托管 Python 服务，将 Telegram、飞书连接到 Codex CLI，通过独立 Git worktree 隔离代码改动，支持差异检查、应用、丢弃和取消。实现 SQLite 持久化任务队列与重启恢复，并加入操作员白名单、操作确认和审计日志。",
       "link": {
         "label": "GitHub",
         "label_fr": "GitHub",
