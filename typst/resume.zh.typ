@@ -14,20 +14,20 @@
   email: email,
   phone: "+86 17640426168",
   accent-color: "#000000",
-  font: ("New Computer Modern", "Noto Sans CJK SC"),
+  font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
   lang: "zh",
-  font-size: 10pt,
+  font-size: 9.5pt,
   author-position: left,
   personal-info-position: left,
 )
 
-#set par(leading: 0.45em, spacing: 0.55em)
+#set par(leading: 0.45em, spacing: 0.5em)
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
 == 概述
 
-渥太华大学系统科学与工程硕士在读，预计 2026 年 12 月毕业，求职意向为杭州 AI 应用与开发者工具方向。使用 Rust/Tauri、TypeScript/React 和 Python 开发桌面 Agent 与任务服务；LifeMint 已在 App Store 发布。曾在 Nokia、Ford 实习。
+渥太华大学系统科学与工程硕士在读，预计 2026 年 12 月毕业，求职杭州 AI 应用与开发者工具方向的软件工程岗位。使用 Rust/Tauri、TypeScript/React 和 Python 开发桌面 Agent 与任务服务；LifeMint 已在 App Store 发布。曾在 Nokia、Ford 实习。
 
 == 教育经历
 
