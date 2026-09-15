@@ -6,9 +6,9 @@
   "about": "AI applications and developer tools · Master’s expected Dec 2026 · Seeking roles in Hangzhou",
   "about_fr": "Applications IA et outils de développement · Maîtrise prévue en déc. 2026 · Recherche à Hangzhou",
   "about_cn": "AI 应用与开发者工具方向 · 硕士预计 2026 年 12 月毕业 · 求职意向：杭州",
-  "summary": "Systems Science and Engineering master's student at the University of Ottawa, graduating in December 2026 (expected). Software engineer building AI agents and developer tools with Rust/Tauri, TypeScript/React and Python; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad software engineering roles in Hangzhou.",
-  "summary_fr": "Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en décembre 2026. Développement d’agents IA et d’outils de développement avec Rust/Tauri, TypeScript/React et Python ; publication de LifeMint sur l’App Store. Stages chez Nokia et Ford. Recherche un poste en applications IA et outils de développement à Hangzhou.",
-  "summary_cn": "渥太华大学系统科学与工程硕士在读，预计 2026 年 12 月毕业，求职杭州 AI 应用与开发者工具方向的软件工程岗位。使用 Rust/Tauri、TypeScript/React 和 Python 开发桌面 Agent 与任务服务；LifeMint 已在 App Store 发布。曾在 Nokia、Ford 实习。",
+  "summary": "Systems Science and Engineering master's student at the University of Ottawa, graduating in December 2026 (expected). Software engineer building and fine-tuning AI systems with Python, PyTorch, Rust/Tauri and TypeScript/React; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad AI application and developer-tools roles in Hangzhou.",
+  "summary_fr": "Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en décembre 2026. Développement et adaptation de systèmes IA avec Python, PyTorch, Rust/Tauri et TypeScript/React ; publication de LifeMint sur l’App Store. Stages chez Nokia et Ford. Recherche un poste junior en applications IA et outils de développement à Hangzhou.",
+  "summary_cn": "渥太华大学系统科学与工程硕士在读，预计 2026 年 12 月毕业，求职杭州 AI 应用与开发者工具方向的应届软件工程岗位。使用 Python/PyTorch、Rust/Tauri 与 TypeScript/React 开发并微调 AI 系统；LifeMint 已在 App Store 发布。曾在 Nokia、Ford 实习。",
   "avatarUrl": "https://avatars.githubusercontent.com/u/141458085?v=4",
   "personalWebsiteUrl": "https://cv.paytonpei.top",
   "contact": {
@@ -224,6 +224,11 @@
     "Node.js",
     "Tauri 2",
     "SwiftUI",
+    "PyTorch",
+    "Transformers",
+    "PEFT/TRL",
+    "QLoRA",
+    "MLX",
     "LLM APIs",
     "Tool Calling",
     "MCP",
@@ -241,6 +246,31 @@
   "projects": [
     {
       "index": 0,
+      "title": "GaokaoTutor — LLM Fine-Tuning & Evaluation",
+      "title_fr": "GaokaoTutor — adaptation et évaluation de LLM",
+      "title_cn": "GaokaoTutor — 大模型微调与评测",
+      "status": 1,
+      "techStack": [
+        "Python",
+        "PyTorch",
+        "Transformers",
+        "PEFT/TRL",
+        "QLoRA",
+        "MLX",
+        "React Native"
+      ],
+      "description": "Fine-tuned Spark X2.5-4B with 4-bit QLoRA on an RTX 4090 using 161 tutoring traces; built reproducible data provenance, anti-contamination checks and a matched evaluation on a frozen 80-case unseen holdout. Reduced unsolicited solution dumping in hint/diagnosis cases from 100% to 13.5% and truncation from 57.5% to 0%; integrated the adapter into a Python tutor service and Expo prototype with deterministic math verification.",
+      "description_fr": "Adaptation de Spark X2.5-4B par QLoRA 4 bits sur RTX 4090 avec 161 traces pédagogiques ; mise en place de la provenance des données, de contrôles anti-contamination et d'une évaluation appariée sur 80 cas inédits gelés. Réduction des solutions complètes non sollicitées de 100 % à 13,5 % dans les modes indice/diagnostic et des troncatures de 57,5 % à 0 % ; intégration de l'adaptateur dans un service Python et un prototype Expo avec vérification mathématique déterministe.",
+      "description_cn": "在 RTX 4090 上使用 4-bit QLoRA 微调 Spark X2.5-4B，构建 161 条教学轨迹，并实现数据溯源、污染检测及 80 题冻结未见集对照评测。将提示/诊断场景中未经请求的完整解答率从 100% 降至 13.5%、输出截断率从 57.5% 降至 0%；将适配器接入 Python 教学服务与 Expo 原型，并加入确定性数学校验。",
+      "link": {
+        "label": "GitHub",
+        "label_fr": "GitHub",
+        "label_cn": "GitHub",
+        "href": "https://github.com/mammut001/gaokao"
+      }
+    },
+    {
+      "index": 1,
       "title": "pipi-shrimp-agent",
       "title_fr": "Pipi Shrimp Agent",
       "title_cn": "桌面 AI Agent（pipi-shrimp-agent）",
@@ -265,7 +295,7 @@
       }
     },
     {
-      "index": 1,
+      "index": 2,
       "title": "Conveyor",
       "title_fr": "Conveyor",
       "title_cn": "Conveyor 编码任务服务",
@@ -286,10 +316,11 @@
         "label_fr": "GitHub",
         "label_cn": "GitHub",
         "href": "https://github.com/mammut001/Conveyor"
-      }
+      },
+      "includeInPdf": false
     },
     {
-      "index": 2,
+      "index": 3,
       "title": "LifeMint (formerly Focus Mint)",
       "title_fr": "LifeMint (anciennement Focus Mint)",
       "title_cn": "LifeMint（原 Focus Mint）",
@@ -314,7 +345,7 @@
       }
     },
     {
-      "index": 3,
+      "index": 4,
       "title": "Resume Generator",
       "title_fr": "Resume Generator",
       "title_cn": "Resume Generator 简历生成器",

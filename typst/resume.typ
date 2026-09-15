@@ -17,17 +17,17 @@
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
   lang: "en",
-  font-size: 9.5pt,
+  font-size: 9.75pt,
   author-position: left,
   personal-info-position: left,
 )
 
-#set par(leading: 0.45em, spacing: 0.5em)
+#set par(leading: 0.47em, spacing: 0.5em)
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
 == Summary
 
-Systems Science and Engineering master's student at the University of Ottawa, graduating in December 2026 (expected). Software engineer building AI agents and developer tools with Rust/Tauri, TypeScript/React and Python; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad software engineering roles in Hangzhou.
+Systems Science and Engineering master's student at the University of Ottawa, graduating in December 2026 (expected). Software engineer building and fine-tuning AI systems with Python, PyTorch, Rust/Tauri and TypeScript/React; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad AI application and developer-tools roles in Hangzhou.
 
 == Education
 
@@ -48,21 +48,21 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 == Projects
 
 #project(
+  name: "GaokaoTutor — LLM Fine-Tuning & Evaluation",
+  url: "github.com/mammut001/gaokao",
+)
+#align(left)[
+- Fine-tuned Spark X2.5-4B with 4-bit QLoRA on an RTX 4090 using 161 tutoring traces; built reproducible data provenance, anti-contamination checks and a matched evaluation on a frozen 80-case unseen holdout.
+- Reduced unsolicited solution dumping in hint/diagnosis cases from 100% to 13.5% and truncation from 57.5% to 0%; integrated the adapter into a Python tutor service and Expo prototype with deterministic math verification.
+]
+
+#project(
   name: "pipi-shrimp-agent",
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
 #align(left)[
 - Built a local-first desktop AI agent with Rust/Tauri, React/TypeScript and SQLite, integrating multiple LLM providers, structured tool calls and project memory.
 - Implemented provider adapters, buffered SSE parsing and cancellation, plus CDP browser automation with failure recovery and context compression for long-running sessions.
-]
-
-#project(
-  name: "Conveyor",
-  url: "github.com/mammut001/Conveyor",
-)
-#align(left)[
-- Built a self-hosted Python service connecting Telegram and Feishu to Codex CLI, separating code changes into detached Git worktrees with diff, apply, discard and cancellation controls.
-- Implemented a persistent SQLite task queue with restart recovery, operator allowlists, explicit approval gates and audit logging.
 ]
 
 #project(
@@ -122,6 +122,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 == Skills
 - *Languages*: Python, TypeScript, JavaScript, Rust, Swift, C++
 - *Frameworks*: React, Node.js, Tauri 2, SwiftUI
-- *AI & Systems*: LLM APIs, Tool Calling, MCP, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
+- *AI & Systems*: PyTorch, Transformers, PEFT/TRL, QLoRA, MLX, LLM APIs, Tool Calling, MCP, SQLite
 - *Testing & Delivery*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
+- *Additional*: CDP Browser Automation, WatchConnectivity, StoreKit 2
 

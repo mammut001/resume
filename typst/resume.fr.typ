@@ -17,17 +17,17 @@
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
   lang: "fr",
-  font-size: 9.5pt,
+  font-size: 9.75pt,
   author-position: left,
   personal-info-position: left,
 )
 
-#set par(leading: 0.45em, spacing: 0.5em)
+#set par(leading: 0.47em, spacing: 0.5em)
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
 == Résumé
 
-Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en décembre 2026. Développement d’agents IA et d’outils de développement avec Rust/Tauri, TypeScript/React et Python ; publication de LifeMint sur l’App Store. Stages chez Nokia et Ford. Recherche un poste en applications IA et outils de développement à Hangzhou.
+Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en décembre 2026. Développement et adaptation de systèmes IA avec Python, PyTorch, Rust/Tauri et TypeScript/React ; publication de LifeMint sur l’App Store. Stages chez Nokia et Ford. Recherche un poste junior en applications IA et outils de développement à Hangzhou.
 
 == Formation
 
@@ -48,21 +48,21 @@
 == Projets
 
 #project(
+  name: "GaokaoTutor — adaptation et évaluation de LLM",
+  url: "github.com/mammut001/gaokao",
+)
+#align(left)[
+- Adaptation de Spark X2.5-4B par QLoRA 4 bits sur RTX 4090 avec 161 traces pédagogiques ; mise en place de la provenance des données, de contrôles anti-contamination et d'une évaluation appariée sur 80 cas inédits gelés.
+- Réduction des solutions complètes non sollicitées de 100 % à 13,5 % dans les modes indice/diagnostic et des troncatures de 57,5 % à 0 % ; intégration de l'adaptateur dans un service Python et un prototype Expo avec vérification mathématique déterministe.
+]
+
+#project(
   name: "Pipi Shrimp Agent",
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
 #align(left)[
 - Développement d'un agent IA de bureau local-first avec Rust/Tauri, React/TypeScript et SQLite : intégration de plusieurs fournisseurs LLM, appels d'outils structurés et mémoire par projet.
 - Mise en œuvre d'adaptateurs fournisseurs, d'une analyse SSE avec mise en tampon et de l'annulation, ainsi que de l'automatisation CDP avec reprise après échec et compression du contexte.
-]
-
-#project(
-  name: "Conveyor",
-  url: "github.com/mammut001/Conveyor",
-)
-#align(left)[
-- Développement d'un service Python auto-hébergé reliant Telegram et Feishu à Codex CLI, avec des worktrees Git détachés pour séparer les modifications et des commandes de diff, application, abandon et annulation.
-- Mise en œuvre d'une file SQLite persistante avec reprise après redémarrage, listes d'opérateurs autorisés, confirmations explicites et journalisation d'audit.
 ]
 
 #project(
@@ -122,6 +122,7 @@
 == Compétences
 - *Langages*: Python, TypeScript, JavaScript, Rust, Swift, C++
 - *Frameworks*: React, Node.js, Tauri 2, SwiftUI
-- *IA & systèmes*: LLM APIs, Tool Calling, MCP, SQLite, CDP Browser Automation, WatchConnectivity, StoreKit 2
+- *IA & systèmes*: PyTorch, Transformers, PEFT/TRL, QLoRA, MLX, LLM APIs, Tool Calling, MCP, SQLite
 - *Tests & livraison*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
+- *Complémentaire*: CDP Browser Automation, WatchConnectivity, StoreKit 2
 

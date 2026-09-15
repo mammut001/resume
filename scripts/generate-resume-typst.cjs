@@ -233,7 +233,7 @@ const skillGroups = [
   },
   {
     labelKey: "aiSystems",
-    values: ["LLM APIs", "Tool Calling", "MCP", "Embeddings", "SQLite", "CDP Browser Automation", "WatchConnectivity", "StoreKit 2"],
+    values: ["PyTorch", "Transformers", "PEFT/TRL", "QLoRA", "MLX", "LLM APIs", "Tool Calling", "MCP", "SQLite"],
   },
   {
     labelKey: "delivery",
@@ -290,12 +290,12 @@ const renderResume = (language) => {
     '  font: ("Noto Sans", "Noto Sans CJK SC"),',
     '  paper: "a4",',
     `  lang: ${typstString({ english: "en", french: "fr", chinese: "zh" }[language])},`,
-    "  font-size: 9.5pt,",
+    "  font-size: 9.75pt,",
     "  author-position: left,",
     "  personal-info-position: left,",
     ")",
     "",
-    "#set par(leading: 0.45em, spacing: 0.5em)",
+    "#set par(leading: 0.47em, spacing: 0.5em)",
     `#link(${typstString(findSocial("GitHub"))})[GitHub: ${escapeTypstInline(github.replace(/^github\.com\//, ""))}] | #link(${typstString(findSocial("LinkedIn"))})[LinkedIn]${showPersonalSite ? ` | #link(${typstString(resume.personalWebsiteUrl)})[${escapeTypstInline(personalSite)}]` : ""}`,
     "",
     `== ${labels.summary}`,
