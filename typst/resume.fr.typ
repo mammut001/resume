@@ -49,7 +49,6 @@
 
 #project(
   name: "GaokaoTutor — adaptation et évaluation de LLM",
-  url: "github.com/mammut001/gaokao",
 )
 #align(left)[
 - Adaptation de Spark X2.5-4B par QLoRA 4 bits sur RTX 4090 avec 161 traces pédagogiques ; mise en place de la provenance des données, de contrôles anti-contamination et d'une évaluation appariée sur 80 cas inédits gelés.

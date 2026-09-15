@@ -49,7 +49,6 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 
 #project(
   name: "GaokaoTutor — LLM Fine-Tuning & Evaluation",
-  url: "github.com/mammut001/gaokao",
 )
 #align(left)[
 - Fine-tuned Spark X2.5-4B with 4-bit QLoRA on an RTX 4090 using 161 tutoring traces; built reproducible data provenance, anti-contamination checks and a matched evaluation on a frozen 80-case unseen holdout.

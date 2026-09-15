@@ -49,7 +49,6 @@
 
 #project(
   name: "GaokaoTutor — 大模型微调与评测",
-  url: "github.com/mammut001/gaokao",
 )
 #align(left)[
 - 在 RTX 4090 上使用 4-bit QLoRA 微调 Spark X2.5-4B，构建 161 条教学轨迹，并实现数据溯源、污染检测及 80 题冻结未见集对照评测。

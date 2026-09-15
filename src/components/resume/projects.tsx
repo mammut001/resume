@@ -18,14 +18,15 @@ export const Projects = () => {
                     const title = localize(project, "title")
                     const description = localize(project, "description")
                     const statusLabel = project.status === 1 ? labels.active : labels.archived
+                    const projectLink = "link" in project ? project.link : undefined
 
                     return (
                         <Card key={title} className="border-none shadow-none bg-transparent p-0">
                             <CardHeader className="p-0 space-y-1">
                                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                                     <h3 className="text-lg font-semibold leading-none hover:underline">
-                                        {"link" in project ? (
-                                            <a href={project.link.href} target="_blank" rel="noopener noreferrer">
+                                        {projectLink?.href ? (
+                                            <a href={projectLink.href} target="_blank" rel="noopener noreferrer">
                                                 {title}
                                             </a>
                                         ) : (

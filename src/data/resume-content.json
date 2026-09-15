@@ -261,13 +261,7 @@
       ],
       "description": "Fine-tuned Spark X2.5-4B with 4-bit QLoRA on an RTX 4090 using 161 tutoring traces; built reproducible data provenance, anti-contamination checks and a matched evaluation on a frozen 80-case unseen holdout. Reduced unsolicited solution dumping in hint/diagnosis cases from 100% to 13.5% and truncation from 57.5% to 0%; integrated the adapter into a Python tutor service and Expo prototype with deterministic math verification.",
       "description_fr": "Adaptation de Spark X2.5-4B par QLoRA 4 bits sur RTX 4090 avec 161 traces pédagogiques ; mise en place de la provenance des données, de contrôles anti-contamination et d'une évaluation appariée sur 80 cas inédits gelés. Réduction des solutions complètes non sollicitées de 100 % à 13,5 % dans les modes indice/diagnostic et des troncatures de 57,5 % à 0 % ; intégration de l'adaptateur dans un service Python et un prototype Expo avec vérification mathématique déterministe.",
-      "description_cn": "在 RTX 4090 上使用 4-bit QLoRA 微调 Spark X2.5-4B，构建 161 条教学轨迹，并实现数据溯源、污染检测及 80 题冻结未见集对照评测。将提示/诊断场景中未经请求的完整解答率从 100% 降至 13.5%、输出截断率从 57.5% 降至 0%；将适配器接入 Python 教学服务与 Expo 原型，并加入确定性数学校验。",
-      "link": {
-        "label": "GitHub",
-        "label_fr": "GitHub",
-        "label_cn": "GitHub",
-        "href": "https://github.com/mammut001/gaokao"
-      }
+      "description_cn": "在 RTX 4090 上使用 4-bit QLoRA 微调 Spark X2.5-4B，构建 161 条教学轨迹，并实现数据溯源、污染检测及 80 题冻结未见集对照评测。将提示/诊断场景中未经请求的完整解答率从 100% 降至 13.5%、输出截断率从 57.5% 降至 0%；将适配器接入 Python 教学服务与 Expo 原型，并加入确定性数学校验。"
     },
     {
       "index": 1,
