@@ -278,7 +278,7 @@ const renderResume = (language) => {
     '#import "@preview/basic-resume:0.2.9": *',
     "",
     `#let name = ${typstString(getLocalizedText(resume, "name", language))}`,
-    `#let location = ${typstString(resume.location)}`,
+    `#let location = ${typstString(getLocalizedText(resume, "location", language))}`,
     `#let email = ${typstString(resume.contact.email)}`,
     "",
     "#show: resume.with(",

@@ -5,7 +5,7 @@
 #import "@preview/basic-resume:0.2.9": *
 
 #let name = "Payton Pei"
-#let location = "Hangzhou / Ottawa"
+#let location = "Ottawa"
 #let email = "paytonpei01@gmail.com"
 
 #show: resume.with(
@@ -27,7 +27,7 @@
 
 == Summary
 
-Systems Science and Engineering master's student at the University of Ottawa, graduating in December 2026 (expected). Software engineer building and fine-tuning AI systems with Python, PyTorch, Rust/Tauri and TypeScript/React; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad AI application and developer-tools roles in Hangzhou.
+Systems Science and Engineering master's student at the University of Ottawa, graduating in December 2026 (expected). Software engineer building and fine-tuning AI systems with Python, PyTorch, Rust/Tauri and TypeScript/React; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad AI application and developer-tools roles in Ottawa.
 
 == Education
 

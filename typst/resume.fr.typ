@@ -5,7 +5,7 @@
 #import "@preview/basic-resume:0.2.9": *
 
 #let name = "Payton Pei"
-#let location = "Hangzhou / Ottawa"
+#let location = "Ottawa"
 #let email = "paytonpei01@gmail.com"
 
 #show: resume.with(
@@ -27,7 +27,7 @@
 
 == Résumé
 
-Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en décembre 2026. Développement et adaptation de systèmes IA avec Python, PyTorch, Rust/Tauri et TypeScript/React ; publication de LifeMint sur l’App Store. Stages chez Nokia et Ford. Recherche un poste junior en applications IA et outils de développement à Hangzhou.
+Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en décembre 2026. Développement et adaptation de systèmes IA avec Python, PyTorch, Rust/Tauri et TypeScript/React ; publication de LifeMint sur l’App Store. Stages chez Nokia et Ford. Recherche un poste junior en applications IA et outils de développement à Ottawa.
 
 == Formation
 

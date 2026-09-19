@@ -5,7 +5,7 @@
 #import "@preview/basic-resume:0.2.9": *
 
 #let name = "裴栋 | Payton Pei"
-#let location = "Hangzhou / Ottawa"
+#let location = "杭州 / 上海"
 #let email = "paytonpei01@gmail.com"
 
 #show: resume.with(
@@ -27,7 +27,7 @@
 
 == 概述
 
-渥太华大学系统科学与工程硕士在读，预计 2026 年 12 月毕业，求职杭州 AI 应用与开发者工具方向的应届软件工程岗位。使用 Python/PyTorch、Rust/Tauri 与 TypeScript/React 开发并微调 AI 系统；LifeMint 已在 App Store 发布。曾在 Nokia、Ford 实习。
+渥太华大学系统科学与工程硕士在读，预计 2026 年 12 月毕业，求职杭州 / 上海 AI 应用与开发者工具方向的应届软件工程岗位。使用 Python/PyTorch、Rust/Tauri 与 TypeScript/React 开发并微调 AI 系统；LifeMint 已在 App Store 发布。曾在 Nokia、Ford 实习。
 
 == 教育经历
 

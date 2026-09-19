@@ -41,11 +41,11 @@ export const Hero = () => {
                     <GlobeIcon className="size-4" />
                     <a
                         className="hover:underline offset-4"
-                        href={RESUME_DATA.locationLink}
+                        href={localize(RESUME_DATA, "locationLink")}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        {RESUME_DATA.location}
+                        {localize(RESUME_DATA, "location")}
                     </a>
                 </div>
 
