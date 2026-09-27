@@ -13,18 +13,18 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-background font-sans antialiased">
       <Header />
-      <div className="container relative mx-auto max-w-screen-lg scroll-my-12 overflow-auto p-4 md:p-16">
-        <section className="mx-auto w-full space-y-8 bg-background print:space-y-4">
+      <div className="relative mx-auto max-w-screen-lg px-4 pb-16 pt-6 md:px-16 md:pt-10 print:p-0">
+        <div className="mx-auto w-full space-y-12 bg-background md:space-y-14 print:space-y-6">
           <Hero />
-          <Heatmap />
           <About />
           <Projects />
           <Experience />
           <Education />
           <Research />
           <Skills />
+          <Heatmap />
           <Coursework />
-        </section>
+        </div>
       </div>
     </main>
   );

@@ -71,13 +71,19 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background font-sans text-foreground;
   }
   html {
      scroll-behavior: smooth;
   }
 }
 
-.print-force-new-page {
-  page-break-before: always;
+@media print {
+  @page {
+    margin: 12mm;
+  }
+
+  html {
+    font-size: 13px;
+  }
 }

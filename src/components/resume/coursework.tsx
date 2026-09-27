@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Section } from "@/components/ui/section";
+import { Section, SectionHeading } from "@/components/ui/section";
 import { RESUME_DATA } from "@/data/resume-data";
 import { useResumeLocale } from "@/data/resume-locale";
 
@@ -16,14 +16,12 @@ export const Coursework = () => {
   }
 
   return (
-    <Section className="py-8 print:hidden scroll-mb-16">
-      <div className="border-b pb-2">
-        <h2 className="text-2xl font-bold tracking-tight">{labels.coursework}</h2>
-        <p className="mt-2 text-sm text-muted-foreground">{labels.courseworkIntro}</p>
-      </div>
+    <Section id="coursework" className="print:hidden">
+      <SectionHeading>{labels.coursework}</SectionHeading>
+      <p className="text-sm text-muted-foreground">{labels.courseworkIntro}</p>
 
       <details className="group">
-        <summary className="cursor-pointer rounded-md py-2 text-sm font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">
+        <summary className="w-fit cursor-pointer rounded-md py-1 text-sm font-medium underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">
           {labels.coursework} ({RESUME_DATA.coursework.length})
         </summary>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
@@ -48,7 +46,7 @@ export const Coursework = () => {
                   </div>
                   <h3 className="pt-2 text-base font-semibold leading-snug">{title}</h3>
                 </CardHeader>
-                <CardContent className="mt-3 flex flex-1 flex-col p-0 font-sans text-sm leading-relaxed">
+                <CardContent className="mt-3 flex flex-1 flex-col p-0 leading-relaxed">
                   <p>{description}</p>
                   <a
                     className="mt-4 inline-flex w-fit items-center gap-1 text-xs font-medium text-foreground underline-offset-4 hover:underline"
