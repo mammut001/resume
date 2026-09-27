@@ -2,7 +2,7 @@
 
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Section } from "@/components/ui/section";
+import { Section, SectionHeading } from "@/components/ui/section";
 import { RESUME_DATA } from "@/data/resume-data";
 import { formatDateRange, useResumeLocale } from "@/data/resume-locale";
 
@@ -10,44 +10,49 @@ export const Experience = () => {
     const { labels, localize } = useResumeLocale()
 
     return (
-        <Section className="py-8">
-            <h2 className="text-2xl font-bold tracking-tight mb-6 border-b pb-2">{labels.workExperience}</h2>
+        <Section id="experience">
+            <SectionHeading>{labels.workExperience}</SectionHeading>
             <div className="space-y-6">
                 {RESUME_DATA.work.map((work) => {
                     const workDescription = localize(work, "description")
                     const title = localize(work, "title")
+                    const location = localize(work, "location")
 
                     return (
-                        <Card key={work.company} className="border-none shadow-none bg-transparent p-0">
-                            <CardHeader className="p-0 space-y-1">
-                                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                                    <h3 className="text-lg font-semibold leading-none hover:underline">
-                                        <a href={work.link} target="_blank" rel="noopener noreferrer">
-                                            {work.company}
-                                        </a>
+                        <Card key={`${work.company}-${work.start}`} className="break-inside-avoid border-none bg-transparent p-0 shadow-none">
+                            <CardHeader className="space-y-1.5 p-0">
+                                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+                                    <h3 className="text-base font-semibold leading-snug md:text-lg">
+                                        {work.link ? (
+                                            <a
+                                                href={work.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="underline-offset-4 hover:underline"
+                                            >
+                                                {work.company}
+                                            </a>
+                                        ) : (
+                                            work.company
+                                        )}
                                     </h3>
-                                    <div className="text-sm font-medium tabular-nums text-muted-foreground">
+                                    <div className="shrink-0 text-sm tabular-nums text-muted-foreground">
                                         {formatDateRange(work.start, work.end, labels.present)}
                                     </div>
                                 </div>
-                                <div className="flex items-center gap-2 flex-wrap">
-                                    <h4 className="font-mono text-sm leading-none text-foreground/80 font-medium">
-                                        {title}
-                                    </h4>
-                                    <span className="flex gap-1">
-                                        {work.badges.map((badge) => (
-                                            <Badge
-                                                variant="secondary"
-                                                className="align-middle text-xs"
-                                                key={badge}
-                                            >
-                                                {badge}
-                                            </Badge>
-                                        ))}
-                                    </span>
+                                <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
+                                    <span className="font-medium text-foreground/80">{title}</span>
+                                    {work.badges.map((badge) => (
+                                        <Badge variant="secondary" className="text-[11px] font-medium" key={badge}>
+                                            {badge}
+                                        </Badge>
+                                    ))}
+                                    {location ? (
+                                        <span className="text-muted-foreground">· {location}</span>
+                                    ) : null}
                                 </div>
                             </CardHeader>
-                            <CardContent className="mt-3 text-sm text-muted-foreground leading-relaxed p-0">
+                            <CardContent className="mt-2 p-0 leading-relaxed">
                                 {workDescription}
                             </CardContent>
                         </Card>

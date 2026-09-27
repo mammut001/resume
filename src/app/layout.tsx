@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import React from "react";
 import { RESUME_DATA } from "@/data/resume-data";
@@ -27,9 +28,26 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: `${RESUME_DATA.name} — Software Engineer`,
-    description: RESUME_DATA.about,
+    description: RESUME_DATA.summary,
     images: [RESUME_DATA.avatarUrl],
   },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: RESUME_DATA.name,
+  url: RESUME_DATA.personalWebsiteUrl,
+  image: RESUME_DATA.avatarUrl,
+  email: `mailto:${RESUME_DATA.contact.email}`,
+  jobTitle: "Software Engineer",
+  description: RESUME_DATA.summary,
+  alumniOf: RESUME_DATA.education.map((education) => ({
+    "@type": "CollegeOrUniversity",
+    name: education.school,
+  })),
+  knowsAbout: RESUME_DATA.skills,
+  sameAs: RESUME_DATA.contact.social.map((social) => social.url),
 };
 
 export default function RootLayout({
@@ -38,8 +56,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={GeistSans.className} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${GeistSans.variable} ${GeistMono.variable}`}
+      suppressHydrationWarning
+    >
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>

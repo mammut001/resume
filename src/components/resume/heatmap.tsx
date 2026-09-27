@@ -1,11 +1,24 @@
 "use client";
 
-import { Section } from "@/components/ui/section";
+import { Section, SectionHeading } from "@/components/ui/section";
 import { RESUME_DATA } from "@/data/resume-data";
 import { useResumeLocale } from "@/data/resume-locale";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { Component, type ReactNode, useEffect, useState } from "react";
 import { GitHubCalendar } from "react-github-calendar";
+
+// Hides the whole section when the GitHub contributions request fails.
+class HideOnError extends Component<{ children: ReactNode }, { failed: boolean }> {
+  state = { failed: false };
+
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+
+  render() {
+    return this.state.failed ? null : this.props.children;
+  }
+}
 
 export function Heatmap() {
   const { labels } = useResumeLocale();
@@ -22,17 +35,22 @@ export function Heatmap() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;
-
   return (
-    <Section className="print-force-visible">
-      <h2 className="text-xl font-bold">{labels.githubContributions}</h2>
-      <div className="mt-4 flex justify-center overflow-hidden rounded-lg border bg-card p-4 shadow-sm">
-        <GitHubCalendar
-          username={githubUsername}
-          colorScheme={resolvedTheme === "dark" ? "dark" : "light"}
-        />
-      </div>
-    </Section>
+    <HideOnError>
+      <Section id="github" className="print:hidden">
+        <SectionHeading>{labels.githubContributions}</SectionHeading>
+        <div className="flex min-h-[168px] justify-center overflow-x-auto rounded-lg border bg-card p-4">
+          {mounted ? (
+            <GitHubCalendar
+              username={githubUsername}
+              colorScheme={resolvedTheme === "dark" ? "dark" : "light"}
+              blockSize={11}
+              fontSize={12}
+              throwOnError
+            />
+          ) : null}
+        </div>
+      </Section>
+    </HideOnError>
   );
 }
