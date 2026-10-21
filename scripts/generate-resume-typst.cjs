@@ -188,9 +188,9 @@ const renderWork = (language) =>
 
       return `#work(\n  title: ${typstString(getLocalizedText(entry, "title", language))},\n  location: ${typstString(
         getLocalizedText(entry, "location", language),
-      )},\n  company: ${typstString(entry.company)},\n  dates: ${renderDates(language, entry.start, entry.end)},\n)\n${renderBulletList(bullets)}`;
+      )},\n  company: ${typstString(entry.company)},\n  dates: ${renderDates(language, entry.start, entry.end)},\n)\n${renderBulletList(bullets)}\n#v(0.28em)`;
     })
-    .join("\n\n");
+    .join("\n");
 
 const renderProjects = (language) => {
   const projects = resume.projects.filter((entry) => entry.includeInPdf !== false)
@@ -198,13 +198,14 @@ const renderProjects = (language) => {
     .slice();
 
   return projects
-    .map((entry) => {
+    .map((entry, index) => {
       const localizedDescription = getLocalizedText(entry, "description", language);
       const descriptions = splitSentences(localizedDescription);
       const urlLine = entry.link?.href ? `\n  url: ${typstString(stripProtocol(entry.link.href))},` : "";
-      return `#project(\n  name: ${typstString(getLocalizedText(entry, "title", language))},${urlLine}\n)\n${renderBulletList(descriptions)}`;
+      const leadSpace = index === 0 ? "" : "#v(0.32em)\n";
+      return `${leadSpace}#project(\n  name: ${typstString(getLocalizedText(entry, "title", language))},${urlLine}\n)\n${renderBulletList(descriptions)}\n#v(0.3em)`;
     })
-    .join("\n\n");
+    .join("\n");
 };
 
 const renderResearch = (language) =>
@@ -212,15 +213,18 @@ const renderResearch = (language) =>
     .slice()
     .reverse()
     .map((entry) => {
-      const bullets = splitSentences(getLocalizedText(entry, "description", language));
+      const bullets = splitSentences(getLocalizedText(entry, "description", language)).slice(
+        0,
+        language === "chinese" ? 2 : 1,
+      );
 
       return `#extracurriculars(\n  activity: ${typstString(getLocalizedText(entry, "title", language))},\n  dates: ${renderDates(
         language,
         entry.start,
         entry.end,
-      )},\n)\n${renderBulletList(bullets)}`;
+      )},\n)\n${renderBulletList(bullets)}\n#v(0.28em)`;
     })
-    .join("\n\n");
+    .join("\n");
 
 const skillGroups = [
   {
@@ -229,7 +233,7 @@ const skillGroups = [
   },
   {
     labelKey: "frameworks",
-    values: ["React", "Node.js", "Tauri 2", "SwiftUI", "Jetpack Compose", "Firebase", "Tailwind CSS"],
+    values: ["React", "Next.js", "Node.js", "Tauri 2", "SwiftUI", "Jetpack Compose", "Firebase", "Tailwind CSS"],
   },
   {
     labelKey: "aiSystems",
@@ -290,39 +294,46 @@ const renderResume = (language) => {
     '  font: ("Noto Sans", "Noto Sans CJK SC"),',
     '  paper: "a4",',
     `  lang: ${typstString({ english: "en", french: "fr", chinese: "zh" }[language])},`,
-    "  font-size: 9.75pt,",
+    "  font-size: 9.5pt,",
     "  author-position: left,",
     "  personal-info-position: left,",
     ")",
     "",
-    "#set par(leading: 0.47em, spacing: 0.5em)",
+    "#set par(leading: 0.42em, spacing: 0.44em)",
+    "// basic-resume pulls the section rule up with pad(bottom: -10pt), which collides with CJK.",
+    "#let section(title) = block(above: 0.85em, below: 0.5em)[",
+    "  #text(weight: \"bold\", size: 1.05em)[#title]",
+    "  #v(0.32em)",
+    "  #line(length: 100%, stroke: 0.5pt)",
+    "]",
     `#link(${typstString(findSocial("GitHub"))})[GitHub: ${escapeTypstInline(github.replace(/^github\.com\//, ""))}] | #link(${typstString(findSocial("LinkedIn"))})[LinkedIn]${showPersonalSite ? ` | #link(${typstString(resume.personalWebsiteUrl)})[${escapeTypstInline(personalSite)}]` : ""}`,
     "",
-    `== ${labels.summary}`,
+    `#section(${typstString(labels.summary)})`,
     "",
     escapeTypstInline(getLocalizedText(resume, "summary", language)),
     "",
-    `== ${labels.education}`,
+    `#section(${typstString(labels.education)})`,
     "",
     renderEducation(language),
     "",
-    `== ${labels.projects}`,
+    `#section(${typstString(labels.projects)})`,
     "",
     renderProjects(language),
     "",
-    `== ${labels.workExperience}`,
+    `#section(${typstString(labels.workExperience)})`,
     "",
     renderWork(language),
     "",
     ...(resume.research.length > 0
       ? [
-          `== ${labels.research}`,
+          `#section(${typstString(labels.research)})`,
           "",
           renderResearch(language),
           "",
         ]
       : []),
-    `== ${labels.skills}`,
+    `#section(${typstString(labels.skills)})`,
+    "",
     renderSkills(language),
     "",
   ];
