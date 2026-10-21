@@ -23,14 +23,19 @@
 )
 
 #set par(leading: 0.42em, spacing: 0.44em)
-#show heading.where(level: 2): set block(above: 0.72em, below: 0.42em)
+// basic-resume pulls the section rule up with pad(bottom: -10pt), which collides with CJK.
+#let section(title) = block(above: 0.85em, below: 0.5em)[
+  #text(weight: "bold", size: 1.05em)[#title]
+  #v(0.32em)
+  #line(length: 100%, stroke: 0.5pt)
+]
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
-== 概述
+#section("概述")
 
 渥太华大学系统科学与工程硕士在读，预计 2026 年 12 月毕业，求职杭州 / 上海 AI 应用与开发者工具方向的应届软件工程岗位。使用 Python/PyTorch、Rust/Tauri 与 TypeScript/React 开发并微调 AI 系统；LifeMint 已在 App Store 发布。曾在 Nokia、Ford 实习。
 
-== 教育经历
+#section("教育经历")
 
 #edu(
   institution: "渥太华大学",
@@ -46,7 +51,7 @@
   degree: "计算机科学学士",
 )
 
-== 项目
+#section("项目")
 
 #project(
   name: "Réussir en français 法语备考平台",
@@ -87,7 +92,7 @@
 ]
 #v(0.3em)
 
-== 工作经历
+#section("工作经历")
 
 #work(
   title: "助教（兼职）",
@@ -121,7 +126,7 @@
 ]
 #v(0.28em)
 
-== 研究
+#section("研究")
 
 #extracurriculars(
   activity: "基于 Bridge U-Net 与 DDBM 的极低照度 RAW 图像复原",
@@ -133,7 +138,7 @@
 ]
 #v(0.28em)
 
-== 技能
+#section("技能")
 
 - *语言*: Python, TypeScript, JavaScript, Rust, Swift, C++
 - *框架*: React, Next.js, Node.js, Tauri 2, SwiftUI

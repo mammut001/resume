@@ -23,14 +23,19 @@
 )
 
 #set par(leading: 0.42em, spacing: 0.44em)
-#show heading.where(level: 2): set block(above: 0.72em, below: 0.42em)
+// basic-resume pulls the section rule up with pad(bottom: -10pt), which collides with CJK.
+#let section(title) = block(above: 0.85em, below: 0.5em)[
+  #text(weight: "bold", size: 1.05em)[#title]
+  #v(0.32em)
+  #line(length: 100%, stroke: 0.5pt)
+]
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
-== Résumé
+#section("Résumé")
 
 Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en décembre 2026. Développement et adaptation de systèmes IA avec Python, PyTorch, Rust/Tauri et TypeScript/React ; publication de LifeMint sur l’App Store. Stages chez Nokia et Ford. Recherche un poste junior en applications IA et outils de développement à Ottawa.
 
-== Formation
+#section("Formation")
 
 #edu(
   institution: "Université d'Ottawa",
@@ -46,7 +51,7 @@
   degree: "Baccalauréat en informatique",
 )
 
-== Projets
+#section("Projets")
 
 #project(
   name: "Réussir en français",
@@ -87,7 +92,7 @@
 ]
 #v(0.3em)
 
-== Expérience
+#section("Expérience")
 
 #work(
   title: "Auxiliaire d’enseignement",
@@ -122,7 +127,7 @@
 ]
 #v(0.28em)
 
-== Recherche
+#section("Recherche")
 
 #extracurriculars(
   activity: "Restauration d'images RAW en très faible luminosité avec Bridge U-Net et DDBM",
@@ -133,7 +138,7 @@
 ]
 #v(0.28em)
 
-== Compétences
+#section("Compétences")
 
 - *Langages*: Python, TypeScript, JavaScript, Rust, Swift, C++
 - *Frameworks*: React, Next.js, Node.js, Tauri 2, SwiftUI

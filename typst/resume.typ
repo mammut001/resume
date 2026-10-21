@@ -23,14 +23,19 @@
 )
 
 #set par(leading: 0.42em, spacing: 0.44em)
-#show heading.where(level: 2): set block(above: 0.72em, below: 0.42em)
+// basic-resume pulls the section rule up with pad(bottom: -10pt), which collides with CJK.
+#let section(title) = block(above: 0.85em, below: 0.5em)[
+  #text(weight: "bold", size: 1.05em)[#title]
+  #v(0.32em)
+  #line(length: 100%, stroke: 0.5pt)
+]
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
-== Summary
+#section("Summary")
 
 Systems Science and Engineering master's student at the University of Ottawa, graduating in December 2026 (expected). Software engineer building and fine-tuning AI systems with Python, PyTorch, Rust/Tauri and TypeScript/React; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad AI application and developer-tools roles in Ottawa.
 
-== Education
+#section("Education")
 
 #edu(
   institution: "University of Ottawa",
@@ -46,7 +51,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
   degree: "Bachelor of Computer Science",
 )
 
-== Projects
+#section("Projects")
 
 #project(
   name: "Réussir en français",
@@ -87,7 +92,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 ]
 #v(0.3em)
 
-== Work Experience
+#section("Work Experience")
 
 #work(
   title: "Teaching Assistant",
@@ -122,7 +127,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 ]
 #v(0.28em)
 
-== Research
+#section("Research")
 
 #extracurriculars(
   activity: "Low-Light RAW Image Restoration with Bridge U-Net and DDBM",
@@ -133,7 +138,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 ]
 #v(0.28em)
 
-== Skills
+#section("Skills")
 
 - *Languages*: Python, TypeScript, JavaScript, Rust, Swift, C++
 - *Frameworks*: React, Next.js, Node.js, Tauri 2, SwiftUI
