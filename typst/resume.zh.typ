@@ -12,7 +12,7 @@
   author: name,
   location: location,
   email: email,
-  phone: "+86 17640426168",
+  phone: "+1 873-354-4085 | +86 176-4042-6168",
   accent-color: "#000000",
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
@@ -48,6 +48,15 @@
 == 项目
 
 #project(
+  name: "Réussir en français 法语备考平台",
+  url: "french.paytonpei.top",
+)
+#align(left)[
+- 在 french.paytonpei.top 上线 TCF Canada 法语备考平台：Next.js 16 / React 19 前端通过同源反向代理接入 Node/SQLite 学习后端，并支持 Cloudflare Worker/D1 双运行时。
+- 实现限时四科模考与冲突安全的会话同步、26 周 SM-2 学习计划、法汉词典、句级对齐精听，以及 Stripe 订阅与 Docker 自托管部署。
+]
+
+#project(
   name: "GaokaoTutor — 大模型微调与评测",
 )
 #align(left)[
@@ -62,15 +71,6 @@
 #align(left)[
 - 使用 Rust/Tauri、React/TypeScript 与 SQLite 构建本地优先桌面 AI Agent，集成多模型接入、结构化工具调用与项目记忆。
 - 实现供应商适配、SSE 缓冲解析与取消机制，并支持 CDP 浏览器自动化、失败恢复和长会话上下文压缩。
-]
-
-#project(
-  name: "LifeMint（原 Focus Mint）",
-  url: "apps.apple.com/us/app/lifemint/id6759029810",
-)
-#align(left)[
-- 在 App Store 发布面向 iPhone、iPad 和 Apple Watch 的 SwiftUI 应用，提供专注会话、收益追踪及中英法三语支持。
-- 实现 StoreKit 内购、桌面组件、实时活动，以及基于 WatchConnectivity 的手机与手表双向同步。
 ]
 
 == 工作经历
@@ -119,7 +119,7 @@
 
 == 技能
 - *语言*: Python, TypeScript, JavaScript, Rust, Swift, C++
-- *框架*: React, Node.js, Tauri 2, SwiftUI
+- *框架*: React, Next.js, Node.js, Tauri 2, SwiftUI
 - *AI 与系统*: PyTorch, Transformers, PEFT/TRL, QLoRA, MLX, LLM APIs, Tool Calling, MCP, SQLite
 - *测试与交付*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
 - *补充*: CDP Browser Automation, WatchConnectivity, StoreKit 2

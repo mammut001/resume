@@ -266,7 +266,7 @@
         "Docker"
       ],
       "description": "Built and deployed a TCF Canada exam-prep platform at french.paytonpei.top: Next.js 16 / React 19 frontend with same-origin API rewrites to a Node/SQLite study backend, also runnable on Cloudflare Worker/D1. Implemented timed four-section mock exams with compare-and-swap session sync, a 26-week SM-2 study plan, bilingual dictionary, sentence-aligned listening audio, and Stripe billing on a Docker self-hosted VPS.",
-      "description_fr": "Mise en ligne d'une plateforme de préparation TCF Canada (french.paytonpei.top) : frontend Next.js 16 / React 19 avec réécriture d'API same-origin vers un backend Node/SQLite, également exécutable sur Cloudflare Worker/D1. Examens blancs chronométrés en quatre épreuves avec synchronisation de session par comparaison-échange, plan d'étude SM-2 sur 26 semaines, dictionnaire bilingue, écoute alignée au niveau de la phrase, et facturation Stripe sur un VPS auto-hébergé Docker.",
+      "description_fr": "Mise en ligne d'une plateforme TCF Canada (french.paytonpei.top) : frontend Next.js 16 / React 19, API same-origin vers un backend Node/SQLite également exécutable sur Cloudflare Worker/D1. Examens blancs chronométrés en quatre épreuves avec sync CAS, plan SM-2 sur 26 semaines, dictionnaire bilingue, écoute alignée et facturation Stripe sur VPS Docker.",
       "description_cn": "在 french.paytonpei.top 上线 TCF Canada 法语备考平台：Next.js 16 / React 19 前端通过同源反向代理接入 Node/SQLite 学习后端，并支持 Cloudflare Worker/D1 双运行时。实现限时四科模考与冲突安全的会话同步、26 周 SM-2 学习计划、法汉词典、句级对齐精听，以及 Stripe 订阅与 Docker 自托管部署。",
       "link": {
         "label": "Live",
@@ -367,7 +367,8 @@
         "label_fr": "App Store",
         "label_cn": "App Store",
         "href": "https://apps.apple.com/us/app/lifemint/id6759029810"
-      }
+      },
+      "includeInPdf": false
     },
     {
       "index": 5,

@@ -12,7 +12,7 @@
   author: name,
   location: location,
   email: email,
-  phone: "+86 17640426168",
+  phone: "+1 873-354-4085 | +86 176-4042-6168",
   accent-color: "#000000",
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
@@ -48,6 +48,15 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 == Projects
 
 #project(
+  name: "Réussir en français",
+  url: "french.paytonpei.top",
+)
+#align(left)[
+- Built and deployed a TCF Canada exam-prep platform at french.paytonpei.top: Next.js 16 / React 19 frontend with same-origin API rewrites to a Node/SQLite study backend, also runnable on Cloudflare Worker/D1.
+- Implemented timed four-section mock exams with compare-and-swap session sync, a 26-week SM-2 study plan, bilingual dictionary, sentence-aligned listening audio, and Stripe billing on a Docker self-hosted VPS.
+]
+
+#project(
   name: "GaokaoTutor — LLM Fine-Tuning & Evaluation",
 )
 #align(left)[
@@ -62,15 +71,6 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 #align(left)[
 - Built a local-first desktop AI agent with Rust/Tauri, React/TypeScript and SQLite, integrating multiple LLM providers, structured tool calls and project memory.
 - Implemented provider adapters, buffered SSE parsing and cancellation, plus CDP browser automation with failure recovery and context compression for long-running sessions.
-]
-
-#project(
-  name: "LifeMint (formerly Focus Mint)",
-  url: "apps.apple.com/us/app/lifemint/id6759029810",
-)
-#align(left)[
-- Published a SwiftUI productivity app for iPhone, iPad and Apple Watch with focus sessions, earnings tracking and English, Chinese and French localization.
-- Implemented StoreKit purchases, widgets, Live Activities and bidirectional iPhone–Apple Watch synchronization with WatchConnectivity.
 ]
 
 == Work Experience
@@ -120,7 +120,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 
 == Skills
 - *Languages*: Python, TypeScript, JavaScript, Rust, Swift, C++
-- *Frameworks*: React, Node.js, Tauri 2, SwiftUI
+- *Frameworks*: React, Next.js, Node.js, Tauri 2, SwiftUI
 - *AI & Systems*: PyTorch, Transformers, PEFT/TRL, QLoRA, MLX, LLM APIs, Tool Calling, MCP, SQLite
 - *Testing & Delivery*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
 - *Additional*: CDP Browser Automation, WatchConnectivity, StoreKit 2

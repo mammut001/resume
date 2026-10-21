@@ -12,7 +12,7 @@
   author: name,
   location: location,
   email: email,
-  phone: "+86 17640426168",
+  phone: "+1 873-354-4085 | +86 176-4042-6168",
   accent-color: "#000000",
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
@@ -48,6 +48,15 @@
 == Projets
 
 #project(
+  name: "Réussir en français",
+  url: "french.paytonpei.top",
+)
+#align(left)[
+- Mise en ligne d'une plateforme TCF Canada (french.paytonpei.top) : frontend Next.js 16 / React 19, API same-origin vers un backend Node/SQLite également exécutable sur Cloudflare Worker/D1.
+- Examens blancs chronométrés en quatre épreuves avec sync CAS, plan SM-2 sur 26 semaines, dictionnaire bilingue, écoute alignée et facturation Stripe sur VPS Docker.
+]
+
+#project(
   name: "GaokaoTutor — adaptation et évaluation de LLM",
 )
 #align(left)[
@@ -62,15 +71,6 @@
 #align(left)[
 - Développement d'un agent IA de bureau local-first avec Rust/Tauri, React/TypeScript et SQLite : intégration de plusieurs fournisseurs LLM, appels d'outils structurés et mémoire par projet.
 - Mise en œuvre d'adaptateurs fournisseurs, d'une analyse SSE avec mise en tampon et de l'annulation, ainsi que de l'automatisation CDP avec reprise après échec et compression du contexte.
-]
-
-#project(
-  name: "LifeMint (anciennement Focus Mint)",
-  url: "apps.apple.com/us/app/lifemint/id6759029810",
-)
-#align(left)[
-- Publication d'une application SwiftUI pour iPhone, iPad et Apple Watch : sessions de concentration, suivi des gains et localisation en anglais, chinois et français.
-- Mise en œuvre des achats StoreKit, des widgets, des Live Activities et de la synchronisation bidirectionnelle iPhone–Apple Watch avec WatchConnectivity.
 ]
 
 == Expérience
@@ -120,7 +120,7 @@
 
 == Compétences
 - *Langages*: Python, TypeScript, JavaScript, Rust, Swift, C++
-- *Frameworks*: React, Node.js, Tauri 2, SwiftUI
+- *Frameworks*: React, Next.js, Node.js, Tauri 2, SwiftUI
 - *IA & systèmes*: PyTorch, Transformers, PEFT/TRL, QLoRA, MLX, LLM APIs, Tool Calling, MCP, SQLite
 - *Tests & livraison*: PyTest, Vitest, Playwright, GoogleTest, Jenkins, Docker
 - *Complémentaire*: CDP Browser Automation, WatchConnectivity, StoreKit 2
