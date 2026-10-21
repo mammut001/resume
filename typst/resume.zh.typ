@@ -17,12 +17,13 @@
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
   lang: "zh",
-  font-size: 9.75pt,
+  font-size: 9.5pt,
   author-position: left,
   personal-info-position: left,
 )
 
-#set par(leading: 0.47em, spacing: 0.5em)
+#set par(leading: 0.4em, spacing: 0.42em)
+#show heading: set block(above: 0.62em, below: 0.32em)
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
 == 概述
@@ -71,6 +72,15 @@
 #align(left)[
 - 使用 Rust/Tauri、React/TypeScript 与 SQLite 构建本地优先桌面 AI Agent，集成多模型接入、结构化工具调用与项目记忆。
 - 实现供应商适配、SSE 缓冲解析与取消机制，并支持 CDP 浏览器自动化、失败恢复和长会话上下文压缩。
+]
+
+#project(
+  name: "LifeMint（原 Focus Mint）",
+  url: "apps.apple.com/us/app/lifemint/id6759029810",
+)
+#align(left)[
+- 在 App Store 发布面向 iPhone、iPad 和 Apple Watch 的 SwiftUI 应用，提供专注会话、收益追踪及中英法三语支持。
+- 实现 StoreKit 内购、桌面组件、实时活动，以及基于 WatchConnectivity 的手机与手表双向同步。
 ]
 
 == 工作经历

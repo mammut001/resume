@@ -17,12 +17,13 @@
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
   lang: "fr",
-  font-size: 9.75pt,
+  font-size: 9.5pt,
   author-position: left,
   personal-info-position: left,
 )
 
-#set par(leading: 0.47em, spacing: 0.5em)
+#set par(leading: 0.4em, spacing: 0.42em)
+#show heading: set block(above: 0.62em, below: 0.32em)
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
 == Résumé
@@ -71,6 +72,15 @@
 #align(left)[
 - Développement d'un agent IA de bureau local-first avec Rust/Tauri, React/TypeScript et SQLite : intégration de plusieurs fournisseurs LLM, appels d'outils structurés et mémoire par projet.
 - Mise en œuvre d'adaptateurs fournisseurs, d'une analyse SSE avec mise en tampon et de l'annulation, ainsi que de l'automatisation CDP avec reprise après échec et compression du contexte.
+]
+
+#project(
+  name: "LifeMint (anciennement Focus Mint)",
+  url: "apps.apple.com/us/app/lifemint/id6759029810",
+)
+#align(left)[
+- Publication d'une application SwiftUI pour iPhone, iPad et Apple Watch : sessions de concentration, suivi des gains et localisation en anglais, chinois et français.
+- Mise en œuvre des achats StoreKit, des widgets, des Live Activities et de la synchronisation bidirectionnelle iPhone–Apple Watch avec WatchConnectivity.
 ]
 
 == Expérience

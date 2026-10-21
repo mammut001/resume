@@ -17,12 +17,13 @@
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
   lang: "en",
-  font-size: 9.75pt,
+  font-size: 9.5pt,
   author-position: left,
   personal-info-position: left,
 )
 
-#set par(leading: 0.47em, spacing: 0.5em)
+#set par(leading: 0.4em, spacing: 0.42em)
+#show heading: set block(above: 0.62em, below: 0.32em)
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
 == Summary
@@ -71,6 +72,15 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 #align(left)[
 - Built a local-first desktop AI agent with Rust/Tauri, React/TypeScript and SQLite, integrating multiple LLM providers, structured tool calls and project memory.
 - Implemented provider adapters, buffered SSE parsing and cancellation, plus CDP browser automation with failure recovery and context compression for long-running sessions.
+]
+
+#project(
+  name: "LifeMint (formerly Focus Mint)",
+  url: "apps.apple.com/us/app/lifemint/id6759029810",
+)
+#align(left)[
+- Published a SwiftUI productivity app for iPhone, iPad and Apple Watch with focus sessions, earnings tracking and English, Chinese and French localization.
+- Implemented StoreKit purchases, widgets, Live Activities and bidirectional iPhone–Apple Watch synchronization with WatchConnectivity.
 ]
 
 == Work Experience
