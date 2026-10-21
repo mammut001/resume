@@ -188,9 +188,9 @@ const renderWork = (language) =>
 
       return `#work(\n  title: ${typstString(getLocalizedText(entry, "title", language))},\n  location: ${typstString(
         getLocalizedText(entry, "location", language),
-      )},\n  company: ${typstString(entry.company)},\n  dates: ${renderDates(language, entry.start, entry.end)},\n)\n${renderBulletList(bullets)}`;
+      )},\n  company: ${typstString(entry.company)},\n  dates: ${renderDates(language, entry.start, entry.end)},\n)\n${renderBulletList(bullets)}\n#v(0.28em)`;
     })
-    .join("\n\n");
+    .join("\n");
 
 const renderProjects = (language) => {
   const projects = resume.projects.filter((entry) => entry.includeInPdf !== false)
@@ -198,13 +198,14 @@ const renderProjects = (language) => {
     .slice();
 
   return projects
-    .map((entry) => {
+    .map((entry, index) => {
       const localizedDescription = getLocalizedText(entry, "description", language);
       const descriptions = splitSentences(localizedDescription);
       const urlLine = entry.link?.href ? `\n  url: ${typstString(stripProtocol(entry.link.href))},` : "";
-      return `#project(\n  name: ${typstString(getLocalizedText(entry, "title", language))},${urlLine}\n)\n${renderBulletList(descriptions)}`;
+      const leadSpace = index === 0 ? "" : "#v(0.32em)\n";
+      return `${leadSpace}#project(\n  name: ${typstString(getLocalizedText(entry, "title", language))},${urlLine}\n)\n${renderBulletList(descriptions)}\n#v(0.3em)`;
     })
-    .join("\n\n");
+    .join("\n");
 };
 
 const renderResearch = (language) =>
@@ -212,15 +213,18 @@ const renderResearch = (language) =>
     .slice()
     .reverse()
     .map((entry) => {
-      const bullets = splitSentences(getLocalizedText(entry, "description", language));
+      const bullets = splitSentences(getLocalizedText(entry, "description", language)).slice(
+        0,
+        language === "chinese" ? 2 : 1,
+      );
 
       return `#extracurriculars(\n  activity: ${typstString(getLocalizedText(entry, "title", language))},\n  dates: ${renderDates(
         language,
         entry.start,
         entry.end,
-      )},\n)\n${renderBulletList(bullets)}`;
+      )},\n)\n${renderBulletList(bullets)}\n#v(0.28em)`;
     })
-    .join("\n\n");
+    .join("\n");
 
 const skillGroups = [
   {
@@ -295,8 +299,8 @@ const renderResume = (language) => {
     "  personal-info-position: left,",
     ")",
     "",
-    "#set par(leading: 0.4em, spacing: 0.42em)",
-    "#show heading: set block(above: 0.62em, below: 0.32em)",
+    "#set par(leading: 0.42em, spacing: 0.44em)",
+    "#show heading.where(level: 2): set block(above: 0.72em, below: 0.42em)",
     `#link(${typstString(findSocial("GitHub"))})[GitHub: ${escapeTypstInline(github.replace(/^github\.com\//, ""))}] | #link(${typstString(findSocial("LinkedIn"))})[LinkedIn]${showPersonalSite ? ` | #link(${typstString(resume.personalWebsiteUrl)})[${escapeTypstInline(personalSite)}]` : ""}`,
     "",
     `== ${labels.summary}`,
@@ -324,6 +328,7 @@ const renderResume = (language) => {
         ]
       : []),
     `== ${labels.skills}`,
+    "",
     renderSkills(language),
     "",
   ];

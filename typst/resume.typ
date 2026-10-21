@@ -22,8 +22,8 @@
   personal-info-position: left,
 )
 
-#set par(leading: 0.4em, spacing: 0.42em)
-#show heading: set block(above: 0.62em, below: 0.32em)
+#set par(leading: 0.42em, spacing: 0.44em)
+#show heading.where(level: 2): set block(above: 0.72em, below: 0.42em)
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
 == Summary
@@ -56,7 +56,8 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Built and deployed a TCF Canada exam-prep platform at french.paytonpei.top: Next.js 16 / React 19 frontend with same-origin API rewrites to a Node/SQLite study backend, also runnable on Cloudflare Worker/D1.
 - Implemented timed four-section mock exams with compare-and-swap session sync, a 26-week SM-2 study plan, bilingual dictionary, sentence-aligned listening audio, and Stripe billing on a Docker self-hosted VPS.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "GaokaoTutor — LLM Fine-Tuning & Evaluation",
 )
@@ -64,7 +65,8 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Fine-tuned Spark X2.5-4B with 4-bit QLoRA on an RTX 4090 using 161 tutoring traces; built reproducible data provenance, anti-contamination checks and a matched evaluation on a frozen 80-case unseen holdout.
 - Reduced unsolicited solution dumping in hint/diagnosis cases from 100% to 13.5% and truncation from 57.5% to 0%; integrated the adapter into a Python tutor service and Expo prototype with deterministic math verification.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "pipi-shrimp-agent",
   url: "github.com/mammut001/pipi-shrimp-agent",
@@ -73,7 +75,8 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Built a local-first desktop AI agent with Rust/Tauri, React/TypeScript and SQLite, integrating multiple LLM providers, structured tool calls and project memory.
 - Implemented provider adapters, buffered SSE parsing and cancellation, plus CDP browser automation with failure recovery and context compression for long-running sessions.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "LifeMint (formerly Focus Mint)",
   url: "apps.apple.com/us/app/lifemint/id6759029810",
@@ -82,6 +85,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Published a SwiftUI productivity app for iPhone, iPad and Apple Watch with focus sessions, earnings tracking and English, Chinese and French localization.
 - Implemented StoreKit purchases, widgets, Live Activities and bidirectional iPhone–Apple Watch synchronization with WatchConnectivity.
 ]
+#v(0.3em)
 
 == Work Experience
 
@@ -94,7 +98,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 #align(left)[
 - Teaching assistant for Python 3 (Jan–Apr 2021) and JOUR 4401 (Sep–Dec 2021), covering relational databases, web crawling and data analysis.
 ]
-
+#v(0.28em)
 #work(
   title: "Software Tester Intern",
   location: "Ottawa, Canada",
@@ -105,7 +109,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Tested the legacy NFM-P client in the 7750 Service Router context using JavaScript, XML and the Mocha testing framework.
 - Documented system architecture and data flows in Confluence.
 ]
-
+#v(0.28em)
 #work(
   title: "Software Engineer Intern",
   location: "Ottawa, Canada",
@@ -116,6 +120,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Contributed to in-vehicle and cloud connectivity software in C++11 on QNX/Linux.
 - Wrote GoogleTest unit tests, fixed bugs and maintained technical documentation; used Jenkins in the CI/CD workflow.
 ]
+#v(0.28em)
 
 == Research
 
@@ -125,10 +130,11 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 )
 #align(left)[
 - Responsible for the initial DDBM implementation in a collaborative low-light RAW image restoration study using SID and ELD data.
-- The project evaluated a DDBM-Feature variant at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.
 ]
+#v(0.28em)
 
 == Skills
+
 - *Languages*: Python, TypeScript, JavaScript, Rust, Swift, C++
 - *Frameworks*: React, Next.js, Node.js, Tauri 2, SwiftUI
 - *AI & Systems*: PyTorch, Transformers, PEFT/TRL, QLoRA, MLX, LLM APIs, Tool Calling, MCP, SQLite

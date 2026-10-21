@@ -22,8 +22,8 @@
   personal-info-position: left,
 )
 
-#set par(leading: 0.4em, spacing: 0.42em)
-#show heading: set block(above: 0.62em, below: 0.32em)
+#set par(leading: 0.42em, spacing: 0.44em)
+#show heading.where(level: 2): set block(above: 0.72em, below: 0.42em)
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
 == 概述
@@ -56,7 +56,8 @@
 - 在 french.paytonpei.top 上线 TCF Canada 法语备考平台：Next.js 16 / React 19 前端通过同源反向代理接入 Node/SQLite 学习后端，并支持 Cloudflare Worker/D1 双运行时。
 - 实现限时四科模考与冲突安全的会话同步、26 周 SM-2 学习计划、法汉词典、句级对齐精听，以及 Stripe 订阅与 Docker 自托管部署。
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "GaokaoTutor — 大模型微调与评测",
 )
@@ -64,7 +65,8 @@
 - 在 RTX 4090 上使用 4-bit QLoRA 微调 Spark X2.5-4B，构建 161 条教学轨迹，并实现数据溯源、污染检测及 80 题冻结未见集对照评测。
 - 将提示/诊断场景中未经请求的完整解答率从 100% 降至 13.5%、输出截断率从 57.5% 降至 0%；将适配器接入 Python 教学服务与 Expo 原型，并加入确定性数学校验。
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "桌面 AI Agent（pipi-shrimp-agent）",
   url: "github.com/mammut001/pipi-shrimp-agent",
@@ -73,7 +75,8 @@
 - 使用 Rust/Tauri、React/TypeScript 与 SQLite 构建本地优先桌面 AI Agent，集成多模型接入、结构化工具调用与项目记忆。
 - 实现供应商适配、SSE 缓冲解析与取消机制，并支持 CDP 浏览器自动化、失败恢复和长会话上下文压缩。
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "LifeMint（原 Focus Mint）",
   url: "apps.apple.com/us/app/lifemint/id6759029810",
@@ -82,6 +85,7 @@
 - 在 App Store 发布面向 iPhone、iPad 和 Apple Watch 的 SwiftUI 应用，提供专注会话、收益追踪及中英法三语支持。
 - 实现 StoreKit 内购、桌面组件、实时活动，以及基于 WatchConnectivity 的手机与手表双向同步。
 ]
+#v(0.3em)
 
 == 工作经历
 
@@ -94,7 +98,7 @@
 #align(left)[
 - 2021 年 1–4 月担任 Python 3 助教；9–12 月担任 JOUR 4401 助教，课程涉及关系型数据库、网络爬虫与数据分析。
 ]
-
+#v(0.28em)
 #work(
   title: "软件测试实习生",
   location: "加拿大渥太华",
@@ -105,7 +109,7 @@
 - 围绕 7750 Service Router，使用 JavaScript、XML 与 Mocha 测试框架测试旧版 NFM-P 客户端。
 - 编写 Confluence 设计文档，记录系统架构与数据流。
 ]
-
+#v(0.28em)
 #work(
   title: "软件工程实习生",
   location: "加拿大渥太华",
@@ -115,6 +119,7 @@
 #align(left)[
 - 参与车载与云连接软件子系统开发，在 QNX/Linux 环境下使用 C++11 编写 GoogleTest 单元测试、修复缺陷并维护技术文档；在 CI/CD 工作流中使用 Jenkins。
 ]
+#v(0.28em)
 
 == 研究
 
@@ -126,8 +131,10 @@
 - 参与基于 SID、ELD 数据的极低照度 RAW 图像复原研究，负责 DDBM 初版实现。
 - 项目中的 DDBM-Feature 变体在 598 张 SID Sony 测试图像上取得 26.12 dB PSNR 与 0.807 MS-SSIM。
 ]
+#v(0.28em)
 
 == 技能
+
 - *语言*: Python, TypeScript, JavaScript, Rust, Swift, C++
 - *框架*: React, Next.js, Node.js, Tauri 2, SwiftUI
 - *AI 与系统*: PyTorch, Transformers, PEFT/TRL, QLoRA, MLX, LLM APIs, Tool Calling, MCP, SQLite

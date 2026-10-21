@@ -22,8 +22,8 @@
   personal-info-position: left,
 )
 
-#set par(leading: 0.4em, spacing: 0.42em)
-#show heading: set block(above: 0.62em, below: 0.32em)
+#set par(leading: 0.42em, spacing: 0.44em)
+#show heading.where(level: 2): set block(above: 0.72em, below: 0.42em)
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
 == Résumé
@@ -56,7 +56,8 @@
 - Mise en ligne d'une plateforme TCF Canada (french.paytonpei.top) : frontend Next.js 16 / React 19, API same-origin vers un backend Node/SQLite également exécutable sur Cloudflare Worker/D1.
 - Examens blancs chronométrés en quatre épreuves avec sync CAS, plan SM-2 sur 26 semaines, dictionnaire bilingue, écoute alignée et facturation Stripe sur VPS Docker.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "GaokaoTutor — adaptation et évaluation de LLM",
 )
@@ -64,7 +65,8 @@
 - Adaptation de Spark X2.5-4B par QLoRA 4 bits sur RTX 4090 avec 161 traces pédagogiques ; mise en place de la provenance des données, de contrôles anti-contamination et d'une évaluation appariée sur 80 cas inédits gelés.
 - Réduction des solutions complètes non sollicitées de 100 % à 13,5 % dans les modes indice/diagnostic et des troncatures de 57,5 % à 0 % ; intégration de l'adaptateur dans un service Python et un prototype Expo avec vérification mathématique déterministe.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "Pipi Shrimp Agent",
   url: "github.com/mammut001/pipi-shrimp-agent",
@@ -73,7 +75,8 @@
 - Développement d'un agent IA de bureau local-first avec Rust/Tauri, React/TypeScript et SQLite : intégration de plusieurs fournisseurs LLM, appels d'outils structurés et mémoire par projet.
 - Mise en œuvre d'adaptateurs fournisseurs, d'une analyse SSE avec mise en tampon et de l'annulation, ainsi que de l'automatisation CDP avec reprise après échec et compression du contexte.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "LifeMint (anciennement Focus Mint)",
   url: "apps.apple.com/us/app/lifemint/id6759029810",
@@ -82,6 +85,7 @@
 - Publication d'une application SwiftUI pour iPhone, iPad et Apple Watch : sessions de concentration, suivi des gains et localisation en anglais, chinois et français.
 - Mise en œuvre des achats StoreKit, des widgets, des Live Activities et de la synchronisation bidirectionnelle iPhone–Apple Watch avec WatchConnectivity.
 ]
+#v(0.3em)
 
 == Expérience
 
@@ -94,7 +98,7 @@
 #align(left)[
 - Auxiliaire pour Python 3 (janvier à avril 2021) et JOUR 4401 (septembre à décembre 2021) : bases de données relationnelles, collecte web et analyse de données.
 ]
-
+#v(0.28em)
 #work(
   title: "Stagiaire en test de logiciels",
   location: "Ottawa, Canada",
@@ -105,7 +109,7 @@
 - Test du client NFM-P historique dans le contexte du 7750 Service Router avec JavaScript, XML et Mocha.
 - Documentation de l’architecture système et des flux de données dans Confluence.
 ]
-
+#v(0.28em)
 #work(
   title: "Stagiaire en développement logiciel",
   location: "Ottawa, Canada",
@@ -116,6 +120,7 @@
 - Contribution aux sous-systèmes de connectivité véhicule-cloud en C++11 sous QNX/Linux.
 - Tests unitaires GoogleTest, correction de bugs et documentation technique ; utilisation de Jenkins dans le flux CI/CD.
 ]
+#v(0.28em)
 
 == Recherche
 
@@ -125,10 +130,11 @@
 )
 #align(left)[
 - Responsable de l'implémentation initiale de DDBM dans une étude collaborative de restauration d'images RAW en faible luminosité utilisant SID et ELD.
-- Le projet a évalué une variante DDBM-Feature à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.
 ]
+#v(0.28em)
 
 == Compétences
+
 - *Langages*: Python, TypeScript, JavaScript, Rust, Swift, C++
 - *Frameworks*: React, Next.js, Node.js, Tauri 2, SwiftUI
 - *IA & systèmes*: PyTorch, Transformers, PEFT/TRL, QLoRA, MLX, LLM APIs, Tool Calling, MCP, SQLite
