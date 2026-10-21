@@ -229,7 +229,7 @@ const skillGroups = [
   },
   {
     labelKey: "frameworks",
-    values: ["React", "Node.js", "Tauri 2", "SwiftUI", "Jetpack Compose", "Firebase", "Tailwind CSS"],
+    values: ["React", "Next.js", "Node.js", "Tauri 2", "SwiftUI", "Jetpack Compose", "Firebase", "Tailwind CSS"],
   },
   {
     labelKey: "aiSystems",
