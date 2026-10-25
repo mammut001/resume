@@ -12,7 +12,7 @@
   author: name,
   location: location,
   email: email,
-  phone: "+86 17640426168",
+  phone: "+1 873-354-4085 | +86 176-4042-6168",
   accent-color: "#000000",
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
@@ -51,8 +51,8 @@
   name: "GaokaoTutor — 大模型微调与评测",
 )
 #align(left)[
-- 在 RTX 4090 上使用 4-bit QLoRA 微调 Spark X2.5-4B，构建 161 条教学轨迹，并实现数据溯源、污染检测及 80 题冻结未见集对照评测。
-- 将提示/诊断场景中未经请求的完整解答率从 100% 降至 13.5%、输出截断率从 57.5% 降至 0%；将适配器接入 Python 教学服务与 Expo 原型，并加入确定性数学校验。
+- 使用 4-bit QLoRA 在 161 条教学轨迹上微调 Spark X2.5-4B，配合数据溯源与污染检测，在 80 题冻结未见集上将未经请求的完整解答率从 100% 降至 13.5%。
+- 改用 Qwen2.5-Math-1.5B + MLX LoRA：三票表决在 497 道留出的 GAOKAO-Bench 高考数学真题上答对 454 题，超过 Qwen3.5-4B（449 题），算力仅约其 58%，并接入带确定性步骤校验的 Python/Expo 应用。
 ]
 
 #project(
@@ -62,6 +62,24 @@
 #align(left)[
 - 使用 Rust/Tauri、React/TypeScript 与 SQLite 构建本地优先桌面 AI Agent，集成多模型接入、结构化工具调用与项目记忆。
 - 实现供应商适配、SSE 缓冲解析与取消机制，并支持 CDP 浏览器自动化、失败恢复和长会话上下文压缩。
+]
+
+#project(
+  name: "Conveyor 编码任务服务",
+  url: "github.com/mammut001/Conveyor",
+)
+#align(left)[
+- 开发 Python 服务，将 Telegram、飞书接入 Codex CLI，每个任务隔离在独立 Git worktree 中。
+- 实现可重启恢复的 SQLite 任务队列，并加入操作员白名单、操作确认与审计日志。
+]
+
+#project(
+  name: "Réussir en français — TCF Canada 法语备考平台",
+  url: "french.paytonpei.top",
+)
+#align(left)[
+- 将开源打字练习项目的分支发展为全栈 TCF Canada 法语备考平台：A1–B2 背词、带间隔复习的 26 周自适应计划，以及听说读写四科计时模考。
+- 加入经校准的大模型写作与口语评分（可切换模型供应商）、OAuth 与通行密钥登录、Stripe 与支付宝订阅，并以 Next.js + Docker 自托管部署。
 ]
 
 #project(

@@ -12,7 +12,7 @@
   author: name,
   location: location,
   email: email,
-  phone: "+86 17640426168",
+  phone: "+1 873-354-4085 | +86 176-4042-6168",
   accent-color: "#000000",
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
@@ -27,7 +27,7 @@
 
 == Summary
 
-Systems Science and Engineering master's student at the University of Ottawa, graduating in December 2026 (expected). Software engineer building and fine-tuning AI systems with Python, PyTorch, Rust/Tauri and TypeScript/React; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad AI application and developer-tools roles in Ottawa.
+Systems Science and Engineering master's student at the University of Ottawa, graduating December 2026. Software engineer building and fine-tuning AI systems with Python, PyTorch, Rust/Tauri and TypeScript/React; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad AI and developer-tools roles in Ottawa.
 
 == Education
 
@@ -51,8 +51,8 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
   name: "GaokaoTutor — LLM Fine-Tuning & Evaluation",
 )
 #align(left)[
-- Fine-tuned Spark X2.5-4B with 4-bit QLoRA on an RTX 4090 using 161 tutoring traces; built reproducible data provenance, anti-contamination checks and a matched evaluation on a frozen 80-case unseen holdout.
-- Reduced unsolicited solution dumping in hint/diagnosis cases from 100% to 13.5% and truncation from 57.5% to 0%; integrated the adapter into a Python tutor service and Expo prototype with deterministic math verification.
+- Fine-tuned Spark X2.5-4B with 4-bit QLoRA on 161 tutoring traces with data provenance and contamination checks, cutting unsolicited solution dumps from 100% to 13.5% on a frozen 80-case holdout.
+- Moved to Qwen2.5-Math-1.5B with an MLX LoRA: three-vote solutions score 454/497 on held-out GAOKAO-Bench math, beating Qwen3.5-4B (449) at 58% of its compute, in a Python/Expo app with deterministic step checks.
 ]
 
 #project(
@@ -65,12 +65,30 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 ]
 
 #project(
+  name: "Conveyor",
+  url: "github.com/mammut001/Conveyor",
+)
+#align(left)[
+- Built a Python service linking Telegram and Feishu to Codex CLI, isolating each task in its own Git worktree.
+- Added a SQLite task queue with restart recovery, operator allowlists, approval gates and audit logs.
+]
+
+#project(
+  name: "Réussir en français — TCF Canada Prep Platform",
+  url: "french.paytonpei.top",
+)
+#align(left)[
+- Grew an open-source typing-trainer fork into a full-stack TCF Canada prep platform with A1–B2 vocabulary drills, a 26-week adaptive study plan with spaced review and timed mock exams in all four skills.
+- Added calibrated LLM writing and speaking feedback with swappable providers, OAuth and passkey sign-in, Stripe and Alipay billing, and a self-hosted Next.js and Docker deployment.
+]
+
+#project(
   name: "LifeMint (formerly Focus Mint)",
   url: "apps.apple.com/us/app/lifemint/id6759029810",
 )
 #align(left)[
-- Published a SwiftUI productivity app for iPhone, iPad and Apple Watch with focus sessions, earnings tracking and English, Chinese and French localization.
-- Implemented StoreKit purchases, widgets, Live Activities and bidirectional iPhone–Apple Watch synchronization with WatchConnectivity.
+- Published a SwiftUI app for iPhone, iPad and Apple Watch with focus sessions, earnings tracking and 3 languages.
+- Built StoreKit purchases, widgets, Live Activities and two-way iPhone–Watch sync with WatchConnectivity.
 ]
 
 == Work Experience
@@ -82,7 +100,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
   dates: "2021",
 )
 #align(left)[
-- Teaching assistant for Python 3 (Jan–Apr 2021) and JOUR 4401 (Sep–Dec 2021), covering relational databases, web crawling and data analysis.
+- Teaching assistant for Python 3 (2021) and JOUR 4401 (2021): relational databases, web crawling and data analysis.
 ]
 
 #work(
@@ -92,7 +110,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
   dates: dates-helper(start-date: "Sep 2020", end-date: "Aug 2021"),
 )
 #align(left)[
-- Tested the legacy NFM-P client in the 7750 Service Router context using JavaScript, XML and the Mocha testing framework.
+- Tested the legacy NFM-P client for the 7750 Service Router with JavaScript, XML and Mocha.
 - Documented system architecture and data flows in Confluence.
 ]
 
@@ -103,8 +121,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
   dates: dates-helper(start-date: "May 2020", end-date: "Aug 2020"),
 )
 #align(left)[
-- Contributed to in-vehicle and cloud connectivity software in C++11 on QNX/Linux.
-- Wrote GoogleTest unit tests, fixed bugs and maintained technical documentation; used Jenkins in the CI/CD workflow.
+- Wrote C++11 vehicle-cloud connectivity code on QNX/Linux with GoogleTest unit tests, bug fixes and Jenkins CI/CD.
 ]
 
 == Research
@@ -114,7 +131,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
   dates: "2026",
 )
 #align(left)[
-- Responsible for the initial DDBM implementation in a collaborative low-light RAW image restoration study using SID and ELD data.
+- Built the initial DDBM implementation in a collaborative low-light RAW restoration study on SID and ELD data.
 - The project evaluated a DDBM-Feature variant at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.
 ]
 

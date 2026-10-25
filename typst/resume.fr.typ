@@ -12,7 +12,7 @@
   author: name,
   location: location,
   email: email,
-  phone: "+86 17640426168",
+  phone: "+1 873-354-4085 | +86 176-4042-6168",
   accent-color: "#000000",
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
@@ -27,7 +27,7 @@
 
 == Résumé
 
-Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en décembre 2026. Développement et adaptation de systèmes IA avec Python, PyTorch, Rust/Tauri et TypeScript/React ; publication de LifeMint sur l’App Store. Stages chez Nokia et Ford. Recherche un poste junior en applications IA et outils de développement à Ottawa.
+Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en déc. 2026. Développement et adaptation de systèmes IA avec Python, PyTorch, Rust/Tauri et TypeScript/React ; LifeMint publiée sur l’App Store. Stages chez Nokia et Ford ; recherche un poste junior en IA et outils de développement à Ottawa.
 
 == Formation
 
@@ -51,8 +51,8 @@
   name: "GaokaoTutor — adaptation et évaluation de LLM",
 )
 #align(left)[
-- Adaptation de Spark X2.5-4B par QLoRA 4 bits sur RTX 4090 avec 161 traces pédagogiques ; mise en place de la provenance des données, de contrôles anti-contamination et d'une évaluation appariée sur 80 cas inédits gelés.
-- Réduction des solutions complètes non sollicitées de 100 % à 13,5 % dans les modes indice/diagnostic et des troncatures de 57,5 % à 0 % ; intégration de l'adaptateur dans un service Python et un prototype Expo avec vérification mathématique déterministe.
+- Adaptation de Spark X2.5-4B par QLoRA 4 bits sur 161 traces pédagogiques, avec provenance des données et contrôles anti-contamination : solutions non sollicitées réduites de 100 % à 13,5 % sur 80 cas inédits gelés.
+- Passage à Qwen2.5-Math-1.5B avec un LoRA MLX : trois votes donnent 454/497 sur GAOKAO-Bench (hors entraînement), devant Qwen3.5-4B (449) pour 58 % de son calcul ; app Python/Expo à vérification déterministe.
 ]
 
 #project(
@@ -60,8 +60,26 @@
   url: "github.com/mammut001/pipi-shrimp-agent",
 )
 #align(left)[
-- Développement d'un agent IA de bureau local-first avec Rust/Tauri, React/TypeScript et SQLite : intégration de plusieurs fournisseurs LLM, appels d'outils structurés et mémoire par projet.
-- Mise en œuvre d'adaptateurs fournisseurs, d'une analyse SSE avec mise en tampon et de l'annulation, ainsi que de l'automatisation CDP avec reprise après échec et compression du contexte.
+- Développement d'un agent IA de bureau local-first avec Rust/Tauri, React/TypeScript et SQLite : plusieurs fournisseurs LLM, appels d'outils structurés et mémoire par projet.
+- Adaptateurs fournisseurs, analyse SSE tamponnée avec annulation, automatisation CDP avec reprise après échec et compression du contexte.
+]
+
+#project(
+  name: "Conveyor",
+  url: "github.com/mammut001/Conveyor",
+)
+#align(left)[
+- Service Python reliant Telegram et Feishu à Codex CLI, chaque tâche isolée dans son propre worktree Git.
+- File SQLite avec reprise au redémarrage, opérateurs autorisés, validations et journal d'audit.
+]
+
+#project(
+  name: "Réussir en français — plateforme de préparation au TCF Canada",
+  url: "french.paytonpei.top",
+)
+#align(left)[
+- Fork open source d'entraîneur de frappe devenu une plateforme complète de préparation au TCF Canada : vocabulaire A1–B2, plan adaptatif de 26 semaines avec révision espacée et examens blancs chronométrés.
+- Ajout d'une rétroaction LLM calibrée sur l'écrit et l'oral avec fournisseurs interchangeables, connexion OAuth et passkey, paiements Stripe et Alipay, et déploiement Next.js et Docker auto-hébergé.
 ]
 
 #project(
@@ -69,8 +87,8 @@
   url: "apps.apple.com/us/app/lifemint/id6759029810",
 )
 #align(left)[
-- Publication d'une application SwiftUI pour iPhone, iPad et Apple Watch : sessions de concentration, suivi des gains et localisation en anglais, chinois et français.
-- Mise en œuvre des achats StoreKit, des widgets, des Live Activities et de la synchronisation bidirectionnelle iPhone–Apple Watch avec WatchConnectivity.
+- Publication d'une app SwiftUI pour iPhone, iPad et Apple Watch : concentration, suivi des gains, trois langues.
+- Achats StoreKit, widgets, Live Activities et synchronisation iPhone–Watch via WatchConnectivity.
 ]
 
 == Expérience
@@ -82,7 +100,7 @@
   dates: "2021",
 )
 #align(left)[
-- Auxiliaire pour Python 3 (janvier à avril 2021) et JOUR 4401 (septembre à décembre 2021) : bases de données relationnelles, collecte web et analyse de données.
+- Auxiliaire pour Python 3 et JOUR 4401 (2021) : bases de données relationnelles, collecte web, analyse de données.
 ]
 
 #work(
@@ -92,7 +110,7 @@
   dates: dates-helper(start-date: "Sep 2020", end-date: "Aug 2021"),
 )
 #align(left)[
-- Test du client NFM-P historique dans le contexte du 7750 Service Router avec JavaScript, XML et Mocha.
+- Test du client NFM-P historique du 7750 Service Router avec JavaScript, XML et Mocha.
 - Documentation de l’architecture système et des flux de données dans Confluence.
 ]
 
@@ -103,8 +121,7 @@
   dates: dates-helper(start-date: "May 2020", end-date: "Aug 2020"),
 )
 #align(left)[
-- Contribution aux sous-systèmes de connectivité véhicule-cloud en C++11 sous QNX/Linux.
-- Tests unitaires GoogleTest, correction de bugs et documentation technique ; utilisation de Jenkins dans le flux CI/CD.
+- Code C++11 de connectivité véhicule-cloud sous QNX/Linux, tests GoogleTest, corrections et CI/CD Jenkins.
 ]
 
 == Recherche
@@ -114,8 +131,8 @@
   dates: "2026",
 )
 #align(left)[
-- Responsable de l'implémentation initiale de DDBM dans une étude collaborative de restauration d'images RAW en faible luminosité utilisant SID et ELD.
-- Le projet a évalué une variante DDBM-Feature à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.
+- Implémentation initiale de DDBM dans une étude collaborative de restauration RAW en faible luminosité (SID, ELD).
+- Variante DDBM-Feature évaluée à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.
 ]
 
 == Compétences

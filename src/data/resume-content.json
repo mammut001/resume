@@ -10,8 +10,8 @@
   "about": "AI applications and developer tools · Master’s expected Dec 2026 · Seeking roles in Ottawa",
   "about_fr": "Applications IA et outils de développement · Maîtrise prévue en déc. 2026 · Recherche à Ottawa",
   "about_cn": "AI 应用与开发者工具方向 · 硕士预计 2026 年 12 月毕业 · 求职意向：杭州 / 上海",
-  "summary": "Systems Science and Engineering master's student at the University of Ottawa, graduating in December 2026 (expected). Software engineer building and fine-tuning AI systems with Python, PyTorch, Rust/Tauri and TypeScript/React; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad AI application and developer-tools roles in Ottawa.",
-  "summary_fr": "Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en décembre 2026. Développement et adaptation de systèmes IA avec Python, PyTorch, Rust/Tauri et TypeScript/React ; publication de LifeMint sur l’App Store. Stages chez Nokia et Ford. Recherche un poste junior en applications IA et outils de développement à Ottawa.",
+  "summary": "Systems Science and Engineering master's student at the University of Ottawa, graduating December 2026. Software engineer building and fine-tuning AI systems with Python, PyTorch, Rust/Tauri and TypeScript/React; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad AI and developer-tools roles in Ottawa.",
+  "summary_fr": "Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en déc. 2026. Développement et adaptation de systèmes IA avec Python, PyTorch, Rust/Tauri et TypeScript/React ; LifeMint publiée sur l’App Store. Stages chez Nokia et Ford ; recherche un poste junior en IA et outils de développement à Ottawa.",
   "summary_cn": "渥太华大学系统科学与工程硕士在读，预计 2026 年 12 月毕业，求职杭州 / 上海 AI 应用与开发者工具方向的应届软件工程岗位。使用 Python/PyTorch、Rust/Tauri 与 TypeScript/React 开发并微调 AI 系统；LifeMint 已在 App Store 发布。曾在 Nokia、Ford 实习。",
   "avatarUrl": "https://avatars.githubusercontent.com/u/141458085?v=4",
   "personalWebsiteUrl": "https://cv.paytonpei.top",
@@ -176,9 +176,9 @@
       "location": "Ottawa, Canada",
       "location_cn": "加拿大渥太华",
       "location_fr": "Ottawa, Canada",
-      "description": "Teaching assistant for Python 3 (Jan–Apr 2021) and JOUR 4401 (Sep–Dec 2021), covering relational databases, web crawling and data analysis.",
+      "description": "Teaching assistant for Python 3 (2021) and JOUR 4401 (2021): relational databases, web crawling and data analysis.",
       "description_cn": "2021 年 1–4 月担任 Python 3 助教；9–12 月担任 JOUR 4401 助教，课程涉及关系型数据库、网络爬虫与数据分析。",
-      "description_fr": "Auxiliaire pour Python 3 (janvier à avril 2021) et JOUR 4401 (septembre à décembre 2021) : bases de données relationnelles, collecte web et analyse de données."
+      "description_fr": "Auxiliaire pour Python 3 et JOUR 4401 (2021) : bases de données relationnelles, collecte web, analyse de données."
     },
     {
       "company": "Nokia Canada",
@@ -191,8 +191,8 @@
       "title_cn": "软件测试实习生",
       "start": "Sep 2020",
       "end": "Aug 2021",
-      "description": "Tested the legacy NFM-P client in the 7750 Service Router context using JavaScript, XML and the Mocha testing framework. Documented system architecture and data flows in Confluence.",
-      "description_fr": "Test du client NFM-P historique dans le contexte du 7750 Service Router avec JavaScript, XML et Mocha. Documentation de l’architecture système et des flux de données dans Confluence.",
+      "description": "Tested the legacy NFM-P client for the 7750 Service Router with JavaScript, XML and Mocha. Documented system architecture and data flows in Confluence.",
+      "description_fr": "Test du client NFM-P historique du 7750 Service Router avec JavaScript, XML et Mocha. Documentation de l’architecture système et des flux de données dans Confluence.",
       "description_cn": "围绕 7750 Service Router，使用 JavaScript、XML 与 Mocha 测试框架测试旧版 NFM-P 客户端。编写 Confluence 设计文档，记录系统架构与数据流。",
       "location": "Ottawa, Canada",
       "location_cn": "加拿大渥太华",
@@ -209,8 +209,8 @@
       "title_cn": "软件工程实习生",
       "start": "May 2020",
       "end": "Aug 2020",
-      "description": "Contributed to in-vehicle and cloud connectivity software in C++11 on QNX/Linux. Wrote GoogleTest unit tests, fixed bugs and maintained technical documentation; used Jenkins in the CI/CD workflow.",
-      "description_fr": "Contribution aux sous-systèmes de connectivité véhicule-cloud en C++11 sous QNX/Linux. Tests unitaires GoogleTest, correction de bugs et documentation technique ; utilisation de Jenkins dans le flux CI/CD.",
+      "description": "Wrote C++11 vehicle-cloud connectivity code on QNX/Linux with GoogleTest unit tests, bug fixes and Jenkins CI/CD.",
+      "description_fr": "Code C++11 de connectivité véhicule-cloud sous QNX/Linux, tests GoogleTest, corrections et CI/CD Jenkins.",
       "description_cn": "参与车载与云连接软件子系统开发，在 QNX/Linux 环境下使用 C++11 编写 GoogleTest 单元测试、修复缺陷并维护技术文档；在 CI/CD 工作流中使用 Jenkins。",
       "location": "Ottawa, Canada",
       "location_cn": "加拿大渥太华",
@@ -263,9 +263,9 @@
         "MLX",
         "React Native"
       ],
-      "description": "Fine-tuned Spark X2.5-4B with 4-bit QLoRA on an RTX 4090 using 161 tutoring traces; built reproducible data provenance, anti-contamination checks and a matched evaluation on a frozen 80-case unseen holdout. Reduced unsolicited solution dumping in hint/diagnosis cases from 100% to 13.5% and truncation from 57.5% to 0%; integrated the adapter into a Python tutor service and Expo prototype with deterministic math verification.",
-      "description_fr": "Adaptation de Spark X2.5-4B par QLoRA 4 bits sur RTX 4090 avec 161 traces pédagogiques ; mise en place de la provenance des données, de contrôles anti-contamination et d'une évaluation appariée sur 80 cas inédits gelés. Réduction des solutions complètes non sollicitées de 100 % à 13,5 % dans les modes indice/diagnostic et des troncatures de 57,5 % à 0 % ; intégration de l'adaptateur dans un service Python et un prototype Expo avec vérification mathématique déterministe.",
-      "description_cn": "在 RTX 4090 上使用 4-bit QLoRA 微调 Spark X2.5-4B，构建 161 条教学轨迹，并实现数据溯源、污染检测及 80 题冻结未见集对照评测。将提示/诊断场景中未经请求的完整解答率从 100% 降至 13.5%、输出截断率从 57.5% 降至 0%；将适配器接入 Python 教学服务与 Expo 原型，并加入确定性数学校验。"
+      "description": "Fine-tuned Spark X2.5-4B with 4-bit QLoRA on 161 tutoring traces with data provenance and contamination checks, cutting unsolicited solution dumps from 100% to 13.5% on a frozen 80-case holdout. Moved to Qwen2.5-Math-1.5B with an MLX LoRA: three-vote solutions score 454/497 on held-out GAOKAO-Bench math, beating Qwen3.5-4B (449) at 58% of its compute, in a Python/Expo app with deterministic step checks.",
+      "description_fr": "Adaptation de Spark X2.5-4B par QLoRA 4 bits sur 161 traces pédagogiques, avec provenance des données et contrôles anti-contamination : solutions non sollicitées réduites de 100 % à 13,5 % sur 80 cas inédits gelés. Passage à Qwen2.5-Math-1.5B avec un LoRA MLX : trois votes donnent 454/497 sur GAOKAO-Bench (hors entraînement), devant Qwen3.5-4B (449) pour 58 % de son calcul ; app Python/Expo à vérification déterministe.",
+      "description_cn": "使用 4-bit QLoRA 在 161 条教学轨迹上微调 Spark X2.5-4B，配合数据溯源与污染检测，在 80 题冻结未见集上将未经请求的完整解答率从 100% 降至 13.5%。改用 Qwen2.5-Math-1.5B + MLX LoRA：三票表决在 497 道留出的 GAOKAO-Bench 高考数学真题上答对 454 题，超过 Qwen3.5-4B（449 题），算力仅约其 58%，并接入带确定性步骤校验的 Python/Expo 应用。"
     },
     {
       "index": 1,
@@ -283,7 +283,7 @@
         "CDP"
       ],
       "description": "Built a local-first desktop AI agent with Rust/Tauri, React/TypeScript and SQLite, integrating multiple LLM providers, structured tool calls and project memory. Implemented provider adapters, buffered SSE parsing and cancellation, plus CDP browser automation with failure recovery and context compression for long-running sessions.",
-      "description_fr": "Développement d'un agent IA de bureau local-first avec Rust/Tauri, React/TypeScript et SQLite : intégration de plusieurs fournisseurs LLM, appels d'outils structurés et mémoire par projet. Mise en œuvre d'adaptateurs fournisseurs, d'une analyse SSE avec mise en tampon et de l'annulation, ainsi que de l'automatisation CDP avec reprise après échec et compression du contexte.",
+      "description_fr": "Développement d'un agent IA de bureau local-first avec Rust/Tauri, React/TypeScript et SQLite : plusieurs fournisseurs LLM, appels d'outils structurés et mémoire par projet. Adaptateurs fournisseurs, analyse SSE tamponnée avec annulation, automatisation CDP avec reprise après échec et compression du contexte.",
       "description_cn": "使用 Rust/Tauri、React/TypeScript 与 SQLite 构建本地优先桌面 AI Agent，集成多模型接入、结构化工具调用与项目记忆。实现供应商适配、SSE 缓冲解析与取消机制，并支持 CDP 浏览器自动化、失败恢复和长会话上下文压缩。",
       "link": {
         "label": "GitHub",
@@ -306,19 +306,44 @@
         "Codex CLI",
         "Git worktree"
       ],
-      "description": "Built a self-hosted Python service connecting Telegram and Feishu to Codex CLI, separating code changes into detached Git worktrees with diff, apply, discard and cancellation controls. Implemented a persistent SQLite task queue with restart recovery, operator allowlists, explicit approval gates and audit logging.",
-      "description_fr": "Développement d'un service Python auto-hébergé reliant Telegram et Feishu à Codex CLI, avec des worktrees Git détachés pour séparer les modifications et des commandes de diff, application, abandon et annulation. Mise en œuvre d'une file SQLite persistante avec reprise après redémarrage, listes d'opérateurs autorisés, confirmations explicites et journalisation d'audit.",
-      "description_cn": "开发自托管 Python 服务，将 Telegram、飞书连接到 Codex CLI，通过独立 Git worktree 隔离代码改动，支持差异检查、应用、丢弃和取消。实现 SQLite 持久化任务队列与重启恢复，并加入操作员白名单、操作确认和审计日志。",
+      "description": "Built a Python service linking Telegram and Feishu to Codex CLI, isolating each task in its own Git worktree. Added a SQLite task queue with restart recovery, operator allowlists, approval gates and audit logs.",
+      "description_fr": "Service Python reliant Telegram et Feishu à Codex CLI, chaque tâche isolée dans son propre worktree Git. File SQLite avec reprise au redémarrage, opérateurs autorisés, validations et journal d'audit.",
+      "description_cn": "开发 Python 服务，将 Telegram、飞书接入 Codex CLI，每个任务隔离在独立 Git worktree 中。实现可重启恢复的 SQLite 任务队列，并加入操作员白名单、操作确认与审计日志。",
       "link": {
         "label": "GitHub",
         "label_fr": "GitHub",
         "label_cn": "GitHub",
         "href": "https://github.com/mammut001/Conveyor"
-      },
-      "includeInPdf": false
+      }
     },
     {
       "index": 3,
+      "title": "Réussir en français — TCF Canada Prep Platform",
+      "title_fr": "Réussir en français — plateforme de préparation au TCF Canada",
+      "title_cn": "Réussir en français — TCF Canada 法语备考平台",
+      "status": 1,
+      "techStack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "SQLite",
+        "LLM APIs",
+        "Stripe",
+        "Docker"
+      ],
+      "description": "Grew an open-source typing-trainer fork into a full-stack TCF Canada prep platform with A1–B2 vocabulary drills, a 26-week adaptive study plan with spaced review and timed mock exams in all four skills. Added calibrated LLM writing and speaking feedback with swappable providers, OAuth and passkey sign-in, Stripe and Alipay billing, and a self-hosted Next.js and Docker deployment.",
+      "description_fr": "Fork open source d'entraîneur de frappe devenu une plateforme complète de préparation au TCF Canada : vocabulaire A1–B2, plan adaptatif de 26 semaines avec révision espacée et examens blancs chronométrés. Ajout d'une rétroaction LLM calibrée sur l'écrit et l'oral avec fournisseurs interchangeables, connexion OAuth et passkey, paiements Stripe et Alipay, et déploiement Next.js et Docker auto-hébergé.",
+      "description_cn": "将开源打字练习项目的分支发展为全栈 TCF Canada 法语备考平台：A1–B2 背词、带间隔复习的 26 周自适应计划，以及听说读写四科计时模考。加入经校准的大模型写作与口语评分（可切换模型供应商）、OAuth 与通行密钥登录、Stripe 与支付宝订阅，并以 Next.js + Docker 自托管部署。",
+      "link": {
+        "label": "Website",
+        "label_fr": "Site web",
+        "label_cn": "网站",
+        "href": "https://french.paytonpei.top"
+      }
+    },
+    {
+      "index": 4,
       "title": "LifeMint (formerly Focus Mint)",
       "title_fr": "LifeMint (anciennement Focus Mint)",
       "title_cn": "LifeMint（原 Focus Mint）",
@@ -332,8 +357,8 @@
         "WatchConnectivity",
         "Localization"
       ],
-      "description": "Published a SwiftUI productivity app for iPhone, iPad and Apple Watch with focus sessions, earnings tracking and English, Chinese and French localization. Implemented StoreKit purchases, widgets, Live Activities and bidirectional iPhone–Apple Watch synchronization with WatchConnectivity.",
-      "description_fr": "Publication d'une application SwiftUI pour iPhone, iPad et Apple Watch : sessions de concentration, suivi des gains et localisation en anglais, chinois et français. Mise en œuvre des achats StoreKit, des widgets, des Live Activities et de la synchronisation bidirectionnelle iPhone–Apple Watch avec WatchConnectivity.",
+      "description": "Published a SwiftUI app for iPhone, iPad and Apple Watch with focus sessions, earnings tracking and 3 languages. Built StoreKit purchases, widgets, Live Activities and two-way iPhone–Watch sync with WatchConnectivity.",
+      "description_fr": "Publication d'une app SwiftUI pour iPhone, iPad et Apple Watch : concentration, suivi des gains, trois langues. Achats StoreKit, widgets, Live Activities et synchronisation iPhone–Watch via WatchConnectivity.",
       "description_cn": "在 App Store 发布面向 iPhone、iPad 和 Apple Watch 的 SwiftUI 应用，提供专注会话、收益追踪及中英法三语支持。实现 StoreKit 内购、桌面组件、实时活动，以及基于 WatchConnectivity 的手机与手表双向同步。",
       "link": {
         "label": "App Store",
@@ -343,7 +368,7 @@
       }
     },
     {
-      "index": 4,
+      "index": 5,
       "title": "Resume Generator",
       "title_fr": "Resume Generator",
       "title_cn": "Resume Generator 简历生成器",
@@ -368,6 +393,30 @@
         "href": "https://github.com/mammut001/Resume-Generator"
       },
       "includeInPdf": false
+    },
+    {
+      "title": "Kanjo",
+      "title_fr": "Kanjo",
+      "title_cn": "Kanjo 勘定（AI 编码成本账本）",
+      "status": 1,
+      "techStack": [
+        "Swift",
+        "SwiftUI",
+        "Python",
+        "macOS",
+        "CLI"
+      ],
+      "description": "Built a macOS menu bar app and Python CLI that turn local Claude Code, Codex and Antigravity logs into one API-equivalent cost bill per git repo. Sessions are attributed by the files they touched and grouped by git remote, so worktrees and clones count as one project, with an always-visible unattributed bucket and no conversation text stored.",
+      "description_fr": "Application de barre de menus macOS et CLI Python qui transforment les journaux locaux de Claude Code, Codex et Antigravity en une facture par dépôt Git, en coût équivalent API. Les sessions sont attribuées selon les fichiers touchés et regroupées par remote Git, de sorte que worktrees et clones comptent comme un seul projet ; un compartiment « non attribué » reste visible et aucun texte de conversation n'est conservé.",
+      "description_cn": "开发 macOS 菜单栏应用与 Python 命令行工具，读取本地 Claude Code、Codex 与 Antigravity 日志，按 git 仓库汇总 API 等价成本。会话按实际读写的文件归属，并以 git remote 识别项目，worktree 与多份克隆计为同一项目；无法归属的花费单独显示，且不保存任何对话内容。",
+      "link": {
+        "label": "GitHub",
+        "label_fr": "GitHub",
+        "label_cn": "GitHub",
+        "href": "https://github.com/mammut001/kanjo"
+      },
+      "includeInPdf": false,
+      "index": 6
     }
   ],
   "research": [
@@ -377,8 +426,8 @@
       "title_cn": "基于 Bridge U-Net 与 DDBM 的极低照度 RAW 图像复原",
       "start": "2026",
       "end": null,
-      "description": "Responsible for the initial DDBM implementation in a collaborative low-light RAW image restoration study using SID and ELD data. The project evaluated a DDBM-Feature variant at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.",
-      "description_fr": "Responsable de l'implémentation initiale de DDBM dans une étude collaborative de restauration d'images RAW en faible luminosité utilisant SID et ELD. Le projet a évalué une variante DDBM-Feature à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.",
+      "description": "Built the initial DDBM implementation in a collaborative low-light RAW restoration study on SID and ELD data. The project evaluated a DDBM-Feature variant at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.",
+      "description_fr": "Implémentation initiale de DDBM dans une étude collaborative de restauration RAW en faible luminosité (SID, ELD). Variante DDBM-Feature évaluée à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.",
       "description_cn": "参与基于 SID、ELD 数据的极低照度 RAW 图像复原研究，负责 DDBM 初版实现。项目中的 DDBM-Feature 变体在 598 张 SID Sony 测试图像上取得 26.12 dB PSNR 与 0.807 MS-SSIM。",
       "tags": [
         "Python",
