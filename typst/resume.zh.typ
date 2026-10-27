@@ -35,14 +35,14 @@
   institution: "渥太华大学",
   location: "",
   dates: dates-helper(start-date: "2024", end-date: "2026 年 12 月（预计）"),
-  degree: "系统科学与工程硕士",
+  degree: "系统科学与工程硕士 · GPA 9.0/10（约 3.9/4.0）",
 )
 
 #edu(
   institution: "卡尔顿大学",
   location: "",
   dates: dates-helper(start-date: "2017", end-date: "2023"),
-  degree: "计算机科学学士",
+  degree: "计算机科学学士 · GPA 3.75/4.0",
 )
 
 == 项目

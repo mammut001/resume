@@ -35,14 +35,14 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
   institution: "University of Ottawa",
   location: "",
   dates: dates-helper(start-date: "2024", end-date: "Dec 2026 (expected)"),
-  degree: "Master of Systems Science and Engineering",
+  degree: "Master of Systems Science and Engineering · GPA 9.0/10 (≈3.9/4.0)",
 )
 
 #edu(
   institution: "Carleton University",
   location: "",
   dates: dates-helper(start-date: "2017", end-date: "2023"),
-  degree: "Bachelor of Computer Science",
+  degree: "Bachelor of Computer Science · GPA 3.75/4.0",
 )
 
 == Projects

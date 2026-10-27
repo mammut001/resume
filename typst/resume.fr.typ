@@ -35,14 +35,14 @@
   institution: "Université d'Ottawa",
   location: "",
   dates: dates-helper(start-date: "2024", end-date: "Déc. 2026 (prévu)"),
-  degree: "Maîtrise en science et génie des systèmes",
+  degree: "Maîtrise en science et génie des systèmes · GPA 9,0/10 (≈3,9/4,0)",
 )
 
 #edu(
   institution: "Université Carleton",
   location: "",
   dates: dates-helper(start-date: "2017", end-date: "2023"),
-  degree: "Baccalauréat en informatique",
+  degree: "Baccalauréat en informatique · GPA 3,75/4,0",
 )
 
 == Projets
