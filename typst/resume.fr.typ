@@ -17,19 +17,25 @@
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
   lang: "fr",
-  font-size: 9.75pt,
+  font-size: 9.5pt,
   author-position: left,
   personal-info-position: left,
 )
 
-#set par(leading: 0.47em, spacing: 0.5em)
+#set par(leading: 0.42em, spacing: 0.44em)
+// basic-resume pulls the section rule up with pad(bottom: -10pt), which collides with CJK.
+#let section(title) = block(above: 0.85em, below: 0.5em)[
+  #text(weight: "bold", size: 1.05em)[#title]
+  #v(0.32em)
+  #line(length: 100%, stroke: 0.5pt)
+]
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
-== Résumé
+#section("Résumé")
 
 Étudiant à la maîtrise en science et génie des systèmes à l’Université d’Ottawa, diplomation prévue en déc. 2026. Développement et adaptation de systèmes IA avec Python, PyTorch, Rust/Tauri et TypeScript/React ; LifeMint publiée sur l’App Store. Stages chez Nokia et Ford ; recherche un poste junior en IA et outils de développement à Ottawa.
 
-== Formation
+#section("Formation")
 
 #edu(
   institution: "Université d'Ottawa",
@@ -45,7 +51,7 @@
   degree: "Baccalauréat en informatique · GPA 3,75/4,0",
 )
 
-== Projets
+#section("Projets")
 
 #project(
   name: "GaokaoTutor — adaptation et évaluation de LLM",
@@ -54,7 +60,8 @@
 - Adaptation de Spark X2.5-4B par QLoRA 4 bits sur 161 traces pédagogiques, avec provenance des données et contrôles anti-contamination : solutions non sollicitées réduites de 100 % à 13,5 % sur 80 cas inédits gelés.
 - Passage à Qwen2.5-Math-1.5B avec un LoRA MLX : trois votes donnent 454/497 sur GAOKAO-Bench (hors entraînement), devant Qwen3.5-4B (449) pour 58 % de son calcul ; app Python/Expo à vérification déterministe.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "Pipi Shrimp Agent",
   url: "github.com/mammut001/pipi-shrimp-agent",
@@ -63,7 +70,8 @@
 - Développement d'un agent IA de bureau local-first avec Rust/Tauri, React/TypeScript et SQLite : plusieurs fournisseurs LLM, appels d'outils structurés et mémoire par projet.
 - Adaptateurs fournisseurs, analyse SSE tamponnée avec annulation, automatisation CDP avec reprise après échec et compression du contexte.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "Conveyor",
   url: "github.com/mammut001/Conveyor",
@@ -72,7 +80,8 @@
 - Service Python reliant Telegram et Feishu à Codex CLI, chaque tâche isolée dans son propre worktree Git.
 - File SQLite avec reprise au redémarrage, opérateurs autorisés, validations et journal d'audit.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "Réussir en français — plateforme de préparation au TCF Canada",
   url: "french.paytonpei.top",
@@ -81,7 +90,8 @@
 - Fork open source d'entraîneur de frappe devenu une plateforme complète de préparation au TCF Canada : vocabulaire A1–B2, plan adaptatif de 26 semaines avec révision espacée et examens blancs chronométrés.
 - Ajout d'une rétroaction LLM calibrée sur l'écrit et l'oral avec fournisseurs interchangeables, connexion OAuth et passkey, paiements Stripe et Alipay, et déploiement Next.js et Docker auto-hébergé.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "LifeMint (anciennement Focus Mint)",
   url: "apps.apple.com/us/app/lifemint/id6759029810",
@@ -90,8 +100,9 @@
 - Publication d'une app SwiftUI pour iPhone, iPad et Apple Watch : concentration, suivi des gains, trois langues.
 - Achats StoreKit, widgets, Live Activities et synchronisation iPhone–Watch via WatchConnectivity.
 ]
+#v(0.3em)
 
-== Expérience
+#section("Expérience")
 
 #work(
   title: "Auxiliaire d’enseignement",
@@ -102,7 +113,7 @@
 #align(left)[
 - Auxiliaire pour Python 3 et JOUR 4401 (2021) : bases de données relationnelles, collecte web, analyse de données.
 ]
-
+#v(0.28em)
 #work(
   title: "Stagiaire en test de logiciels",
   location: "Ottawa, Canada",
@@ -113,7 +124,7 @@
 - Test du client NFM-P historique du 7750 Service Router avec JavaScript, XML et Mocha.
 - Documentation de l’architecture système et des flux de données dans Confluence.
 ]
-
+#v(0.28em)
 #work(
   title: "Stagiaire en développement logiciel",
   location: "Ottawa, Canada",
@@ -123,8 +134,9 @@
 #align(left)[
 - Code C++11 de connectivité véhicule-cloud sous QNX/Linux, tests GoogleTest, corrections et CI/CD Jenkins.
 ]
+#v(0.28em)
 
-== Recherche
+#section("Recherche")
 
 #extracurriculars(
   activity: "Restauration d'images RAW en très faible luminosité avec Bridge U-Net et DDBM",
@@ -132,10 +144,11 @@
 )
 #align(left)[
 - Implémentation initiale de DDBM dans une étude collaborative de restauration RAW en faible luminosité (SID, ELD).
-- Variante DDBM-Feature évaluée à 26,12 dB PSNR et 0,807 MS-SSIM sur 598 images de test SID Sony.
 ]
+#v(0.28em)
 
-== Compétences
+#section("Compétences")
+
 - *Langages*: Python, TypeScript, JavaScript, Rust, Swift, C++
 - *Frameworks*: React, Node.js, Tauri 2, SwiftUI
 - *IA & systèmes*: PyTorch, Transformers, PEFT/TRL, QLoRA, MLX, LLM APIs, Tool Calling, MCP, SQLite

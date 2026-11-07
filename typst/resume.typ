@@ -17,19 +17,25 @@
   font: ("Noto Sans", "Noto Sans CJK SC"),
   paper: "a4",
   lang: "en",
-  font-size: 9.75pt,
+  font-size: 9.5pt,
   author-position: left,
   personal-info-position: left,
 )
 
-#set par(leading: 0.47em, spacing: 0.5em)
+#set par(leading: 0.42em, spacing: 0.44em)
+// basic-resume pulls the section rule up with pad(bottom: -10pt), which collides with CJK.
+#let section(title) = block(above: 0.85em, below: 0.5em)[
+  #text(weight: "bold", size: 1.05em)[#title]
+  #v(0.32em)
+  #line(length: 100%, stroke: 0.5pt)
+]
 #link("https://github.com/mammut001")[GitHub: mammut001] | #link("https://www.linkedin.com/in/pd110/")[LinkedIn] | #link("https://cv.paytonpei.top")[cv.paytonpei.top]
 
-== Summary
+#section("Summary")
 
 Systems Science and Engineering master's student at the University of Ottawa, graduating December 2026. Software engineer building and fine-tuning AI systems with Python, PyTorch, Rust/Tauri and TypeScript/React; published LifeMint on the App Store. Former Nokia and Ford intern seeking new-grad AI and developer-tools roles in Ottawa.
 
-== Education
+#section("Education")
 
 #edu(
   institution: "University of Ottawa",
@@ -45,7 +51,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
   degree: "Bachelor of Computer Science · GPA 3.75/4.0",
 )
 
-== Projects
+#section("Projects")
 
 #project(
   name: "GaokaoTutor — LLM Fine-Tuning & Evaluation",
@@ -54,7 +60,8 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Fine-tuned Spark X2.5-4B with 4-bit QLoRA on 161 tutoring traces with data provenance and contamination checks, cutting unsolicited solution dumps from 100% to 13.5% on a frozen 80-case holdout.
 - Moved to Qwen2.5-Math-1.5B with an MLX LoRA: three-vote solutions score 454/497 on held-out GAOKAO-Bench math, beating Qwen3.5-4B (449) at 58% of its compute, in a Python/Expo app with deterministic step checks.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "pipi-shrimp-agent",
   url: "github.com/mammut001/pipi-shrimp-agent",
@@ -63,7 +70,8 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Built a local-first desktop AI agent with Rust/Tauri, React/TypeScript and SQLite, integrating multiple LLM providers, structured tool calls and project memory.
 - Implemented provider adapters, buffered SSE parsing and cancellation, plus CDP browser automation with failure recovery and context compression for long-running sessions.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "Conveyor",
   url: "github.com/mammut001/Conveyor",
@@ -72,7 +80,8 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Built a Python service linking Telegram and Feishu to Codex CLI, isolating each task in its own Git worktree.
 - Added a SQLite task queue with restart recovery, operator allowlists, approval gates and audit logs.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "Réussir en français — TCF Canada Prep Platform",
   url: "french.paytonpei.top",
@@ -81,7 +90,8 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Grew an open-source typing-trainer fork into a full-stack TCF Canada prep platform with A1–B2 vocabulary drills, a 26-week adaptive study plan with spaced review and timed mock exams in all four skills.
 - Added calibrated LLM writing and speaking feedback with swappable providers, OAuth and passkey sign-in, Stripe and Alipay billing, and a self-hosted Next.js and Docker deployment.
 ]
-
+#v(0.3em)
+#v(0.32em)
 #project(
   name: "LifeMint (formerly Focus Mint)",
   url: "apps.apple.com/us/app/lifemint/id6759029810",
@@ -90,8 +100,9 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Published a SwiftUI app for iPhone, iPad and Apple Watch with focus sessions, earnings tracking and 3 languages.
 - Built StoreKit purchases, widgets, Live Activities and two-way iPhone–Watch sync with WatchConnectivity.
 ]
+#v(0.3em)
 
-== Work Experience
+#section("Work Experience")
 
 #work(
   title: "Teaching Assistant",
@@ -102,7 +113,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 #align(left)[
 - Teaching assistant for Python 3 (2021) and JOUR 4401 (2021): relational databases, web crawling and data analysis.
 ]
-
+#v(0.28em)
 #work(
   title: "Software Tester Intern",
   location: "Ottawa, Canada",
@@ -113,7 +124,7 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 - Tested the legacy NFM-P client for the 7750 Service Router with JavaScript, XML and Mocha.
 - Documented system architecture and data flows in Confluence.
 ]
-
+#v(0.28em)
 #work(
   title: "Software Engineer Intern",
   location: "Ottawa, Canada",
@@ -123,8 +134,9 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 #align(left)[
 - Wrote C++11 vehicle-cloud connectivity code on QNX/Linux with GoogleTest unit tests, bug fixes and Jenkins CI/CD.
 ]
+#v(0.28em)
 
-== Research
+#section("Research")
 
 #extracurriculars(
   activity: "Low-Light RAW Image Restoration with Bridge U-Net and DDBM",
@@ -132,10 +144,11 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 )
 #align(left)[
 - Built the initial DDBM implementation in a collaborative low-light RAW restoration study on SID and ELD data.
-- The project evaluated a DDBM-Feature variant at 26.12 dB PSNR and 0.807 MS-SSIM on 598 SID Sony test images.
 ]
+#v(0.28em)
 
-== Skills
+#section("Skills")
+
 - *Languages*: Python, TypeScript, JavaScript, Rust, Swift, C++
 - *Frameworks*: React, Node.js, Tauri 2, SwiftUI
 - *AI & Systems*: PyTorch, Transformers, PEFT/TRL, QLoRA, MLX, LLM APIs, Tool Calling, MCP, SQLite
