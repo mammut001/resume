@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPostBySlug, getPosts } from "@/lib/posts";
 import { Badge } from "@/components/ui/badge";
+import { EmbedAutoHeight } from "@/components/posts/embed-auto-height";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -87,6 +88,7 @@ export default async function PostPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      <EmbedAutoHeight />
       <main className="mx-auto w-full max-w-[720px] px-4 py-8 sm:px-6 sm:py-12">
         <article lang={post.lang}>
           <header className="space-y-3 pb-8 border-b border-border/60">

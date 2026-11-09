@@ -150,6 +150,12 @@
   .post-body p:has(> img) + p:has(> em:only-child) {
     @apply -mt-4 mb-6 text-center text-xs sm:text-sm text-muted-foreground not-italic;
   }
+  .post-body .post-embed {
+    @apply my-6 w-full max-w-full overflow-hidden rounded-lg border border-border;
+  }
+  .post-body .post-embed iframe {
+    @apply block w-full border-0 min-h-[900px] bg-transparent;
+  }
 }
 
 @media print {
