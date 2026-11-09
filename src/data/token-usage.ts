@@ -8,11 +8,18 @@ export interface TokenCounts {
   total: number;
 }
 
+export interface ProviderModelUsage {
+  model: string;
+  tokens_total: number;
+  cost_usd: number;
+}
+
 export interface ProviderUsage {
   provider: string;
   label: string;
   tokens: TokenCounts;
   cost_usd: number;
+  models?: ProviderModelUsage[];
 }
 
 export interface AgentUsage {
