@@ -11,6 +11,7 @@ import {
   tokenUsage,
   type PeriodUsage,
   type ProviderUsage,
+  type ProviderModelUsage,
   type ModelUsage,
 } from "@/data/token-usage";
 import { cn } from "@/lib/utils";
@@ -272,6 +273,82 @@ function CostInfoTooltip({
   );
 }
 
+function ProviderModelBadges({
+  provider,
+  topModelsMap,
+  labels,
+  language,
+  size = "md",
+}: {
+  provider: ProviderUsage;
+  topModelsMap: Record<string, ModelUsage[]>;
+  labels: ReturnType<typeof useResumeLocale>["labels"];
+  language: Lang;
+  size?: "sm" | "md";
+}) {
+  const badgeClass =
+    size === "sm"
+      ? "text-[10px] font-mono font-normal px-1.5 py-0"
+      : "text-[11px] font-mono font-normal px-1.5 py-0";
+
+  if (Array.isArray(provider.models)) {
+    const sorted = [...provider.models].sort(
+      (a, b) => b.tokens_total - a.tokens_total
+    );
+    const displayed = sorted.slice(0, 3);
+    const remaining = sorted.slice(3);
+
+    const remainingTooltip =
+      remaining.length > 0
+        ? labels.moreModelsAriaLabel
+            .replace("{count}", String(remaining.length))
+            .replace(
+              "{models}",
+              remaining
+                .map(
+                  (m) =>
+                    `${m.model} (${labels.tokensCount.replace(
+                      "{amount}",
+                      formatTokens(m.tokens_total, language)
+                    )})`
+                )
+                .join(", ")
+            )
+        : "";
+
+    return (
+      <>
+        {displayed.map((m) => (
+          <Badge key={m.model} variant="secondary" className={badgeClass}>
+            {m.model}
+          </Badge>
+        ))}
+        {remaining.length > 0 && (
+          <Badge
+            variant="secondary"
+            className={cn(badgeClass, "cursor-default")}
+            title={remainingTooltip}
+            aria-label={remainingTooltip}
+          >
+            {labels.moreModels.replace("{count}", String(remaining.length))}
+          </Badge>
+        )}
+      </>
+    );
+  }
+
+  const fallbackModels = (topModelsMap[provider.provider] || []).slice(0, 2);
+  return (
+    <>
+      {fallbackModels.map((m) => (
+        <Badge key={m.model} variant="secondary" className={badgeClass}>
+          {m.model}
+        </Badge>
+      ))}
+    </>
+  );
+}
+
 function TokenUsageContent() {
   const { labels, language } = useResumeLocale();
   const [range, setRange] = useState<RangeOption>("this_month");
@@ -371,7 +448,16 @@ function TokenUsageContent() {
 
     const provAgg: Record<
       string,
-      { provider: string; label: string; tokensTotal: number; costUsd: number }
+      {
+        provider: string;
+        label: string;
+        tokensTotal: number;
+        costUsd: number;
+        models?: Record<
+          string,
+          { model: string; tokensTotal: number; costUsd: number }
+        >;
+      }
     > = {};
     const modelAgg: Record<
       string,
@@ -394,6 +480,24 @@ function TokenUsageContent() {
         }
         provAgg[pr.provider].tokensTotal += pr.tokens.total;
         provAgg[pr.provider].costUsd += pr.cost_usd;
+
+        if (pr.models) {
+          if (!provAgg[pr.provider].models) {
+            provAgg[pr.provider].models = {};
+          }
+          const provModels = provAgg[pr.provider].models!;
+          for (const m of pr.models) {
+            if (!provModels[m.model]) {
+              provModels[m.model] = {
+                model: m.model,
+                tokensTotal: 0,
+                costUsd: 0,
+              };
+            }
+            provModels[m.model].tokensTotal += m.tokens_total;
+            provModels[m.model].costUsd += m.cost_usd;
+          }
+        }
       }
 
       for (const tm of p.top_models) {
@@ -422,6 +526,15 @@ function TokenUsageContent() {
           total: item.tokensTotal,
         },
         cost_usd: Number(item.costUsd.toFixed(2)),
+        models: item.models
+          ? Object.values(item.models)
+              .map((m) => ({
+                model: m.model,
+                tokens_total: m.tokensTotal,
+                cost_usd: Number(m.costUsd.toFixed(2)),
+              }))
+              .sort((a, b) => b.tokens_total - a.tokens_total)
+          : undefined,
       }))
       .sort((a, b) => b.tokens.total - a.tokens.total);
 
@@ -848,7 +961,6 @@ function TokenUsageContent() {
           {providersList.map((p) => {
             const pct = (p.tokens.total / (totalTokens || 1)) * 100;
             const color = getProviderColor(p.provider);
-            const topModels = (topModelsMap[p.provider] || []).slice(0, 2);
 
             return (
               <div
@@ -857,30 +969,28 @@ function TokenUsageContent() {
               >
                 <div className="flex items-center justify-between gap-2">
                   {/* Left: Color dot, provider label, and top models badges on desktop */}
-                  <div className="flex items-center gap-2 min-w-0">
+                  <div className="flex items-center gap-2 min-w-0 flex-1">
                     <span
                       className="size-2.5 rounded-full shrink-0"
                       style={{ backgroundColor: color }}
                       aria-hidden="true"
                     />
-                    <span className="text-sm font-medium text-foreground truncate">
+                    <span className="text-sm font-medium text-foreground whitespace-nowrap shrink-0 min-w-[7rem] sm:min-w-[8.5rem]">
                       {p.label}
                     </span>
-                    <div className="hidden md:flex items-center gap-1.5">
-                      {topModels.map((m) => (
-                        <Badge
-                          key={m.model}
-                          variant="secondary"
-                          className="text-[11px] font-mono font-normal px-1.5 py-0"
-                        >
-                          {m.model}
-                        </Badge>
-                      ))}
+                    <div className="hidden md:flex flex-wrap items-center gap-1.5 min-w-0">
+                      <ProviderModelBadges
+                        provider={p}
+                        topModelsMap={topModelsMap}
+                        labels={labels}
+                        language={language}
+                        size="md"
+                      />
                     </div>
                   </div>
 
                   {/* Right: Bar, Percentage, Tokens, Cost */}
-                  <div className="flex items-center gap-3 shrink-0 text-right">
+                  <div className="flex items-center gap-2 sm:gap-3 shrink-0 text-right">
                     <div className="hidden sm:block h-1.5 w-16 md:w-28 bg-muted rounded-full overflow-hidden shrink-0">
                       <div
                         className="h-full rounded-full transition-all duration-300"
@@ -890,30 +1000,28 @@ function TokenUsageContent() {
                         }}
                       />
                     </div>
-                    <span className="text-xs text-muted-foreground font-mono w-11 sm:w-12 text-right">
+                    <span className="text-xs text-muted-foreground font-mono w-10 sm:w-12 text-right">
                       {pct.toFixed(1)}%
                     </span>
                     <span className="text-xs sm:text-sm font-mono font-medium w-16 sm:w-20 text-right">
                       {formatTokens(p.tokens.total, language)}
                     </span>
-                    <span className="text-xs text-muted-foreground font-mono whitespace-nowrap shrink-0 w-20 sm:w-24 min-w-[5rem] sm:min-w-[6rem] text-right">
+                    <span className="text-xs text-muted-foreground font-mono whitespace-nowrap shrink-0 w-16 sm:w-24 min-w-[4rem] sm:min-w-[6rem] text-right">
                       ≈ {formatCost(p.cost_usd, language)}
                     </span>
                   </div>
                 </div>
 
-                {/* Mobile subrow: Top-2 models and mini progress bar */}
+                {/* Mobile subrow: Top models and mini progress bar */}
                 <div className="flex md:hidden items-center justify-between gap-2 pl-4.5">
                   <div className="flex flex-wrap items-center gap-1">
-                    {topModels.map((m) => (
-                      <Badge
-                        key={m.model}
-                        variant="secondary"
-                        className="text-[10px] font-mono font-normal px-1.5 py-0"
-                      >
-                        {m.model}
-                      </Badge>
-                    ))}
+                    <ProviderModelBadges
+                      provider={p}
+                      topModelsMap={topModelsMap}
+                      labels={labels}
+                      language={language}
+                      size="sm"
+                    />
                   </div>
                   <div className="sm:hidden block h-1 w-16 bg-muted rounded-full overflow-hidden shrink-0">
                     <div
