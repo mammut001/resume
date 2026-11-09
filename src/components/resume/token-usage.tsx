@@ -174,6 +174,33 @@ function formatPeriodFullTitle(
   return period.period;
 }
 
+function getDaysInMonth(periodStr: string | null | undefined): number {
+  if (!periodStr) return 30;
+  const parts = periodStr.split("-");
+  if (parts.length >= 2) {
+    const year = Number(parts[0]);
+    const month = Number(parts[1]);
+    if (!isNaN(year) && !isNaN(month) && month >= 1 && month <= 12) {
+      return new Date(year, month, 0).getDate();
+    }
+  }
+  return 30;
+}
+
+function getElapsedDaysInMonth(periodUsage: PeriodUsage | null | undefined): number {
+  if (!periodUsage) return 1;
+  if (periodUsage.last_day) {
+    const parts = periodUsage.last_day.split("-");
+    if (parts.length === 3) {
+      const day = Number(parts[2]);
+      if (!isNaN(day) && day >= 1) {
+        return day;
+      }
+    }
+  }
+  return Math.max(1, getDaysInMonth(periodUsage.period));
+}
+
 function getThisMonthButtonLabel(
   latestMonthPeriod: string | undefined,
   generatedAt: string | undefined,
@@ -277,6 +304,7 @@ function TokenUsageContent() {
     uniqueProvidersCount,
     uniqueModelsCount,
     momPct,
+    previousDailyAvg,
   } = useMemo(() => {
     if (range === "this_month") {
       if (!latestMonth) {
@@ -291,6 +319,7 @@ function TokenUsageContent() {
           uniqueProvidersCount: 0,
           uniqueModelsCount: 0,
           momPct: null,
+          previousDailyAvg: null,
         };
       }
 
@@ -299,10 +328,17 @@ function TokenUsageContent() {
       const cost = latestMonth.cost_usd;
 
       let pctChange: number | null = null;
+      let prevDailyAvg: number | null = null;
       if (previousMonth && previousMonth.tokens.total > 0) {
-        pctChange = Math.round(
-          ((tot - previousMonth.tokens.total) / previousMonth.tokens.total) * 100
-        );
+        const currentElapsedDays = getElapsedDaysInMonth(latestMonth);
+        const prevMonthDays = getDaysInMonth(previousMonth.period);
+        const currentDailyAvg = tot / currentElapsedDays;
+        prevDailyAvg = previousMonth.tokens.total / prevMonthDays;
+        if (prevDailyAvg > 0) {
+          pctChange = Math.round(
+            ((currentDailyAvg - prevDailyAvg) / prevDailyAvg) * 100
+          );
+        }
       }
 
       const modelsByProv: Record<string, ModelUsage[]> = {};
@@ -322,6 +358,7 @@ function TokenUsageContent() {
         uniqueProvidersCount: latestMonth.by_provider.length,
         uniqueModelsCount: latestMonth.top_models.length,
         momPct: pctChange,
+        previousDailyAvg: prevDailyAvg,
       };
     }
 
@@ -426,6 +463,7 @@ function TokenUsageContent() {
       uniqueProvidersCount: sortedProviders.length,
       uniqueModelsCount: sortedModels.length,
       momPct: null,
+      previousDailyAvg: null,
     };
   }, [range, latestMonth, previousMonth, periodsForChart]);
 
@@ -541,10 +579,10 @@ function TokenUsageContent() {
                 )}
               </div>
               <div className="text-[11px] sm:text-xs text-muted-foreground mt-1 truncate">
-                {previousMonth
+                {previousDailyAvg !== null
                   ? labels.vsPreviousMonthValue.replace(
                       "{amount}",
-                      formatTokens(previousMonth.tokens.total, language)
+                      formatTokens(previousDailyAvg, language)
                     )
                   : "—"}
               </div>
@@ -856,7 +894,7 @@ function TokenUsageContent() {
                     <span className="text-xs sm:text-sm font-mono font-medium w-16 sm:w-20 text-right">
                       {formatTokens(p.tokens.total, language)}
                     </span>
-                    <span className="text-xs text-muted-foreground font-mono w-14 sm:w-16 text-right">
+                    <span className="text-xs text-muted-foreground font-mono whitespace-nowrap shrink-0 w-20 sm:w-24 min-w-[5rem] sm:min-w-[6rem] text-right">
                       ≈ {formatCost(p.cost_usd, language)}
                     </span>
                   </div>
