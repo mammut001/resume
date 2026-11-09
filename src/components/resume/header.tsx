@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect } from 'react';
+import Link from 'next/link';
 import { useResumeLocale } from '@/data/resume-locale';
 import { hasTokenUsage } from '@/data/token-usage';
 import { ModeToggle } from '@/components/mode-toggle';
@@ -72,9 +73,21 @@ export const Header = () => {
                             {item.label}
                         </a>
                     ))}
+                    <Link
+                        href="/posts"
+                        className="rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+                    >
+                        {labels.posts}
+                    </Link>
                 </nav>
 
                 <div className="flex items-center gap-1">
+                    <Link
+                        href="/posts"
+                        className="rounded-md px-2.5 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground md:hidden"
+                    >
+                        {labels.posts}
+                    </Link>
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                             <Button variant="ghost" size="icon" aria-label={labels.changeLanguage}>
