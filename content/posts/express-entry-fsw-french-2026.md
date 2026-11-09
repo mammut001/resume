@@ -76,6 +76,10 @@ tags: [Express Entry, FSW, 法语, TCF Canada, 移民]
 
 *分数用我们网站的 [CRS 计算器](https://french.paytonpei.top/express-entry/crs-calculator?utm_source=cv-post&utm_medium=article) 算出，规则按 IRCC 2026-11-03 起的版本。*
 
+**自己算一下**：下面就是那个计算器，直接嵌在这里。填上你的年龄、学历、英语和法语成绩，它会告诉你现在的分数，以及法语每升一级能加多少分。
+
+<div class="post-embed"><iframe src="https://french.paytonpei.top/embed/crs-calculator" title="CRS 计算器（Parlemiao 喵说法语）" loading="lazy" data-auto-height></iframe></div>
+
 分数涨在哪里：
 
 1. **法语附加分 +50**：法语四项都 NCLC 7 以上，且英语四项都 CLB 5 以上，加 50 分；英语 CLB 4 及以下（或没考英语）则加 25 分。
