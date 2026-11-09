@@ -78,6 +78,80 @@
   }
 }
 
+@layer components {
+  .post-body {
+    @apply text-foreground leading-relaxed break-words;
+  }
+  .post-body h1 {
+    @apply text-2xl sm:text-3xl font-bold tracking-tight text-foreground mt-8 mb-4;
+  }
+  .post-body h2 {
+    @apply text-xl sm:text-2xl font-bold tracking-tight text-foreground mt-8 mb-3 pb-2 border-b border-border/50;
+  }
+  .post-body h3 {
+    @apply text-lg sm:text-xl font-semibold tracking-tight text-foreground mt-6 mb-2;
+  }
+  .post-body h4 {
+    @apply text-base font-semibold tracking-tight text-foreground mt-4 mb-2;
+  }
+  .post-body p {
+    @apply leading-7 text-foreground/90 my-4;
+  }
+  .post-body a {
+    @apply font-medium text-foreground underline underline-offset-4 decoration-border hover:decoration-foreground transition-colors;
+  }
+  .post-body strong {
+    @apply font-semibold text-foreground;
+  }
+  .post-body ul {
+    @apply my-4 ml-6 list-disc space-y-1.5 text-foreground/90;
+  }
+  .post-body ol {
+    @apply my-4 ml-6 list-decimal space-y-1.5 text-foreground/90;
+  }
+  .post-body li {
+    @apply leading-7;
+  }
+  .post-body blockquote {
+    @apply my-4 border-l-4 border-border pl-4 text-muted-foreground;
+  }
+  .post-body hr {
+    @apply my-8 border-border;
+  }
+  .post-body code {
+    @apply rounded bg-muted px-1.5 py-0.5 font-mono text-sm text-foreground;
+  }
+  .post-body pre {
+    @apply my-6 max-w-full overflow-x-auto rounded-lg border border-border bg-muted/60 p-4 font-mono text-sm leading-normal;
+  }
+  .post-body pre code {
+    @apply bg-transparent p-0 border-0 text-inherit;
+  }
+  .post-body table {
+    @apply my-6 block w-full max-w-full overflow-x-auto border-collapse text-sm;
+  }
+  .post-body th,
+  .post-body td {
+    @apply border border-border px-3.5 py-2 text-left;
+  }
+  .post-body th {
+    @apply bg-muted/60 font-semibold text-foreground;
+  }
+  .post-body tr:nth-child(even) {
+    @apply bg-muted/20;
+  }
+  .post-body img {
+    @apply my-6 h-auto w-full max-w-full rounded-lg border border-border/50 object-cover;
+  }
+  .post-body img + em,
+  .post-body p > img + em {
+    @apply -mt-4 mb-6 block text-center text-xs sm:text-sm text-muted-foreground not-italic;
+  }
+  .post-body p:has(> img) + p:has(> em:only-child) {
+    @apply -mt-4 mb-6 text-center text-xs sm:text-sm text-muted-foreground not-italic;
+  }
+}
+
 @media print {
   @page {
     margin: 12mm;
