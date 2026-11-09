@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { useResumeLocale } from '@/data/resume-locale';
+import { hasTokenUsage } from '@/data/token-usage';
 import { ModeToggle } from '@/components/mode-toggle';
 import { Button } from '@/components/ui/button';
 import { useLanguageStore, type Lang } from '@/store/useLanguageStore';
@@ -51,6 +52,7 @@ export const Header = () => {
         { href: '#experience', label: labels.workExperience },
         { href: '#education', label: labels.education },
         { href: '#skills', label: labels.skills },
+        ...(hasTokenUsage ? [{ href: '#ai-usage', label: labels.aiUsage }] : []),
     ];
 
     return (
