@@ -969,16 +969,16 @@ function TokenUsageContent() {
               >
                 <div className="flex items-center justify-between gap-2">
                   {/* Left: Color dot, provider label, and top models badges on desktop */}
-                  <div className="flex items-center gap-2 min-w-0">
+                  <div className="flex items-center gap-2 min-w-0 flex-1">
                     <span
                       className="size-2.5 rounded-full shrink-0"
                       style={{ backgroundColor: color }}
                       aria-hidden="true"
                     />
-                    <span className="text-sm font-medium text-foreground truncate">
+                    <span className="text-sm font-medium text-foreground whitespace-nowrap shrink-0 min-w-[7rem] sm:min-w-[8.5rem]">
                       {p.label}
                     </span>
-                    <div className="hidden md:flex items-center gap-1.5">
+                    <div className="hidden md:flex flex-wrap items-center gap-1.5 min-w-0">
                       <ProviderModelBadges
                         provider={p}
                         topModelsMap={topModelsMap}
@@ -990,7 +990,7 @@ function TokenUsageContent() {
                   </div>
 
                   {/* Right: Bar, Percentage, Tokens, Cost */}
-                  <div className="flex items-center gap-3 shrink-0 text-right">
+                  <div className="flex items-center gap-2 sm:gap-3 shrink-0 text-right">
                     <div className="hidden sm:block h-1.5 w-16 md:w-28 bg-muted rounded-full overflow-hidden shrink-0">
                       <div
                         className="h-full rounded-full transition-all duration-300"
@@ -1000,13 +1000,13 @@ function TokenUsageContent() {
                         }}
                       />
                     </div>
-                    <span className="text-xs text-muted-foreground font-mono w-11 sm:w-12 text-right">
+                    <span className="text-xs text-muted-foreground font-mono w-10 sm:w-12 text-right">
                       {pct.toFixed(1)}%
                     </span>
                     <span className="text-xs sm:text-sm font-mono font-medium w-16 sm:w-20 text-right">
                       {formatTokens(p.tokens.total, language)}
                     </span>
-                    <span className="text-xs text-muted-foreground font-mono whitespace-nowrap shrink-0 w-20 sm:w-24 min-w-[5rem] sm:min-w-[6rem] text-right">
+                    <span className="text-xs text-muted-foreground font-mono whitespace-nowrap shrink-0 w-16 sm:w-24 min-w-[4rem] sm:min-w-[6rem] text-right">
                       ≈ {formatCost(p.cost_usd, language)}
                     </span>
                   </div>
