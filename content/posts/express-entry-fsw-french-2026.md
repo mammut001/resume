@@ -1,6 +1,6 @@
 ---
 title: 没有加拿大经验，法语可能是 Express Entry 最现实的那条路（2026）
-description: 用 IRCC 公开的抽签数据，看 FSW 申请人在 2026 年还能从哪里拿到邀请：全类别抽签已经停了两年半，法语类别拿走了四成邀请，分数线比 CEC 低一百多分。附 CRS 算例、TCF 分数对照和备考建议。
+description: 用 IRCC 公开的抽签数据，看 FSW 申请人在 2026 年还能从哪里拿到邀请：全类别抽签已经停了两年半，法语类别拿走了四成邀请，分数线比 CEC 低一百多分。另附 FCIP 法语社区试点、法语工签、省提名、魁北克等全部法语路径，以及 CRS 算例和 TCF 分数对照。
 date: 2026-11-09
 lang: zh-CN
 cover: /posts/express-entry-fsw-french-2026/cover.png
@@ -98,6 +98,8 @@ IRCC 认可两种法语考试：TEF Canada 和 TCF Canada。下面是 TCF Canada
 
 | NCLC | 阅读 | 写作 | 听力 | 口语 |
 |---|---|---|---|---|
+| 5 | 375 – 405 | 6 | 369 – 397 | 6 |
+| 6 | 406 – 452 | 7 – 9 | 398 – 457 | 7 – 9 |
 | 7 | 453 – 498 | 10 – 11 | 458 – 502 | 10 – 11 |
 | 8 | 499 – 523 | 12 – 13 | 503 – 522 | 12 – 13 |
 | 9 | 524 – 548 | 14 – 15 | 523 – 548 | 14 – 15 |
@@ -105,9 +107,46 @@ IRCC 认可两种法语考试：TEF Canada 和 TCF Canada。下面是 TCF Canada
 
 要点：
 
-- **四项都要到 NCLC 7**，差一项都拿不到附加分，也进不了法语类别。
+- **Express Entry 要四项都到 NCLC 7**，差一项都拿不到附加分，也进不了法语类别。FCIP、新不伦瑞克省提名只要 NCLC 5；法语工签只看听说 NCLC 5。
 - 对多数中文母语的考生，阅读和听力上 7 相对快，**写作和口语的 10 分**是真正的门槛。写作要能在规定时间里写出结构完整、连接词到位的短文，口语要能就日常话题连续说两三分钟。
 - 从零开始，认真学的话一般以年为单位。早一年开始，就早一年进入那个 400 分的赛道。
+
+## 所有跟法语有关的路径，一次列全
+
+Express Entry 的法语类别只是其中一条。下面是截至 2026 年 11 月，所有会因为你会法语而变得更容易的路径（魁北克单独说）。
+
+![每条法语路径的最低法语要求](/posts/express-entry-fsw-french-2026/paths.png)
+*图 3：圆点是直接拿 PR 的路径，方块是先拿工签。越靠左，法语门槛越低。*
+
+| 路径 | 拿到的是 | 法语最低要求 | 关键条件 | 现状 |
+|---|---|---|---|---|
+| **Express Entry 法语类别抽签** | PR 邀请 | 四项 NCLC 7 | 先满足 FSW / CEC / FST 之一进池；不看职业 | 2026 年抽了 12 次，60,500 个邀请 |
+| **Express Entry 法语附加分** | CRS 加分 | 四项 NCLC 7 | 英语 CLB 5+ 加 50 分，否则加 25 分；所有抽签都算 | 2026-11-03 新规里没变 |
+| **FCIP 法语社区移民试点** | PR | 四项 NCLC 5 | 指定社区里指定雇主的 offer；过去 3 年 1,560 小时相关工作经验；学历；安家资金 | 开放中，6 个社区 |
+| **RCIP 农村社区移民试点** | PR | 不是法语专属，英法都可 | 指定农村社区的雇主 offer | 开放中，14 个社区 |
+| **新不伦瑞克省提名 Strategic Initiative** | 省提名 → PR | 四项 NCLC 5 | 19 岁以上、高中学历、过去 5 年 1 年工作经验（新省毕业生免） | 2026-09-11 一轮发了 251 个邀请 |
+| **曼尼托巴省提名法语定向邀请** | 省提名 → PR | 有效的法语成绩 | 意向书里把沟通语言选法语 | 每轮十几到二十几人 |
+| **安大略省法语技术移民（FSSW）** | 省提名 → PR | — | — | **已关闭**（2026-05-30，OINP 改革） |
+| **法语工签 Mobilité francophone（C16）** | 工签 | 只要听、说 NCLC 5 | 魁省以外的雇主 offer，TEER 0–5 都行（TEER 4–5 的初级农业除外），不需要 LMIA | 开放中 |
+| **法语少数社区留学试点（FMCSP）** | 学签 | 四项 NCLC 5 | 仅限 33 个国家的公民 | **中国公民不在名单内** |
+
+几条展开说：
+
+**FCIP 法语社区移民试点**是 2025 年开的联邦试点，6 个社区是：新不伦瑞克的阿卡迪亚半岛（Acadian Peninsula）、安大略的萨德伯里（Sudbury）、蒂明斯（Timmins）、Superior East Region、曼尼托巴的 St. Pierre Jolys、BC 的基洛纳（Kelowna）。它要的法语只有 **NCLC 5**，比 Express Entry 法语类别低两级，但你得先拿到当地指定雇主的 offer。萨德伯里和蒂明斯同时也在 RCIP 农村试点里。
+
+**法语工签（C16）**本身不是移民项目，但门槛最低：只看听力和口语，NCLC 5，相当于 TCF 听力 369 分、口语 6 分。雇主不用做 LMIA，只要在雇主门户提交 offer、交 230 加元。拿着它在加拿大做 TEER 0–3 的工作满一年，就有了 CEC 认可的**加拿大工作经验**。再加上法语，你就同时能参加 CEC 和法语类别两种抽签。
+
+**省提名的法语名额在扩大**：联邦 2026 年额外给各省留了 **5,000 个**法语移民的提名名额，在各省常规 PNP 配额之外。联邦的目标是魁北克以外法语移民占比 2026 年 9%、2027 年 9.5%、2028 年 10.5%。2025 年实际做到了约 8.9%。
+
+**魁北克**是另一套体系，以上联邦和其他省的路径都不适用于在魁北克定居。魁北克现在的技术移民主要是 **PSTQ**（Programme de sélection des travailleurs qualifiés），按职业分四个类别（volet）邀请，前三个类别都要求法语；2026 年 1 月到 7 月共发出 13,240 个邀请。**PEQ**（魁北克经验类）在 2026 年重新开放了一个接收期，到 10 月为止。具体法语等级按类别不同，以 [quebec.ca](https://www.quebec.ca/en/immigration/permanent/skilled-workers/skilled-worker-selection-program) 为准。
+
+### 怎么选
+
+- **在海外、没有 offer**：主攻 Express Entry 法语类别，目标四项 NCLC 7。
+- **能找到小城市的 offer**：看 FCIP 的 6 个社区，法语 NCLC 5 就够。
+- **想先过去再说**：法语工签 C16，听说 NCLC 5，找 TEER 0–3 的工作攒一年经验转 CEC。
+- **愿意去新不伦瑞克**：Strategic Initiative，NCLC 5 加一年工作经验。
+- **想去魁北克**：走 PSTQ，法语是硬门槛，等级以魁北克官网为准。
 
 ## 如果我现在开始，怎么准备
 
@@ -123,6 +162,13 @@ IRCC 认可两种法语考试：TEF Canada 和 TCF Canada。下面是 TCF Canada
 - 2023 年七成邀请来自全类别抽签，2025 年起一次都没有。
 - 对海外 FSW 申请人，法语类别是抽得最多、门槛最低的那扇门：2026 年拿走 40% 的邀请，最低分 382 – 435。
 - 法语四项 NCLC 7，能给一个典型 FSW 申请人加 60 分左右，更重要的是让你有资格参加法语抽签。
+- 如果 NCLC 7 一时到不了，NCLC 5 也能打开 FCIP、新不伦瑞克省提名和法语工签这几条路。
 - 11 月 3 日起 CRS 新规生效，分数线会重新洗牌，但法语附加分没变。
 
 数据和规则会变，申请前请以 [IRCC 官网](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html) 为准。
+
+## 资料来源
+
+- IRCC：[Express Entry 邀请轮次](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html)、[CRS 评分标准](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html)、[FSW 条件](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html)、[类别抽签](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html)、[语言考试换算](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html)
+- IRCC：[农村和法语社区移民试点](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots.html)、[FCIP 语言要求](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/franco-immigration/eligibility/language-test.html)、[法语工签 C16](https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/special-instructions/francophone-mobility/eligibility.html)、[FMCSP 留学试点](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/fmc-student-pilot/eligibility.html)、[2026–2028 移民配额补充说明](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/corporate-initiatives/levels/supplementary-immigration-levels-2026-2028.html)、[2025 年法语移民目标达成](https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/01/canada-exceeded-its-francophone-immigration-target-for-2025.html)
+- 各省：[新不伦瑞克 Strategic Initiative](https://www.gnb.ca/en/topic/family-home-community/immigration/provincial-nominee-program/strategic-initiative.html)、[安大略 2026 OINP 更新](https://www.ontario.ca/page/2026-ontario-immigrant-nominee-program-updates)、[曼尼托巴 MPNP 抽签](https://immigratemanitoba.com/news/)、[魁北克 PSTQ](https://www.quebec.ca/en/immigration/permanent/skilled-workers/skilled-worker-selection-program)
