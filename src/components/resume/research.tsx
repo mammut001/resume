@@ -1,5 +1,6 @@
 "use client"
 
+import { ArrowUpRight } from "lucide-react"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Section, SectionHeading } from "@/components/ui/section"
@@ -20,6 +21,7 @@ export const Research = () => {
                 {RESUME_DATA.research.map((item) => {
                     const title = localize(item, "title")
                     const description = localize(item, "description")
+                    const links = "links" in item ? item.links : []
 
                     return (
                         <Card key={item.title} className="break-inside-avoid border-none bg-transparent p-0 shadow-none">
@@ -44,6 +46,25 @@ export const Research = () => {
                             </CardHeader>
                             <CardContent className="mt-3 p-0 leading-relaxed">
                                 {description}
+                                {links.length > 0 ? (
+                                    <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm print:hidden">
+                                        {links.map((link) => (
+                                            <a
+                                                key={link.href}
+                                                href={link.href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="group inline-flex items-center gap-1 font-medium underline-offset-4 hover:underline"
+                                            >
+                                                {localize(link, "label")}
+                                                <ArrowUpRight
+                                                    aria-hidden="true"
+                                                    className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                                                />
+                                            </a>
+                                        ))}
+                                    </div>
+                                ) : null}
                             </CardContent>
                         </Card>
                     )

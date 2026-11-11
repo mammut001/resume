@@ -435,6 +435,20 @@
         "Computer Vision",
         "Low-Light Imaging",
         "DDBM"
+      ],
+      "links": [
+        {
+          "label": "Report (PDF)",
+          "label_fr": "Rapport (PDF)",
+          "label_cn": "报告 (PDF)",
+          "href": "/research/low-light-raw-restoration-report.pdf"
+        },
+        {
+          "label": "GitHub",
+          "label_fr": "GitHub",
+          "label_cn": "GitHub",
+          "href": "https://github.com/mammut001/ddbm"
+        }
       ]
     }
   ],
