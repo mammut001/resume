@@ -144,7 +144,7 @@
 )
 #align(left)[
 - 参与基于 SID、ELD 数据的极低照度 RAW 图像复原研究，负责 DDBM 初版实现。
-- 项目中的 DDBM-Feature 变体在 598 张 SID Sony 测试图像上取得 26.12 dB PSNR 与 0.807 MS-SSIM。
+- 后在修订报告中重新实现并扩展该研究：按官方配方实现的像素空间 DDBM 在 598 张全分辨率 SID Sony 测试图像上使 LPIPS 比 SID U-Net 降低 37%，PSNR 低 1.3 dB；两者输出取平均后，PSNR 与 LPIPS 均优于 U-Net（28.86 dB 与 0.344，对比 28.61 dB 与 0.459）。
 ]
 #v(0.28em)
 
