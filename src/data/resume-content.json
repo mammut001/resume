@@ -318,9 +318,9 @@
     },
     {
       "index": 3,
-      "title": "Réussir en français — TCF Canada Prep Platform",
-      "title_fr": "Réussir en français — plateforme de préparation au TCF Canada",
-      "title_cn": "Réussir en français — TCF Canada 法语备考平台",
+      "title": "Parlemiao (formerly Réussir en français)",
+      "title_fr": "Parlemiao (anciennement Réussir en français)",
+      "title_cn": "Parlemiao 喵说法语（原 Réussir en français）",
       "status": 1,
       "techStack": [
         "Next.js",
@@ -332,9 +332,9 @@
         "Stripe",
         "Docker"
       ],
-      "description": "Grew an open-source typing-trainer fork into a full-stack TCF Canada prep platform with A1–B2 vocabulary drills, a 26-week adaptive study plan with spaced review and timed mock exams in all four skills. Added calibrated LLM writing and speaking feedback with swappable providers, OAuth and passkey sign-in, Stripe and Alipay billing, and a self-hosted Next.js and Docker deployment.",
-      "description_fr": "Fork open source d'entraîneur de frappe devenu une plateforme complète de préparation au TCF Canada : vocabulaire A1–B2, plan adaptatif de 26 semaines avec révision espacée et examens blancs chronométrés. Ajout d'une rétroaction LLM calibrée sur l'écrit et l'oral avec fournisseurs interchangeables, connexion OAuth et passkey, paiements Stripe et Alipay, et déploiement Next.js et Docker auto-hébergé.",
-      "description_cn": "将开源打字练习项目的分支发展为全栈 TCF Canada 法语备考平台：A1–B2 背词、带间隔复习的 26 周自适应计划，以及听说读写四科计时模考。加入经校准的大模型写作与口语评分（可切换模型供应商）、OAuth 与通行密钥登录、Stripe 与支付宝订阅，并以 Next.js + Docker 自托管部署。",
+      "description": "Grew an open-source typing-trainer fork into a full-stack TCF Canada prep platform with A1–B2 vocabulary drills in France and Québec accents, a 26-week adaptive study plan and timed mock exams in all four skills. Added sentence-synced dictation, calibrated LLM writing and speaking feedback with swappable providers, OAuth and passkey sign-in, Stripe and Alipay billing, and a self-hosted Next.js and Docker deployment.",
+      "description_fr": "Fork open source d'entraîneur de frappe devenu une plateforme complète de préparation au TCF Canada : vocabulaire A1–B2 avec accents français et québécois, plan adaptatif de 26 semaines et examens blancs chronométrés dans les quatre compétences. Ajout de la dictée synchronisée phrase par phrase, d'une rétroaction LLM calibrée sur l'écrit et l'oral avec fournisseurs interchangeables, de la connexion OAuth et passkey, des paiements Stripe et Alipay, et d'un déploiement Next.js et Docker auto-hébergé.",
+      "description_cn": "将开源打字练习项目的分支发展为全栈 TCF Canada 法语备考平台：A1–B2 背词（法国与魁北克双口音）、26 周自适应计划，以及听说读写四科计时模考。加入句子级同步精听、经校准的大模型写作与口语评分（可切换模型供应商）、OAuth 与通行密钥登录、Stripe 与支付宝订阅，并以 Next.js + Docker 自托管部署。",
       "link": {
         "label": "Website",
         "label_fr": "Site web",

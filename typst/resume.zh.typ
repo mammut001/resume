@@ -83,12 +83,12 @@
 #v(0.3em)
 #v(0.32em)
 #project(
-  name: "Réussir en français — TCF Canada 法语备考平台",
+  name: "Parlemiao 喵说法语（原 Réussir en français）",
   url: "french.paytonpei.top",
 )
 #align(left)[
-- 将开源打字练习项目的分支发展为全栈 TCF Canada 法语备考平台：A1–B2 背词、带间隔复习的 26 周自适应计划，以及听说读写四科计时模考。
-- 加入经校准的大模型写作与口语评分（可切换模型供应商）、OAuth 与通行密钥登录、Stripe 与支付宝订阅，并以 Next.js + Docker 自托管部署。
+- 将开源打字练习项目的分支发展为全栈 TCF Canada 法语备考平台：A1–B2 背词（法国与魁北克双口音）、26 周自适应计划，以及听说读写四科计时模考。
+- 加入句子级同步精听、经校准的大模型写作与口语评分（可切换模型供应商）、OAuth 与通行密钥登录、Stripe 与支付宝订阅，并以 Next.js + Docker 自托管部署。
 ]
 #v(0.3em)
 #v(0.32em)

@@ -83,12 +83,12 @@ Systems Science and Engineering master's student at the University of Ottawa, gr
 #v(0.3em)
 #v(0.32em)
 #project(
-  name: "Réussir en français — TCF Canada Prep Platform",
+  name: "Parlemiao (formerly Réussir en français)",
   url: "french.paytonpei.top",
 )
 #align(left)[
-- Grew an open-source typing-trainer fork into a full-stack TCF Canada prep platform with A1–B2 vocabulary drills, a 26-week adaptive study plan with spaced review and timed mock exams in all four skills.
-- Added calibrated LLM writing and speaking feedback with swappable providers, OAuth and passkey sign-in, Stripe and Alipay billing, and a self-hosted Next.js and Docker deployment.
+- Grew an open-source typing-trainer fork into a full-stack TCF Canada prep platform with A1–B2 vocabulary drills in France and Québec accents, a 26-week adaptive study plan and timed mock exams in all four skills.
+- Added sentence-synced dictation, calibrated LLM writing and speaking feedback with swappable providers, OAuth and passkey sign-in, Stripe and Alipay billing, and a self-hosted Next.js and Docker deployment.
 ]
 #v(0.3em)
 #v(0.32em)
