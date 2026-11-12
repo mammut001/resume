@@ -83,12 +83,12 @@
 #v(0.3em)
 #v(0.32em)
 #project(
-  name: "Réussir en français — plateforme de préparation au TCF Canada",
+  name: "Parlemiao (anciennement Réussir en français)",
   url: "french.paytonpei.top",
 )
 #align(left)[
-- Fork open source d'entraîneur de frappe devenu une plateforme complète de préparation au TCF Canada : vocabulaire A1–B2, plan adaptatif de 26 semaines avec révision espacée et examens blancs chronométrés.
-- Ajout d'une rétroaction LLM calibrée sur l'écrit et l'oral avec fournisseurs interchangeables, connexion OAuth et passkey, paiements Stripe et Alipay, et déploiement Next.js et Docker auto-hébergé.
+- Fork open source d'entraîneur de frappe devenu une plateforme complète de préparation au TCF Canada : vocabulaire A1–B2 avec accents français et québécois, plan adaptatif de 26 semaines et examens blancs chronométrés dans les quatre compétences.
+- Ajout de la dictée synchronisée phrase par phrase, d'une rétroaction LLM calibrée sur l'écrit et l'oral avec fournisseurs interchangeables, de la connexion OAuth et passkey, des paiements Stripe et Alipay, et d'un déploiement Next.js et Docker auto-hébergé.
 ]
 #v(0.3em)
 #v(0.32em)
