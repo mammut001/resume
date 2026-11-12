@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { useResumeLocale } from "@/data/resume-locale";
 import {
+  countDistinctModels,
   hasTokenUsage,
   tokenUsage,
   type PeriodUsage,
@@ -435,7 +436,7 @@ function TokenUsageContent() {
         dailyAvg: null,
         daysCount: null,
         uniqueProvidersCount: latestMonth.by_provider.length,
-        uniqueModelsCount: latestMonth.top_models.length,
+        uniqueModelsCount: countDistinctModels([latestMonth]),
         momPct: pctChange,
         previousDailyAvg: prevDailyAvg,
       };
@@ -576,7 +577,7 @@ function TokenUsageContent() {
       dailyAvg: daily,
       daysCount: days,
       uniqueProvidersCount: sortedProviders.length,
-      uniqueModelsCount: sortedModels.length,
+      uniqueModelsCount: countDistinctModels(periods),
       momPct: null,
       previousDailyAvg: null,
     };

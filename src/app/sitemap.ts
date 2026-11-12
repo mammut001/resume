@@ -25,6 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/kanjo/privacy`,
+      lastModified: new Date("2026-11-09"),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
     ...postEntries,
   ];
 }
