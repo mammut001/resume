@@ -350,10 +350,86 @@ function ProviderModelBadges({
   );
 }
 
+function ProviderDetailPopover({
+  provider,
+  topModelsMap,
+  labels,
+  language,
+}: {
+  provider: ProviderUsage;
+  topModelsMap: Record<string, ModelUsage[]>;
+  labels: ReturnType<typeof useResumeLocale>["labels"];
+  language: Lang;
+}) {
+  const models: { model: string; tokens_total: number; cost_usd: number }[] = [
+    ...(provider.models ?? topModelsMap[provider.provider] ?? []),
+  ].sort((a, b) => b.tokens_total - a.tokens_total);
+  const total = provider.tokens.total || 1;
+  const breakdown: [string, number][] = [
+    [labels.tokenInput, provider.tokens.input],
+    [labels.tokenOutput, provider.tokens.output],
+    [labels.tokenCacheRead, provider.tokens.cache_read],
+    [labels.tokenCacheWrite, provider.tokens.cache_write],
+  ];
+  const color = getProviderColor(provider.provider);
+  return (
+    <div
+      role="tooltip"
+      className="absolute left-0 right-0 sm:left-auto sm:w-80 top-full mt-1 z-50 rounded-md border bg-popover p-3 text-xs text-popover-foreground shadow-lg pointer-events-none animate-in fade-in-0 zoom-in-95"
+    >
+      <div className="flex items-center justify-between gap-2 border-b pb-1.5 mb-2 font-semibold">
+        <span className="flex items-center gap-1.5">
+          <span className="size-2 rounded-full" style={{ backgroundColor: color }} />
+          {provider.label}
+        </span>
+        <span className="font-mono text-muted-foreground">
+          {formatTokens(provider.tokens.total, language)} · ≈{" "}
+          {formatCost(provider.cost_usd, language)}
+        </span>
+      </div>
+      <div className="grid grid-cols-4 gap-1 mb-2 text-[10px]">
+        {breakdown.map(([k, v]) => (
+          <div key={k} className="rounded bg-muted/60 px-1.5 py-1">
+            <div className="text-muted-foreground truncate">{k}</div>
+            <div className="font-mono text-foreground">{formatTokens(v, language)}</div>
+          </div>
+        ))}
+      </div>
+      {models.length > 0 && (
+        <div className="space-y-1.5">
+          {models.map((m) => {
+            const pct = (m.tokens_total / total) * 100;
+            return (
+              <div key={m.model} className="space-y-0.5">
+                <div className="flex items-center justify-between gap-2 text-[11px]">
+                  <span className="font-mono truncate text-foreground">{m.model}</span>
+                  <span className="font-mono text-muted-foreground shrink-0">
+                    {formatTokens(m.tokens_total, language)} ({pct.toFixed(1)}%) · ≈{" "}
+                    {formatCost(m.cost_usd, language)}
+                  </span>
+                </div>
+                <div className="h-1 rounded-full bg-muted overflow-hidden">
+                  <div
+                    className="h-full rounded-full"
+                    style={{ width: `${Math.max(1, pct)}%`, backgroundColor: color }}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function TokenUsageContent() {
   const { labels, language } = useResumeLocale();
   const [range, setRange] = useState<RangeOption>("this_month");
   const [hoveredBarIndex, setHoveredBarIndex] = useState<number | null>(null);
+  const [hoveredProvider, setHoveredProvider] = useState<string | null>(null);
+  const dimFor = (provider: string) =>
+    hoveredProvider !== null && hoveredProvider !== provider;
 
   const months = useMemo(() => tokenUsage.months ?? [], []);
   const weeks = useMemo(() => tokenUsage.weeks ?? [], []);
@@ -646,7 +722,7 @@ function TokenUsageContent() {
       {/* 2. Four Metric Cards */}
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         {/* Card 1: Total Tokens */}
-        <Card className="p-3 sm:p-4 bg-card/60 border shadow-none">
+        <Card className="p-3 sm:p-4 bg-card/60 border shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:border-foreground/20">
           <div className="text-xs text-muted-foreground font-medium">
             {labels.totalTokens}
           </div>
@@ -662,7 +738,7 @@ function TokenUsageContent() {
         </Card>
 
         {/* Card 2: Cost */}
-        <Card className="p-3 sm:p-4 bg-card/60 border shadow-none">
+        <Card className="p-3 sm:p-4 bg-card/60 border shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:border-foreground/20">
           <div className="text-xs text-muted-foreground font-medium flex items-center">
             <span>{labels.equivalentCost}</span>
             <CostInfoTooltip
@@ -679,7 +755,7 @@ function TokenUsageContent() {
         </Card>
 
         {/* Card 3: MoM change or Daily average */}
-        <Card className="p-3 sm:p-4 bg-card/60 border shadow-none">
+        <Card className="p-3 sm:p-4 bg-card/60 border shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:border-foreground/20">
           {range === "this_month" ? (
             <>
               <div className="text-xs text-muted-foreground font-medium">
@@ -721,7 +797,7 @@ function TokenUsageContent() {
         </Card>
 
         {/* Card 4: Providers & Models */}
-        <Card className="p-3 sm:p-4 bg-card/60 border shadow-none">
+        <Card className="p-3 sm:p-4 bg-card/60 border shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:border-foreground/20">
           <div className="text-xs text-muted-foreground font-medium">
             {labels.providersAndModels}
           </div>
@@ -770,8 +846,14 @@ function TokenUsageContent() {
                 return (
                   <div
                     key={p.provider}
-                    className="h-full transition-opacity hover:opacity-85 cursor-pointer first:rounded-l-[3px] last:rounded-r-[3px]"
+                    className={cn(
+                      "h-full transition-all duration-200 cursor-pointer first:rounded-l-[3px] last:rounded-r-[3px]",
+                      dimFor(p.provider) ? "opacity-30" : "opacity-100",
+                      hoveredProvider === p.provider && "brightness-110"
+                    )}
                     style={{ width: `${pct}%`, backgroundColor: color }}
+                    onMouseEnter={() => setHoveredProvider(p.provider)}
+                    onMouseLeave={() => setHoveredProvider(null)}
                     title={`${p.label}: ${formatTokens(
                       p.tokens.total,
                       language
@@ -791,7 +873,15 @@ function TokenUsageContent() {
                 const pct = (p.tokens.total / (totalTokens || 1)) * 100;
                 const color = getProviderColor(p.provider);
                 return (
-                  <div key={p.provider} className="flex items-center gap-1.5">
+                  <div
+                    key={p.provider}
+                    className={cn(
+                      "flex items-center gap-1.5 cursor-default transition-opacity duration-200",
+                      dimFor(p.provider) && "opacity-40"
+                    )}
+                    onMouseEnter={() => setHoveredProvider(p.provider)}
+                    onMouseLeave={() => setHoveredProvider(null)}
+                  >
                     <span
                       className="size-2 rounded-full shrink-0"
                       style={{ backgroundColor: color }}
@@ -929,6 +1019,10 @@ function TokenUsageContent() {
                       return (
                         <div
                           key={seg.provider}
+                          className={cn(
+                            "transition-opacity duration-200",
+                            dimFor(seg.provider) && "opacity-25"
+                          )}
                           style={{
                             height: `${segHeight}%`,
                             backgroundColor: c,
@@ -966,8 +1060,25 @@ function TokenUsageContent() {
             return (
               <div
                 key={p.provider}
-                className="py-2.5 first:pt-0 last:pb-0 flex flex-col gap-1.5"
+                className={cn(
+                  "relative py-2.5 first:pt-0 last:pb-0 flex flex-col gap-1.5 -mx-2 px-2 rounded-md transition-all duration-200",
+                  hoveredProvider === p.provider && "bg-muted/50",
+                  dimFor(p.provider) && "opacity-50"
+                )}
+                onMouseEnter={() => setHoveredProvider(p.provider)}
+                onMouseLeave={() => setHoveredProvider(null)}
+                onClick={() =>
+                  setHoveredProvider(hoveredProvider === p.provider ? null : p.provider)
+                }
               >
+                {hoveredProvider === p.provider && (
+                  <ProviderDetailPopover
+                    provider={p}
+                    topModelsMap={topModelsMap}
+                    labels={labels}
+                    language={language}
+                  />
+                )}
                 <div className="flex items-center justify-between gap-2">
                   {/* Left: Color dot, provider label, and top models badges on desktop */}
                   <div className="flex items-center gap-2 min-w-0 flex-1">
