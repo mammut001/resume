@@ -31,6 +31,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    {
+      url: `${baseUrl}/photoagent/privacy`,
+      lastModified: new Date("2026-11-19"),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/photoagent/support`,
+      lastModified: new Date("2026-11-19"),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
     ...postEntries,
   ];
 }
