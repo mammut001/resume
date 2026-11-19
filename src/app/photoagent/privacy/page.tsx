@@ -83,6 +83,8 @@ export default function PhotoAgentPrivacyPage() {
             items={[
               "Photos are read on your device with your permission.",
               "Thumbnails and analysis run on your device using Apple Vision and, where available, Apple Intelligence's on-device model.",
+              "To make photo descriptions searchable, PhotoAgent may download Apple's on-device language model for English or Chinese once. The download comes from Apple and carries none of your photos or text.",
+              "Photo descriptions are written only on iPhones with Apple Intelligence turned on, and can be turned off in Settings, which deletes them.",
               "Photo content, thumbnails and analysis results are never uploaded.",
               'Analysis results (labels such as "screenshot" or "cat", short descriptions, and search vectors) are stored only in the app\'s own storage on your device. You can delete them in Settings, and they are removed when the app is deleted.',
             ]}
@@ -196,6 +198,8 @@ export default function PhotoAgentPrivacyPage() {
             items={[
               "应用在获得你的授权后，在设备本地读取照片。",
               "缩略图生成与照片分析均在设备本地运行（使用 Apple Vision，以及在受支持设备上使用 Apple Intelligence 本地模型）。",
+              "为了能按照片描述搜索，PhotoAgent 可能会一次性下载 Apple 的英文或中文本机语言模型。下载来自 Apple，不包含你的任何照片或文字。",
+              "只有开启了 Apple Intelligence 的 iPhone 才会生成照片描述；可在“设置”中关闭，关闭后会删除这些描述。",
               "照片内容、缩略图和分析结果绝不会上传。",
               "分析结果（如“截图”或“猫”等标签、简短描述和搜索向量）仅保存在设备上的应用本地存储中。你可以在“设置”中删除这些数据，卸载应用时它们也会被一并移除。",
             ]}
