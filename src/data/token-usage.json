@@ -1,50 +1,50 @@
 {
   "schema_version": 1,
   "kind": "kanjo-public-summary",
-  "generated_at": "2026-11-18T14:05:46Z",
-  "generated_by": "kanjo 0.6.5",
+  "generated_at": "2026-11-19T17:08:47Z",
+  "generated_by": "kanjo 0.6.10",
   "timezone": "America/Montreal",
   "currency": "USD",
   "cost_note": "API-equivalent cost estimated from public API prices. Not actual subscription spend.",
   "all_time": {
     "period": "all",
     "first_day": "2026-06-28",
-    "last_day": "2026-11-18",
+    "last_day": "2026-11-19",
     "tokens": {
-      "input": 1244310557,
-      "output": 224624517,
-      "cache_read": 49405101957,
-      "cache_write": 289923917,
-      "total": 51163960948
+      "input": 1272660839,
+      "output": 230387215,
+      "cache_read": 50705943234,
+      "cache_write": 297011043,
+      "total": 52506002331
     },
-    "cost_usd": 12066.34,
+    "cost_usd": 12507.99,
     "by_provider": [
       {
         "provider": "anthropic",
         "label": "Anthropic",
         "tokens": {
-          "input": 11773690,
-          "output": 74448278,
-          "cache_read": 20326445327,
-          "cache_write": 289906744,
-          "total": 20702574039
+          "input": 11781128,
+          "output": 76647610,
+          "cache_read": 21251247304,
+          "cache_write": 296993870,
+          "total": 21636669912
         },
-        "cost_usd": 6771.57,
+        "cost_usd": 7048.5,
         "models": [
           {
             "model": "claude-opus-5.5",
-            "tokens_total": 17521659119,
-            "cost_usd": 5643.76
+            "tokens_total": 18447925199,
+            "cost_usd": 5916.86
           },
           {
             "model": "claude-sonnet-5.5",
-            "tokens_total": 1890690417,
-            "cost_usd": 598.68
+            "tokens_total": 1896516142,
+            "cost_usd": 602.16
           },
           {
             "model": "claude-haiku-5.5",
-            "tokens_total": 757431227,
-            "cost_usd": 81.99
+            "tokens_total": 759435295,
+            "cost_usd": 82.36
           },
           {
             "model": "claude-fable-5.1",
@@ -62,23 +62,23 @@
         "provider": "google",
         "label": "Google",
         "tokens": {
-          "input": 692525930,
-          "output": 85099353,
-          "cache_read": 13526397047,
+          "input": 714702042,
+          "output": 87162103,
+          "cache_read": 13731137659,
           "cache_write": 0,
-          "total": 14304022330
+          "total": 14533001804
         },
-        "cost_usd": 2263.11,
+        "cost_usd": 2379.87,
         "models": [
           {
             "model": "gemini-3.8-flash",
-            "tokens_total": 10769034956,
-            "cost_usd": 1373.02
+            "tokens_total": 10722139592,
+            "cost_usd": 1367.18
           },
           {
             "model": "gemini-4-hydrogen",
-            "tokens_total": 781177664,
-            "cost_usd": 303.44
+            "tokens_total": 987926648,
+            "cost_usd": 399.46
           },
           {
             "model": "gemini-default",
@@ -86,14 +86,14 @@
             "cost_usd": 248.48
           },
           {
+            "model": "gemini-4-argon",
+            "tokens_total": 528544452,
+            "cost_usd": 154.15
+          },
+          {
             "model": "gemini-3-flash-a",
             "tokens_total": 517779223,
             "cost_usd": 46.64
-          },
-          {
-            "model": "gemini-4-argon",
-            "tokens_total": 494186126,
-            "cost_usd": 141.99
           }
         ]
       },
@@ -101,13 +101,13 @@
         "provider": "openai",
         "label": "OpenAI",
         "tokens": {
-          "input": 243719041,
-          "output": 21612599,
-          "cache_read": 10912156860,
+          "input": 244808111,
+          "output": 21640723,
+          "cache_read": 10938059324,
           "cache_write": 17173,
-          "total": 11177505673
+          "total": 11204525331
         },
-        "cost_usd": 1600.72,
+        "cost_usd": 1607.66,
         "models": [
           {
             "model": "gpt-5.6-luna",
@@ -126,8 +126,8 @@
           },
           {
             "model": "gpt-6.1-terra",
-            "tokens_total": 1133274634,
-            "cost_usd": 272.65
+            "tokens_total": 1145875559,
+            "cost_usd": 276.04
           },
           {
             "model": "muse-spark-1.3-contributor",
@@ -140,18 +140,18 @@
         "provider": "xai",
         "label": "xAI",
         "tokens": {
-          "input": 133554604,
-          "output": 24032999,
-          "cache_read": 2066808960,
+          "input": 136559259,
+          "output": 24890722,
+          "cache_read": 2128050944,
           "cache_write": 0,
-          "total": 2224396563
+          "total": 2289500925
         },
-        "cost_usd": 1254.54,
+        "cost_usd": 1287.96,
         "models": [
           {
             "model": "grok-4.7",
-            "tokens_total": 1386100064,
-            "cost_usd": 737.0
+            "tokens_total": 1451204426,
+            "cost_usd": 770.42
           },
           {
             "model": "grok-4.6",
@@ -198,18 +198,18 @@
         "provider": "stepfun",
         "label": "StepFun",
         "tokens": {
-          "input": 23853000,
-          "output": 10767829,
-          "cache_read": 657850112,
+          "input": 25709902,
+          "output": 11365233,
+          "cache_read": 739269888,
           "cache_write": 0,
-          "total": 692470941
+          "total": 776345023
         },
-        "cost_usd": 85.82,
+        "cost_usd": 93.36,
         "models": [
           {
             "model": "step-5-preview",
-            "tokens_total": 692470941,
-            "cost_usd": 85.82
+            "tokens_total": 776345023,
+            "cost_usd": 93.36
           }
         ]
       },
@@ -256,23 +256,23 @@
         "provider": "deepseek",
         "label": "DeepSeek",
         "tokens": {
-          "input": 6128994,
-          "output": 643979,
-          "cache_read": 184131083,
+          "input": 6300358,
+          "output": 661343,
+          "cache_read": 186852747,
           "cache_write": 0,
-          "total": 190904056
+          "total": 193814448
         },
-        "cost_usd": 2.97,
+        "cost_usd": 3.02,
         "models": [
+          {
+            "model": "deepseek-v4.1-flash",
+            "tokens_total": 97715147,
+            "cost_usd": 1.04
+          },
           {
             "model": "deepseek-v4-flash",
             "tokens_total": 96045098,
             "cost_usd": 1.94
-          },
-          {
-            "model": "deepseek-v4.1-flash",
-            "tokens_total": 94804755,
-            "cost_usd": 0.99
           },
           {
             "model": "deepseek-v4-pro",
@@ -290,13 +290,13 @@
         "provider": "other",
         "label": "Other",
         "tokens": {
-          "input": 10001882,
-          "output": 1220691,
-          "cache_read": 142540986,
+          "input": 10046623,
+          "output": 1220692,
+          "cache_read": 142553786,
           "cache_write": 0,
-          "total": 153763559
+          "total": 153821101
         },
-        "cost_usd": 3.44,
+        "cost_usd": 3.45,
         "models": [
           {
             "model": "beam:free",
@@ -407,26 +407,26 @@
       {
         "agent": "claude",
         "label": "Claude Code",
-        "tokens_total": 20567829818,
-        "cost_usd": 6693.7
+        "tokens_total": 21501925691,
+        "cost_usd": 6970.64
       },
       {
         "agent": "antigravity",
         "label": "Antigravity CLI",
-        "tokens_total": 14436078036,
-        "cost_usd": 2337.83
+        "tokens_total": 14665057510,
+        "cost_usd": 2454.59
       },
       {
         "agent": "codex",
         "label": "Codex CLI",
-        "tokens_total": 11611889459,
-        "cost_usd": 1601.88
+        "tokens_total": 11638909117,
+        "cost_usd": 1608.82
       },
       {
         "agent": "grok",
         "label": "Grok CLI",
-        "tokens_total": 2217949009,
-        "cost_usd": 1251.63
+        "tokens_total": 2283053371,
+        "cost_usd": 1285.05
       },
       {
         "agent": "commandcode",
@@ -437,14 +437,14 @@
       {
         "agent": "pi",
         "label": "Pi",
-        "tokens_total": 684626343,
-        "cost_usd": 85.05
+        "tokens_total": 768500425,
+        "cost_usd": 92.59
       },
       {
         "agent": "opencode",
         "label": "OpenCode",
-        "tokens_total": 479387204,
-        "cost_usd": 38.49
+        "tokens_total": 482355138,
+        "cost_usd": 38.54
       },
       {
         "agent": "minimax",
@@ -505,14 +505,14 @@
       {
         "model": "claude-opus-5.5",
         "provider": "anthropic",
-        "tokens_total": 17521659119,
-        "cost_usd": 5643.76
+        "tokens_total": 18447925199,
+        "cost_usd": 5916.86
       },
       {
         "model": "gemini-3.8-flash",
         "provider": "google",
-        "tokens_total": 10769034956,
-        "cost_usd": 1373.02
+        "tokens_total": 10722139592,
+        "cost_usd": 1367.18
       },
       {
         "model": "gpt-5.6-luna",
@@ -535,8 +535,8 @@
       {
         "model": "claude-sonnet-5.5",
         "provider": "anthropic",
-        "tokens_total": 1890690417,
-        "cost_usd": 598.68
+        "tokens_total": 1896516142,
+        "cost_usd": 602.16
       },
       {
         "model": "gpt-6-luna",
@@ -547,8 +547,8 @@
       {
         "model": "grok-4.7",
         "provider": "xai",
-        "tokens_total": 1386100064,
-        "cost_usd": 737.0
+        "tokens_total": 1451204426,
+        "cost_usd": 770.42
       }
     ],
     "models_used": [
@@ -583,6 +583,7 @@
       "gemini-4-argon-d",
       "gemini-4-hydrogen",
       "gemini-4-hydrogen-tiered",
+      "gemini-4-neon",
       "gemini-default",
       "gemini-flash-worker-agy",
       "gemini-pro-orchestrator-g1-pro",
@@ -600,6 +601,7 @@
       "gpt-6-sol",
       "gpt-6.1-sol",
       "gpt-6.1-terra",
+      "gpt-6.2-sol",
       "gpt-reserve",
       "grok",
       "grok-4.5",
@@ -2192,42 +2194,42 @@
     {
       "period": "2026-11",
       "first_day": "2026-11-01",
-      "last_day": "2026-11-18",
+      "last_day": "2026-11-19",
       "tokens": {
-        "input": 298352236,
-        "output": 97375046,
-        "cache_read": 18277388002,
-        "cache_write": 152060126,
-        "total": 18825175410
+        "input": 326702518,
+        "output": 103137744,
+        "cache_read": 19578229279,
+        "cache_write": 159147252,
+        "total": 20167216793
       },
-      "cost_usd": 5016.4,
+      "cost_usd": 5458.05,
       "by_provider": [
         {
           "provider": "anthropic",
           "label": "Anthropic",
           "tokens": {
-            "input": 5834373,
-            "output": 40781064,
-            "cache_read": 10946514035,
-            "cache_write": 152060126,
-            "total": 11145189598
+            "input": 5841811,
+            "output": 42980396,
+            "cache_read": 11871316012,
+            "cache_write": 159147252,
+            "total": 12079285471
           },
-          "cost_usd": 3515.48,
+          "cost_usd": 3792.42,
           "models": [
             {
               "model": "claude-opus-5.5",
-              "tokens_total": 9435731273,
-              "cost_usd": 3026.93
+              "tokens_total": 10361997353,
+              "cost_usd": 3300.03
             },
             {
               "model": "claude-sonnet-5.5",
-              "tokens_total": 1160964409,
-              "cost_usd": 363.79
+              "tokens_total": 1166790134,
+              "cost_usd": 367.26
             },
             {
               "model": "claude-haiku-5.5",
-              "tokens_total": 458884582,
-              "cost_usd": 42.17
+              "tokens_total": 460888650,
+              "cost_usd": 42.54
             },
             {
               "model": "claude-fable-5-2",
@@ -2245,28 +2247,28 @@
           "provider": "google",
           "label": "Google",
           "tokens": {
-            "input": 220735113,
-            "output": 34604633,
-            "cache_read": 4875201854,
+            "input": 242911225,
+            "output": 36667383,
+            "cache_read": 5079942466,
             "cache_write": 0,
-            "total": 5130541600
+            "total": 5359521074
           },
-          "cost_usd": 914.62,
+          "cost_usd": 1031.37,
           "models": [
             {
               "model": "gemini-3.8-flash",
-              "tokens_total": 3862626909,
-              "cost_usd": 480.95
+              "tokens_total": 3815731545,
+              "cost_usd": 475.11
             },
             {
               "model": "gemini-4-hydrogen",
-              "tokens_total": 781177664,
-              "cost_usd": 303.44
+              "tokens_total": 987926648,
+              "cost_usd": 399.46
             },
             {
               "model": "gemini-4-argon",
-              "tokens_total": 335555431,
-              "cost_usd": 101.33
+              "tokens_total": 369913757,
+              "cost_usd": 113.5
             },
             {
               "model": "gemini-3.8-flash-r",
@@ -2284,18 +2286,18 @@
           "provider": "openai",
           "label": "OpenAI",
           "tokens": {
-            "input": 17208013,
-            "output": 1811762,
-            "cache_read": 1298183680,
+            "input": 18297083,
+            "output": 1839886,
+            "cache_read": 1324086144,
             "cache_write": 0,
-            "total": 1317203455
+            "total": 1344223113
           },
-          "cost_usd": 255.27,
+          "cost_usd": 262.21,
           "models": [
             {
               "model": "gpt-6.1-terra",
-              "tokens_total": 747413599,
-              "cost_usd": 177.03
+              "tokens_total": 760014524,
+              "cost_usd": 180.42
             },
             {
               "model": "gpt-6.1-sol",
@@ -2303,14 +2305,19 @@
               "cost_usd": 73.95
             },
             {
+              "model": "gpt-6-sol",
+              "tokens_total": 17755411,
+              "cost_usd": 6.34
+            },
+            {
               "model": "gpt-6-luna",
               "tokens_total": 15483153,
               "cost_usd": 0.23
             },
             {
-              "model": "gpt-6-sol",
-              "tokens_total": 10840517,
-              "cost_usd": 4.06
+              "model": "gpt-6.2-sol",
+              "tokens_total": 7503839,
+              "cost_usd": 1.27
             }
           ]
         },
@@ -2318,18 +2325,18 @@
           "provider": "stepfun",
           "label": "StepFun",
           "tokens": {
-            "input": 23853000,
-            "output": 10767829,
-            "cache_read": 657850112,
+            "input": 25709902,
+            "output": 11365233,
+            "cache_read": 739269888,
             "cache_write": 0,
-            "total": 692470941
+            "total": 776345023
           },
-          "cost_usd": 85.82,
+          "cost_usd": 93.36,
           "models": [
             {
               "model": "step-5-preview",
-              "tokens_total": 692470941,
-              "cost_usd": 85.82
+              "tokens_total": 776345023,
+              "cost_usd": 93.36
             }
           ]
         },
@@ -2337,18 +2344,18 @@
           "provider": "xai",
           "label": "xAI",
           "tokens": {
-            "input": 24820342,
-            "output": 8450145,
-            "cache_read": 410025216,
+            "input": 27824997,
+            "output": 9307868,
+            "cache_read": 471267200,
             "cache_write": 0,
-            "total": 443295703
+            "total": 508400065
           },
-          "cost_usd": 244.28,
+          "cost_usd": 277.7,
           "models": [
             {
               "model": "grok-4.7",
-              "tokens_total": 443295703,
-              "cost_usd": 244.28
+              "tokens_total": 508400065,
+              "cost_usd": 277.7
             },
             {
               "model": "grok",
@@ -2361,18 +2368,18 @@
           "provider": "deepseek",
           "label": "DeepSeek",
           "tokens": {
-            "input": 2400283,
-            "output": 262885,
-            "cache_read": 61600128,
+            "input": 2571647,
+            "output": 280249,
+            "cache_read": 64321792,
             "cache_write": 0,
-            "total": 64263296
+            "total": 67173688
           },
-          "cost_usd": 0.73,
+          "cost_usd": 0.78,
           "models": [
             {
               "model": "deepseek-v4.1-flash",
-              "tokens_total": 63957929,
-              "cost_usd": 0.69
+              "tokens_total": 66868321,
+              "cost_usd": 0.73
             },
             {
               "model": "deepseek-v4-flash",
@@ -2395,18 +2402,23 @@
           "provider": "other",
           "label": "Other",
           "tokens": {
-            "input": 2204973,
-            "output": 436580,
-            "cache_read": 24953984,
+            "input": 2249714,
+            "output": 436581,
+            "cache_read": 24966784,
             "cache_write": 0,
-            "total": 27595537
+            "total": 27653079
           },
-          "cost_usd": 0.01,
+          "cost_usd": 0.02,
           "models": [
             {
               "model": "beam:free",
               "tokens_total": 27572546,
               "cost_usd": 0.0
+            },
+            {
+              "model": "mimo-v2.6-flash",
+              "tokens_total": 57542,
+              "cost_usd": 0.01
             },
             {
               "model": "big-pickle",
@@ -2516,38 +2528,38 @@
         {
           "agent": "claude",
           "label": "Claude Code",
-          "tokens_total": 11060335834,
-          "cost_usd": 3473.76
+          "tokens_total": 11994431707,
+          "cost_usd": 3750.69
         },
         {
           "agent": "antigravity",
           "label": "Antigravity CLI",
-          "tokens_total": 5215395364,
-          "cost_usd": 956.34
+          "tokens_total": 5444374838,
+          "cost_usd": 1073.1
         },
         {
           "agent": "codex",
           "label": "Codex CLI",
-          "tokens_total": 1317203455,
-          "cost_usd": 255.27
+          "tokens_total": 1344223113,
+          "cost_usd": 262.21
         },
         {
           "agent": "pi",
           "label": "Pi",
-          "tokens_total": 684626343,
-          "cost_usd": 85.05
+          "tokens_total": 768500425,
+          "cost_usd": 92.59
         },
         {
           "agent": "grok",
           "label": "Grok CLI",
-          "tokens_total": 443295703,
-          "cost_usd": 244.28
+          "tokens_total": 508400065,
+          "cost_usd": 277.7
         },
         {
           "agent": "opencode",
           "label": "OpenCode",
-          "tokens_total": 63859763,
-          "cost_usd": 0.67
+          "tokens_total": 66827697,
+          "cost_usd": 0.73
         },
         {
           "agent": "commandcode",
@@ -2566,38 +2578,38 @@
         {
           "model": "claude-opus-5.5",
           "provider": "anthropic",
-          "tokens_total": 9435731273,
-          "cost_usd": 3026.93
+          "tokens_total": 10361997353,
+          "cost_usd": 3300.03
         },
         {
           "model": "gemini-3.8-flash",
           "provider": "google",
-          "tokens_total": 3862626909,
-          "cost_usd": 480.95
+          "tokens_total": 3815731545,
+          "cost_usd": 475.11
         },
         {
           "model": "claude-sonnet-5.5",
           "provider": "anthropic",
-          "tokens_total": 1160964409,
-          "cost_usd": 363.79
+          "tokens_total": 1166790134,
+          "cost_usd": 367.26
         },
         {
           "model": "gemini-4-hydrogen",
           "provider": "google",
-          "tokens_total": 781177664,
-          "cost_usd": 303.44
-        },
-        {
-          "model": "gpt-6.1-terra",
-          "provider": "openai",
-          "tokens_total": 747413599,
-          "cost_usd": 177.03
+          "tokens_total": 987926648,
+          "cost_usd": 399.46
         },
         {
           "model": "step-5-preview",
           "provider": "stepfun",
-          "tokens_total": 692470941,
-          "cost_usd": 85.82
+          "tokens_total": 776345023,
+          "cost_usd": 93.36
+        },
+        {
+          "model": "gpt-6.1-terra",
+          "provider": "openai",
+          "tokens_total": 760014524,
+          "cost_usd": 180.42
         },
         {
           "model": "gpt-6.1-sol",
@@ -2606,10 +2618,10 @@
           "cost_usd": 73.95
         },
         {
-          "model": "claude-haiku-5.5",
-          "provider": "anthropic",
-          "tokens_total": 458884582,
-          "cost_usd": 42.17
+          "model": "grok-4.7",
+          "provider": "xai",
+          "tokens_total": 508400065,
+          "cost_usd": 277.7
         }
       ],
       "models_used": [
@@ -2631,6 +2643,7 @@
         "gemini-4-argon-d",
         "gemini-4-hydrogen",
         "gemini-4-hydrogen-tiered",
+        "gemini-4-neon",
         "gemini-flash-worker-agy",
         "gemini-pro-orchestrator-g1-pro",
         "glm-5.3",
@@ -2639,10 +2652,12 @@
         "gpt-6-sol",
         "gpt-6.1-sol",
         "gpt-6.1-terra",
+        "gpt-6.2-sol",
         "grok",
         "grok-4.7",
         "iceman-free",
         "kimi-k2.7-code",
+        "mimo-v2.6-flash",
         "minimax-m2.5",
         "minimax-m3.1-flash",
         "muse-spark-1.3-contributor",
@@ -7108,13 +7123,13 @@
       "first_day": "2026-11-02",
       "last_day": "2026-11-08",
       "tokens": {
-        "input": 121060761,
-        "output": 37924253,
-        "cache_read": 7326965149,
+        "input": 119279861,
+        "output": 37619417,
+        "cache_read": 7282155521,
         "cache_write": 46404953,
-        "total": 7532355116
+        "total": 7485459752
       },
-      "cost_usd": 1852.45,
+      "cost_usd": 1846.61,
       "by_provider": [
         {
           "provider": "anthropic",
@@ -7154,18 +7169,18 @@
           "provider": "google",
           "label": "Google",
           "tokens": {
-            "input": 83788869,
-            "output": 13513611,
-            "cache_read": 2010499245,
+            "input": 82007969,
+            "output": 13208775,
+            "cache_read": 1965689617,
             "cache_write": 0,
-            "total": 2107801725
+            "total": 2060906361
           },
-          "cost_usd": 284.3,
+          "cost_usd": 278.46,
           "models": [
             {
               "model": "gemini-3.8-flash",
-              "tokens_total": 1963677114,
-              "cost_usd": 244.15
+              "tokens_total": 1916781750,
+              "cost_usd": 238.31
             },
             {
               "model": "gemini-4-argon",
@@ -7324,8 +7339,8 @@
         {
           "agent": "antigravity",
           "label": "Antigravity CLI",
-          "tokens_total": 2170201083,
-          "cost_usd": 312.97
+          "tokens_total": 2123305719,
+          "cost_usd": 307.13
         },
         {
           "agent": "codex",
@@ -7368,8 +7383,8 @@
         {
           "model": "gemini-3.8-flash",
           "provider": "google",
-          "tokens_total": 1963677114,
-          "cost_usd": 244.15
+          "tokens_total": 1916781750,
+          "cost_usd": 238.31
         },
         {
           "model": "gpt-6.1-sol",
@@ -7802,37 +7817,42 @@
       "period": "2026-W47",
       "start": "2026-11-16",
       "first_day": "2026-11-16",
-      "last_day": "2026-11-18",
+      "last_day": "2026-11-19",
       "tokens": {
-        "input": 32796538,
-        "output": 7581635,
-        "cache_read": 2566259327,
-        "cache_write": 15024614,
-        "total": 2621662114
+        "input": 62927720,
+        "output": 13649169,
+        "cache_read": 3911910232,
+        "cache_write": 22111740,
+        "total": 4010598861
       },
-      "cost_usd": 775.68,
+      "cost_usd": 1223.17,
       "by_provider": [
         {
           "provider": "anthropic",
           "label": "Anthropic",
           "tokens": {
-            "input": 333798,
-            "output": 2890631,
-            "cache_read": 1922635932,
-            "cache_write": 15024614,
-            "total": 1940884975
+            "input": 341236,
+            "output": 5089963,
+            "cache_read": 2847437909,
+            "cache_write": 22111740,
+            "total": 2874980848
           },
-          "cost_usd": 545.49,
+          "cost_usd": 822.42,
           "models": [
             {
               "model": "claude-opus-5.5",
-              "tokens_total": 1520078285,
-              "cost_usd": 443.65
+              "tokens_total": 2446344365,
+              "cost_usd": 716.76
             },
             {
               "model": "claude-sonnet-5.5",
-              "tokens_total": 420806690,
-              "cost_usd": 101.83
+              "tokens_total": 426632415,
+              "cost_usd": 105.31
+            },
+            {
+              "model": "claude-haiku-5.5",
+              "tokens_total": 2004068,
+              "cost_usd": 0.37
             }
           ]
         },
@@ -7840,23 +7860,28 @@
           "provider": "google",
           "label": "Google",
           "tokens": {
-            "input": 29727179,
-            "output": 4482014,
-            "cache_read": 542003811,
+            "input": 53684191,
+            "output": 6849600,
+            "cache_read": 791554051,
             "cache_write": 0,
-            "total": 576213004
+            "total": 852087842
           },
-          "cost_usd": 217.03,
+          "cost_usd": 339.63,
           "models": [
             {
               "model": "gemini-4-hydrogen",
-              "tokens_total": 518072409,
-              "cost_usd": 194.63
+              "tokens_total": 724821393,
+              "cost_usd": 290.64
             },
             {
               "model": "gemini-4-argon",
-              "tokens_total": 42585457,
-              "cost_usd": 16.07
+              "tokens_total": 76943783,
+              "cost_usd": 28.24
+            },
+            {
+              "model": "gemini-4-neon",
+              "tokens_total": 33341568,
+              "cost_usd": 13.54
             },
             {
               "model": "gemini-pro-orchestrator-g1-pro",
@@ -7865,13 +7890,8 @@
             },
             {
               "model": "gemini-4-hydrogen-tiered",
-              "tokens_total": 1286919,
-              "cost_usd": 0.68
-            },
-            {
-              "model": "gemini-flash-worker-agy",
-              "tokens_total": 606878,
-              "cost_usd": 0.51
+              "tokens_total": 2712879,
+              "cost_usd": 1.55
             }
           ]
         },
@@ -7879,23 +7899,76 @@
           "provider": "openai",
           "label": "OpenAI",
           "tokens": {
-            "input": 1110856,
-            "output": 66179,
-            "cache_read": 58534912,
+            "input": 2199926,
+            "output": 94303,
+            "cache_read": 84437376,
             "cache_write": 0,
-            "total": 59711947
+            "total": 86731605
           },
-          "cost_usd": 12.7,
+          "cost_usd": 19.64,
           "models": [
             {
               "model": "gpt-6.1-terra",
-              "tokens_total": 39733305,
-              "cost_usd": 10.05
+              "tokens_total": 52334230,
+              "cost_usd": 13.44
             },
             {
               "model": "gpt-6.1-sol",
               "tokens_total": 19978642,
               "cost_usd": 2.65
+            },
+            {
+              "model": "gpt-6.2-sol",
+              "tokens_total": 7503839,
+              "cost_usd": 1.27
+            },
+            {
+              "model": "gpt-6-sol",
+              "tokens_total": 6914894,
+              "cost_usd": 2.28
+            }
+          ]
+        },
+        {
+          "provider": "stepfun",
+          "label": "StepFun",
+          "tokens": {
+            "input": 1856902,
+            "output": 597404,
+            "cache_read": 81419776,
+            "cache_write": 0,
+            "total": 83874082
+          },
+          "cost_usd": 7.54,
+          "models": [
+            {
+              "model": "step-5-preview",
+              "tokens_total": 83874082,
+              "cost_usd": 7.54
+            }
+          ]
+        },
+        {
+          "provider": "xai",
+          "label": "xAI",
+          "tokens": {
+            "input": 3004655,
+            "output": 857723,
+            "cache_read": 61241984,
+            "cache_write": 0,
+            "total": 65104362
+          },
+          "cost_usd": 33.42,
+          "models": [
+            {
+              "model": "grok-4.7",
+              "tokens_total": 65104362,
+              "cost_usd": 33.42
+            },
+            {
+              "model": "grok",
+              "tokens_total": 0,
+              "cost_usd": 0.0
             }
           ]
         },
@@ -7903,18 +7976,18 @@
           "provider": "deepseek",
           "label": "DeepSeek",
           "tokens": {
-            "input": 1591744,
-            "output": 142764,
-            "cache_read": 43082880,
+            "input": 1763108,
+            "output": 160128,
+            "cache_read": 45804544,
             "cache_write": 0,
-            "total": 44817388
+            "total": 47727780
           },
-          "cost_usd": 0.45,
+          "cost_usd": 0.5,
           "models": [
             {
               "model": "deepseek-v4.1-flash",
-              "tokens_total": 44817388,
-              "cost_usd": 0.45
+              "tokens_total": 47727780,
+              "cost_usd": 0.5
             }
           ]
         },
@@ -7922,14 +7995,19 @@
           "provider": "other",
           "label": "Other",
           "tokens": {
-            "input": 21155,
-            "output": 44,
-            "cache_read": 1792,
+            "input": 65896,
+            "output": 45,
+            "cache_read": 14592,
             "cache_write": 0,
-            "total": 22991
+            "total": 80533
           },
-          "cost_usd": 0.01,
+          "cost_usd": 0.02,
           "models": [
+            {
+              "model": "mimo-v2.6-flash",
+              "tokens_total": 57542,
+              "cost_usd": 0.01
+            },
             {
               "model": "big-pickle",
               "tokens_total": 12166,
@@ -7989,51 +8067,44 @@
               "cost_usd": 0.0
             }
           ]
-        },
-        {
-          "provider": "xai",
-          "label": "xAI",
-          "tokens": {
-            "input": 0,
-            "output": 0,
-            "cache_read": 0,
-            "cache_write": 0,
-            "total": 0
-          },
-          "cost_usd": 0.0,
-          "models": [
-            {
-              "model": "grok",
-              "tokens_total": 0,
-              "cost_usd": 0.0
-            }
-          ]
         }
       ],
       "by_agent": [
         {
           "agent": "claude",
           "label": "Claude Code",
-          "tokens_total": 1936583674,
-          "cost_usd": 542.84
+          "tokens_total": 2870679547,
+          "cost_usd": 819.79
         },
         {
           "agent": "antigravity",
           "label": "Antigravity CLI",
-          "tokens_total": 580514305,
-          "cost_usd": 219.67
+          "tokens_total": 856389143,
+          "cost_usd": 342.26
         },
         {
           "agent": "codex",
           "label": "Codex CLI",
-          "tokens_total": 59711947,
-          "cost_usd": 12.7
+          "tokens_total": 86731605,
+          "cost_usd": 19.64
+        },
+        {
+          "agent": "pi",
+          "label": "Pi",
+          "tokens_total": 83874082,
+          "cost_usd": 7.54
+        },
+        {
+          "agent": "grok",
+          "label": "Grok CLI",
+          "tokens_total": 65104362,
+          "cost_usd": 33.42
         },
         {
           "agent": "opencode",
           "label": "OpenCode",
-          "tokens_total": 44852188,
-          "cost_usd": 0.47
+          "tokens_total": 47820122,
+          "cost_usd": 0.52
         },
         {
           "agent": "grok_bot",
@@ -8046,70 +8117,77 @@
         {
           "model": "claude-opus-5.5",
           "provider": "anthropic",
-          "tokens_total": 1520078285,
-          "cost_usd": 443.65
+          "tokens_total": 2446344365,
+          "cost_usd": 716.76
         },
         {
           "model": "gemini-4-hydrogen",
           "provider": "google",
-          "tokens_total": 518072409,
-          "cost_usd": 194.63
+          "tokens_total": 724821393,
+          "cost_usd": 290.64
         },
         {
           "model": "claude-sonnet-5.5",
           "provider": "anthropic",
-          "tokens_total": 420806690,
-          "cost_usd": 101.83
+          "tokens_total": 426632415,
+          "cost_usd": 105.31
         },
         {
-          "model": "deepseek-v4.1-flash",
-          "provider": "deepseek",
-          "tokens_total": 44817388,
-          "cost_usd": 0.45
+          "model": "step-5-preview",
+          "provider": "stepfun",
+          "tokens_total": 83874082,
+          "cost_usd": 7.54
         },
         {
           "model": "gemini-4-argon",
           "provider": "google",
-          "tokens_total": 42585457,
-          "cost_usd": 16.07
+          "tokens_total": 76943783,
+          "cost_usd": 28.24
+        },
+        {
+          "model": "grok-4.7",
+          "provider": "xai",
+          "tokens_total": 65104362,
+          "cost_usd": 33.42
         },
         {
           "model": "gpt-6.1-terra",
           "provider": "openai",
-          "tokens_total": 39733305,
-          "cost_usd": 10.05
+          "tokens_total": 52334230,
+          "cost_usd": 13.44
         },
         {
-          "model": "gpt-6.1-sol",
-          "provider": "openai",
-          "tokens_total": 19978642,
-          "cost_usd": 2.65
-        },
-        {
-          "model": "gemini-pro-orchestrator-g1-pro",
-          "provider": "google",
-          "tokens_total": 13661341,
-          "cost_usd": 5.13
+          "model": "deepseek-v4.1-flash",
+          "provider": "deepseek",
+          "tokens_total": 47727780,
+          "cost_usd": 0.5
         }
       ],
       "models_used": [
         "MiniMax-M3.1-Flash",
         "big-pickle",
+        "claude-haiku-5.5",
         "claude-opus-5.5",
         "claude-sonnet-5.5",
         "deepseek-v4.1-flash",
         "gemini-4-argon",
         "gemini-4-hydrogen",
         "gemini-4-hydrogen-tiered",
+        "gemini-4-neon",
         "gemini-flash-worker-agy",
         "gemini-pro-orchestrator-g1-pro",
         "glm-5.3-flash",
+        "gpt-6-sol",
         "gpt-6.1-sol",
         "gpt-6.1-terra",
+        "gpt-6.2-sol",
         "grok",
+        "grok-4.7",
         "iceman-free",
+        "mimo-v2.6-flash",
         "minimax-m2.5",
-        "minimax-m3.1-flash"
+        "minimax-m3.1-flash",
+        "step-5-preview"
       ]
     }
   ]
