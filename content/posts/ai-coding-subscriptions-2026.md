@@ -168,7 +168,9 @@ tags: [AI 编程, 订阅评测, Claude Code, Codex, Antigravity, Kanjo]
 
 ```bash
 npx degit mammut001/resume/skills/code-supervisor ~/.claude/skills/code-supervisor
-```原来的 `agy-supervisor` 保留成别名，直接指向新版本加 agy 配置。
+```
+
+原来的 `agy-supervisor` 保留成别名，直接指向新版本加 agy 配置。
 
 简单说，Antigravity 自带的是"同一个模型分身协作"，适合在一个工具里并行拆活；我的是"跨厂商分工"，核心是让更强的模型做规划和验收，让额度更便宜的模型写代码，并且验收的一方和干活的一方不是同一个模型，不会自己给自己打分。
 
