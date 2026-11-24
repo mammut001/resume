@@ -123,6 +123,49 @@ tags: [AI 编程, 订阅评测, Claude Code, Codex, Antigravity, Kanjo]
 
 **怎么避免。** 切换前把所有旧的 agy 会话都退出，包括别的终端、tmux 和后台里的。在 Kanjo 里点 Switch 时，如果检测到有 agy 在跑，会弹窗让你选"退出全部并切换"还是"只切换，不退出"，选前者就行，切完再重新打开 agy。注意 Kanjo 只认进程名正好是 `agy` 的进程，用其他方式包装启动的 agy 不会被自动关掉，需要你手动退出。
 
+### 番外 3：我的"Opus 规划、Antigravity 干活"具体是怎么跑的
+
+前面说 Antigravity 最适合给 Claude 当执行层，具体做法是我写给 Claude Code 的一个技能（skill），叫 `agy-supervisor`。规则一句话就能说完：**agy 写代码；Claude 写提示词、监工、验收、发布。** Claude 自己不改产品代码，连小修小补也让 agy 用 `agy -c` 接着改。
+
+![agy-supervisor 工作流：Claude 当总控，agy 当执行层](/posts/ai-coding-subscriptions-2026/agy-supervisor-flow.png)
+*图 8：上面一排是 Claude Code 里规划模型的活（我用 Opus 5.5），下面一排是 agy 的活。验收不合格就打回去让 agy 返工，合格才开 PR。*
+
+一次完整的流程是这样的：
+
+1. **开独立 worktree**：每次都从最新的 `origin/main` 拉一个新的 git worktree 给 agy 用，绝不让它在我的主目录里干活，那里可能有我还没提交的改动。
+2. **写任务提示词**：Claude 把提示词写进一个文件，顺序固定为：worktree 路径和分支；硬性规则（只改这个 worktree、只 commit 不 push、不开 PR、不碰 main、不准删改用户数据、默认不跑测试）；背景和我想要什么；相关文件和不能动的地方；具体要做什么；要加哪些测试；最后要求 commit 并输出一段总结。
+3. **agy 后台干活**：`agy -p "$(cat prompt.md)" --dangerously-skip-permissions --effort high`，在后台跑。agy 写代码时一直不输出东西，有时要读 25 分钟以上才开始改，所以判断它有没有卡死，不看 worktree 有没有变化，而是看它对话数据库文件的修改时间。
+4. **Claude 验收**：Claude 读完整个 diff，检查规则有没有被遵守，然后**自己跑全部测试**。agy 说的"all passed"一律不信。不合格就用 `agy -c` 打回去返工。
+5. **发布**：验收通过，Claude 开 PR、合并，需要的话再安装。
+
+几条是踩坑踩出来的经验：
+
+- **任务要切小**：agy 一次跑超过 1 小时，经常因为 `write: broken pipe` 断掉，或者对话越来越长、越跑越慢。所以一次只给一批活；难的 bug 先让它只诊断、把结论写进文件，再另起一次去修。
+- **它会提前收工**：在非交互模式下，agy 自己开的某个后台任务一结束，它就以为整轮任务结束了，留下没提交的改动。遇到这种情况就用 `agy -c` 让它"继续，别跑后台命令，做完剩下的并 commit"。
+- **额度用完有后备**：agy 额度见底时，换 Command Code（`cmd`），用同一份提示词、同一个 worktree 接着做，监工方式完全一样。
+
+**和 Antigravity 自带的 Subagent 有什么不同？** Antigravity 自己也支持多 Agent：主 Agent 可以把调研、构建、测试分给 Subagent，每个 Subagent 有独立的对话和干净的上下文，并行运行；需要隔离时会自动建 worktree、用完自动清理（见 [Antigravity 功能概览](https://antigravity.google/docs/features/) 和 [I/O 2026 功能详解](https://antigravity.google/blog/google-io-2026-feature-deep-dive/)）。两者的区别在于：
+
+| | Antigravity 自带 Subagent | 我的 agy-supervisor |
+|---|---|---|
+| 谁当总控 | Antigravity 自己的主 Agent（Gemini） | Claude Code，规划模型可自选（我用 Opus 5.5） |
+| 谁干活 | 同一套 Gemini 模型分身 | agy；额度用完换 Command Code |
+| 用谁的额度 | 全部算在 Google 订阅里 | 规划和验收用 Claude，写代码用 Google |
+| 谁来验收 | 主 Agent 汇总 Subagent 的结果 | Claude 独立读 diff、自己跑测试，不信执行方的自报结果 |
+| 隔离 | 需要时自动建 worktree | 每次都开 worktree，外加"不 push、不碰 main"的硬规则 |
+| 并行 | 原生支持多个 Subagent 并行 | 默认一次一个，靠切小任务换稳定 |
+| 交付 | 停在代码改动 | 一直走到 PR、合并、安装 |
+
+**后来我把它改成了通用版。** 一开始这个技能里写死了很多 agy 专属的东西：启动参数、判断卡死要看的文件、"提前收工"的毛病。但真正有用的其实是那套和工具无关的流程：独立 worktree、固定结构的提示词、硬规则、不信执行方的自报结果、自己跑测试。所以我把它拆成了两层，新名字叫 `code-supervisor`：
+
+- **通用核心**：上面那五步流程，不管谁来写代码都一样。
+- **执行器配置**：每个干活的 Agent 一份，写清楚怎么启动、怎么接着上次的对话、怎么判断卡死、有哪些已知毛病。现在有 agy、Command Code，以及服务器上跑的 Claude Haiku 三份。
+- **项目笔记**：某个仓库特有的坑（比如 iOS 项目的模拟器 ID、哪些测试偶尔不稳定）单独放一份。
+
+以后想换一个执行器，只要加一份配置，流程不用改。**做规划和验收的模型也不写死**：默认就是当前会话用的模型，也可以在一份默认配置里改，或者直接说"这次用 Sonnet 规划"。我自己默认用 Opus 5.5，但预算紧的时候换便宜一档的模型来规划，流程完全一样。第一次用的时候，它会先问几个问题：用哪个模型规划、默认让谁写代码、额度用完了自动换人还是先问我、验收后直接合并还是停在 PR 等我看，答完写进配置，以后就不再问了。原来的 `agy-supervisor` 保留成别名，直接指向新版本加 agy 配置。
+
+简单说，Antigravity 自带的是"同一个模型分身协作"，适合在一个工具里并行拆活；我的是"跨厂商分工"，核心是让更强的模型做规划和验收，让额度更便宜的模型写代码，并且验收的一方和干活的一方不是同一个模型，不会自己给自己打分。
+
 ### 3. OpenAI（ChatGPT Plus $20/月）：账单只拍到了它一半的价值
 
 - **数据**：Codex CLI 是我连用最久的工具——整整 **22 周不断档**，累计 11.75B tokens / $1,641。每个月的 API 等价用量异常稳定：7 月 $328、8 月 $292、9 月 $317、10 月 $407、11 月前 21 天 $294（折合全月 ~$420）。按 ChatGPT Plus **$20/月** 算，单看本地 Codex CLI 就是稳稳的 **17x – 21x**。
