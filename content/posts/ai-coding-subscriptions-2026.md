@@ -20,6 +20,7 @@ tags: [AI 编程, 订阅评测, Claude Code, Codex, Antigravity, Kanjo]
 3. **只评价我真金白银付费用过（或实际深度白嫖过）的订阅**。像 Kimi Code 和智谱 GLM Coding Plan，我没付过费（本地只有不到 1 亿 token 的零散测试），就不装懂打分，放在文末附表里只列官方公开定价。
 4. **时效与汇率**：所有价格、额度规则与实测数据均**截至 2026 年 11 月 23 日**。AI 订阅的定价和限额几乎按月在变，下单前请以各家官网为准。汇率按 2026 年 11 月均价估算：`1 USD ≈ 1.43 CAD ≈ 6.67 CNY`。
 5. **利益相关披露**：文中的本地账单来自我自己开发的开源工具 [Kanjo](https://github.com/mammut001/kanjo)（macOS 菜单栏应用 + Python CLI，读取本机 Claude Code、Codex、Antigravity、Grok CLI、Pi 等日志按项目汇总成本，不保存任何对话内容）。它只覆盖本地 CLI 日志，**网页聊天、桌面端 Computer Use 和 Cursor IDE 内部消耗不会进入 Kanjo 账本**，遇到这些地方我会在下文单独注明。
+6. **国内读者注意地区限制**：文中排名靠前的 Claude、Google Antigravity 和 OpenAI 官方都**不支持在中国大陆使用**，限制按使用地区，不按国籍。三家里 **Anthropic 管得最严**：除了地区限制，它从 2025 年 9 月起还禁止中资控股企业使用，风控也最敏感，IP、支付方式、手机号对不上都可能直接封号。
 
 ## 总账：5 个月 562 亿 Token，钱都烧在了哪里
 
@@ -77,8 +78,26 @@ tags: [AI 编程, 订阅评测, Claude Code, Codex, Antigravity, Kanjo]
 
 - **数据**：我开了 **两个学生 Pro 账号**，单号约 CA$7.5/月，合计 CA$15/月（约 US$10.5/月）。10 月跑了 **$782（5.92B tokens）**，11 月前 21 天已经跑了 **$1,116（5.53B tokens）**。按实付学生价算，10 月是 **75x**、11 月前 21 天高达 **106x**；就算你是没有学生折扣的普通用户，按两个美区原价 Pro（2 × $19.99 ≈ $40/月）折算，依然有 **20x – 28x**（11 月按 30 天推算接近 40x）。模型分布非常鲜明：`gemini-3.8-flash` 一家就吃了 **106.9 亿 tokens（$1,364）**，其次是 `gemini-4-hydrogen`（10.5 亿 / $427）和 `gemini-4-argon`（5.7 亿 / $168）。
 - **额度机制**：Antigravity CLI（`agy`）没有独立订阅，额度直接挂在 Google AI 订阅档位下（AI Pro 为 $19.99/月，5 小时刷新 + 周上限；重度还有 $99.99 的 Ultra 5x 和 $199.99 的 Ultra 20x）。学生价本身就便宜，额度对我的用法来说基本够用。
-- **真实体验**：说句实在话，**单拿 Antigravity 从头到尾扛一个复杂项目，效果一般**——规划深度和边界把控明显不如 Opus 5.5。但一旦换个用法，把它的定位摆在 **Orchestrator 模式里的执行层**，体验立刻反转：我让 Opus 5.5 写好详细的修改计划，再派 Antigravity 的 `gemini-4-hydrogen` 或 `gemini-3.8-flash` 这类快模型去写样板代码、跑批量改动和干杂活，速度快、额度厚、不心疼。至于刚上的 `gemini-4-neon`，我账本里只跑了 4,600 万 tokens，太新还没来得及深度用，这里不硬评。
+- **真实体验**：说句实在话，**单拿 Antigravity 从头到尾扛一个复杂项目，效果一般**——规划深度和边界把控明显不如 Opus 5.5。但一旦换个用法，把它的定位摆在 **Orchestrator 模式里的执行层**，体验立刻反转：我让 Opus 5.5 写好详细的修改计划，再派 Antigravity 的 `gemini-4-hydrogen` 或 `gemini-3.8-flash` 这类快模型去写样板代码、跑批量改动和干杂活，速度快、额度厚、不心疼。11 月 18 日刚发布的 `gemini-4-neon` 定位在 Hydrogen 和 Carbon 之间，号称"Carbon 的质量、Flash 的速度"，AI Pro 订阅里直接替换了 Argon。按 Google 自己的 model card，它和 Opus 5.5、GPT-6.2 Sol 对比 19 项里领先 16 项（厂商自测）。但它的 API 价格是 $3/$15 每百万 token，明显比 Hydrogen 贵，算倍数时会更"值"，额度也可能烧得更快。我账本里才跑了 4,600 万 tokens，下次更新再给实测结论。
+- **国内能不能用**：官方不支持中国大陆，但实际风控比 Claude 宽松得多。
 - **适合谁**：有学生价或者需要大量便宜、高速 Subagent 算力的开发者。**最佳拍档是作为 Claude 的副手**，而不是单独替代它。
+
+### 番外：Gemini 4 Neon 号称打赢 Opus 5.5，我为什么还是用 Opus
+
+11 月 18 日 Google 发布 Gemini 4 Neon，宣传里最响的一句是"19 项跑分里 16 项领先 Opus 5.5 和 GPT-6.2 Sol"。我翻了一圈 model card 和第三方评测，结论是：**纸面上略胜，实际体验互有输赢，"打赢 Opus 5.5"并不成立。**
+
+![Gemini 4 Neon 与 Claude Opus 5.5 主要跑分对比](/posts/ai-coding-subscriptions-2026/neon-vs-opus-benchmarks.png)
+*图 4：最贴近 Coding Agent 日常的 Terminal-Bench 4.1，Opus 5.5 仍以 65.8% 对 65.2% 小幅领先。Neon 在 SWE-sweep 上的大比分，很大一部分来自 Google 自家工具链，换成中立工具链后差距明显缩小。*
+
+- **跑分**：Artificial Analysis 智能指数 Neon（最高档）61、Opus 5.5（最高档）58，Neon 确实高一点，但两者前面还有 GPT-6.2 Astra 和 Claude Fable 5.2。"16 项领先"是 Google 自己报的数字，目前没有第三方完整复现。
+- **价格**：API 单价 Neon $3/$15，Opus 5.5 $4/$20，便宜约 25%。但 Neon 默认思考得很"长"，Flavio Copes 拿同一个短编码任务实测，Neon 用了约 49 秒、$0.091，Opus 只用了约 12 秒、$0.029。
+
+![Neon 与 Opus 5.5 的单价、单任务耗时与幻觉率](/posts/ai-coding-subscriptions-2026/neon-cost-reality.png)
+*图 5：单价便宜不等于每个任务更便宜。幻觉率一栏没有 Opus 同口径数据，用同门的 Argon 做对照。*
+
+- **幻觉**：eesel.ai 测到 Neon 高思考档的幻觉率约 14%，比 Argon 的 4% 高出不少。它更敢答，答对的多，编的也多，这对要连续改几十个文件的 Agent 是实打实的风险。
+
+所以我的选择没变：**规划、架构和 Code Review 继续交给 Opus 5.5**。Neon 已经包含在我现有的 AI Pro 里，我会把它当成比 Hydrogen 更强一档的执行层试一试，但不会为它单独加订阅，也不建议你因为这波宣传换掉 Claude。
 
 ### 3. OpenAI（ChatGPT Plus $20/月）：账单只拍到了它一半的价值
 
@@ -180,3 +199,5 @@ tags: [AI 编程, 订阅评测, Claude Code, Codex, Antigravity, Kanjo]
 
 - 本人实测用量数据：Kanjo 导出的公开汇总 [token-usage.json](https://cv.paytonpei.top/#ai-usage)（统计区间 2026-06-28 至 2026-11-21，`kanjo 0.6.10`），以及阶跃星辰开放平台控制台实账（2026-10-24 至 2026-11-23）。
 - 官方定价与额度参考（截至 2026 年 11 月）：[Anthropic Claude 定价](https://claude.com/pricing)、[Google Antigravity](https://antigravity.google/)、[OpenAI ChatGPT / Codex](https://openai.com/chatgpt/pricing/)、[Cursor / The X Subscription](https://cursor.com/pricing)、[StepFun 国际站 Step Plan](https://platform.stepfun.ai/)、[Command Code](https://commandcode.ai/)、[Kimi 会员](https://www.kimi.com/)、[智谱开放平台 GLM Coding Plan](https://bigmodel.cn/)。
+- 地区限制与新模型：[Anthropic 支持地区政策](https://www.anthropic.com/supported-countries)、[Anthropic 对不支持地区的销售限制更新（2025-09）](https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions)、[Google Antigravity FAQ](https://antigravity.google/docs/faq)、[Introducing Gemini 4 Neon（Google 官方博客）](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/)。
+- Neon 评测：[DataCamp：Neon vs Opus 5.5](https://www.datacamp.com/blog/gemini-4-neon-vs-claude-opus-5-5)、[Creole Studios](https://www.creolestudios.com/gemini-4-neon-vs-claude-opus-5-5/)、[Artificial Analysis：Gemini 4 Neon](https://artificialanalysis.ai/models/gemini-4-neon)、[Flavio Copes：I tested it against Opus 5.5](https://flaviocopes.com/gemini-4-neon/)、[eesel.ai 评测](https://www.eesel.ai/blog/gemini-4-neon-review)。
