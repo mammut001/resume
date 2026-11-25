@@ -1,5 +1,10 @@
 import type { MetadataRoute } from "next";
 import { getPosts } from "@/lib/posts";
+import {
+  HREFLANG,
+  LOCALES,
+  pageUrl,
+} from "@/components/photoagent/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getPosts();
@@ -10,6 +15,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: post.date ? new Date(post.date) : new Date(),
     changeFrequency: "monthly",
     priority: 0.7,
+  }));
+
+  // The PhotoAgent page in each of its six languages, each listing the others as alternates.
+  const photoAgentEntries: MetadataRoute.Sitemap = LOCALES.map((lang) => ({
+    url: `${baseUrl}${pageUrl(lang)}`,
+    lastModified: new Date("2026-11-25"),
+    changeFrequency: "monthly",
+    priority: 0.6,
+    alternates: {
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [HREFLANG[l], `${baseUrl}${pageUrl(l)}`]),
+      ),
+    },
   }));
 
   return [
@@ -37,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.4,
     },
+    ...photoAgentEntries,
     {
       url: `${baseUrl}/photoagent/privacy`,
       lastModified: new Date("2026-11-25"),

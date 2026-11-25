@@ -15,12 +15,14 @@ const APPS: {
   summary: string;
   privacy: string;
   support?: string;
+  website?: string;
 }[] = [
   {
     name: "PhotoAgent",
     summary: "On-device photo search and cleanup for iPhone. 照片搜索与整理。",
     privacy: "/photoagent/privacy",
     support: "/photoagent/support",
+    website: "/photoagent",
   },
   {
     name: "LifeMint",
@@ -62,6 +64,12 @@ export default function AppsPage() {
               {app.summary}
             </p>
             <p className="text-sm text-muted-foreground sm:text-base">
+              {app.website ? (
+                <>
+                  <TextLink href={app.website}>Website · 网站</TextLink>
+                  {" · "}
+                </>
+              ) : null}
               <TextLink href={app.privacy}>Privacy Policy · 隐私政策</TextLink>
               {app.support ? (
                 <>
