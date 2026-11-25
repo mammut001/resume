@@ -63,7 +63,12 @@ const localeCodeMap: Record<Lang, string> = {
   chinese: "zh-CN",
 };
 
-type RangeOption = "this_month" | "12_weeks" | "12_months" | "all_time";
+type RangeOption =
+  | "latest_week"
+  | "this_month"
+  | "12_weeks"
+  | "12_months"
+  | "all_time";
 
 function formatTokens(amount: number, lang: Lang): string {
   return new Intl.NumberFormat(localeCodeMap[lang], {
@@ -203,6 +208,14 @@ function getElapsedDaysInMonth(periodUsage: PeriodUsage | null | undefined): num
     }
   }
   return Math.max(1, getDaysInMonth(periodUsage.period));
+}
+
+/** Number of calendar days covered by a period, inclusive of both ends. */
+function getPeriodSpanDays(period: PeriodUsage, fallback: number): number {
+  const d1 = new Date(period.first_day + "T00:00:00").getTime();
+  const d2 = new Date(period.last_day + "T00:00:00").getTime();
+  if (isNaN(d1) || isNaN(d2) || d2 < d1) return fallback;
+  return Math.round((d2 - d1) / (1000 * 3600 * 24)) + 1;
 }
 
 function getThisMonthButtonLabel(
@@ -435,6 +448,10 @@ function TokenUsageContent() {
   const weeks = useMemo(() => tokenUsage.weeks ?? [], []);
   const latestMonth = months[months.length - 1];
   const previousMonth = months.length >= 2 ? months[months.length - 2] : null;
+  const latestWeek = weeks[weeks.length - 1];
+  const previousWeek = weeks.length >= 2 ? weeks[weeks.length - 2] : null;
+  const isSnapshot = range === "this_month" || range === "latest_week";
+  const snapshotPeriod = range === "latest_week" ? latestWeek : latestMonth;
 
   const periodsForChart: PeriodUsage[] = useMemo(() => {
     if (range === "12_weeks") {
@@ -462,8 +479,10 @@ function TokenUsageContent() {
     momPct,
     previousDailyAvg,
   } = useMemo(() => {
-    if (range === "this_month") {
-      if (!latestMonth) {
+    if (isSnapshot) {
+      const current = snapshotPeriod;
+      const previous = range === "latest_week" ? previousWeek : previousMonth;
+      if (!current) {
         return {
           totalTokens: 0,
           inOutTokens: 0,
@@ -479,17 +498,24 @@ function TokenUsageContent() {
         };
       }
 
-      const tot = latestMonth.tokens.total;
-      const io = latestMonth.tokens.input + latestMonth.tokens.output;
-      const cost = latestMonth.cost_usd;
+      const tot = current.tokens.total;
+      const io = current.tokens.input + current.tokens.output;
+      const cost = current.cost_usd;
 
       let pctChange: number | null = null;
       let prevDailyAvg: number | null = null;
-      if (previousMonth && previousMonth.tokens.total > 0) {
-        const currentElapsedDays = getElapsedDaysInMonth(latestMonth);
-        const prevMonthDays = getDaysInMonth(previousMonth.period);
+      if (previous && previous.tokens.total > 0) {
+        // The latest period is usually still in progress, so compare daily averages.
+        const currentElapsedDays =
+          range === "latest_week"
+            ? getPeriodSpanDays(current, 7)
+            : getElapsedDaysInMonth(current);
+        const prevDays =
+          range === "latest_week"
+            ? getPeriodSpanDays(previous, 7)
+            : getDaysInMonth(previous.period);
         const currentDailyAvg = tot / currentElapsedDays;
-        prevDailyAvg = previousMonth.tokens.total / prevMonthDays;
+        prevDailyAvg = previous.tokens.total / prevDays;
         if (prevDailyAvg > 0) {
           pctChange = Math.round(
             ((currentDailyAvg - prevDailyAvg) / prevDailyAvg) * 100
@@ -498,7 +524,7 @@ function TokenUsageContent() {
       }
 
       const modelsByProv: Record<string, ModelUsage[]> = {};
-      for (const m of latestMonth.top_models) {
+      for (const m of current.top_models) {
         if (!modelsByProv[m.provider]) modelsByProv[m.provider] = [];
         modelsByProv[m.provider].push(m);
       }
@@ -507,12 +533,12 @@ function TokenUsageContent() {
         totalTokens: tot,
         inOutTokens: io,
         totalCost: cost,
-        providersList: latestMonth.by_provider,
+        providersList: current.by_provider,
         topModelsMap: modelsByProv,
         dailyAvg: null,
         daysCount: null,
-        uniqueProvidersCount: latestMonth.by_provider.length,
-        uniqueModelsCount: countDistinctModels([latestMonth]),
+        uniqueProvidersCount: current.by_provider.length,
+        uniqueModelsCount: countDistinctModels([current]),
         momPct: pctChange,
         previousDailyAvg: prevDailyAvg,
       };
@@ -657,7 +683,14 @@ function TokenUsageContent() {
       momPct: null,
       previousDailyAvg: null,
     };
-  }, [range, latestMonth, previousMonth, periodsForChart]);
+  }, [
+    range,
+    isSnapshot,
+    snapshotPeriod,
+    previousMonth,
+    previousWeek,
+    periodsForChart,
+  ]);
 
   const maxPeriodTokens = useMemo(() => {
     if (periodsForChart.length === 0) return 1;
@@ -674,6 +707,9 @@ function TokenUsageContent() {
   }, [latestMonth?.period, labels.thisMonth, language]);
 
   const rangeButtons: { value: RangeOption; label: string }[] = [
+    ...(latestWeek
+      ? [{ value: "latest_week" as const, label: labels.latestWeek }]
+      : []),
     { value: "this_month", label: thisMonthBtnLabel },
     { value: "12_weeks", label: labels.twelveWeeks },
     { value: "12_months", label: labels.twelveMonths },
@@ -756,10 +792,12 @@ function TokenUsageContent() {
 
         {/* Card 3: MoM change or Daily average */}
         <Card className="p-3 sm:p-4 bg-card/60 border shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:border-foreground/20">
-          {range === "this_month" ? (
+          {isSnapshot ? (
             <>
               <div className="text-xs text-muted-foreground font-medium">
-                {labels.vsPreviousMonth}
+                {range === "latest_week"
+                  ? labels.vsPreviousWeek
+                  : labels.vsPreviousMonth}
               </div>
               <div className="text-xl sm:text-2xl font-bold tracking-tight mt-1 font-mono text-foreground">
                 {momPct !== null ? (
@@ -772,7 +810,10 @@ function TokenUsageContent() {
               </div>
               <div className="text-[11px] sm:text-xs text-muted-foreground mt-1 truncate">
                 {previousDailyAvg !== null
-                  ? labels.vsPreviousMonthValue.replace(
+                  ? (range === "latest_week"
+                      ? labels.vsPreviousWeekValue
+                      : labels.vsPreviousMonthValue
+                    ).replace(
                       "{amount}",
                       formatTokens(previousDailyAvg, language)
                     )
@@ -813,11 +854,18 @@ function TokenUsageContent() {
       </div>
 
       {/* 3. Stacked Bar Chart OR "This Month" Horizontal Segmented Bar */}
-      {range === "this_month" && latestMonth ? (
+      {isSnapshot && snapshotPeriod ? (
         <div className="rounded-lg border bg-card/40 p-4 sm:p-5 space-y-3">
-          <div className="flex items-center justify-between text-xs text-muted-foreground font-medium">
-            <span>{labels.monthlyDistribution}</span>
-            <span className="font-mono">
+          <div className="flex items-center justify-between gap-2 text-xs text-muted-foreground font-medium">
+            <span>
+              {range === "latest_week"
+                ? labels.weeklyDistribution
+                : labels.monthlyDistribution}
+            </span>
+            <span className="font-mono text-right">
+              {range === "latest_week"
+                ? `${formatPeriodFullTitle(snapshotPeriod, labels.allTime, language)} · `
+                : ""}
               {labels.tokensCount.replace(
                 "{amount}",
                 formatTokens(totalTokens, language)
@@ -827,7 +875,11 @@ function TokenUsageContent() {
 
           <div
             role="img"
-            aria-label={`${labels.monthlyDistribution}: ${latestMonth.by_provider
+            aria-label={`${
+              range === "latest_week"
+                ? labels.weeklyDistribution
+                : labels.monthlyDistribution
+            }: ${snapshotPeriod.by_provider
               .filter((p) => p.tokens.total > 0)
               .map(
                 (p) =>
@@ -838,7 +890,7 @@ function TokenUsageContent() {
               .join(", ")}`}
             className="flex h-5 w-full overflow-hidden rounded-md bg-muted/60 p-0.5 gap-0.5 shadow-inner"
           >
-            {latestMonth.by_provider
+            {snapshotPeriod.by_provider
               .filter((p) => p.tokens.total > 0)
               .map((p) => {
                 const pct = (p.tokens.total / (totalTokens || 1)) * 100;
@@ -867,7 +919,7 @@ function TokenUsageContent() {
           </div>
 
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 pt-1 text-xs">
-            {latestMonth.by_provider
+            {snapshotPeriod.by_provider
               .filter((p) => p.tokens.total > 0)
               .map((p) => {
                 const pct = (p.tokens.total / (totalTokens || 1)) * 100;
