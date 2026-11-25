@@ -1,0 +1,244 @@
+/*
+ * The LifeMint page's own styles. Everything is scoped to .lm-root (the page wrapper) and every variable and class is
+ * prefixed with lm-, so nothing here touches the résumé or the other pages of the site.
+ *
+ * The light values are the standalone LifeMint site's palette (its tailwind.config.ts and globals.css, which mirror
+ * LifeMintPalette in the app). Dark values follow the site's next-themes class on <html>.
+ */
+.lm-root {
+  color-scheme: light;
+  --lm-brand: #2f9a5f;
+  --lm-brand-hover: #268550;
+  /* Brand green used as text, on the page and on cards. */
+  --lm-brand-text: #2f9a5f;
+  --lm-brand-dark-text: #1f803c;
+  --lm-brand-deep: #0f3324;
+  --lm-brand-soft: #dff3e6;
+  --lm-brand-softer: #edf8f2;
+
+  /* Domain fills (white text sits on them), their text colour on the page, and their tint. */
+  --lm-domain-focus: #2f6fe0;
+  --lm-domain-earn: #1f803c;
+  --lm-domain-move: #f24d4d;
+  --lm-domain-spend: #8c57ad;
+  --lm-domain-focus-text: #2f6fe0;
+  --lm-domain-earn-text: #1f803c;
+  --lm-domain-move-text: #f24d4d;
+  --lm-domain-spend-text: #8c57ad;
+  --lm-domain-focus-soft: rgba(47, 111, 224, 0.12);
+  --lm-domain-earn-soft: rgba(31, 128, 60, 0.12);
+  --lm-domain-move-soft: rgba(255, 77, 77, 0.12);
+  --lm-domain-spend-soft: rgba(140, 87, 173, 0.12);
+
+  --lm-bg: #f3f6ef;
+  --lm-bg-warm: #eef3e8;
+  --lm-surface: #ffffff;
+  /* The source's bg-white sections and cards. */
+  --lm-white: #ffffff;
+
+  --lm-text-primary: #172019;
+  --lm-text-secondary: #5d675f;
+  --lm-text-tertiary: #8b948c;
+
+  --lm-border: rgba(23, 32, 25, 0.09);
+  --lm-border-strong: rgba(23, 32, 25, 0.15);
+
+  /* The source's black/5, black/10 … overlays. */
+  --lm-tint-4: rgba(0, 0, 0, 0.04);
+  --lm-tint-5: rgba(0, 0, 0, 0.05);
+  --lm-tint-10: rgba(0, 0, 0, 0.1);
+  --lm-tint-15: rgba(0, 0, 0, 0.15);
+  --lm-tint-25: rgba(0, 0, 0, 0.25);
+  --lm-ring-track: rgba(23, 32, 25, 0.06);
+
+  /* The dark green bands (paycheck, Apple Watch) and the footer. */
+  --lm-deep: #0f3324;
+  --lm-footer: #0f3324;
+
+  --lm-shadow-soft: 0 12px 40px rgba(23, 32, 25, 0.06);
+
+  --lm-hero-atmosphere: radial-gradient(ellipse 80% 60% at 15% 20%, rgba(31, 128, 60, 0.1), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 85% 30%, rgba(47, 111, 224, 0.07), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 60% 90%, rgba(140, 87, 173, 0.05), transparent 45%),
+    linear-gradient(180deg, #f5f8f1 0%, #eef3e8 100%);
+
+  /* Mixes the source made with Tailwind's opacity modifiers. */
+  --lm-bg-90: color-mix(in srgb, var(--lm-bg) 90%, transparent);
+  --lm-white-80: color-mix(in srgb, var(--lm-white) 80%, transparent);
+  --lm-brand-20: color-mix(in srgb, var(--lm-brand) 20%, transparent);
+  --lm-brand-soft-50: color-mix(in srgb, var(--lm-brand-soft) 50%, transparent);
+  --lm-brand-softer-50: color-mix(in srgb, var(--lm-brand-softer) 50%, transparent);
+
+  background: var(--lm-bg);
+  color: var(--lm-text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* The source hid horizontal overflow on <body>; never let a wide strip scroll the page sideways. */
+  overflow-x: clip;
+}
+
+.dark .lm-root {
+  color-scheme: dark;
+  --lm-brand: #2f9a5f;
+  --lm-brand-hover: #37ad6b;
+  --lm-brand-text: #4cc584;
+  --lm-brand-dark-text: #6fd49a;
+  --lm-brand-deep: #0b2a1c;
+  --lm-brand-soft: #173a27;
+  --lm-brand-softer: #0f1f16;
+
+  --lm-domain-focus: #2f6fe0;
+  --lm-domain-earn: #1f803c;
+  --lm-domain-move: #e04545;
+  --lm-domain-spend: #8c57ad;
+  --lm-domain-focus-text: #7aa6f5;
+  --lm-domain-earn-text: #5fcb86;
+  --lm-domain-move-text: #ff7d7d;
+  --lm-domain-spend-text: #c39ae0;
+  --lm-domain-focus-soft: rgba(90, 145, 240, 0.18);
+  --lm-domain-earn-soft: rgba(60, 180, 100, 0.18);
+  --lm-domain-move-soft: rgba(255, 100, 100, 0.18);
+  --lm-domain-spend-soft: rgba(175, 125, 210, 0.2);
+
+  --lm-bg: #0e1410;
+  --lm-bg-warm: #111914;
+  --lm-surface: #18221b;
+  --lm-white: #141d17;
+
+  --lm-text-primary: #e9f0ea;
+  --lm-text-secondary: #a8b4aa;
+  --lm-text-tertiary: #84918a;
+
+  --lm-border: rgba(233, 240, 234, 0.1);
+  --lm-border-strong: rgba(233, 240, 234, 0.18);
+
+  --lm-tint-4: rgba(255, 255, 255, 0.05);
+  --lm-tint-5: rgba(255, 255, 255, 0.07);
+  --lm-tint-10: rgba(255, 255, 255, 0.12);
+  --lm-tint-15: rgba(255, 255, 255, 0.18);
+  --lm-tint-25: rgba(255, 255, 255, 0.3);
+  --lm-ring-track: rgba(233, 240, 234, 0.1);
+
+  --lm-deep: #0b2a1c;
+  --lm-footer: #07170f;
+
+  --lm-shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.35);
+
+  --lm-hero-atmosphere: radial-gradient(ellipse 80% 60% at 15% 20%, rgba(47, 154, 95, 0.16), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 85% 30%, rgba(47, 111, 224, 0.12), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 60% 90%, rgba(140, 87, 173, 0.1), transparent 45%),
+    linear-gradient(180deg, #101813 0%, #0e1410 100%);
+}
+
+.lm-root ::selection {
+  background: var(--lm-brand-soft);
+  color: var(--lm-brand-deep);
+}
+.dark .lm-root ::selection {
+  color: var(--lm-text-primary);
+}
+
+.lm-root ::-webkit-scrollbar { width: 6px; }
+.lm-root ::-webkit-scrollbar-track { background: transparent; }
+.lm-root ::-webkit-scrollbar-thumb { background: var(--lm-border-strong); border-radius: 3px; }
+.lm-root ::-webkit-scrollbar-thumb:hover { background: var(--lm-text-tertiary); }
+
+.lm-root :focus-visible {
+  outline: 2px solid var(--lm-brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.lm-root .lm-skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 100;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: var(--lm-surface);
+  color: var(--lm-text-primary);
+  font-weight: 600;
+}
+.lm-root .lm-skip-link:focus {
+  top: 12px;
+}
+
+/* ── Buttons ────────────────────────────────────────────── */
+.lm-root .lm-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background: var(--lm-brand);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.lm-root .lm-btn-primary:hover {
+  background: var(--lm-brand-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--lm-shadow-soft);
+}
+.lm-root .lm-btn-primary:active {
+  transform: translateY(0);
+}
+
+.lm-root .lm-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--lm-text-secondary);
+  background: transparent;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.lm-root .lm-btn-secondary:hover {
+  color: var(--lm-text-primary);
+  background: var(--lm-tint-4);
+}
+
+/* ── Motion ─────────────────────────────────────────────── */
+@keyframes lm-fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes lm-domain-fade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes lm-screenshot-enter {
+  from { opacity: 0; transform: translateX(10px) scale(0.99); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+.lm-root .lm-hero-enter { animation: lm-fade-up 0.7s ease-out both; }
+.lm-root .lm-hero-enter-delayed { animation-duration: 0.8s; animation-delay: 0.15s; }
+.lm-root .lm-domain-panel-enter { animation: lm-domain-fade 280ms ease-out both; }
+.lm-root .lm-screenshot-enter { animation: lm-screenshot-enter 320ms ease-out both; }
+
+.lm-root .lm-hero-atmosphere { background: var(--lm-hero-atmosphere); }
+
+@media (prefers-reduced-motion: reduce) {
+  .lm-root *,
+  .lm-root *::before,
+  .lm-root *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
