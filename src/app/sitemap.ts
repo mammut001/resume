@@ -5,6 +5,11 @@ import {
   LOCALES,
   pageUrl,
 } from "@/components/photoagent/site";
+import {
+  HREFLANG as DOGETHER_HREFLANG,
+  LOCALES as DOGETHER_LOCALES,
+  pageUrl as dogetherPageUrl,
+} from "@/components/dogether/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getPosts();
@@ -26,6 +31,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: {
       languages: Object.fromEntries(
         LOCALES.map((l) => [HREFLANG[l], `${baseUrl}${pageUrl(l)}`]),
+      ),
+    },
+  }));
+
+  // The Dogether page in English and Chinese.
+  const dogetherEntries: MetadataRoute.Sitemap = DOGETHER_LOCALES.map((lang) => ({
+    url: `${baseUrl}${dogetherPageUrl(lang)}`,
+    lastModified: new Date("2026-11-25"),
+    changeFrequency: "monthly",
+    priority: 0.6,
+    alternates: {
+      languages: Object.fromEntries(
+        DOGETHER_LOCALES.map((l) => [DOGETHER_HREFLANG[l], `${baseUrl}${dogetherPageUrl(l)}`]),
       ),
     },
   }));
@@ -80,6 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    ...dogetherEntries,
     {
       url: `${baseUrl}/dogether/privacy`,
       lastModified: new Date("2026-11-21"),
