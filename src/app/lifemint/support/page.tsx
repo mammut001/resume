@@ -7,7 +7,8 @@ import {
   Section,
   TextLink,
 } from "@/components/app-docs";
-import { RESUME_DATA } from "@/data/resume-data";
+/** The address LifeMint's Send Feedback button uses (AppConstants.feedbackEmail in the app). */
+const LIFEMINT_EMAIL = "drakehuston7@gmail.com";
 
 const EFFECTIVE_DATE = "2026-11-25";
 
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 export default function LifeMintSupportPage() {
-  const email = RESUME_DATA.contact.email;
+  const email = LIFEMINT_EMAIL;
 
   return (
     <AppDocPage
