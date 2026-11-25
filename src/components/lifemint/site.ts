@@ -16,7 +16,8 @@ export const OG_IMAGE = '/lifemint/og-image.jpg';
 export const APP_STORE_ID = '6759029810';
 export const APP_STORE_URL = 'https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810';
 
-export const GITHUB_URL = 'https://github.com/mammut001/focus-website';
+/** The site's source, now part of the cv repository. */
+export const GITHUB_URL = 'https://github.com/mammut001/resume';
 
 /** The privacy policy and support pages on this site. Chinese readers land on their section (#zh). */
 export function privacyUrl(lang: Locale) {

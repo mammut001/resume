@@ -10,6 +10,11 @@ import {
   LOCALES as DOGETHER_LOCALES,
   pageUrl as dogetherPageUrl,
 } from "@/components/dogether/site";
+import {
+  HREFLANG as LIFEMINT_HREFLANG,
+  LOCALES as LIFEMINT_LOCALES,
+  pageUrl as lifemintPageUrl,
+} from "@/components/lifemint/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getPosts();
@@ -47,6 +52,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ),
     },
   }));
+
+  // The LifeMint page and its changelog in each of its six languages.
+  const lifemintEntries: MetadataRoute.Sitemap = (
+    [
+      { subpath: "", priority: 0.6 },
+      { subpath: "/changelog", priority: 0.4 },
+    ] as const
+  ).flatMap(({ subpath, priority }) =>
+    LIFEMINT_LOCALES.map((lang) => ({
+      url: `${baseUrl}${lifemintPageUrl(lang, subpath)}`,
+      lastModified: new Date("2026-11-25"),
+      changeFrequency: "monthly" as const,
+      priority,
+      alternates: {
+        languages: Object.fromEntries(
+          LIFEMINT_LOCALES.map((l) => [LIFEMINT_HREFLANG[l], `${baseUrl}${lifemintPageUrl(l, subpath)}`]),
+        ),
+      },
+    })),
+  );
 
   return [
     {
@@ -86,6 +111,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    ...lifemintEntries,
     {
       url: `${baseUrl}/lifemint/privacy`,
       lastModified: new Date("2026-11-25"),
