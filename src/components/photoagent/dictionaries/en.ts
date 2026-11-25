@@ -308,7 +308,7 @@ export const en: Dictionary = {
             videos: { title: 'Large videos', body: 'Videos of a minute or longer, longest first.' },
             places: {
                 title: 'Places',
-                body: 'Countries, provinces, cities, campuses and landmarks: “photos I took at Carleton University”.',
+                body: 'Countries, provinces, cities, campuses and landmarks: “photos I took in Tokyo”.',
             },
             dates: { title: 'Dates', body: '“Last summer”, “3 years ago”, “Christmas 2020”, “Spring Festival”.' },
             albums: { title: 'Albums', body: 'Save the results as an album in Photos, with Undo.' },
@@ -335,7 +335,7 @@ export const en: Dictionary = {
         description: 'Taken in the iOS Simulator with sample pictures.',
         shots: {
             home: 'Home: ask, or start from a cleanup',
-            results: 'Results for “Delete the photos I took at Carleton University”',
+            results: 'Results for “Delete the photos I took in Tokyo”',
             review: 'Review: pick what goes',
             confirm: 'The first confirmation, with the total size',
             duplicates: 'Duplicates, with the best shot marked',

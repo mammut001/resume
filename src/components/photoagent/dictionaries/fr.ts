@@ -145,7 +145,7 @@ export const fr: Dictionary = {
             videos: { title: 'Grosses vidéos', body: 'Les vidéos d’une minute ou plus, de la plus longue à la plus courte.' },
             places: {
                 title: 'Lieux',
-                body: 'Pays, provinces, villes, campus et lieux connus : « les photos prises à l’Université Carleton ».',
+                body: 'Pays, provinces, villes, campus et lieux connus : « les photos prises à Tokyo ».',
             },
             dates: { title: 'Dates', body: '« L’été dernier », « il y a 3 ans », « Noël 2020 », « Nouvel An chinois ».' },
             albums: { title: 'Albums', body: 'Enregistrez les résultats comme album dans Photos, avec Annuler.' },
@@ -172,7 +172,7 @@ export const fr: Dictionary = {
         description: 'Prises dans le simulateur iOS avec des images d’exemple. Les écrans sont en anglais.',
         shots: {
             home: 'Accueil : demandez, ou partez d’un tri',
-            results: 'Résultats de « Supprime les photos prises à l’Université Carleton »',
+            results: 'Résultats de « Supprime les photos prises à Tokyo »',
             review: 'Vérification : choisissez ce qui part',
             confirm: 'La première confirmation, avec la taille totale',
             duplicates: 'Doublons, avec la meilleure prise marquée',

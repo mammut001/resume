@@ -144,7 +144,7 @@ export const es: Dictionary = {
             videos: { title: 'Videos grandes', body: 'Videos de un minuto o más, del más largo al más corto.' },
             places: {
                 title: 'Lugares',
-                body: 'Países, provincias, ciudades, campus y lugares de interés: “fotos que tomé en la Universidad de Carleton”.',
+                body: 'Países, provincias, ciudades, campus y lugares de interés: “fotos que tomé en Tokio”.',
             },
             dates: { title: 'Fechas', body: '“El verano pasado”, “hace 3 años”, “Navidad de 2020”, “Año Nuevo chino”.' },
             albums: { title: 'Álbumes', body: 'Guarda los resultados como un álbum en Fotos, con opción de deshacer.' },
@@ -171,7 +171,7 @@ export const es: Dictionary = {
         description: 'Tomadas en el simulador de iOS con imágenes de ejemplo. Las pantallas están en inglés.',
         shots: {
             home: 'Inicio: pregunta o empieza por una limpieza',
-            results: 'Resultados de “Borra las fotos que tomé en la Universidad de Carleton”',
+            results: 'Resultados de “Borra las fotos que tomé en Tokio”',
             review: 'Revisión: elige qué se va',
             confirm: 'La primera confirmación, con el tamaño total',
             duplicates: 'Duplicados, con la mejor toma marcada',
