@@ -321,7 +321,7 @@ export default function CleanupDemo({ dict }: { dict: Dictionary['cleanupDemo'] 
                   className="absolute inset-x-2.5 bottom-2.5 z-10 pa-clay p-4 pa-sheet-in"
                 >
                   <h3 id="cleanup-app-title" className="text-base font-bold text-[color:var(--pa-title)] mb-1">
-                    {fill(dict.appConfirmTitle, { n: count })}
+                    {count === 1 && dict.appConfirmTitleOne ? dict.appConfirmTitleOne : fill(dict.appConfirmTitle, { n: count })}
                   </h3>
                   <p id="cleanup-app-body" className="text-[13px] text-[color:var(--pa-secondary)] mb-3">
                     {dict.appConfirmBody}
@@ -361,7 +361,7 @@ export default function CleanupDemo({ dict }: { dict: Dictionary['cleanupDemo'] 
                   >
                     <div className="px-4 pt-5 pb-4">
                       <h3 id="cleanup-system-title" className="text-[16px] font-semibold leading-snug mb-1">
-                        {fill(dict.systemTitle, { n: count })}
+                        {count === 1 && dict.systemTitleOne ? dict.systemTitleOne : fill(dict.systemTitle, { n: count })}
                       </h3>
                       <p id="cleanup-system-body" className="text-[12.5px] leading-snug">
                         {dict.systemBody}

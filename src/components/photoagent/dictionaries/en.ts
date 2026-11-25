@@ -81,8 +81,12 @@ export type Dictionary = {
         tileLabel: string;
         tileSelected: string;
         appConfirmTitle: string;
+        /** Used instead of appConfirmTitle when one photo is selected, for languages with a singular form. */
+        appConfirmTitleOne?: string;
         appConfirmBody: string;
         systemTitle: string;
+        /** Used instead of systemTitle when one photo is selected. */
+        systemTitleOne?: string;
         systemBody: string;
         systemDontAllow: string;
         systemDelete: string;
@@ -228,8 +232,10 @@ export const en: Dictionary = {
         tileLabel: 'Demo photo {n}, {name}',
         tileSelected: 'selected',
         appConfirmTitle: 'Delete {n} photos?',
+        appConfirmTitleOne: 'Delete 1 photo?',
         appConfirmBody: 'First confirmation: in PhotoAgent.',
         systemTitle: 'Allow “PhotoAgent” to delete {n} photos?',
+        systemTitleOne: 'Allow “PhotoAgent” to delete 1 photo?',
         systemBody:
             'Second confirmation: iOS asks too. Deleted photos go to Recently Deleted, where they can be recovered for 30 days.',
         systemDontAllow: 'Don’t Allow',

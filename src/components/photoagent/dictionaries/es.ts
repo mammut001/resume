@@ -74,8 +74,10 @@ export const es: Dictionary = {
         tileLabel: 'Foto de demo {n}, {name}',
         tileSelected: 'seleccionada',
         appConfirmTitle: '¿Borrar {n} fotos?',
+        appConfirmTitleOne: '¿Borrar 1 foto?',
         appConfirmBody: 'Primera confirmación: en PhotoAgent.',
         systemTitle: '¿Permitir que “PhotoAgent” borre {n} fotos?',
+        systemTitleOne: '¿Permitir que “PhotoAgent” borre 1 foto?',
         systemBody:
             'Segunda confirmación: iOS también lo pregunta. Las fotos borradas van a Eliminado recientemente, donde se pueden recuperar durante 30 días.',
         systemDontAllow: 'No permitir',

@@ -74,8 +74,10 @@ export const fr: Dictionary = {
         tileLabel: 'Photo de démo {n}, {name}',
         tileSelected: 'sélectionnée',
         appConfirmTitle: 'Supprimer {n} photos ?',
+        appConfirmTitleOne: 'Supprimer 1 photo ?',
         appConfirmBody: 'Première confirmation : dans PhotoAgent.',
         systemTitle: 'Autoriser « PhotoAgent » à supprimer {n} photos ?',
+        systemTitleOne: 'Autoriser « PhotoAgent » à supprimer 1 photo ?',
         systemBody:
             'Deuxième confirmation : iOS demande aussi. Les photos supprimées vont dans Suppressions récentes, où elles restent récupérables pendant 30 jours.',
         systemDontAllow: 'Refuser',
