@@ -1,0 +1,125 @@
+/*
+ * The Dogether page's own styles. Everything is scoped to .dg-root (the page wrapper) and every variable and class is
+ * prefixed with dg-, so nothing here touches the résumé or the other pages of the site.
+ *
+ * Light values are the old mammut001.github.io site's palette (brand, ink, muted, line, paper). Dark values follow the
+ * site's next-themes class on <html>.
+ */
+.dg-root {
+  color-scheme: light;
+  --dg-paper: #fdfbf8;
+  --dg-surface: #ffffff;
+  --dg-tint: #fff7f0;
+  --dg-ink: #1e1b18;
+  --dg-muted: #6b6560;
+  --dg-line: #e8e0d8;
+  --dg-brand: #d9764a;
+  --dg-brand-hover: #c46538;
+  --dg-brand-deep: #7a3a24;
+  --dg-brand-soft: #fff0e6;
+  --dg-brand-border: #ffe4d1;
+  /* The footer and the download card: dark panels in both themes. */
+  --dg-panel: #1e1b18;
+  --dg-frame: #1e1b18;
+
+  background: var(--dg-paper);
+  color: var(--dg-ink);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Helvetica Neue",
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark .dg-root {
+  color-scheme: dark;
+  --dg-paper: #161310;
+  --dg-surface: #201b17;
+  --dg-tint: #1c1612;
+  --dg-ink: #f3ede6;
+  --dg-muted: #aba198;
+  --dg-line: #352d26;
+  --dg-brand: #e8895c;
+  --dg-brand-hover: #f09b72;
+  --dg-brand-deep: #f5bfa2;
+  --dg-brand-soft: #2e1d14;
+  --dg-brand-border: #4a2c1c;
+  --dg-panel: #0d0b09;
+  --dg-frame: #0d0b09;
+}
+
+html:has(.dg-root) {
+  scroll-behavior: smooth;
+}
+
+.dg-root ::selection {
+  background: #ffe4d1;
+  color: #7a3a24;
+}
+
+.dg-root .dg-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background: #d9764a;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.dg-root .dg-btn-primary:hover {
+  background: #c46538;
+  transform: translateY(-1px);
+}
+
+.dg-root .dg-btn-primary:focus-visible,
+.dg-root .dg-focus:focus-visible {
+  outline: 2px solid var(--dg-brand);
+  outline-offset: 2px;
+}
+
+.dg-root .dg-btn-sm {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+/* Sections land below the fixed header when reached through #features, #how and the like. */
+.dg-root section[id] {
+  scroll-margin-top: 4rem;
+}
+
+.dg-skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 60;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: var(--dg-ink);
+  color: var(--dg-paper);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dg-skip-link:focus {
+  top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(.dg-root) {
+    scroll-behavior: auto;
+  }
+  .dg-root .dg-btn-primary {
+    transition: none;
+  }
+  .dg-root .dg-btn-primary:hover {
+    transform: none;
+  }
+}
