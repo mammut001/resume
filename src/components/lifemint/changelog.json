@@ -1,0 +1,242 @@
+[
+  {
+    "id": 148,
+    "name": "LifeMint 1.4.8",
+    "tag_name": "1.4.8",
+    "published_at": "2026-10-23T12:00:00Z",
+    "body": "• Apple Watch redesign: a glanceable home, quick start, a dedicated Today's 3 page, a full-screen timer, and new complications.\n• Paycheck reconciliation: pick the actual arrival date freely — no pay schedule needed.\n• iPhone Duo support: two panes when open or half-folded, and your running timer and unsaved entries survive every fold.\n• Larger text: titles, buttons and lists no longer break mid-word or cut off.\n• Faster and more stable.",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 147,
+    "name": "LifeMint 1.4.7",
+    "tag_name": "1.4.7",
+    "published_at": "2026-10-19T12:00:00Z",
+    "body": "A clearer view of your time and earnings.\n\n• Monthly Review reminders help you look back before the month ends.\n• Records now show activity mode colours and a daily rhythm chart, with a clearer yearly heatmap summary.\n• Compare earnings across periods in a new animated receipt view. Weekly earnings now include paycheque tips.\n• Choose work dates and the actual paycheque arrival date directly on the calendar, without a preset pay schedule or a 14-day limit. Already reconciled work dates stay grey and locked.\n• Pay schedule settings, forecast cards and predicted-payday reminders have been removed.\n• Receive a Pomodoro completion notification when the timer finishes in the background.\n• Improved decimal entry in amount fields, including comma keyboards.",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 146,
+    "name": "LifeMint 1.4.6",
+    "tag_name": "1.4.6",
+    "published_at": "2026-10-10T12:00:00Z",
+    "body": "• LifeMint is now available in Spanish.\n• The comma key now types a decimal point in every amount field, for phones whose region uses a comma.\n• Japanese and Korean: the Pro screen and date headers are fully translated.\n• Clearer amounts when you track more than one currency.\n• Smaller fixes and polish.",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 145,
+    "name": "LifeMint 1.4.5",
+    "tag_name": "1.4.5",
+    "published_at": "2026-10-05T12:00:00Z",
+    "body": "• Biweekly paydays now follow a fixed anchor date, so your payday countdown stays on a steady 14-day rhythm.\n• Apple Watch: see your next payday and this month's workout check-ins at a glance.\n• CSV export and import now cover expenses, fixed bills, budgets, and workouts.\n• Payday countdown and monthly check-ins now refresh more reliably.",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 144,
+    "name": "LifeMint 1.4.4",
+    "tag_name": "1.4.4",
+    "published_at": "2026-10-01T12:00:00Z",
+    "body": "LifeMint 1.4.4 strengthens bills, widgets, and the four module home pages.\n\n• Monthly expenses return with a unified header across Study, Work, Expense, and Gym\n• Bill reminders up to a year ahead\n• Per-profile payday widget and Watch payday / monthly workout check-ins\n• CSV export and import for expenses, fixed bills, budgets, and workouts\n• Biweekly paydays follow a fixed anchor-date cadence",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 143,
+    "name": "LifeMint 1.4.3",
+    "tag_name": "1.4.3",
+    "published_at": "2026-09-28T12:00:00Z",
+    "body": "LifeMint 1.4.3 refines Home, shifts, and Pro presentation.\n\n• Home and Profile redesign with clearer Life Ring hero tiles\n• Overnight shifts with safer editing after midnight\n• Native holographic Pro membership card with verified purchase reference\n• Spend purple styling across expense screens\n• Goals with activity shortcuts and clearer editor contrast",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 142,
+    "name": "LifeMint 1.4.2",
+    "tag_name": "1.4.2",
+    "published_at": "2026-09-26T12:00:00Z",
+    "body": "LifeMint 1.4.2 deepens paycheck tools and earnings detail.\n\n• One-page Add Paycheque flow with job picker and calendar range\n• Paycheck reconciliation scoped to work profiles\n• Paycheque tips and paycheck history navigation fixes\n• Smarter paycheck forecast and payday resolution",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 141,
+    "name": "LifeMint 1.4.1",
+    "tag_name": "1.4.1",
+    "published_at": "2026-09-25T12:00:00Z",
+    "body": "1. Added shift schedule support\n2. Added monthly expense\n3. Fixed bugs",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 140,
+    "name": "LifeMint 1.4.0",
+    "tag_name": "1.4.0",
+    "published_at": "2026-09-14T12:00:00Z",
+    "body": "LifeMint 1.4.0 makes it easier to begin, stay focused, and keep your week in view.\n\n• A new modular Start page on Apple Watch for Study, Work, Expense, and Gym\n• Start Study and Work from synced iPhone quick starts\n• Clearer iPhone handoff for Expense and Gym\n• Refined Watch navigation with Now first and Start one swipe away\n• More reliable Apple Health connection and workout syncing\n• Smoother onboarding, accessibility, and general performance improvements",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 136,
+    "name": "LifeMint 1.3.6",
+    "tag_name": "1.3.6",
+    "published_at": "2026-08-24T12:00:00Z",
+    "body": "Apple Health is now a clearly integrated part of LifeMint Fitness.\n\n• Imported workouts power fitness history, weekly goals, charts, activity insights, and Weekly Review\n• Improved Connect Apple Health reliability with a timeout and visible error state\n• Added a clear explanation when Apple Health is unavailable on a device\n• Clarified read-only workout access and privacy messaging\n• Improved Fitness dashboard placement so Apple Health is easy to find",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 133,
+    "name": "LifeMint 1.3.3",
+    "tag_name": "1.3.3",
+    "published_at": "2026-08-01T12:00:00Z",
+    "body": "We fixed bugs!",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 132,
+    "name": "LifeMint 1.3.2",
+    "tag_name": "1.3.2",
+    "published_at": "2026-07-23T12:00:00Z",
+    "body": "Architecture redesigned!",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 131,
+    "name": "LifeMint 1.3.1",
+    "tag_name": "1.3.1",
+    "published_at": "2026-07-21T12:00:00Z",
+    "body": "We now have FOCUSMINT PRO\n\nLifetime LifeMint Pro unlocks advanced work tools.",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 130,
+    "name": "LifeMint 1.3.0",
+    "tag_name": "1.3.0",
+    "published_at": "2026-07-16T12:00:00Z",
+    "body": "Version 1.3 introduces smarter shift planning, paycheck forecasting, reconciliation tools, and improved Pro access handling. We also improved reliability, localization, and overall performance.\n\nAlso in recent LifeMint builds: Earn / Spend / Train records, weekly review, and home actions for study, work, expense, and gym.",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 123,
+    "name": "LifeMint 1.2.3",
+    "tag_name": "1.2.3",
+    "published_at": "2026-07-09T12:00:00Z",
+    "body": "Update: \nFixed some bugs \nWe also added Widget to support one-click punch-in",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 122,
+    "name": "LifeMint 1.2.2",
+    "tag_name": "1.2.2",
+    "published_at": "2026-07-07T12:00:00Z",
+    "body": "We fixed bugs!",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 121,
+    "name": "LifeMint 1.2.1",
+    "tag_name": "1.2.1",
+    "published_at": "2026-07-06T12:00:00Z",
+    "body": "We fixed some bugs, and we added TIP option!",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 120,
+    "name": "LifeMint 1.2.0",
+    "tag_name": "1.2.0",
+    "published_at": "2026-07-03T12:00:00Z",
+    "body": "We fixed some bugs!",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 119,
+    "name": "LifeMint 1.1.9",
+    "tag_name": "1.1.9",
+    "published_at": "2026-07-01T12:00:00Z",
+    "body": "Update:\nRefactor the UI\nAdded:\nGOAL SYSTEM",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 118,
+    "name": "LifeMint 1.1.8",
+    "tag_name": "1.1.8",
+    "published_at": "2026-05-20T12:00:00Z",
+    "body": "Fixed bugs!",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 117,
+    "name": "LifeMint 1.1.7",
+    "tag_name": "1.1.7",
+    "published_at": "2026-05-17T12:00:00Z",
+    "body": "Update:\nBug fixed!",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 115,
+    "name": "LifeMint 1.1.5",
+    "tag_name": "1.1.5",
+    "published_at": "2026-05-14T12:00:00Z",
+    "body": "Updates：\nUI re-designed！\nBugs fixed！",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 114,
+    "name": "LifeMint 1.1.4",
+    "tag_name": "1.1.4",
+    "published_at": "2026-04-19T12:00:00Z",
+    "body": "Fixed bugs",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 113,
+    "name": "LifeMint 1.1.3",
+    "tag_name": "1.1.3",
+    "published_at": "2026-04-17T12:00:00Z",
+    "body": "Fix bugs and added SMART predict salary",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 112,
+    "name": "LifeMint 1.1.2",
+    "tag_name": "1.1.2",
+    "published_at": "2026-04-12T12:00:00Z",
+    "body": "1.feat: added work profile\n2.fix: bugs",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 111,
+    "name": "LifeMint 1.1.1",
+    "tag_name": "1.1.1",
+    "published_at": "2026-04-10T12:00:00Z",
+    "body": "1. Buy Me a Coffee – Enjoy the app? Tip the developer directly from within Focus Mint!\n2. Bonus Pay – Log bonuses and special rates alongside your focus sessions.\n3. Earnings Stats – Clearer, more accurate earnings display.\n4. Bug Fixes & Polish – Smoother experience overall.",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 110,
+    "name": "LifeMint 1.1.0",
+    "tag_name": "1.1.0",
+    "published_at": "2026-04-02T12:00:00Z",
+    "body": "Fix:\nreduced audio size\nfixed bugs",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 109,
+    "name": "LifeMint 1.0.9",
+    "tag_name": "1.0.9",
+    "published_at": "2026-04-01T12:00:00Z",
+    "body": "Updates:\nFix:Bug fixed\nFeat: Added HeatMap and background white noise",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 108,
+    "name": "LifeMint 1.0.8",
+    "tag_name": "1.0.8",
+    "published_at": "2026-03-14T12:00:00Z",
+    "body": "What's New in This Version\n\nCustom Modes: Personalize your focus sessions with Custom Emoji icons! \nWatch Sync: Your custom modes now sync automatically and permanently to your Apple Watch.\nSend Feedback: Reach out to us directly via the new Feedback section in your Profile. \nUI Refinement: Enhanced Dark Mode support and optimized layouts for a smoother experience.\nBug Fixes: Squashed various UI bugs across both iPhone and Watch apps.\nLanguage: Added French supportz!",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  },
+  {
+    "id": 10,
+    "name": "LifeMint 1.0",
+    "tag_name": "1.0",
+    "published_at": "2026-02-25T12:00:00Z",
+    "body": "LifeMint 1.0",
+    "html_url": "https://apps.apple.com/us/app/focus-mint-focus-timer-study/id6759029810"
+  }
+]

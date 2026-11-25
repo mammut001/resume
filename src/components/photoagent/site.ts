@@ -21,8 +21,8 @@ export const APP_STORE_URL = 'https://apps.apple.com/app/id6838622854';
  */
 export const APP_STORE_LIVE = false;
 
-export const LIFEMINT_URL = 'https://mammut001.github.io/focus-website/';
-export const DOGETHER_URL = 'https://mammut001.github.io/';
+export const LIFEMINT_URL = '/lifemint';
+export const DOGETHER_URL = '/dogether';
 export const APPS_URL = '/apps';
 
 /** The privacy policy and support pages on this site. Chinese readers land on their section (#zh). */

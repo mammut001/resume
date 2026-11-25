@@ -30,6 +30,7 @@ const APPS: {
       "Tips, shifts and pay tracker for iPhone and Apple Watch. 小费、排班与工资记录。",
     privacy: "/lifemint/privacy",
     support: "/lifemint/support",
+    website: "/lifemint",
   },
   {
     name: "Dogether",
@@ -37,6 +38,7 @@ const APPS: {
       "Local-first shared plans for iPhone and iPad. 本地优先的共享计划。",
     privacy: "/dogether/privacy",
     support: "/dogether/support",
+    website: "/dogether",
   },
   {
     name: "Kanjo",
