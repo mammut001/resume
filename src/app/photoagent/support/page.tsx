@@ -29,7 +29,7 @@ export default function PhotoAgentSupportPage() {
       title="PhotoAgent Support"
       intro="PhotoAgent is an iPhone app that finds photos from a typed or spoken request and helps you delete, save to albums, favorite or hide the ones you confirm, with all photo analysis running on your device."
       zhTitle="PhotoAgent 支持（中文）"
-      zhIntro="PhotoAgent 是一款 iPhone 应用，可根据输入或语音请求查找照片，并协助你删除、存入相簿、收藏或隐藏经你确认的照片，所有照片分析均在设备本地完成。"
+      zhIntro="PhotoAgent 是一款 iPhone 应用，可根据输入或语音请求查找照片，并协助你删除、存入相册、收藏或隐藏经你确认的照片，所有照片分析均在设备本地完成。"
       zhChildren={
         <>
           <Section title="联系方式">

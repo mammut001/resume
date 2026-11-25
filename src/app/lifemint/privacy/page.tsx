@@ -34,7 +34,7 @@ export default function LifeMintPrivacyPage() {
           <Section title="你的数据保存在哪里">
             <List
               items={[
-                "你输入的内容（工作记录、排班、小费、发薪日、工资对账、支出、固定账单、预算、目标、训练记录和设置）只保存在设备上的应用本地存储中，即应用与其小组件和 Apple Watch 应用共享的 App Group。",
+                "你输入的内容（工作记录、排班、小费、发薪日、工资对账、支出、固定账单、预算、目标、训练记录和设置）只保存在你的 iPhone 上（Apple Watch 上会保留一份同步副本），并通过 App Group 与小组件共享。",
                 "LifeMint 不通过 iCloud 或任何服务器同步数据，也不会把数据发送给开发者。",
                 "与其他应用数据一样，如果你使用 iCloud 云备份或在电脑上备份 iPhone，这些数据会包含在你自己的设备备份中。",
               ]}
@@ -113,7 +113,7 @@ export default function LifeMintPrivacyPage() {
       <Section title="Where Your Data Is Stored">
         <List
           items={[
-            "What you enter (work sessions, shifts, tips, paydays, paycheck reconciliations, expenses, fixed bills, budgets, goals, workouts and settings) is stored only in the app's own storage on your device: an App Group shared with its widgets and its Apple Watch app.",
+            "What you enter (work sessions, shifts, tips, paydays, paycheck reconciliations, expenses, fixed bills, budgets, goals, workouts and settings) is stored only on your iPhone (with a synced copy on your Apple Watch) and shared with the widgets through an App Group.",
             "LifeMint does not sync through iCloud or any server, and does not send your data to the developer.",
             "Like other app data, it is included in your own device backups if you use iCloud Backup or back up your iPhone to a computer.",
           ]}

@@ -31,7 +31,7 @@ export default function PhotoAgentPrivacyPage() {
       title="PhotoAgent Privacy Policy"
       intro="PhotoAgent is an iPhone app that finds photos from a typed or spoken request and helps you delete, save to albums, favorite or hide the ones you confirm. There is no account, no developer server, and no analytics, advertising or tracking SDKs. The developer receives no data from the app."
       zhTitle="PhotoAgent 隐私政策（中文）"
-      zhIntro="PhotoAgent 是一款 iPhone 应用，可根据输入或语音请求查找照片，并协助你删除、存入相簿、收藏或隐藏经你确认的照片。应用没有账号，没有开发者服务器，不含任何统计分析、广告或追踪 SDK。开发者不会从应用中接收任何数据。"
+      zhIntro="PhotoAgent 是一款 iPhone 应用，可根据输入或语音请求查找照片，并协助你删除、存入相册、收藏或隐藏经你确认的照片。应用没有账号，没有开发者服务器，不含任何统计分析、广告或追踪 SDK。开发者不会从应用中接收任何数据。"
       zhChildren={
         <>
           <Section title="照片与本地分析">
@@ -51,7 +51,7 @@ export default function PhotoAgentPrivacyPage() {
           <Section title="对照片图库的修改">
             <List
               items={[
-                "PhotoAgent 只会删除、存入相簿、收藏或取消收藏、隐藏你本人选中并确认的照片，并通过系统 Photos 框架完成这些操作。",
+                "PhotoAgent 只会删除、存入相册、收藏或取消收藏、隐藏你本人选中并确认的照片，并通过系统 Photos 框架完成这些操作。",
                 "删除需要两次确认（先在应用内确认，再在系统弹窗中确认）。被删除的照片会移入系统“照片”应用的“最近删除”相簿。",
                 "隐藏照片时系统会弹窗请你确认；被隐藏的照片会移入“照片”应用的“已隐藏”相簿，该相簿可能已被锁定。",
                 "这些操作都不会把照片发送到设备之外。",
@@ -73,7 +73,7 @@ export default function PhotoAgentPrivacyPage() {
             <List
               items={[
                 "“搜索你输入的地点”默认开启：当需要查找请求中提及但不在内置列表中的地点时，应用只会将输入的地点名称（不含照片、不含位置信息）发送给 Apple 地图。你可以在“设置”中关闭此功能。",
-                "“显示街道和地标名称”默认开启：开启时，应用会把每个照片地点（约 200 米范围）的坐标发送给 Apple 地图以获取地址，与系统“照片”应用为地点命名的方式相同。照片及其内容绝不会被发送。你可以在“设置”中关闭此功能，关闭后会删除已保存的地址。",
+                "“显示街道和地标名称”默认开启：开启时，应用会把每个约 200 米范围的地点中一张照片的位置坐标发送给 Apple 地图以获取地址，与系统“照片”应用为地点命名的方式相同。照片及其内容绝不会被发送。你可以在“设置”中关闭此功能，关闭后会删除已保存的地址。",
                 "“家”和“公司”的位置只在设备上根据照片推断，只保存在内存中，绝不会发送到任何地方。",
                 <>
                   Apple 对这些请求的处理适用{" "}
@@ -89,7 +89,7 @@ export default function PhotoAgentPrivacyPage() {
           <Section title="PhotoAgent Pro（App 内购买）">
             <List
               items={[
-                "PhotoAgent 可免费下载。修改照片图库的操作（删除、存入相簿、收藏、隐藏）每天合计可免费处理 30 张照片。",
+                "PhotoAgent 可免费下载。修改照片图库的操作（删除、存入相册、收藏、隐藏）每天合计可免费处理 30 张照片。",
                 "PhotoAgent Pro 提供按年订阅（含免费试用）和一次性买断两种方式。",
                 "付款由 Apple 通过 App Store 处理，开发者不会收到任何付款信息或个人数据。",
                 "Pro 权益由 StoreKit 在设备上验证；每天已用的免费次数只保存在设备上。",
@@ -100,7 +100,7 @@ export default function PhotoAgentPrivacyPage() {
 
           <Section title="iCloud 照片">
             <p>
-              当你全屏打开单张照片时，系统 Photos
+              当你预览或打开单张照片时，系统 Photos
               框架可能会像系统“照片”应用一样，从你自己的 iCloud
               照片图库下载用于显示的副本。
             </p>
@@ -166,7 +166,7 @@ export default function PhotoAgentPrivacyPage() {
         <List
           items={[
             '"Search places you type" is on by default: to find a place named in a request that is not in the built-in lists, only the typed place name (no photos, no location) is sent to Apple Maps. You can turn this off in Settings.',
-            '"Show street and landmark names" (Chinese UI name: 显示街道和地标名称) is on by default: while it is on, the coordinates of each photo spot (an area of about 200 m) are sent to Apple Maps to get an address, the way the Photos app names places. Photos and their content are never sent. You can turn it off in Settings, which deletes the saved addresses.',
+            '"Show street and landmark names" (Chinese UI name: 显示街道和地标名称) is on by default: while it is on, the location of one photo in each area of about 200 m is sent to Apple Maps to get an address, the way the Photos app names places. Photos and their content are never sent. You can turn it off in Settings, which deletes the saved addresses.',
             "Home and work are worked out on your device from your photos, kept in memory only, and never sent anywhere.",
             <>
               {"Apple's handling of these requests is covered by "}
@@ -193,7 +193,7 @@ export default function PhotoAgentPrivacyPage() {
 
       <Section title="iCloud Photos">
         <p>
-          When you open a single photo full screen, the Photos framework may
+          When you preview or open a photo, the Photos framework may
           download a display copy from your own iCloud Photos, just as the
           Photos app does.
         </p>

@@ -44,7 +44,7 @@ export default function DogetherPrivacyPage() {
           <Section title="主屏幕和锁定屏幕小组件">
             <p>
               小组件读取本机 App Group
-              快照，其中可能包含计划标题、时间、进度、协作者名称、未完成任务标题，以及指派给你的任务和指派人。
+              快照，其中可能包含计划标题、时间、进度、协作者名称、未完成任务标题，以及指派给你的任务和指派人。“我的空间”中的日常事项只保存在你的设备上，也会出现在小组件（包括锁定屏幕小组件）中。
             </p>
           </Section>
 
@@ -65,7 +65,7 @@ export default function DogetherPrivacyPage() {
           <Section title="通知">
             <p>
               App
-              启动时不会请求通知权限。设置截止日期之后，才会提供可选的到期提醒。共享计划可以选全部动态、只看与我相关、只看重要，或静音。通知由
+              启动时不会请求通知权限。设置截止日期或为“我的空间”中的日常事项设置提醒之后，才会提供可选的提醒。共享计划可以选全部动态、只看与我相关、只看重要，或静音。通知由
               Apple 送达。Dogether 没有一台会读取你的计划再推送的服务器。
             </p>
           </Section>
@@ -117,7 +117,9 @@ export default function DogetherPrivacyPage() {
         <p>
           Widgets read a local App Group snapshot on your device that can
           include plan titles, schedules, progress, collaborator names, open
-          task titles, and tasks assigned to you with who assigned them.
+          task titles, and tasks assigned to you with who assigned them. My
+          Space routines stay on your device and also appear in widgets,
+          including the Lock Screen widgets.
         </p>
       </Section>
 
@@ -140,7 +142,8 @@ export default function DogetherPrivacyPage() {
       <Section title="Notifications">
         <p>
           The app does not ask for notification permission at launch. Optional
-          due-date reminders are offered after you set a due date. For shared
+          reminders are offered after you set a due date or turn on a reminder
+          for a My Space routine. For shared
           plans you can choose All activity, Relevant only, Important only, or
           Muted. Apple delivers those notifications. Dogether does not run a
           server that reads your plans in order to push them.

@@ -2,15 +2,12 @@ import type { Metadata } from "next";
 import { RESUME_DATA } from "@/data/resume-data";
 import {
   AppDocPage,
-  ExternalLink,
   List,
   MailLink,
   Question,
   Section,
   TextLink,
 } from "@/components/app-docs";
-
-const issuesUrl = "https://github.com/mammut001/dogether/issues";
 
 export const metadata: Metadata = {
   title: "Dogether Support",
@@ -62,10 +59,6 @@ export default function DogetherSupportPage() {
           <Section title="联系">
             <p>
               产品问题或错误报告请发邮件至 <MailLink email={email} />
-              ，也可以通过开发者 GitHub 仓库的 Issues 提交：
-              <ExternalLink href={issuesUrl}>
-                通过 GitHub Issues 联系
-              </ExternalLink>
               。
             </p>
           </Section>
@@ -106,10 +99,6 @@ export default function DogetherSupportPage() {
       <Section title="Contact">
         <p>
           For product questions or bug reports, email <MailLink email={email} />
-          , or open an issue in the developer&apos;s GitHub repository:{" "}
-          <ExternalLink href={issuesUrl}>
-            Contact via GitHub Issues
-          </ExternalLink>
           .
         </p>
       </Section>
