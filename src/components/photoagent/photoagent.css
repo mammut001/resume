@@ -1,0 +1,249 @@
+/*
+ * The PhotoAgent page's own styles. Everything is scoped to .pa-root (the page wrapper) and every variable and class is
+ * prefixed with pa-, so nothing here touches the résumé or the other pages of the site.
+ *
+ * PhotoAgent's palette (PhotoAgent/DesignSystem: AppColor and AppTint). Coral (--pa-accent) is decoration only; text
+ * and button fills use --pa-accent-text and --pa-accent-fill, as in the app. Dark values follow the site's next-themes
+ * class on <html>.
+ */
+.pa-root {
+  color-scheme: light;
+  --pa-page: #fff7ef;
+  --pa-sunken: #fdeee2;
+  --pa-card: #ffffff;
+  --pa-card-border: #f3dccb;
+  --pa-title: #4a2340;
+  --pa-body: #3d2a35;
+  --pa-secondary: #6b4f58;
+  --pa-accent: #ff6b5e;
+  --pa-accent-fill: #d2412f;
+  --pa-accent-text: #b3362a;
+
+  --pa-sun-bg: #fff1c9;
+  --pa-sun-fg: #7a5300;
+  --pa-leaf-bg: #ddf3e3;
+  --pa-leaf-fg: #1f6b3a;
+  --pa-sky-bg: #dceefb;
+  --pa-sky-fg: #1b4f7a;
+  --pa-plum-bg: #efe1f0;
+  --pa-plum-fg: #6a2e62;
+  --pa-coral-bg: #ffe1dc;
+  --pa-coral-fg: #9e2f20;
+
+  --pa-frame: #2a1c24;
+  --pa-footer: #4a2340;
+  --pa-shadow-soft: 0 12px 36px -12px rgba(185, 122, 90, 0.35);
+  --pa-shadow-lift: 0 30px 70px -24px rgba(120, 60, 60, 0.4), 0 8px 20px -10px rgba(185, 122, 90, 0.3);
+  --pa-system-sheet: rgba(242, 242, 247, 0.96);
+  --pa-system-text: #000000;
+  /* Apple's increased-contrast light shades, so the alert's 16px labels pass 4.5:1. */
+  --pa-system-blue: #0062cc;
+  --pa-system-red: #d70015;
+  /* Fill behind white text on destructive buttons (white on it is about 5.6:1). */
+  --pa-danger-fill: #c4281c;
+  --pa-system-divider: rgba(60, 60, 67, 0.29);
+
+  background: var(--pa-page);
+  color: var(--pa-body);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'PingFang SC', 'Hiragino Sans',
+    'Apple SD Gothic Neo', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* The hero's glow reaches past the right edge; never let it scroll the page sideways. */
+  overflow-x: clip;
+}
+
+.dark .pa-root {
+  color-scheme: dark;
+  --pa-page: #1b1320;
+  --pa-sunken: #150e19;
+  --pa-card: #2a1f2e;
+  --pa-card-border: #3d2e42;
+  --pa-title: #fff1e6;
+  --pa-body: #ead9df;
+  --pa-secondary: #c9b3bb;
+  --pa-accent: #ff8a7a;
+  --pa-accent-fill: #d2412f;
+  --pa-accent-text: #ff9a8c;
+
+  --pa-sun-bg: #3a2e12;
+  --pa-sun-fg: #ffd978;
+  --pa-leaf-bg: #163222;
+  --pa-leaf-fg: #8fe0ae;
+  --pa-sky-bg: #12283a;
+  --pa-sky-fg: #9ccbf2;
+  --pa-plum-bg: #301a2f;
+  --pa-plum-fg: #e3b5da;
+  --pa-coral-bg: #3a1a17;
+  --pa-coral-fg: #ffb0a4;
+
+  --pa-frame: #000000;
+  --pa-footer: #120c16;
+  --pa-shadow-soft: 0 12px 36px -12px rgba(0, 0, 0, 0.6);
+  --pa-shadow-lift: 0 30px 70px -24px rgba(0, 0, 0, 0.75), 0 8px 20px -10px rgba(0, 0, 0, 0.5);
+  --pa-system-sheet: rgba(44, 44, 46, 0.97);
+  --pa-system-text: #ffffff;
+  --pa-system-blue: #0a84ff;
+  --pa-system-red: #ff453a;
+  --pa-danger-fill: #c4281c;
+  --pa-system-divider: rgba(84, 84, 88, 0.65);
+}
+
+.pa-root ::selection {
+  background: var(--pa-coral-bg);
+  color: var(--pa-title);
+}
+
+.pa-root :focus-visible {
+  outline: 2px solid var(--pa-accent-text);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Buttons flush with a clipped edge (the iOS-style alert) draw their ring inside. */
+.pa-root .pa-inset-focus:focus-visible {
+  outline-offset: -3px;
+}
+
+.pa-root .pa-skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 100;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: var(--pa-card);
+  color: var(--pa-title);
+  font-weight: 600;
+}
+.pa-root .pa-skip-link:focus {
+  top: 12px;
+}
+
+/* ── Buttons ────────────────────────────────────────────── */
+.pa-root .pa-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 50px;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #fff;
+  background: var(--pa-accent-fill);
+  border-radius: 999px;
+  border: none;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.pa-root a.pa-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--pa-shadow-soft);
+  background: #bd3626;
+}
+.pa-root .pa-btn-primary[aria-disabled='true'] {
+  cursor: default;
+  background: var(--pa-title);
+  color: var(--pa-page);
+}
+
+.pa-root .pa-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 50px;
+  padding: 14px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--pa-accent-text);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.pa-root .pa-btn-secondary:hover {
+  background: var(--pa-coral-bg);
+}
+
+/* ── Cards ──────────────────────────────────────────────── */
+.pa-root .pa-clay {
+  background: var(--pa-card);
+  border: 1px solid var(--pa-card-border);
+  border-radius: 24px;
+  box-shadow: var(--pa-shadow-soft);
+}
+
+.pa-root .pa-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--pa-coral-bg);
+  color: var(--pa-coral-fg);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.pa-root .pa-chip[aria-pressed='true'] {
+  background: var(--pa-accent-fill);
+  color: #fff;
+}
+
+/* ── Motion ─────────────────────────────────────────────── */
+@keyframes pa-fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pa-bob {
+  from { transform: translateY(-5px); }
+  to { transform: translateY(5px); }
+}
+@keyframes pa-blink {
+  50% { opacity: 0; }
+}
+@keyframes pa-sheet-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pa-alert-in {
+  from { opacity: 0; transform: scale(1.08); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.pa-root .pa-hero-enter { animation: pa-fade-up 0.7s ease-out both; }
+.pa-root .pa-hero-enter-delayed { animation-delay: 0.15s; }
+.pa-root .pa-bob { animation: pa-bob 2.6s ease-in-out infinite alternate; }
+.pa-root .pa-caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: var(--pa-accent);
+  vertical-align: text-bottom;
+  animation: pa-blink 1s steps(1) infinite;
+}
+.pa-root .pa-sheet-in { animation: pa-sheet-up 0.3s ease-out both; }
+.pa-root .pa-alert-in { animation: pa-alert-in 0.22s ease-out both; }
+
+.pa-root .pa-tile {
+  transition: opacity 0.35s ease, filter 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+.pa-root .pa-tile-dim { opacity: 0.32; filter: grayscale(1); }
+.pa-root .pa-tile-hit { opacity: 1; filter: none; transform: scale(1.04); box-shadow: 0 0 0 2.5px var(--pa-accent); }
+
+.pa-root .pa-reveal { transition: opacity 0.55s ease-out, transform 0.55s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pa-root .pa-hero-enter,
+  .pa-root .pa-bob,
+  .pa-root .pa-caret,
+  .pa-root .pa-sheet-in,
+  .pa-root .pa-alert-in { animation: none !important; }
+  .pa-root .pa-caret { display: none; }
+  .pa-root .pa-tile,
+  .pa-root .pa-reveal { transition: none !important; }
+}
+
+.pa-root .pa-no-scrollbar { scrollbar-width: none; }
+.pa-root .pa-no-scrollbar::-webkit-scrollbar { display: none; }
