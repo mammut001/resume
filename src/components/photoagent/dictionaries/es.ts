@@ -125,7 +125,7 @@ export const es: Dictionary = {
         exampleLabel: 'Por ejemplo',
         points: [
             'Tus palabras se convierten en texto en tu iPhone con el reconocimiento de voz de Apple en el dispositivo. El audio nunca se guarda ni se envía.',
-            'La primera vez que usas un idioma, iOS descarga su modelo de voz. Puede tardar uno o dos minutos.',
+            'La primera vez que usas un idioma, puede que iOS necesite descargar su modelo de voz.',
             'Funciona con Siri y Atajos: “Ask PhotoAgent” (con Siri en inglés o chino).',
         ],
     },

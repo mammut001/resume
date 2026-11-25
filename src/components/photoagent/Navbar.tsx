@@ -33,9 +33,9 @@ export default function Navbar({ dict, lang, languageLabel }: { dict: Dictionary
       style={{ background: scrolled || menuOpen ? 'color-mix(in srgb, var(--pa-page) 88%, transparent)' : 'transparent' }}
     >
       <nav className="max-w-[1200px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-2" aria-label="PhotoAgent">
-        <a href="#top" className="flex items-center gap-2.5 min-h-[44px]" aria-label={dict.home}>
-          <Image src={ICON_SRC} alt="" width={32} height={32} className="w-8 h-8 rounded-[9px]" />
-          <span className="text-base font-bold text-[color:var(--pa-title)]">PhotoAgent</span>
+        <a href="#top" className="flex min-w-0 items-center gap-2.5 min-h-[44px]" aria-label={dict.home}>
+          <Image src={ICON_SRC} alt="" width={32} height={32} className="w-8 h-8 shrink-0 rounded-[9px]" />
+          <span className="hidden min-[360px]:inline truncate text-base font-bold text-[color:var(--pa-title)]">PhotoAgent</span>
         </a>
         <ul className="hidden md:flex items-center gap-1">
           {links.map((l) => (
@@ -46,7 +46,7 @@ export default function Navbar({ dict, lang, languageLabel }: { dict: Dictionary
             </li>
           ))}
         </ul>
-        <div className="flex items-center gap-1">
+        <div className="flex shrink-0 items-center gap-1">
           <LanguageSwitcher current={lang} label={languageLabel} />
           <ThemeToggle label={dict.theme} />
           <a

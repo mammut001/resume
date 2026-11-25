@@ -1,10 +1,23 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useTheme } from 'next-themes';
+
+// The page's background in each theme; kept in step with the viewport themeColor in app/photoagent/[lang]/page.tsx.
+const CHROME = { light: '#FFF7EF', dark: '#1B1320' } as const;
 
 /** Switches the cv site's light and dark theme (next-themes), which the PhotoAgent palette follows. */
 export default function ThemeToggle({ label }: { label: string }) {
   const { resolvedTheme, setTheme } = useTheme();
+
+  // theme-color is keyed on the system scheme; when the page's own theme differs, make the browser chrome follow the page.
+  useEffect(() => {
+    if (resolvedTheme !== 'light' && resolvedTheme !== 'dark') return;
+    const metas = Array.from(document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]'));
+    const original = metas.map((m) => m.content);
+    metas.forEach((m) => (m.content = CHROME[resolvedTheme]));
+    return () => metas.forEach((m, i) => (m.content = original[i]));
+  }, [resolvedTheme]);
   return (
     <button
       type="button"

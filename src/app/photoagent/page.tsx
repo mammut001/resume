@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import LanguageRedirect from '@/components/photoagent/LanguageRedirect';
-import { LANGUAGE_NAMES, LOCALES, HREFLANG, pageUrl } from '@/components/photoagent/site';
+import { en } from '@/components/photoagent/dictionaries/en';
+import { LANGUAGE_NAMES, LOCALES, HREFLANG, OG_IMAGE, pageUrl } from '@/components/photoagent/site';
 
 export const metadata: Metadata = {
   title: { absolute: 'PhotoAgent' },
@@ -13,6 +14,25 @@ export const metadata: Metadata = {
     ]),
   },
   robots: { index: false, follow: true },
+  icons: {
+    icon: [{ url: '/photoagent/favicon.png', type: 'image/png' }],
+    apple: '/photoagent/apple-touch-icon.png',
+  },
+  // Its own card, so a shared /photoagent link doesn't show the résumé's (scrapers don't follow the JS redirect).
+  openGraph: {
+    type: 'website',
+    siteName: 'PhotoAgent',
+    url: pageUrl('en'),
+    title: en.metadata.ogTitle,
+    description: en.metadata.ogDescription,
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'PhotoAgent' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: en.metadata.ogTitle,
+    description: en.metadata.ogDescription,
+    images: [OG_IMAGE],
+  },
 };
 
 // Pick the visitor's language before React loads, so the redirect happens at once. Same rule as pickLocale().

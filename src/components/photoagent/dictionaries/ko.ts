@@ -113,7 +113,7 @@ export const ko: Dictionary = {
         exampleLabel: '예를 들어',
         points: [
             '말한 내용은 Apple의 온디바이스 음성 인식으로 iPhone에서 글자로 바뀝니다. 오디오는 저장하거나 보내지 않습니다.',
-            '어떤 언어를 처음 쓸 때 iOS가 그 언어의 음성 모델을 내려받습니다. 1~2분 걸릴 수 있습니다.',
+            '어떤 언어를 처음 쓸 때 iOS가 그 언어의 음성 모델을 내려받아야 할 수 있습니다.',
             'Siri와 단축어 지원: “Ask PhotoAgent”(Siri가 영어나 중국어일 때).',
         ],
     },

@@ -109,7 +109,7 @@ export const zh: Dictionary = {
         exampleLabel: '比如',
         points: [
             '你说的话用 Apple 的本机语音识别在 iPhone 上转成文字。录音不保存，也不发送。',
-            '第一次使用某种语言时，iOS 需要下载它的语音模型，可能要一两分钟。',
+            '第一次使用某种语言时，iOS 可能需要下载它的语音模型。',
             '支持 Siri 和快捷指令：“问问 PhotoAgent”。',
         ],
     },

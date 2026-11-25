@@ -282,7 +282,7 @@ export const en: Dictionary = {
         exampleLabel: 'For example',
         points: [
             'Your words are turned into text on your iPhone with Apple’s on-device speech recognition. Audio is never saved or sent.',
-            'The first time in a language, iOS downloads its speech model. This can take a minute or two.',
+            'The first time you use a language, iOS may need to download its speech model.',
             'Works with Siri and Shortcuts: “Ask PhotoAgent”.',
         ],
     },

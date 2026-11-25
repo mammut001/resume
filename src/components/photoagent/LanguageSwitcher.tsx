@@ -52,9 +52,9 @@ export default function LanguageSwitcher({
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-controls={open ? listId : undefined}
-        className={`flex items-center gap-1.5 px-3 min-h-[40px] text-sm font-semibold rounded-full transition-colors ${buttonTone}`}
+        className={`flex shrink-0 items-center gap-1.5 whitespace-nowrap px-2 sm:px-3 min-h-[40px] text-sm font-semibold rounded-full transition-colors ${buttonTone}`}
       >
-        <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
+        <svg viewBox="0 0 24 24" className="w-4 h-4 shrink-0 max-[379px]:hidden" fill="none" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
           <circle cx="12" cy="12" r="8.5" />
           <path d="M3.5 12 L20.5 12 M12 3.5 Q16 8 16 12 Q16 16 12 20.5 Q8 16 8 12 Q8 8 12 3.5 Z" />
         </svg>

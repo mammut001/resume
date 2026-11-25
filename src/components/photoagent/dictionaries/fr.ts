@@ -126,7 +126,7 @@ export const fr: Dictionary = {
         exampleLabel: 'Par exemple',
         points: [
             'Vos mots sont transcrits sur votre iPhone par la reconnaissance vocale d’Apple intégrée à l’appareil. L’audio n’est jamais enregistré ni envoyé.',
-            'La première fois dans une langue, iOS télécharge son modèle vocal. Cela peut prendre une minute ou deux.',
+            'La première fois que vous utilisez une langue, iOS peut avoir besoin de télécharger son modèle vocal.',
             'Fonctionne avec Siri et Raccourcis : « Ask PhotoAgent » (Siri en anglais ou en chinois).',
         ],
     },

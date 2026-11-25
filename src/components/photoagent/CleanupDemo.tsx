@@ -371,7 +371,7 @@ export default function CleanupDemo({ dict }: { dict: Dictionary['cleanupDemo'] 
                       <button
                         type="button"
                         onClick={cancel}
-                        className="min-h-[44px] text-[16px]"
+                        className="min-h-[44px] text-[16px] pa-inset-focus"
                         style={{ color: 'var(--pa-system-blue)', borderRight: '0.5px solid var(--pa-system-divider)' }}
                       >
                         {dict.systemDontAllow}
@@ -380,7 +380,7 @@ export default function CleanupDemo({ dict }: { dict: Dictionary['cleanupDemo'] 
                         ref={systemConfirmRef}
                         type="button"
                         onClick={confirmSystem}
-                        className="min-h-[44px] text-[16px] font-semibold"
+                        className="min-h-[44px] text-[16px] font-semibold pa-inset-focus"
                         style={{ color: 'var(--pa-system-red)' }}
                       >
                         {dict.systemDelete}

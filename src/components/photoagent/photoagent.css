@@ -100,6 +100,11 @@
   border-radius: 6px;
 }
 
+/* Buttons flush with a clipped edge (the iOS-style alert) draw their ring inside. */
+.pa-root .pa-inset-focus:focus-visible {
+  outline-offset: -3px;
+}
+
 .pa-root .pa-skip-link {
   position: absolute;
   left: 16px;
