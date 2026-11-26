@@ -9,10 +9,12 @@ import { TokenUsage } from "@/components/resume/token-usage";
 import { Projects } from "@/components/resume/projects";
 import { Research } from "@/components/resume/research";
 import { Heatmap } from "@/components/resume/heatmap";
+import { PersonJsonLd } from "@/components/person-json-ld";
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-background font-sans antialiased">
+      <PersonJsonLd />
       <Header />
       <div className="relative mx-auto max-w-screen-lg px-4 pb-16 pt-6 md:px-16 md:pt-10 print:p-0">
         <div className="mx-auto w-full space-y-12 bg-background md:space-y-14 print:space-y-6">

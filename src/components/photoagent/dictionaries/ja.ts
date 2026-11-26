@@ -143,7 +143,7 @@ export const ja: Dictionary = {
         description: 'iOS シミュレータでサンプル画像を使って撮影しました。画面は英語版です。',
         shots: {
             home: 'ホーム：たずねるか、整理カードから始める',
-            results: '「カールトン大学で撮った写真を削除」の結果',
+            results: '「東京で撮った写真を削除」の結果',
             review: 'レビュー：消す写真を選ぶ',
             confirm: '1 回目の確認と合計サイズ',
             duplicates: '重複写真。一番よい 1 枚に印',

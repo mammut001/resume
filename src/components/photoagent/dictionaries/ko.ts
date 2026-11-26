@@ -142,7 +142,7 @@ export const ko: Dictionary = {
         description: 'iOS 시뮬레이터에서 샘플 이미지로 찍었습니다. 화면은 영어판입니다.',
         shots: {
             home: '홈: 물어보거나 정리 카드에서 시작',
-            results: '“칼턴 대학교에서 찍은 사진 삭제” 결과',
+            results: '“도쿄에서 찍은 사진 삭제” 결과',
             review: '검토: 지울 사진 고르기',
             confirm: '첫 번째 확인과 전체 크기',
             duplicates: '중복 사진, 가장 좋은 한 장 표시',

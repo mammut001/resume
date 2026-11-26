@@ -121,7 +121,7 @@ export const zh: Dictionary = {
             duplicates: { title: '重复和相似', body: '把重复和几乎一样的照片、视频归成一组，并标出每组最好的一张。' },
             screenshots: { title: '截图和杂项', body: '旧截图、二维码、收据和菜单、模糊照片。' },
             videos: { title: '大视频', body: '一分钟以上的视频，按时长从长到短。' },
-            places: { title: '地点', body: '国家、省份、城市、校园和地标：“我在卡尔顿大学拍的照片”。' },
+            places: { title: '地点', body: '国家、省份、城市、校园和地标：“我在东京拍的照片”。' },
             dates: { title: '日期', body: '“去年夏天”“三年前”“2020 年圣诞节”“春节”。' },
             albums: { title: '相册', body: '把结果存成“照片”App 里的相册，可以撤销。' },
             favorites: { title: '收藏和隐藏', body: '一次收藏或隐藏一整组照片，可以撤销。' },
@@ -138,7 +138,7 @@ export const zh: Dictionary = {
         description: '在 iOS 模拟器里用示例图片截取。',
         shots: {
             home: '首页：直接问，或者从清理卡片开始',
-            results: '“帮我删除我在卡尔顿大学拍的照片”的结果',
+            results: '“帮我删除我在东京拍的照片”的结果',
             review: '查看：挑出要删的',
             confirm: '第一次确认，显示总大小',
             duplicates: '重复照片，标出了最好的一张',
