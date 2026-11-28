@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { AppDocPage, Section, TextLink } from "@/components/app-docs";
 
-const UPDATED_DATE = "2026-11-21";
+const UPDATED_DATE = "2026-11-25";
 
 export const metadata: Metadata = {
   title: "Dogether Privacy Policy",
@@ -44,7 +44,15 @@ export default function DogetherPrivacyPage() {
           <Section title="主屏幕和锁定屏幕小组件">
             <p>
               小组件读取本机 App Group
-              快照，其中可能包含计划标题、时间、进度、协作者名称、未完成任务标题，以及指派给你的任务和指派人。“我的空间”中的日常事项只保存在你的设备上，也会出现在小组件（包括锁定屏幕小组件）中。
+              快照，其中可能包含计划标题、时间、进度、协作者名称、未完成任务标题，以及“指派给你”小组件里的任务和指派人。1.0.1
+              之前的版本里，“我的空间”中的日常事项只保存在你的设备上，也会出现在小组件（包括锁定屏幕小组件）中。
+            </p>
+          </Section>
+
+          <Section title="只保存在本机的设置">
+            <p>
+              重复任务的规则（例如“每周二、周四 15:30”）、App
+              的显示语言，以及每个计划选择的视图（列表、表格、看板、日历），只保存在创建它们的设备上，不会同步，也不会发给我们。重复任务生成的每一条任务是普通任务，会像其他任务一样同步给共享对象。
             </p>
           </Section>
 
@@ -65,7 +73,7 @@ export default function DogetherPrivacyPage() {
           <Section title="通知">
             <p>
               App
-              启动时不会请求通知权限。设置截止日期或为“我的空间”中的日常事项设置提醒之后，才会提供可选的提醒。共享计划可以选全部动态、只看与我相关、只看重要，或静音。通知由
+              启动时不会请求通知权限。设置截止日期之后，才会提供可选的提醒（1.0.1 之前的版本里，也可以为“我的空间”中的日常事项设置提醒）。共享计划可以选全部动态、只看与我相关、只看重要，或静音。通知由
               Apple 送达。Dogether 没有一台会读取你的计划再推送的服务器。
             </p>
           </Section>
@@ -117,9 +125,21 @@ export default function DogetherPrivacyPage() {
         <p>
           Widgets read a local App Group snapshot on your device that can
           include plan titles, schedules, progress, collaborator names, open
-          task titles, and tasks assigned to you with who assigned them. My
-          Space routines stay on your device and also appear in widgets,
-          including the Lock Screen widgets.
+          task titles, and, in the Assigned to you widget, tasks assigned to
+          you with who assigned them. In versions before 1.0.1, My Space
+          routines stay on your device and also appear in widgets, including
+          the Lock Screen widgets.
+        </p>
+      </Section>
+
+      <Section title="Settings Kept on This Device">
+        <p>
+          Repeating-task rules (for example &ldquo;every Tue and Thu at
+          3:30 PM&rdquo;), the app&apos;s display language, and the view you
+          pick for each plan (List, Table, Board, Calendar) are stored only on
+          the device where you set them. They are not synced and are not sent
+          to us. Each task a repeat creates is an ordinary task and syncs to
+          the people you share the plan with, like any other task.
         </p>
       </Section>
 
@@ -142,8 +162,8 @@ export default function DogetherPrivacyPage() {
       <Section title="Notifications">
         <p>
           The app does not ask for notification permission at launch. Optional
-          reminders are offered after you set a due date or turn on a reminder
-          for a My Space routine. For shared
+          reminders are offered after you set a due date (or, in versions
+          before 1.0.1, turn on a reminder for a My Space routine). For shared
           plans you can choose All activity, Relevant only, Important only, or
           Muted. Apple delivers those notifications. Dogether does not run a
           server that reads your plans in order to push them.
